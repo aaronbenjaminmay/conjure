@@ -1,0 +1,41 @@
+debug.log
+CORS.json
+*.bat
+*.bak
+dev/*
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+/dist
+/.idea
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+
+cardconjurer.iml
+access.log
+error.log
+
+fly.toml
+
+# debug/testing artifacts
+.playwright-mcp/
+current-state.png
+final-check.png
+no-nav-check.png
+no-nav-fresh.png
