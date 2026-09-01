@@ -1,51 +1,51 @@
 /*fonts*/
 @font-face {
 	font-family: gothammedium;
-	src: url("data/fonts/gotham-medium.ttf");
+	src: url("../fonts/gotham-medium.ttf");
 }
 @font-face {
 	font-family: belerenb;
-	src: url("data/fonts/beleren-b.ttf");
+	src: url("../fonts/beleren-b.ttf");
 }
 @font-face {
 	font-family: belerenbsc;
-	src: url("data/fonts/beleren-bsc.ttf");
+	src: url("../fonts/beleren-bsc.ttf");
 }
 @font-face {
 	font-family: matrix;
-	src: url("data/fonts/matrix.ttf");
+	src: url("../fonts/matrix.ttf");
 }
 @font-face {
 	font-family: matrixb;
-	src: url("data/fonts/matrix-b.ttf");
+	src: url("../fonts/matrix-b.ttf");
 }
 @font-face {
 	font-family: matrixbsc;
-	src: url("data/fonts/matrix-bsc.ttf");
+	src: url("../fonts/matrix-bsc.ttf");
 }
 @font-face {
 	font-family: mplantin;
-	src: url("data/fonts/mplantin.ttf");
+	src: url("../fonts/mplantin.ttf");
 }
 @font-face {
 	font-family: mplantini;
-	src: url("data/fonts/mplantin-i.ttf");
+	src: url("../fonts/mplantin-i.ttf");
 }
 @font-face {
 	font-family: plantinsemibold;
-	src: url("data/fonts/plantin-semibold.otf");
+	src: url("../fonts/plantin-semibold.otf");
 }
 @font-face {
 	font-family: goudymedieval;
-	src: url("data/fonts/goudy-medieval.ttf");
+	src: url("../fonts/goudy-medieval.ttf");
 }
 @font-face {
 	font-family: phyrexian;
-	src: url("data/fonts/phyrexian.ttf");
+	src: url("../fonts/phyrexian.ttf");
 }
 
 :root {
-	--site-background: #3a3838 url("data/images/site/backgrounds/lowpolyDarkGreen.svg") left/cover no-repeat fixed;
+	--site-background: #3a3838 url("../images/site/backgrounds/lowpolyDarkGreen.svg") left/cover no-repeat fixed;
 	--site-background-filter: none;
 	--layer-background: none;
 	--layer-background-filter: grayscale(100) brightness(0.5);
