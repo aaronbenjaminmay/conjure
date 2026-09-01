@@ -1,9 +1,9 @@
 //Create objects for common properties across available frames
-var masks = [{src:'/img/frames/planeswalker/regular/planeswalkerMaskPinline.png', name:'Pinline'}, {src:'/img/frames/planeswalker/regular/planeswalkerMaskTitle.png', name:'Title'}, {src:'/img/frames/planeswalker/regular/planeswalkerMaskType.png', name:'Type'}, {src:'/img/frames/planeswalker/regular/planeswalkerMaskBorder.png', name:'Border'}, {src:'/img/frames/planeswalker/maskLoyalty.png', name:'Loyalty'}];
+var masks = [{src:'img/frames/planeswalker/regular/planeswalkerMaskPinline.png', name:'Pinline'}, {src:'img/frames/planeswalker/regular/planeswalkerMaskTitle.png', name:'Title'}, {src:'img/frames/planeswalker/regular/planeswalkerMaskType.png', name:'Type'}, {src:'img/frames/planeswalker/regular/planeswalkerMaskBorder.png', name:'Border'}, {src:'img/frames/planeswalker/maskLoyalty.png', name:'Loyalty'}];
 //defines available frames
 availableFrames = [
-	{name:'Frame', src:'/img/frames/planeswalker/sdcc15/frame.svg', masks:masks},
-	{name:'Transform Frame', src:'/img/frames/planeswalker/sdcc15/transform.svg', masks:masks}
+	{name:'Frame', src:'img/frames/planeswalker/sdcc15/frame.svg', masks:masks},
+	{name:'Transform Frame', src:'img/frames/planeswalker/sdcc15/transform.svg', masks:masks}
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;
@@ -13,8 +13,8 @@ document.querySelector('#loadFrameVersion').onclick = async function() {
 	await resetCardIrregularities();
 	//sets card version
 	card.version = 'planeswalkerSDCC15';
-	card.onload = '/js/frames/versionPlaneswalker.js';
-	loadScript('/js/frames/versionPlaneswalker.js');
+	card.onload = 'js/frames/versionPlaneswalker.js';
+	loadScript('js/frames/versionPlaneswalker.js');
 	//art bounds
 	card.artBounds = {x:0.0394, y:0.0281, width:0.9214, height:0.8929};
 	autoFitArt();

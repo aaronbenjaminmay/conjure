@@ -1,26 +1,26 @@
 //Create objects for common properties across available frames
-var masks = [{src:'/img/frames/m15/regular/m15MaskPinline.png', name:'Pinline'}, {src:'/img/frames/m15/regular/m15MaskTitle.png', name:'Title'}, {src:'/img/frames/m15/regular/m15MaskType.png', name:'Type'}, {src:'/img/frames/m15/regular/m15MaskRules.png', name:'Rules'}, {src:'/img/frames/m15/regular/m15MaskFrame.png', name:'Frame'}, {src:'/img/frames/m15/regular/m15MaskBorder.png', name:'Border'}];
+var masks = [{src:'img/frames/m15/regular/m15MaskPinline.png', name:'Pinline'}, {src:'img/frames/m15/regular/m15MaskTitle.png', name:'Title'}, {src:'img/frames/m15/regular/m15MaskType.png', name:'Type'}, {src:'img/frames/m15/regular/m15MaskRules.png', name:'Rules'}, {src:'img/frames/m15/regular/m15MaskFrame.png', name:'Frame'}, {src:'img/frames/m15/regular/m15MaskBorder.png', name:'Border'}];
 var bounds = {x:0.7573, y:0.8848, width:0.188, height:0.0733};
 //defines available frames
 availableFrames = [
-	{name:'Artifact Frame', src:'/img/frames/m15/invention/mul/a.png', masks:masks},
-	{name:'White Frame', src:'/img/frames/m15/invention/mul/w.png', masks:masks},
-	{name:'Blue Frame', src:'/img/frames/m15/invention/mul/u.png', masks:masks},
-	{name:'Black Frame', src:'/img/frames/m15/invention/mul/b.png', masks:masks},
-	{name:'Red Frame', src:'/img/frames/m15/invention/mul/r.png', masks:masks},
-	{name:'Green Frame', src:'/img/frames/m15/invention/mul/g.png', masks:masks},
-	{name:'Multicolored Frame', src:'/img/frames/m15/invention/mul/m.png', masks:masks},
-	{name:'Land Frame', src:'/img/frames/m15/invention/mul/l.png', masks:masks},
+	{name:'Artifact Frame', src:'img/frames/m15/invention/mul/a.png', masks:masks},
+	{name:'White Frame', src:'img/frames/m15/invention/mul/w.png', masks:masks},
+	{name:'Blue Frame', src:'img/frames/m15/invention/mul/u.png', masks:masks},
+	{name:'Black Frame', src:'img/frames/m15/invention/mul/b.png', masks:masks},
+	{name:'Red Frame', src:'img/frames/m15/invention/mul/r.png', masks:masks},
+	{name:'Green Frame', src:'img/frames/m15/invention/mul/g.png', masks:masks},
+	{name:'Multicolored Frame', src:'img/frames/m15/invention/mul/m.png', masks:masks},
+	{name:'Land Frame', src:'img/frames/m15/invention/mul/l.png', masks:masks},
 
-	{name:'Invention Power/Toughness', src:'/img/frames/m15/invention/inventionPT.png', bounds:bounds},
+	{name:'Invention Power/Toughness', src:'img/frames/m15/invention/inventionPT.png', bounds:bounds},
 
-	{name:'Original Invention Frame', src:'/img/frames/m15/invention/inventionFrameA.png', masks:masks},
-	{name:'Silver Frame', src:'/img/frames/m15/invention/a.png', masks:masks},
-	{name:'Silver Power/Toughness', src:'/img/frames/m15/invention/apt.png', bounds:bounds},
-	{name:'Phyrexian Frame', src:'/img/frames/m15/invention/phyrexian.png', masks:masks},
-	{name:'Phyrexian Power/Toughness', src:'/img/frames/m15/invention/phyrexianPT.png', bounds:bounds},
-	{name:'Darksteel Frame', src:'/img/frames/m15/invention/darksteel.png', masks:masks},
-	{name:'Darksteel Power/Toughness', src:'/img/frames/m15/invention/darksteelPT.png', bounds:bounds}
+	{name:'Original Invention Frame', src:'img/frames/m15/invention/inventionFrameA.png', masks:masks},
+	{name:'Silver Frame', src:'img/frames/m15/invention/a.png', masks:masks},
+	{name:'Silver Power/Toughness', src:'img/frames/m15/invention/apt.png', bounds:bounds},
+	{name:'Phyrexian Frame', src:'img/frames/m15/invention/phyrexian.png', masks:masks},
+	{name:'Phyrexian Power/Toughness', src:'img/frames/m15/invention/phyrexianPT.png', bounds:bounds},
+	{name:'Darksteel Frame', src:'img/frames/m15/invention/darksteel.png', masks:masks},
+	{name:'Darksteel Power/Toughness', src:'img/frames/m15/invention/darksteelPT.png', bounds:bounds}
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;

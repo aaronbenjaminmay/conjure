@@ -1,5 +1,5 @@
 //Create objects for common properties across available frames
-var masks = []//[{src:'/img/frames/mysticalArchive/jp/pinline.svg', name:'Pinline'}, {src:'/img/frames/mysticalArchive/jp/rightHalf.svg', name:'Right Half'}];
+var masks = []//[{src:'img/frames/mysticalArchive/jp/pinline.svg', name:'Pinline'}, {src:'img/frames/mysticalArchive/jp/rightHalf.svg', name:'Right Half'}];
 var stretch = [
 	{name:'outline', targets: [3, 11], change:[0, 0]},
 	{name:'top', targets: [0, -2], change:[0, 0]},
@@ -10,12 +10,12 @@ var stretch = [
 notify('When you load the Kamigawa Basics frame version, a "Kamigawa Basics" tab will appear. This tab allows you to control the height of the title bar.', 15);
 //defines available frames
 availableFrames = [
-	{name:'White Frame', src:'/img/frames/neo/basics/w.svg', stretch:stretch, masks:masks},
-	{name:'Blue Frame', src:'/img/frames/neo/basics/u.svg', stretch:stretch, masks:masks},
-	{name:'Black Frame', src:'/img/frames/neo/basics/b.svg', stretch:stretch, masks:masks},
-	{name:'Red Frame', src:'/img/frames/neo/basics/r.svg', stretch:stretch, masks:masks},
-	{name:'Green Frame', src:'/img/frames/neo/basics/g.svg', stretch:stretch, masks:masks},
-	{name:'Colorless Frame', src:'/img/frames/neo/basics/c.svg', stretch:stretch, masks:masks}
+	{name:'White Frame', src:'img/frames/neo/basics/w.svg', stretch:stretch, masks:masks},
+	{name:'Blue Frame', src:'img/frames/neo/basics/u.svg', stretch:stretch, masks:masks},
+	{name:'Black Frame', src:'img/frames/neo/basics/b.svg', stretch:stretch, masks:masks},
+	{name:'Red Frame', src:'img/frames/neo/basics/r.svg', stretch:stretch, masks:masks},
+	{name:'Green Frame', src:'img/frames/neo/basics/g.svg', stretch:stretch, masks:masks},
+	{name:'Colorless Frame', src:'img/frames/neo/basics/c.svg', stretch:stretch, masks:masks}
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;
@@ -25,8 +25,8 @@ document.querySelector('#loadFrameVersion').onclick = async function() {
 	await resetCardIrregularities();
 	//sets card version
 	card.version = 'neoBasics';
-	card.onload = '/js/frames/versionNeoBasics.js';
-	loadScript('/js/frames/versionNeoBasics.js');
+	card.onload = 'js/frames/versionNeoBasics.js';
+	loadScript('js/frames/versionNeoBasics.js');
 	//art bounds
 	card.artBounds = {x:0, y:0, width:1, height:0.9286};
 	autoFitArt();

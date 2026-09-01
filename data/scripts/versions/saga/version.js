@@ -2,12 +2,12 @@ if (!loadedVersions.includes('m15Saga/version')) {
 	loadedVersions.push('m15Saga/version')
 	var sagaDivider = new Image()
     sagaDivider.crossOrigin = 'anonymous'
-    sagaDivider.src = '/data/images/cardImages/saga/sagaDivider.png'
+    sagaDivider.src = 'data/images/cardImages/saga/sagaDivider.png'
     var sagaChapter = new Image()
     sagaChapter.crossOrigin = 'anonymous'
-    sagaChapter.src = '/data/images/cardImages/saga/sagaChapter.png'
+    sagaChapter.src = 'data/images/cardImages/saga/sagaChapter.png'
 	newCanvas('saga')
-	loadMaskImages([['Pinline (saga)', '/data/images/cardImages/saga/sagaMaskPinline.png'], ['Border (saga)', '/data/images/cardImages/saga/sagaMaskBorder.png'], ['Type (saga)', '/data/images/cardImages/saga/sagaMaskType.png'], ['Frame (saga)', '/data/images/cardImages/saga/sagaMaskFrame.png'], ['Rules Text (saga)', '/data/images/cardImages/saga/sagaMaskText.png'], ['Banner (saga)', '/data/images/cardImages/saga/sagaMaskBanner.png']])
+	loadMaskImages([['Pinline (saga)', 'data/images/cardImages/saga/sagaMaskPinline.png'], ['Border (saga)', 'data/images/cardImages/saga/sagaMaskBorder.png'], ['Type (saga)', 'data/images/cardImages/saga/sagaMaskType.png'], ['Frame (saga)', 'data/images/cardImages/saga/sagaMaskFrame.png'], ['Rules Text (saga)', 'data/images/cardImages/saga/sagaMaskText.png'], ['Banner (saga)', 'data/images/cardImages/saga/sagaMaskBanner.png']])
 	document.getElementById('tabPicker').innerHTML += `<div onclick='toggleTabs(this, "sagaTab")' class='interactable'>Saga</div>`
     var sagaTab = document.createElement("div")
     sagaTab.classList.add('hidden')

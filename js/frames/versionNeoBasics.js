@@ -1,6 +1,6 @@
 //checks to see if it needs to run
-if (!loadedVersions.includes('/js/frames/versionNeoBasics.js')) {
-	loadedVersions.push('/js/frames/versionNeoBasics.js');
+if (!loadedVersions.includes('js/frames/versionNeoBasics.js')) {
+	loadedVersions.push('js/frames/versionNeoBasics.js');
 	document.querySelector('#creator-menu-tabs').innerHTML += '<h3 class="selectable readable-background" onclick="toggleCreatorTabs(event, `neoBasics`)">Kamigawa Basics</h3>';
 	var newHTML = document.createElement('div');
 	newHTML.id = 'creator-menu-neoBasics';
@@ -15,7 +15,7 @@ if (!loadedVersions.includes('/js/frames/versionNeoBasics.js')) {
 		<input id='targets' class='input' type='text' oninput='stretchNeoBasics();' value='0'>
 	</div>-->`;
 	document.querySelector('#creator-menu-sections').appendChild(newHTML);
-	loadScript('/js/frames/manaSymbolsMysticalArchiveJP.js');
+	loadScript('js/frames/manaSymbolsMysticalArchiveJP.js');
 }
 
 function stretchNeoBasics() {

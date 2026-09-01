@@ -3,25 +3,25 @@ var masks = [];
 var crownBounds = {x:33/2010, y:0, width:1790/2010, height:419/2814};
 //defines available frames
 availableFrames = [
-	{name:'White Frame', src:'/img/frames/dossier/w.png', masks:masks},
-	{name:'Blue Frame', src:'/img/frames/dossier/u.png', masks:masks},
-	{name:'Black Frame', src:'/img/frames/dossier/b.png', masks:masks},
-	{name:'Red Frame', src:'/img/frames/dossier/r.png', masks:masks},
-	{name:'Green Frame', src:'/img/frames/dossier/g.png', masks:masks},
-	{name:'Multicolor Frame', src:'/img/frames/dossier/m.png', masks:masks},
-	{name:'Artifact Frame', src:'/img/frames/dossier/a.png', masks:masks},
+	{name:'White Frame', src:'img/frames/dossier/w.png', masks:masks},
+	{name:'Blue Frame', src:'img/frames/dossier/u.png', masks:masks},
+	{name:'Black Frame', src:'img/frames/dossier/b.png', masks:masks},
+	{name:'Red Frame', src:'img/frames/dossier/r.png', masks:masks},
+	{name:'Green Frame', src:'img/frames/dossier/g.png', masks:masks},
+	{name:'Multicolor Frame', src:'img/frames/dossier/m.png', masks:masks},
+	{name:'Artifact Frame', src:'img/frames/dossier/a.png', masks:masks},
 
-	{name:'Power/Toughness Box', src:'/img/frames/dossier/pt.png', bounds:{x: 1538/2010, y:2468/2814, width: 392/2010, height: 195/2814}},
+	{name:'Power/Toughness Box', src:'img/frames/dossier/pt.png', bounds:{x: 1538/2010, y:2468/2814, width: 392/2010, height: 195/2814}},
 
-	{name:'White Legendary Crown', src:'/img/frames/dossier/crown/w.png', bounds: crownBounds},
-	{name:'Blue Legendary Crown', src:'/img/frames/dossier/crown/u.png', bounds: crownBounds},
-	{name:'Black Legendary Crown', src:'/img/frames/dossier/crown/b.png', bounds: crownBounds},
-	{name:'Red Legendary Crown', src:'/img/frames/dossier/crown/r.png', bounds: crownBounds},
-	{name:'Green Legendary Crown', src:'/img/frames/dossier/crown/g.png', bounds: crownBounds},
-	{name:'Multicolor Legendary Crown', src:'/img/frames/dossier/crown/m.png', bounds: crownBounds},
-	{name:'Artifact Legendary Crown', src:'/img/frames/dossier/crown/a.png', bounds: crownBounds},
+	{name:'White Legendary Crown', src:'img/frames/dossier/crown/w.png', bounds: crownBounds},
+	{name:'Blue Legendary Crown', src:'img/frames/dossier/crown/u.png', bounds: crownBounds},
+	{name:'Black Legendary Crown', src:'img/frames/dossier/crown/b.png', bounds: crownBounds},
+	{name:'Red Legendary Crown', src:'img/frames/dossier/crown/r.png', bounds: crownBounds},
+	{name:'Green Legendary Crown', src:'img/frames/dossier/crown/g.png', bounds: crownBounds},
+	{name:'Multicolor Legendary Crown', src:'img/frames/dossier/crown/m.png', bounds: crownBounds},
+	{name:'Artifact Legendary Crown', src:'img/frames/dossier/crown/a.png', bounds: crownBounds},
 
-	{name:'Holo Stamp', src:'/img/frames/dossier/stamp.png', bounds: {x:857/2010, y:2540/2814, width:295/2010, height:134/2814}}
+	{name:'Holo Stamp', src:'img/frames/dossier/stamp.png', bounds: {x:857/2010, y:2540/2814, width:295/2010, height:134/2814}}
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;
@@ -32,7 +32,7 @@ document.querySelector('#loadFrameVersion').onclick = async function() {
 	await resetCardIrregularities();
 	//sets card version
 	card.version = 'dossier';
-	loadScript('/js/frames/manaSymbolsOutlineAlt.js');
+	loadScript('js/frames/manaSymbolsOutlineAlt.js');
 	//art bounds
 	card.artBounds = {x:103/2010, y:365/2814, width:1766/2010, height:1149/2814};
 	autoFitArt();

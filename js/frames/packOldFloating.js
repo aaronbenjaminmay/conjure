@@ -1,24 +1,24 @@
 //Create objects for common properties across available frames
-var masks = [{src:'/img/frames/old/floating/title.svg', name:'Title'}, {src:'/img/frames/old/floating/frame.svg', name:'Frame'}, {src:'/img/frames/old/floating/pinline.svg', name:'Pinline'}, {src:'/img/frames/old/floating/rules.svg', name:'Rules'}];
+var masks = [{src:'img/frames/old/floating/title.svg', name:'Title'}, {src:'img/frames/old/floating/frame.svg', name:'Frame'}, {src:'img/frames/old/floating/pinline.svg', name:'Pinline'}, {src:'img/frames/old/floating/rules.svg', name:'Rules'}];
 //defines available frames
 availableFrames = [
-	{name:'White Frame', src:'/img/frames/old/floating/w.png', masks:masks},
-	{name:'Blue Frame', src:'/img/frames/old/floating/u.png', masks:masks},
-	{name:'Black Frame', src:'/img/frames/old/floating/b.png', masks:masks},
-	{name:'Red Frame', src:'/img/frames/old/floating/r.png', masks:masks},
-	{name:'Green Frame', src:'/img/frames/old/floating/g.png', masks:masks},
-	{name:'Multicolored Frame', src:'/img/frames/old/floating/m.png', masks:masks},
-	{name:'Artifact Frame', src:'/img/frames/old/floating/a.png', masks:masks},
-	{name:'Land Frame', src:'/img/frames/old/floating/l.png', masks:masks},
-	{name:'White Land Frame', src:'/img/frames/old/floating/land/w.png', masks:masks},
-	{name:'Blue Land Frame', src:'/img/frames/old/floating/land/u.png', masks:masks},
-	{name:'Black Land Frame', src:'/img/frames/old/floating/land/b.png', masks:masks},
-	{name:'Red Land Frame', src:'/img/frames/old/floating/land/r.png', masks:masks},
-	{name:'Green Land Frame', src:'/img/frames/old/floating/land/g.png', masks:masks},
-	{name:'Colorless Frame', src:'/img/frames/old/floating/c.png', masks:masks},
-	{name:'Tombstone Icon', src:'/img/frames/old/icons/tombstone.svg', bounds: {x:0.0687, y:0.0491, width:0.0338, height:0.0329}},
-	{name:'DCI Star', src:'/img/frames/seventh/foilStar.svg'},
-	{name:'Foil Layer', src:'/img/frames/effects/foil.png', opacity:20, masks:[{src:'/img/frames/seventh/foil.svg', name:'With Star'}, {src:'/img/frames/seventh/foil2.svg', name:'Without Star'}]},
+	{name:'White Frame', src:'img/frames/old/floating/w.png', masks:masks},
+	{name:'Blue Frame', src:'img/frames/old/floating/u.png', masks:masks},
+	{name:'Black Frame', src:'img/frames/old/floating/b.png', masks:masks},
+	{name:'Red Frame', src:'img/frames/old/floating/r.png', masks:masks},
+	{name:'Green Frame', src:'img/frames/old/floating/g.png', masks:masks},
+	{name:'Multicolored Frame', src:'img/frames/old/floating/m.png', masks:masks},
+	{name:'Artifact Frame', src:'img/frames/old/floating/a.png', masks:masks},
+	{name:'Land Frame', src:'img/frames/old/floating/l.png', masks:masks},
+	{name:'White Land Frame', src:'img/frames/old/floating/land/w.png', masks:masks},
+	{name:'Blue Land Frame', src:'img/frames/old/floating/land/u.png', masks:masks},
+	{name:'Black Land Frame', src:'img/frames/old/floating/land/b.png', masks:masks},
+	{name:'Red Land Frame', src:'img/frames/old/floating/land/r.png', masks:masks},
+	{name:'Green Land Frame', src:'img/frames/old/floating/land/g.png', masks:masks},
+	{name:'Colorless Frame', src:'img/frames/old/floating/c.png', masks:masks},
+	{name:'Tombstone Icon', src:'img/frames/old/icons/tombstone.svg', bounds: {x:0.0687, y:0.0491, width:0.0338, height:0.0329}},
+	{name:'DCI Star', src:'img/frames/seventh/foilStar.svg'},
+	{name:'Foil Layer', src:'img/frames/effects/foil.png', opacity:20, masks:[{src:'img/frames/seventh/foil.svg', name:'With Star'}, {src:'img/frames/seventh/foil2.svg', name:'Without Star'}]},
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;

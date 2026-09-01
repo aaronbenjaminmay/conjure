@@ -1,12 +1,12 @@
 //defines available frames
 availableFrames = [
-	{name:'White Frame', src:'/img/frames/old/saga/w.png'},
-	{name:'Blue Frame', src:'/img/frames/old/saga/u.png'},
-	{name:'Black Frame', src:'/img/frames/old/saga/b.png'},
-	{name:'Red Frame', src:'/img/frames/old/saga/r.png'},
-	{name:'Green Frame', src:'/img/frames/old/saga/g.png'},
-	{name:'Multicolored Frame', src:'/img/frames/old/saga/m.png'},
-	{name:'Land Frame', src:'/img/frames/old/saga/l.png'},
+	{name:'White Frame', src:'img/frames/old/saga/w.png'},
+	{name:'Blue Frame', src:'img/frames/old/saga/u.png'},
+	{name:'Black Frame', src:'img/frames/old/saga/b.png'},
+	{name:'Red Frame', src:'img/frames/old/saga/r.png'},
+	{name:'Green Frame', src:'img/frames/old/saga/g.png'},
+	{name:'Multicolored Frame', src:'img/frames/old/saga/m.png'},
+	{name:'Land Frame', src:'img/frames/old/saga/l.png'},
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;
@@ -16,8 +16,8 @@ document.querySelector('#loadFrameVersion').onclick = async function() {
 	await resetCardIrregularities();
 	//sets card version
 	card.version = 'oldSaga';
-	card.onload = '/js/frames/versionSaga.js';
-	loadScript('/js/frames/versionSaga.js');
+	card.onload = 'js/frames/versionSaga.js';
+	loadScript('js/frames/versionSaga.js');
 	//art bounds
 	card.artBounds = {x:0.5334, y:0.1091, width:0.3734, height:0.722};
 	autoFitArt();

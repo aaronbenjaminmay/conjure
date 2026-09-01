@@ -1,32 +1,32 @@
 //Create objects for common properties across available frames
-var masks = [{src:'/img/frames/storybook/mul/adventure/pinline.png', name:'Pinline'}, {src:'/img/frames/storybook/mul/adventure/rules-left.png', name:'Rules (Left)'}];
+var masks = [{src:'img/frames/storybook/mul/adventure/pinline.png', name:'Pinline'}, {src:'img/frames/storybook/mul/adventure/rules-left.png', name:'Rules (Left)'}];
 //Create objects for common properties across available frames
 var bounds = {x:1165/1500, y:1860/2100, width:266/1500, height:134/2100};
 var crownBounds = {x:80/1500, y:41/2100, width:1341/1500, height:73/2100};
 //defines available frames
 availableFrames = [
-	{name:'White Frame', src:'/img/frames/storybook/mul/adventure/w.png', masks:masks},
-	{name:'Blue Frame', src:'/img/frames/storybook/mul/adventure/u.png', masks:masks},
-	{name:'Black Frame', src:'/img/frames/storybook/mul/adventure/b.png', masks:masks},
-	{name:'Red Frame', src:'/img/frames/storybook/mul/adventure/r.png', masks:masks},
-	{name:'Green Frame', src:'/img/frames/storybook/mul/adventure/g.png', masks:masks},
-	{name:'Multicolored Frame', src:'/img/frames/storybook/mul/adventure/m.png', masks:masks},
+	{name:'White Frame', src:'img/frames/storybook/mul/adventure/w.png', masks:masks},
+	{name:'Blue Frame', src:'img/frames/storybook/mul/adventure/u.png', masks:masks},
+	{name:'Black Frame', src:'img/frames/storybook/mul/adventure/b.png', masks:masks},
+	{name:'Red Frame', src:'img/frames/storybook/mul/adventure/r.png', masks:masks},
+	{name:'Green Frame', src:'img/frames/storybook/mul/adventure/g.png', masks:masks},
+	{name:'Multicolored Frame', src:'img/frames/storybook/mul/adventure/m.png', masks:masks},
 
-	{name:'White Power/Toughness', src:'/img/frames/storybook/mul/pt/w.png', bounds:bounds},
-	{name:'Blue Power/Toughness', src:'/img/frames/storybook/mul/pt/u.png', bounds:bounds},
-	{name:'Black Power/Toughness', src:'/img/frames/storybook/mul/pt/b.png', bounds:bounds},
-	{name:'Red Power/Toughness', src:'/img/frames/storybook/mul/pt/r.png', bounds:bounds},
-	{name:'Green Power/Toughness', src:'/img/frames/storybook/mul/pt/g.png', bounds:bounds},
-	{name:'Multicolored Power/Toughness', src:'/img/frames/storybook/mul/pt/m.png', bounds:bounds},
+	{name:'White Power/Toughness', src:'img/frames/storybook/mul/pt/w.png', bounds:bounds},
+	{name:'Blue Power/Toughness', src:'img/frames/storybook/mul/pt/u.png', bounds:bounds},
+	{name:'Black Power/Toughness', src:'img/frames/storybook/mul/pt/b.png', bounds:bounds},
+	{name:'Red Power/Toughness', src:'img/frames/storybook/mul/pt/r.png', bounds:bounds},
+	{name:'Green Power/Toughness', src:'img/frames/storybook/mul/pt/g.png', bounds:bounds},
+	{name:'Multicolored Power/Toughness', src:'img/frames/storybook/mul/pt/m.png', bounds:bounds},
 
-	{name:'White Legend Crown', src:'/img/frames/storybook/mul/crowns/w.png', bounds:crownBounds},
-	{name:'Blue Legend Crown', src:'/img/frames/storybook/mul/crowns/u.png', bounds:crownBounds},
-	{name:'Black Legend Crown', src:'/img/frames/storybook/mul/crowns/b.png', bounds:crownBounds},
-	{name:'Red Legend Crown', src:'/img/frames/storybook/mul/crowns/r.png', bounds:crownBounds},
-	{name:'Green Legend Crown', src:'/img/frames/storybook/mul/crowns/g.png', bounds:crownBounds},
-	{name:'Multicolored Legend Crown', src:'/img/frames/storybook/mul/crowns/m.png', bounds:crownBounds},
+	{name:'White Legend Crown', src:'img/frames/storybook/mul/crowns/w.png', bounds:crownBounds},
+	{name:'Blue Legend Crown', src:'img/frames/storybook/mul/crowns/u.png', bounds:crownBounds},
+	{name:'Black Legend Crown', src:'img/frames/storybook/mul/crowns/b.png', bounds:crownBounds},
+	{name:'Red Legend Crown', src:'img/frames/storybook/mul/crowns/r.png', bounds:crownBounds},
+	{name:'Green Legend Crown', src:'img/frames/storybook/mul/crowns/g.png', bounds:crownBounds},
+	{name:'Multicolored Legend Crown', src:'img/frames/storybook/mul/crowns/m.png', bounds:crownBounds},
 
-	{name:'Holo Stamp', src:'/img/frames/storybook/holo.png', bounds:{x:679/1500, y:0.9129, width:0.0987, height:0.0386}},
+	{name:'Holo Stamp', src:'img/frames/storybook/holo.png', bounds:{x:679/1500, y:0.9129, width:0.0987, height:0.0386}},
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;

@@ -1,6 +1,6 @@
 //checks to see if it needs to run
-if (!loadedVersions.includes('/js/frames/versionClass.js')) {
-	loadedVersions.push('/js/frames/versionClass.js');
+if (!loadedVersions.includes('js/frames/versionClass.js')) {
+	loadedVersions.push('js/frames/versionClass.js');
 	sizeCanvas('class');
 	document.querySelector('#creator-menu-tabs').innerHTML += '<h3 class="selectable readable-background" onclick="toggleCreatorTabs(event, `class`)">Class</h3>';
 	var newHTML = document.createElement('div');
@@ -31,7 +31,7 @@ if (!loadedVersions.includes('/js/frames/versionClass.js')) {
 	}
 	document.querySelector('#creator-menu-sections').appendChild(newHTML);
 	var classHeader = new Image();
-	setImageUrl(classHeader, '/img/frames/class/header.png');
+	setImageUrl(classHeader, 'img/frames/class/header.png');
 	classHeader.onload = classEdited;
 	fixClassInputs(classEdited);
 } else {

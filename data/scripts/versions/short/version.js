@@ -1,6 +1,6 @@
 if (!loadedVersions.includes('short/version')) {
 	loadedVersions.push('short/version')
-	loadMaskImages([['Type (short)', '/data/images/cardImages/short/shortMaskType.png']])
+	loadMaskImages([['Type (short)', 'data/images/cardImages/short/shortMaskType.png']])
 }
 
 if (currentVersion != 'short/version') {

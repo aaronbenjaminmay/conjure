@@ -1,6 +1,6 @@
 //defines available frames
 availableFrames = [
-	{name:'Emblem Frame', src:'/img/frames/token/emblem/frame.png'}
+	{name:'Emblem Frame', src:'img/frames/token/emblem/frame.png'}
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;

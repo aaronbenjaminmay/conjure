@@ -1,8 +1,8 @@
 //Create objects for common properties across available frames
-var masks = [{src:'/img/frames/cardbacks/outer.svg', name:'Outer Frame'}, {src:'/img/frames/cardbacks/inner.svg', name:'Inner Frame'}, {src:'/img/frames/cardbacks/border.svg', name:'Border'}];
+var masks = [{src:'img/frames/cardbacks/outer.svg', name:'Outer Frame'}, {src:'img/frames/cardbacks/inner.svg', name:'Inner Frame'}, {src:'img/frames/cardbacks/border.svg', name:'Border'}];
 //defines available frames
 availableFrames = [
-	{name:'Cardback', src:'/img/frames/cardbacks/cardback.png', masks:masks},
+	{name:'Cardback', src:'img/frames/cardbacks/cardback.png', masks:masks},
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;

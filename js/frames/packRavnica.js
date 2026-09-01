@@ -1,38 +1,38 @@
 //Create objects for common properties across available frames
-var masks = [{src:'/img/frames/ravnica/maskTitleInner.png', name:'Title'}, {src:'/img/frames/ravnica/maskTypeInner.png', name:'Type'}, {src:'/img/frames/ravnica/maskRules.png', name:'Rules'}];
+var masks = [{src:'img/frames/ravnica/maskTitleInner.png', name:'Title'}, {src:'img/frames/ravnica/maskTypeInner.png', name:'Type'}, {src:'img/frames/ravnica/maskRules.png', name:'Rules'}];
 var crownBounds = {x:91/1500, y:0, width:1318/1500, height:91/2100};
 var ptBounds = {x:1152/1500, y:1855/2100, width:287/1500, height:145/2100};
-var ptMasks = [{src:'/img/frames/ravnica/pt/highlightsLeft.png', name:'Highlights (Left)'}, {src:'/img/frames/ravnica/pt/highlightsRight.png', name:'Highlights (Right)'}];
+var ptMasks = [{src:'img/frames/ravnica/pt/highlightsLeft.png', name:'Highlights (Left)'}, {src:'img/frames/ravnica/pt/highlightsRight.png', name:'Highlights (Right)'}];
 //defines available frames
 availableFrames = [
-	{name:'White Frame', src:'/img/frames/ravnica/w.png', masks:masks},
-	{name:'Blue Frame', src:'/img/frames/ravnica/u.png', masks:masks},
-	{name:'Black Frame', src:'/img/frames/ravnica/b.png', masks:masks},
-	{name:'Red Frame', src:'/img/frames/ravnica/r.png', masks:masks},
-	{name:'Green Frame', src:'/img/frames/ravnica/g.png', masks:masks},
-	{name:'Multicolored Frame', src:'/img/frames/ravnica/m.png', masks:masks},
-	{name:'Artifact Frame', src:'/img/frames/ravnica/a.png', masks:masks},
-	{name:'Colorless Frame', src:'/img/frames/ravnica/c.png', masks:masks},
+	{name:'White Frame', src:'img/frames/ravnica/w.png', masks:masks},
+	{name:'Blue Frame', src:'img/frames/ravnica/u.png', masks:masks},
+	{name:'Black Frame', src:'img/frames/ravnica/b.png', masks:masks},
+	{name:'Red Frame', src:'img/frames/ravnica/r.png', masks:masks},
+	{name:'Green Frame', src:'img/frames/ravnica/g.png', masks:masks},
+	{name:'Multicolored Frame', src:'img/frames/ravnica/m.png', masks:masks},
+	{name:'Artifact Frame', src:'img/frames/ravnica/a.png', masks:masks},
+	{name:'Colorless Frame', src:'img/frames/ravnica/c.png', masks:masks},
 
-	{name:'White Power/Toughness', src:'/img/frames/ravnica/pt/w.png', bounds:ptBounds, masks:ptMasks},
-	{name:'Blue Power/Toughness', src:'/img/frames/ravnica/pt/u.png', bounds:ptBounds, masks:ptMasks},
-	{name:'Black Power/Toughness', src:'/img/frames/ravnica/pt/b.png', bounds:ptBounds, masks:ptMasks},
-	{name:'Red Power/Toughness', src:'/img/frames/ravnica/pt/r.png', bounds:ptBounds, masks:ptMasks},
-	{name:'Green Power/Toughness', src:'/img/frames/ravnica/pt/g.png', bounds:ptBounds, masks:ptMasks},
-	{name:'Multicolored Power/Toughness', src:'/img/frames/ravnica/pt/m.png', bounds:ptBounds, masks:ptMasks},
-	{name:'Artifact Power/Toughness', src:'/img/frames/ravnica/pt/a.png', bounds:ptBounds, masks:ptMasks},
-	{name:'Colorless Power/Toughness', src:'/img/frames/ravnica/pt/c.png', bounds:ptBounds, masks:ptMasks},
+	{name:'White Power/Toughness', src:'img/frames/ravnica/pt/w.png', bounds:ptBounds, masks:ptMasks},
+	{name:'Blue Power/Toughness', src:'img/frames/ravnica/pt/u.png', bounds:ptBounds, masks:ptMasks},
+	{name:'Black Power/Toughness', src:'img/frames/ravnica/pt/b.png', bounds:ptBounds, masks:ptMasks},
+	{name:'Red Power/Toughness', src:'img/frames/ravnica/pt/r.png', bounds:ptBounds, masks:ptMasks},
+	{name:'Green Power/Toughness', src:'img/frames/ravnica/pt/g.png', bounds:ptBounds, masks:ptMasks},
+	{name:'Multicolored Power/Toughness', src:'img/frames/ravnica/pt/m.png', bounds:ptBounds, masks:ptMasks},
+	{name:'Artifact Power/Toughness', src:'img/frames/ravnica/pt/a.png', bounds:ptBounds, masks:ptMasks},
+	{name:'Colorless Power/Toughness', src:'img/frames/ravnica/pt/c.png', bounds:ptBounds, masks:ptMasks},
 
-	{name:'White Crown', src:'/img/frames/ravnica/crowns/w.png', bounds:crownBounds},
-	{name:'Blue Crown', src:'/img/frames/ravnica/crowns/u.png', bounds:crownBounds},
-	{name:'Black Crown', src:'/img/frames/ravnica/crowns/b.png', bounds:crownBounds},
-	{name:'Red Crown', src:'/img/frames/ravnica/crowns/r.png', bounds:crownBounds},
-	{name:'Green Crown', src:'/img/frames/ravnica/crowns/g.png', bounds:crownBounds},
-	{name:'Multicolored Crown', src:'/img/frames/ravnica/crowns/m.png', bounds:crownBounds},
-	{name:'Artifact Crown', src:'/img/frames/ravnica/crowns/a.png', bounds:crownBounds},
-	{name:'Colorless Crown', src:'/img/frames/ravnica/crowns/c.png', bounds:crownBounds},
+	{name:'White Crown', src:'img/frames/ravnica/crowns/w.png', bounds:crownBounds},
+	{name:'Blue Crown', src:'img/frames/ravnica/crowns/u.png', bounds:crownBounds},
+	{name:'Black Crown', src:'img/frames/ravnica/crowns/b.png', bounds:crownBounds},
+	{name:'Red Crown', src:'img/frames/ravnica/crowns/r.png', bounds:crownBounds},
+	{name:'Green Crown', src:'img/frames/ravnica/crowns/g.png', bounds:crownBounds},
+	{name:'Multicolored Crown', src:'img/frames/ravnica/crowns/m.png', bounds:crownBounds},
+	{name:'Artifact Crown', src:'img/frames/ravnica/crowns/a.png', bounds:crownBounds},
+	{name:'Colorless Crown', src:'img/frames/ravnica/crowns/c.png', bounds:crownBounds},
 
-	{name:'Holo Stamp', src:'/img/frames/ravnica/stamp.png', bounds:{x:656/1500, y:1886/2100, width:187/1500, height:96/2100}}
+	{name:'Holo Stamp', src:'img/frames/ravnica/stamp.png', bounds:{x:656/1500, y:1886/2100, width:187/1500, height:96/2100}}
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;
@@ -41,7 +41,7 @@ document.querySelector('#loadFrameVersion').onclick = async function() {
 	// notify("To change the color of your mana cost, use {manacolor#}, but replace '#' with your desired color. 'white', 'blue', 'black', 'red', and 'green', as well as hex/html color codes are currently supported.", 15)
 	//resets things so that every frame doesn't have to
 	await resetCardIrregularities();
-	replacementMasks = {'Right Half':'/img/frames/ravnica/maskRight.png'};
+	replacementMasks = {'Right Half':'img/frames/ravnica/maskRight.png'};
 	//sets card version
 	card.version = 'ravnica';
 	//art bounds

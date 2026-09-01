@@ -1,12 +1,12 @@
 //defines available frames
 availableFrames = [
-	{name:'Planar Frame (Phenomenon)', src:'/img/frames/planechase/phenomenon.png'},
-	{name:'Planar Frame (1)', src:'/img/frames/planechase/tallest.png'},
-	{name:'Planar Frame (2)', src:'/img/frames/planechase/taller.png'},
-	{name:'Planar Frame (3)', src:'/img/frames/planechase/tall.png'},
-	{name:'Planar Frame (4)', src:'/img/frames/planechase/short.png'},
-	{name:'Planar Frame (5)', src:'/img/frames/planechase/shorter.png'},
-	{name:'Planar Frame (6)', src:'/img/frames/planechase/shortest.png'}
+	{name:'Planar Frame (Phenomenon)', src:'img/frames/planechase/phenomenon.png'},
+	{name:'Planar Frame (1)', src:'img/frames/planechase/tallest.png'},
+	{name:'Planar Frame (2)', src:'img/frames/planechase/taller.png'},
+	{name:'Planar Frame (3)', src:'img/frames/planechase/tall.png'},
+	{name:'Planar Frame (4)', src:'img/frames/planechase/short.png'},
+	{name:'Planar Frame (5)', src:'img/frames/planechase/shorter.png'},
+	{name:'Planar Frame (6)', src:'img/frames/planechase/shortest.png'}
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;

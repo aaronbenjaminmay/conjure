@@ -1,6 +1,6 @@
 if (!loadedVersions.includes('storybook/version')) {
 	loadedVersions.push('storybook/version')
-	// loadMaskImages([['Storybook Right Half', '/data/images/cardImages/storybook/maskStorybookRightHalf.png']])
+	// loadMaskImages([['Storybook Right Half', 'data/images/cardImages/storybook/maskStorybookRightHalf.png']])
 	//special additional mana cost, title, and type
 }
 

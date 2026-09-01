@@ -2,8 +2,8 @@
 var bounds = {x:0.7574, y:0.8839, width:0.196, height:0.0781};
 //defines available frames
 availableFrames = [
-	{name:'Multicolored Frame', src:'/img/frames/custom/feuerAmeise/ixalan/m.png'},
-	{name:'Multicolored Power/Toughness', src:'/img/frames/custom/feuerAmeise/ixalan/pt.png', bounds:bounds},
+	{name:'Multicolored Frame', src:'img/frames/custom/feuerAmeise/ixalan/m.png'},
+	{name:'Multicolored Power/Toughness', src:'img/frames/custom/feuerAmeise/ixalan/pt.png', bounds:bounds},
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;

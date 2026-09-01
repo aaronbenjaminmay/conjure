@@ -1,29 +1,29 @@
 //Create objects for common properties across available frames
-var mask = [{src:'/img/frames/future/futureMaskBorder.png', name:'Border'}];
-var masks = [{src:'/img/frames/future/futureMaskCreature.png', name:'Creature'}, {src:'/img/frames/future/futureMaskInstant.png', name:'Instant'}, {src:'/img/frames/future/futureMaskSorcery.png', name:'Sorcery'}, {src:'/img/frames/future/futureMaskEnchantment.png', name:'Enchantment'}, {src:'/img/frames/future/futureMaskArtifact.png', name:'Artifact'}, {src:'/img/frames/future/futureMaskLand.png', name:'Land'}, {src:'/img/frames/future/futureMaskMulti.png', name:'Multitype'}];
+var mask = [{src:'img/frames/future/futureMaskBorder.png', name:'Border'}];
+var masks = [{src:'img/frames/future/futureMaskCreature.png', name:'Creature'}, {src:'img/frames/future/futureMaskInstant.png', name:'Instant'}, {src:'img/frames/future/futureMaskSorcery.png', name:'Sorcery'}, {src:'img/frames/future/futureMaskEnchantment.png', name:'Enchantment'}, {src:'img/frames/future/futureMaskArtifact.png', name:'Artifact'}, {src:'img/frames/future/futureMaskLand.png', name:'Land'}, {src:'img/frames/future/futureMaskMulti.png', name:'Multitype'}];
 var bounds = {x:0.7621, y:0.8834, width:0.1734, height:0.0781};
 //defines available frames
 availableFrames = [
-	{name:'White Frame', src:'/img/frames/future/regular/futureFrameW.png', masks:mask},
-	{name:'Blue Frame', src:'/img/frames/future/regular/futureFrameU.png', masks:mask},
-	{name:'Black Frame', src:'/img/frames/future/regular/futureFrameB.png', masks:mask},
-	{name:'Red Frame', src:'/img/frames/future/regular/futureFrameR.png', masks:mask},
-	{name:'Green Frame', src:'/img/frames/future/regular/futureFrameG.png', masks:mask},
-	{name:'Multicolored Frame', src:'/img/frames/future/regular/futureFrameM.png', masks:mask},
-	{name:'Artifact Frame', src:'/img/frames/future/regular/futureFrameA.png', masks:mask},
-	{name:'Land Frame', src:'/img/frames/future/regular/futureFrameL.png', masks:mask},
-	{name:'Colorless Frame', src:'/img/frames/future/regular/futureFrameC.png', masks:mask},
-	{name:'White Power/Toughness', src:'/img/frames/future/regular/futurePTW.png', bounds:bounds},
-	{name:'Blue Power/Toughness', src:'/img/frames/future/regular/futurePTU.png', bounds:bounds},
-	{name:'Black Power/Toughness', src:'/img/frames/future/regular/futurePTB.png', bounds:bounds},
-	{name:'Red Power/Toughness', src:'/img/frames/future/regular/futurePTR.png', bounds:bounds},
-	{name:'Green Power/Toughness', src:'/img/frames/future/regular/futurePTG.png', bounds:bounds},
-	{name:'Multicolored Power/Toughness', src:'/img/frames/future/regular/futurePTM.png', bounds:bounds},
-	{name:'Artifact Power/Toughness', src:'/img/frames/future/regular/futurePTA.png', bounds:bounds},
-	{name:'Land Power/Toughness', src:'/img/frames/future/regular/futurePTL.png', bounds:bounds},
-	{name:'Colorless Power/Toughness', src:'/img/frames/future/regular/futurePTC.png', bounds:bounds},
-	{name:'White Type Icon', src:'/img/frames/future/futureWhite.png', bounds:{x:0.0659, y:0.0472, width:0.0431, height:0.0308}, masks:masks},
-	{name:'Gray Type Icon', src:'/img/frames/future/futureGray.png', bounds:{x:0.0659, y:0.0472, width:0.0431, height:0.0308}, masks:masks}
+	{name:'White Frame', src:'img/frames/future/regular/futureFrameW.png', masks:mask},
+	{name:'Blue Frame', src:'img/frames/future/regular/futureFrameU.png', masks:mask},
+	{name:'Black Frame', src:'img/frames/future/regular/futureFrameB.png', masks:mask},
+	{name:'Red Frame', src:'img/frames/future/regular/futureFrameR.png', masks:mask},
+	{name:'Green Frame', src:'img/frames/future/regular/futureFrameG.png', masks:mask},
+	{name:'Multicolored Frame', src:'img/frames/future/regular/futureFrameM.png', masks:mask},
+	{name:'Artifact Frame', src:'img/frames/future/regular/futureFrameA.png', masks:mask},
+	{name:'Land Frame', src:'img/frames/future/regular/futureFrameL.png', masks:mask},
+	{name:'Colorless Frame', src:'img/frames/future/regular/futureFrameC.png', masks:mask},
+	{name:'White Power/Toughness', src:'img/frames/future/regular/futurePTW.png', bounds:bounds},
+	{name:'Blue Power/Toughness', src:'img/frames/future/regular/futurePTU.png', bounds:bounds},
+	{name:'Black Power/Toughness', src:'img/frames/future/regular/futurePTB.png', bounds:bounds},
+	{name:'Red Power/Toughness', src:'img/frames/future/regular/futurePTR.png', bounds:bounds},
+	{name:'Green Power/Toughness', src:'img/frames/future/regular/futurePTG.png', bounds:bounds},
+	{name:'Multicolored Power/Toughness', src:'img/frames/future/regular/futurePTM.png', bounds:bounds},
+	{name:'Artifact Power/Toughness', src:'img/frames/future/regular/futurePTA.png', bounds:bounds},
+	{name:'Land Power/Toughness', src:'img/frames/future/regular/futurePTL.png', bounds:bounds},
+	{name:'Colorless Power/Toughness', src:'img/frames/future/regular/futurePTC.png', bounds:bounds},
+	{name:'White Type Icon', src:'img/frames/future/futureWhite.png', bounds:{x:0.0659, y:0.0472, width:0.0431, height:0.0308}, masks:masks},
+	{name:'Gray Type Icon', src:'img/frames/future/futureGray.png', bounds:{x:0.0659, y:0.0472, width:0.0431, height:0.0308}, masks:masks}
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;
@@ -34,7 +34,7 @@ document.querySelector('#loadFrameVersion').onclick = async function() {
 	//sets card version
 	card.version = 'futureRegular';
 	card.showsFlavorBar = false;
-	loadScript('/js/frames/manaSymbolsFuture.js');
+	loadScript('js/frames/manaSymbolsFuture.js');
 	// notify('The Future version adds special mana symbols. To use them, place an "F" before the following mana symbols: wubrg, 0-20, x, and hybrid mana symbols.');
 	//art bounds
 	card.artBounds = {x:0.086, y:0.0843, width:0.8714, height:0.5853};

@@ -1,17 +1,17 @@
 //defines available frames
 availableFrames = [
-	{name:'White Frame', src:'/img/frames/custom/deckCover/w.png'},
-	{name:'Blue Frame', src:'/img/frames/custom/deckCover/u.png'},
-	{name:'Black Frame', src:'/img/frames/custom/deckCover/b.png'},
-	{name:'Red Frame', src:'/img/frames/custom/deckCover/r.png'},
-	{name:'Green Frame', src:'/img/frames/custom/deckCover/g.png'},
-	{name:'Multicolored Frame', src:'/img/frames/custom/deckCover/m.png'},
-	{name:'Colorless Frame', src:'/img/frames/custom/deckCover/c.png'},
-	{name:'White Mana Symbol', src:'/img/manaSymbols/w.svg', bounds:{x:0.1594, y:0.7529, width:0.06, height:0.0429}},
-	{name:'Blue Mana Symbol', src:'/img/manaSymbols/u.svg', bounds:{x:0.23, y:0.7896, width:0.06, height:0.0429}},
-	{name:'Black Mana Symbol', src:'/img/manaSymbols/b.svg', bounds:{x:0.2027, y:0.8486, width:0.06, height:0.0429}},
-	{name:'Red Mana Symbol', src:'/img/manaSymbols/r.svg', bounds:{x:0.116, y:0.8486, width:0.06, height:0.0429}},
-	{name:'Green Mana Symbol', src:'/img/manaSymbols/g.svg', bounds:{x:0.0887, y:0.7896, width:0.06, height:0.0429}}
+	{name:'White Frame', src:'img/frames/custom/deckCover/w.png'},
+	{name:'Blue Frame', src:'img/frames/custom/deckCover/u.png'},
+	{name:'Black Frame', src:'img/frames/custom/deckCover/b.png'},
+	{name:'Red Frame', src:'img/frames/custom/deckCover/r.png'},
+	{name:'Green Frame', src:'img/frames/custom/deckCover/g.png'},
+	{name:'Multicolored Frame', src:'img/frames/custom/deckCover/m.png'},
+	{name:'Colorless Frame', src:'img/frames/custom/deckCover/c.png'},
+	{name:'White Mana Symbol', src:'img/manaSymbols/w.svg', bounds:{x:0.1594, y:0.7529, width:0.06, height:0.0429}},
+	{name:'Blue Mana Symbol', src:'img/manaSymbols/u.svg', bounds:{x:0.23, y:0.7896, width:0.06, height:0.0429}},
+	{name:'Black Mana Symbol', src:'img/manaSymbols/b.svg', bounds:{x:0.2027, y:0.8486, width:0.06, height:0.0429}},
+	{name:'Red Mana Symbol', src:'img/manaSymbols/r.svg', bounds:{x:0.116, y:0.8486, width:0.06, height:0.0429}},
+	{name:'Green Mana Symbol', src:'img/manaSymbols/g.svg', bounds:{x:0.0887, y:0.7896, width:0.06, height:0.0429}}
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;
@@ -21,8 +21,8 @@ document.querySelector('#loadFrameVersion').onclick = async function() {
 	await resetCardIrregularities();
 	//sets card version
 	card.version = 'customQRCodeDeckCover';
-	card.onload = '/js/frames/versionQRCode.js';
-	loadScript('/js/frames/versionQRCode.js');
+	card.onload = 'js/frames/versionQRCode.js';
+	loadScript('js/frames/versionQRCode.js');
 	//art bounds
 	card.artBounds = {x:0, y:0, width:1, height:0.7162};
 	autoFitArt();

@@ -1,15 +1,15 @@
 //Create objects for common properties across available frames
-var masks = [{src:'/img/frames/custom/tapped/pinline.svg', name:'Pinline'}, {src:'/img/frames/custom/tapped/title.svg', name:'Title'}, {src:'/img/frames/custom/tapped/type.svg', name:'Type'}, {src:'/img/frames/custom/tapped/text.svg', name:'Textbox'}, {src:'/img/frames/custom/tapped/border.svg', name:'Border'}];
+var masks = [{src:'img/frames/custom/tapped/pinline.svg', name:'Pinline'}, {src:'img/frames/custom/tapped/title.svg', name:'Title'}, {src:'img/frames/custom/tapped/type.svg', name:'Type'}, {src:'img/frames/custom/tapped/text.svg', name:'Textbox'}, {src:'img/frames/custom/tapped/border.svg', name:'Border'}];
 //defines available frames
 availableFrames = [
-	{name:'White Frame', src:'/img/frames/custom/tapped/w.png', masks:masks},
-	{name:'Blue Frame', src:'/img/frames/custom/tapped/u.png', masks:masks},
-	{name:'Black Frame', src:'/img/frames/custom/tapped/b.png', masks:masks},
-	{name:'Red Frame', src:'/img/frames/custom/tapped/r.png', masks:masks},
-	{name:'Green Frame', src:'/img/frames/custom/tapped/g.png', masks:masks},
-	{name:'Multicolored Frame', src:'/img/frames/custom/tapped/m.png', masks:masks},
-	{name:'Artifact Frame', src:'/img/frames/custom/tapped/a.png', masks:masks},
-	{name:'Land Frame', src:'/img/frames/custom/tapped/l.png', masks:masks}
+	{name:'White Frame', src:'img/frames/custom/tapped/w.png', masks:masks},
+	{name:'Blue Frame', src:'img/frames/custom/tapped/u.png', masks:masks},
+	{name:'Black Frame', src:'img/frames/custom/tapped/b.png', masks:masks},
+	{name:'Red Frame', src:'img/frames/custom/tapped/r.png', masks:masks},
+	{name:'Green Frame', src:'img/frames/custom/tapped/g.png', masks:masks},
+	{name:'Multicolored Frame', src:'img/frames/custom/tapped/m.png', masks:masks},
+	{name:'Artifact Frame', src:'img/frames/custom/tapped/a.png', masks:masks},
+	{name:'Land Frame', src:'img/frames/custom/tapped/l.png', masks:masks}
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;
@@ -18,7 +18,7 @@ document.querySelector('#loadFrameVersion').onclick = async function() {
 	//resets things so that every frame doesn't have to
 	var previousCardHeight = card.height
 	await resetCardIrregularities({canvas:[2100, 1500, 0, 0]});
-	replacementMasks = {'Right Half':'/img/frames/custom/tapped/rightHalf.png'};
+	replacementMasks = {'Right Half':'img/frames/custom/tapped/rightHalf.png'};
 	//sets card version
 	card.version = 'tapped';
 	//rotation

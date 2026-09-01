@@ -84,7 +84,7 @@ async function uploadFiles(filesRaw, destination, otherParams = '') {
 			destination(reader.result, otherParams);
 		}
 		reader.onerror = function () {
-			destination('/img/blank.png', otherParams);
+			destination('img/blank.png', otherParams);
 		}
 		reader.readAsDataURL(file);
 	})

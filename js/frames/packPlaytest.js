@@ -1,21 +1,21 @@
 //defines available frames
 availableFrames = [
-	{name:'White Frame', src:'/img/frames/playtest/regular/w.svg'},
-	{name:'Blue Frame', src:'/img/frames/playtest/regular/u.svg'},
-	{name:'Black Frame', src:'/img/frames/playtest/regular/b.svg'},
-	{name:'Red Frame', src:'/img/frames/playtest/regular/r.svg'},
-	{name:'Green Frame', src:'/img/frames/playtest/regular/g.svg'},
-	{name:'Multicolored Frame', src:'/img/frames/playtest/regular/m.svg'},
-	{name:'Artifact Frame', src:'/img/frames/playtest/regular/a.svg'},
-	{name:'Land Frame', src:'/img/frames/playtest/regular/l.svg'},
-	{name:'White Power/Toughness Divider', src:'/img/frames/playtest/regular/pt/w.svg'},
-	{name:'Blue Power/Toughness Divider', src:'/img/frames/playtest/regular/pt/u.svg'},
-	{name:'Black Power/Toughness Divider', src:'/img/frames/playtest/regular/pt/b.svg'},
-	{name:'Red Power/Toughness Divider', src:'/img/frames/playtest/regular/pt/r.svg'},
-	{name:'Green Power/Toughness Divider', src:'/img/frames/playtest/regular/pt/g.svg'},
-	{name:'Multicolored Power/Toughness Divider', src:'/img/frames/playtest/regular/pt/m.svg'},
-	{name:'Artifact Power/Toughness Divider', src:'/img/frames/playtest/regular/pt/a.svg'},
-	{name:'Land Power/Toughness Divider', src:'/img/frames/playtest/regular/pt/l.svg'},];
+	{name:'White Frame', src:'img/frames/playtest/regular/w.svg'},
+	{name:'Blue Frame', src:'img/frames/playtest/regular/u.svg'},
+	{name:'Black Frame', src:'img/frames/playtest/regular/b.svg'},
+	{name:'Red Frame', src:'img/frames/playtest/regular/r.svg'},
+	{name:'Green Frame', src:'img/frames/playtest/regular/g.svg'},
+	{name:'Multicolored Frame', src:'img/frames/playtest/regular/m.svg'},
+	{name:'Artifact Frame', src:'img/frames/playtest/regular/a.svg'},
+	{name:'Land Frame', src:'img/frames/playtest/regular/l.svg'},
+	{name:'White Power/Toughness Divider', src:'img/frames/playtest/regular/pt/w.svg'},
+	{name:'Blue Power/Toughness Divider', src:'img/frames/playtest/regular/pt/u.svg'},
+	{name:'Black Power/Toughness Divider', src:'img/frames/playtest/regular/pt/b.svg'},
+	{name:'Red Power/Toughness Divider', src:'img/frames/playtest/regular/pt/r.svg'},
+	{name:'Green Power/Toughness Divider', src:'img/frames/playtest/regular/pt/g.svg'},
+	{name:'Multicolored Power/Toughness Divider', src:'img/frames/playtest/regular/pt/m.svg'},
+	{name:'Artifact Power/Toughness Divider', src:'img/frames/playtest/regular/pt/a.svg'},
+	{name:'Land Power/Toughness Divider', src:'img/frames/playtest/regular/pt/l.svg'},];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;
 //defines process for loading this version, if applicable
@@ -25,7 +25,7 @@ document.querySelector('#loadFrameVersion').onclick = async function() {
 	//sets card version
 	card.version = 'playtest';
 	card.showsFlavorBar = false;
-	loadScript('/js/frames/manaSymbolsOutline.js');
+	loadScript('js/frames/manaSymbolsOutline.js');
 	//art bounds
 	card.artBounds = {x:0.132, y:0.1439, width:0.736, height:0.3362};
 	autoFitArt();

@@ -3,15 +3,15 @@ var masks = [{src:'img/frames/invocation/accents.png', name:'Accents'}];
 var bounds = {x:0.8587, y:0.8186, width:0.062, height:0.1258};
 //defines available frames
 availableFrames = [
-	{name:'White Frame', src:'/img/frames/invocation/mul/w.png', masks: masks},
-	{name:'Blue Frame', src:'/img/frames/invocation/mul/u.png', masks: masks},
-	{name:'Black Frame', src:'/img/frames/invocation/mul/b.png', masks: masks},
-	{name:'Red Frame', src:'/img/frames/invocation/mul/r.png', masks: masks},
-	{name:'Green Frame', src:'/img/frames/invocation/mul/g.png', masks: masks},
-	{name:'Multicolored Frame', src:'/img/frames/invocation/mul/m.png', masks: masks},
-	{name:'Artifact Frame', src:'/img/frames/invocation/mul/a.png', masks: masks},
-	{name:'Power/Toughness', src:'/img/frames/invocation/mul/pt.png', bounds:bounds},
-	{name:'Holo Stamp', src:'/img/frames/invocation/mul/stamp.png', bounds:{x: 644/1500, y:1874/2100, width:212/1500, height:124/2100}}
+	{name:'White Frame', src:'img/frames/invocation/mul/w.png', masks: masks},
+	{name:'Blue Frame', src:'img/frames/invocation/mul/u.png', masks: masks},
+	{name:'Black Frame', src:'img/frames/invocation/mul/b.png', masks: masks},
+	{name:'Red Frame', src:'img/frames/invocation/mul/r.png', masks: masks},
+	{name:'Green Frame', src:'img/frames/invocation/mul/g.png', masks: masks},
+	{name:'Multicolored Frame', src:'img/frames/invocation/mul/m.png', masks: masks},
+	{name:'Artifact Frame', src:'img/frames/invocation/mul/a.png', masks: masks},
+	{name:'Power/Toughness', src:'img/frames/invocation/mul/pt.png', bounds:bounds},
+	{name:'Holo Stamp', src:'img/frames/invocation/mul/stamp.png', bounds:{x: 644/1500, y:1874/2100, width:212/1500, height:124/2100}}
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;

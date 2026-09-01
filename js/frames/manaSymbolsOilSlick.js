@@ -1,6 +1,6 @@
 //checks to see if it needs to run
-if (!card.manaSymbols.includes('/js/frames/manaSymbolsOilSlick.js')) {
-	card.manaSymbols.push('/js/frames/manaSymbolsOilSlick.js');
+if (!card.manaSymbols.includes('js/frames/manaSymbolsOilSlick.js')) {
+	card.manaSymbols.push('js/frames/manaSymbolsOilSlick.js');
 }
 if (!mana.get('oilslickw')) {
 	loadManaSymbols([

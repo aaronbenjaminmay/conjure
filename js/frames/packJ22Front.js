@@ -1,6 +1,6 @@
 //defines available frames
 availableFrames = [
-	{name:'Frame', src:'/img/frames/token/jmpFront/j22Frame.png'}
+	{name:'Frame', src:'img/frames/token/jmpFront/j22Frame.png'}
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;

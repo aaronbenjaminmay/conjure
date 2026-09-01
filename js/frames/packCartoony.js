@@ -1,5 +1,5 @@
 //defines available frames
-availableFrames = [{src:'/img/blank.png', name:'none'}];
+availableFrames = [{src:'img/blank.png', name:'none'}];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;
 //defines process for loading this version, if applicable
@@ -8,7 +8,7 @@ document.querySelector('#loadFrameVersion').onclick = async function() {
 	await resetCardIrregularities();
 	//sets card version
 	card.version = 'cartoony';
-	loadScript('/js/frames/manaSymbolsCartoony.js');
+	loadScript('js/frames/manaSymbolsCartoony.js');
 	// notify('The Future version adds special mana symbols. To use them, place an "F" before the following mana symbols: wubrg, 0-20, x, and hybrid mana symbols.');
 	//art bounds
 	card.artBounds = {x:0, y:0, width:1, height:1};

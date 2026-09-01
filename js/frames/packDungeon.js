@@ -1,14 +1,14 @@
 //Create objects for common properties across available frames
-var masks = [{src:'/img/frames/dungeon/regular/pinline.svg', name:'Pinline'}, {src:'/img/frames/m15/regular/m15MaskTitle.png', name:'Title'}, {src:'/img/frames/dungeon/regular/frame.svg', name:'Frame'}];
+var masks = [{src:'img/frames/dungeon/regular/pinline.svg', name:'Pinline'}, {src:'img/frames/m15/regular/m15MaskTitle.png', name:'Title'}, {src:'img/frames/dungeon/regular/frame.svg', name:'Frame'}];
 //defines available frames
 availableFrames = [
-	{name:'White Frame', src:'/img/frames/dungeon/regular/w.png', complementary:6, masks:masks},
-	{name:'Blue Frame', src:'/img/frames/dungeon/regular/u.png', complementary:6, masks:masks},
-	{name:'Black Frame', src:'/img/frames/dungeon/regular/b.png', complementary:6, masks:masks},
-	{name:'Red Frame', src:'/img/frames/dungeon/regular/r.png', complementary:6, masks:masks},
-	{name:'Green Frame', src:'/img/frames/dungeon/regular/g.png', complementary:6, masks:masks},
-	{name:'Colorless Frame', src:'/img/frames/dungeon/regular/c.png', complementary:6, masks:masks},
-	{name:'Floor', src:'/img/frames/dungeon/regular/floor.png'}
+	{name:'White Frame', src:'img/frames/dungeon/regular/w.png', complementary:6, masks:masks},
+	{name:'Blue Frame', src:'img/frames/dungeon/regular/u.png', complementary:6, masks:masks},
+	{name:'Black Frame', src:'img/frames/dungeon/regular/b.png', complementary:6, masks:masks},
+	{name:'Red Frame', src:'img/frames/dungeon/regular/r.png', complementary:6, masks:masks},
+	{name:'Green Frame', src:'img/frames/dungeon/regular/g.png', complementary:6, masks:masks},
+	{name:'Colorless Frame', src:'img/frames/dungeon/regular/c.png', complementary:6, masks:masks},
+	{name:'Floor', src:'img/frames/dungeon/regular/floor.png'}
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;
@@ -20,8 +20,8 @@ document.querySelector('#loadFrameVersion').onclick = async function() {
 	await resetCardIrregularities();
 	//sets card version
 	card.version = 'dungeon';
-	card.onload = '/js/frames/versionDungeon.js';
-	loadScript('/js/frames/versionDungeon.js');
+	card.onload = 'js/frames/versionDungeon.js';
+	loadScript('js/frames/versionDungeon.js');
 	//art bounds
 	card.artBounds = {x:0, y:0, width:1, height:1};
 	autoFitArt();

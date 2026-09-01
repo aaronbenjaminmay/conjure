@@ -1,14 +1,14 @@
 //defines available frames
 availableFrames = [
-	{name:'White Frame', src:'/img/frames/dndModule/w.svg'},
-	{name:'Blue Frame', src:'/img/frames/dndModule/u.svg'},
-	{name:'Black Frame', src:'/img/frames/dndModule/b.svg'},
-	{name:'Red Frame', src:'/img/frames/dndModule/r.svg'},
-	{name:'Green Frame', src:'/img/frames/dndModule/g.svg'},
-	{name:'Multicolored Frame', src:'/img/frames/dndModule/m.svg'},
-	{name:'Artifact Frame', src:'/img/frames/dndModule/a.svg'},
-	{name:'Colorless Frame', src:'/img/frames/dndModule/c.svg'},
-	{name:'Land Frame', src:'/img/frames/dndModule/l.svg'}
+	{name:'White Frame', src:'img/frames/dndModule/w.svg'},
+	{name:'Blue Frame', src:'img/frames/dndModule/u.svg'},
+	{name:'Black Frame', src:'img/frames/dndModule/b.svg'},
+	{name:'Red Frame', src:'img/frames/dndModule/r.svg'},
+	{name:'Green Frame', src:'img/frames/dndModule/g.svg'},
+	{name:'Multicolored Frame', src:'img/frames/dndModule/m.svg'},
+	{name:'Artifact Frame', src:'img/frames/dndModule/a.svg'},
+	{name:'Colorless Frame', src:'img/frames/dndModule/c.svg'},
+	{name:'Land Frame', src:'img/frames/dndModule/l.svg'}
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;

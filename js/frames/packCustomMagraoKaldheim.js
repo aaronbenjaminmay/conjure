@@ -2,21 +2,21 @@
 var bounds = {x:0.7607, y:0.8558, width:0.1807, height:0.081};
 //defines available frames
 availableFrames = [
-	{name:'White Frame', src:'/img/frames/custom/magrao/kaldheim/w.png'},
-	{name:'Blue Frame', src:'/img/frames/custom/magrao/kaldheim/u.png'},
-	{name:'Black Frame', src:'/img/frames/custom/magrao/kaldheim/b.png'},
-	{name:'Red Frame', src:'/img/frames/custom/magrao/kaldheim/r.png'},
-	{name:'Green Frame', src:'/img/frames/custom/magrao/kaldheim/g.png'},
-	{name:'Multicolored Frame', src:'/img/frames/custom/magrao/kaldheim/m.png'},
-	{name:'Artifact Frame', src:'/img/frames/custom/magrao/kaldheim/a.png'},
-	{name:'Land Frame', src:'/img/frames/custom/magrao/kaldheim/l.png'},
-	{name:'White Power/Toughness', src:'/img/frames/custom/magrao/kaldheim/pt/w.png', bounds:bounds},
-	{name:'Blue Power/Toughness', src:'/img/frames/custom/magrao/kaldheim/pt/u.png', bounds:bounds},
-	{name:'Black Power/Toughness', src:'/img/frames/custom/magrao/kaldheim/pt/b.png', bounds:bounds},
-	{name:'Red Power/Toughness', src:'/img/frames/custom/magrao/kaldheim/pt/r.png', bounds:bounds},
-	{name:'Green Power/Toughness', src:'/img/frames/custom/magrao/kaldheim/pt/g.png', bounds:bounds},
-	{name:'Multicolored Power/Toughness', src:'/img/frames/custom/magrao/kaldheim/pt/m.png', bounds:bounds},
-	{name:'Artifact Power/Toughness', src:'/img/frames/custom/magrao/kaldheim/pt/a.png', bounds:bounds},
+	{name:'White Frame', src:'img/frames/custom/magrao/kaldheim/w.png'},
+	{name:'Blue Frame', src:'img/frames/custom/magrao/kaldheim/u.png'},
+	{name:'Black Frame', src:'img/frames/custom/magrao/kaldheim/b.png'},
+	{name:'Red Frame', src:'img/frames/custom/magrao/kaldheim/r.png'},
+	{name:'Green Frame', src:'img/frames/custom/magrao/kaldheim/g.png'},
+	{name:'Multicolored Frame', src:'img/frames/custom/magrao/kaldheim/m.png'},
+	{name:'Artifact Frame', src:'img/frames/custom/magrao/kaldheim/a.png'},
+	{name:'Land Frame', src:'img/frames/custom/magrao/kaldheim/l.png'},
+	{name:'White Power/Toughness', src:'img/frames/custom/magrao/kaldheim/pt/w.png', bounds:bounds},
+	{name:'Blue Power/Toughness', src:'img/frames/custom/magrao/kaldheim/pt/u.png', bounds:bounds},
+	{name:'Black Power/Toughness', src:'img/frames/custom/magrao/kaldheim/pt/b.png', bounds:bounds},
+	{name:'Red Power/Toughness', src:'img/frames/custom/magrao/kaldheim/pt/r.png', bounds:bounds},
+	{name:'Green Power/Toughness', src:'img/frames/custom/magrao/kaldheim/pt/g.png', bounds:bounds},
+	{name:'Multicolored Power/Toughness', src:'img/frames/custom/magrao/kaldheim/pt/m.png', bounds:bounds},
+	{name:'Artifact Power/Toughness', src:'img/frames/custom/magrao/kaldheim/pt/a.png', bounds:bounds},
 	
 ];
 //disables/enables the "Load Frame Version" button

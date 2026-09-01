@@ -1,24 +1,24 @@
 //Create objects for common properties across available frames
-var masks = [{src:'/img/frames/textless/m15TextlessMaskPinline.png', name:'Pinline'}, {src:'/img/frames/m15/regular/m15MaskTitle.png', name:'Title'}, {src:'/img/frames/textless/m15TextlessMaskType.png', name:'Type'}, {src:'/img/frames/m15/regular/m15MaskBorder.png', name:'Border'}];
+var masks = [{src:'img/frames/textless/m15TextlessMaskPinline.png', name:'Pinline'}, {src:'img/frames/m15/regular/m15MaskTitle.png', name:'Title'}, {src:'img/frames/textless/m15TextlessMaskType.png', name:'Type'}, {src:'img/frames/m15/regular/m15MaskBorder.png', name:'Border'}];
 var bounds = {x:0.7573, y:0.8848, width:0.188, height:0.0733};
 //defines available frames
 availableFrames = [
-	{name:'White Frame', src:'/img/frames/textless/genericShowcase/m15TextlessGenericShowcaseFrameW.png', masks:masks},
-	{name:'Blue Frame', src:'/img/frames/textless/genericShowcase/m15TextlessGenericShowcaseFrameU.png', masks:masks},
-	{name:'Black Frame', src:'/img/frames/textless/genericShowcase/m15TextlessGenericShowcaseFrameB.png', masks:masks},
-	{name:'Red Frame', src:'/img/frames/textless/genericShowcase/m15TextlessGenericShowcaseFrameR.png', masks:masks},
-	{name:'Green Frame', src:'/img/frames/textless/genericShowcase/m15TextlessGenericShowcaseFrameG.png', masks:masks},
-	{name:'Multicolored Frame', src:'/img/frames/textless/genericShowcase/m15TextlessGenericShowcaseFrameM.png', masks:masks},
-	{name:'Artifact Frame', src:'/img/frames/textless/genericShowcase/m15TextlessGenericShowcaseFrameA.png', masks:masks},
-	{name:'Colorless Frame', src:'/img/frames/textless/genericShowcase/m15TextlessGenericShowcaseFrameL.png', masks:masks},
-	{name:'White Power/Toughness', src:'/img/frames/m15/nickname/m15NicknamePTW.png', bounds:bounds},
-	{name:'Blue Power/Toughness', src:'/img/frames/m15/nickname/m15NicknamePTU.png', bounds:bounds},
-	{name:'Black Power/Toughness', src:'/img/frames/m15/nickname/m15NicknamePTB.png', bounds:bounds},
-	{name:'Red Power/Toughness', src:'/img/frames/m15/nickname/m15NicknamePTR.png', bounds:bounds},
-	{name:'Green Power/Toughness', src:'/img/frames/m15/nickname/m15NicknamePTG.png', bounds:bounds},
-	{name:'Multicolored Power/Toughness', src:'/img/frames/m15/nickname/m15NicknamePTM.png', bounds:bounds},
-	{name:'Artifact Power/Toughness', src:'/img/frames/m15/nickname/m15NicknamePTA.png', bounds:bounds},
-	{name:'Colorless Power/Toughness', src:'/img/frames/m15/nickname/m15NicknamePTC.png', bounds:bounds}
+	{name:'White Frame', src:'img/frames/textless/genericShowcase/m15TextlessGenericShowcaseFrameW.png', masks:masks},
+	{name:'Blue Frame', src:'img/frames/textless/genericShowcase/m15TextlessGenericShowcaseFrameU.png', masks:masks},
+	{name:'Black Frame', src:'img/frames/textless/genericShowcase/m15TextlessGenericShowcaseFrameB.png', masks:masks},
+	{name:'Red Frame', src:'img/frames/textless/genericShowcase/m15TextlessGenericShowcaseFrameR.png', masks:masks},
+	{name:'Green Frame', src:'img/frames/textless/genericShowcase/m15TextlessGenericShowcaseFrameG.png', masks:masks},
+	{name:'Multicolored Frame', src:'img/frames/textless/genericShowcase/m15TextlessGenericShowcaseFrameM.png', masks:masks},
+	{name:'Artifact Frame', src:'img/frames/textless/genericShowcase/m15TextlessGenericShowcaseFrameA.png', masks:masks},
+	{name:'Colorless Frame', src:'img/frames/textless/genericShowcase/m15TextlessGenericShowcaseFrameL.png', masks:masks},
+	{name:'White Power/Toughness', src:'img/frames/m15/nickname/m15NicknamePTW.png', bounds:bounds},
+	{name:'Blue Power/Toughness', src:'img/frames/m15/nickname/m15NicknamePTU.png', bounds:bounds},
+	{name:'Black Power/Toughness', src:'img/frames/m15/nickname/m15NicknamePTB.png', bounds:bounds},
+	{name:'Red Power/Toughness', src:'img/frames/m15/nickname/m15NicknamePTR.png', bounds:bounds},
+	{name:'Green Power/Toughness', src:'img/frames/m15/nickname/m15NicknamePTG.png', bounds:bounds},
+	{name:'Multicolored Power/Toughness', src:'img/frames/m15/nickname/m15NicknamePTM.png', bounds:bounds},
+	{name:'Artifact Power/Toughness', src:'img/frames/m15/nickname/m15NicknamePTA.png', bounds:bounds},
+	{name:'Colorless Power/Toughness', src:'img/frames/m15/nickname/m15NicknamePTC.png', bounds:bounds}
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;

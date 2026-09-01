@@ -1,15 +1,15 @@
 //Create objects for common properties across available frames
-var masks = [{src:'/img/frames/m15/split/fuse/top.png', name:'Top Half'}, {src:'/img/frames/m15/split/fuse/bottom.png', name:'Bottom Half'}];
+var masks = [{src:'img/frames/m15/split/fuse/top.png', name:'Top Half'}, {src:'img/frames/m15/split/fuse/bottom.png', name:'Bottom Half'}];
 //defines available frames
 availableFrames = [
-	{name:'White Frame', src:'/img/frames/m15/split/fuse/w.png', masks:masks},
-	{name:'Blue Frame', src:'/img/frames/m15/split/fuse/u.png', masks:masks},
-	{name:'Black Frame', src:'/img/frames/m15/split/fuse/b.png', masks:masks},
-	{name:'Red Frame', src:'/img/frames/m15/split/fuse/r.png', masks:masks},
-	{name:'Green Frame', src:'/img/frames/m15/split/fuse/g.png', masks:masks},
-	{name:'Multicolored Frame', src:'/img/frames/m15/split/fuse/m.png', masks:masks},
-	{name:'Artifact Frame', src:'/img/frames/m15/split/fuse/a.png', masks:masks},
-	{name:'Land Frame', src:'/img/frames/m15/split/fuse/l.png', masks:masks}
+	{name:'White Frame', src:'img/frames/m15/split/fuse/w.png', masks:masks},
+	{name:'Blue Frame', src:'img/frames/m15/split/fuse/u.png', masks:masks},
+	{name:'Black Frame', src:'img/frames/m15/split/fuse/b.png', masks:masks},
+	{name:'Red Frame', src:'img/frames/m15/split/fuse/r.png', masks:masks},
+	{name:'Green Frame', src:'img/frames/m15/split/fuse/g.png', masks:masks},
+	{name:'Multicolored Frame', src:'img/frames/m15/split/fuse/m.png', masks:masks},
+	{name:'Artifact Frame', src:'img/frames/m15/split/fuse/a.png', masks:masks},
+	{name:'Land Frame', src:'img/frames/m15/split/fuse/l.png', masks:masks}
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;

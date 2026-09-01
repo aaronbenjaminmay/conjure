@@ -1,33 +1,33 @@
 //Create objects for common properties across available frames
-// var masks = [{src:'/img/frames/m15/regular/m15MaskPinline.png', name:'Pinline'}, {src:'/img/frames/m15/regular/m15MaskTitle.png', name:'Title'}, {src:'/img/frames/m15/regular/m15MaskType.png', name:'Type'}, {src:'/img/frames/m15/regular/m15MaskRules.png', name:'Rules'}, {src:'/img/frames/m15/regular/m15MaskFrame.png', name:'Frame'}, {src:'/img/frames/m15/regular/m15MaskBorder.png', name:'Border'}];
-var masks = [{src:'/img/frames/custom/pokemon/border.png', name:'Border'}, {src:'/img/frames/custom/pokemon/background.png', name:'Background'}];
-var boomerangMasks = [{src:'/img/frames/custom/pokemon/boomerangs/div.png', name:'Divider'}, {src:'/img/frames/custom/pokemon/boomerangs/left.png', name:'Left'}, {src:'/img/frames/custom/pokemon/boomerangs/right.png', name:'Right'}];
+// var masks = [{src:'img/frames/m15/regular/m15MaskPinline.png', name:'Pinline'}, {src:'img/frames/m15/regular/m15MaskTitle.png', name:'Title'}, {src:'img/frames/m15/regular/m15MaskType.png', name:'Type'}, {src:'img/frames/m15/regular/m15MaskRules.png', name:'Rules'}, {src:'img/frames/m15/regular/m15MaskFrame.png', name:'Frame'}, {src:'img/frames/m15/regular/m15MaskBorder.png', name:'Border'}];
+var masks = [{src:'img/frames/custom/pokemon/border.png', name:'Border'}, {src:'img/frames/custom/pokemon/background.png', name:'Background'}];
+var boomerangMasks = [{src:'img/frames/custom/pokemon/boomerangs/div.png', name:'Divider'}, {src:'img/frames/custom/pokemon/boomerangs/left.png', name:'Left'}, {src:'img/frames/custom/pokemon/boomerangs/right.png', name:'Right'}];
 // var bounds = {x:0.7573, y:0.8848, width:0.188, height:0.0733};
 //defines available frames
 availableFrames = [
-	{name: 'Psychic Frame', src:'/img/frames/custom/pokemon/psychic.png', masks:masks},
-	{name: 'Water Frame', src:'/img/frames/custom/pokemon/water.png', masks:masks},
-	{name: 'Lightning Frame', src:'/img/frames/custom/pokemon/lightning.png', masks:masks},
-	{name: 'Metal Frame', src:'/img/frames/custom/pokemon/metal.png', masks:masks},
-	{name: 'Fighting Frame', src:'/img/frames/custom/pokemon/fighting.png', masks:masks},
-	{name: 'Fire Frame', src:'/img/frames/custom/pokemon/fire.png', masks:masks},
-	{name: 'Grass Frame', src:'/img/frames/custom/pokemon/grass.png', masks:masks},
-	{name: 'Colorless Frame', src:'/img/frames/custom/pokemon/colorless.png', masks:masks},
-	{name: 'Darkness Frame', src:'/img/frames/custom/pokemon/dark.png', masks:masks},
+	{name: 'Psychic Frame', src:'img/frames/custom/pokemon/psychic.png', masks:masks},
+	{name: 'Water Frame', src:'img/frames/custom/pokemon/water.png', masks:masks},
+	{name: 'Lightning Frame', src:'img/frames/custom/pokemon/lightning.png', masks:masks},
+	{name: 'Metal Frame', src:'img/frames/custom/pokemon/metal.png', masks:masks},
+	{name: 'Fighting Frame', src:'img/frames/custom/pokemon/fighting.png', masks:masks},
+	{name: 'Fire Frame', src:'img/frames/custom/pokemon/fire.png', masks:masks},
+	{name: 'Grass Frame', src:'img/frames/custom/pokemon/grass.png', masks:masks},
+	{name: 'Colorless Frame', src:'img/frames/custom/pokemon/colorless.png', masks:masks},
+	{name: 'Darkness Frame', src:'img/frames/custom/pokemon/dark.png', masks:masks},
 
-	{name: 'Nickname Bar', src:'/img/frames/custom/pokemon/nickname.png'},
-	{name: 'Nickname Bar 2', src:'/img/frames/custom/pokemon/nickname2.png'},
-	{name: 'Nickname Bar 3', src:'/img/frames/custom/pokemon/nickname3.png'},
+	{name: 'Nickname Bar', src:'img/frames/custom/pokemon/nickname.png'},
+	{name: 'Nickname Bar 2', src:'img/frames/custom/pokemon/nickname2.png'},
+	{name: 'Nickname Bar 3', src:'img/frames/custom/pokemon/nickname3.png'},
 
-	{name: 'Psychic Boomerangs', src:'/img/frames/custom/pokemon/boomerangs/psychic.png', masks:boomerangMasks},
-	{name: 'Water Boomerangs', src:'/img/frames/custom/pokemon/boomerangs/water.png', masks:boomerangMasks},
-	{name: 'Lightning Boomerangs', src:'/img/frames/custom/pokemon/boomerangs/lightning.png', masks:boomerangMasks},
-	{name: 'Metal Boomerangs', src:'/img/frames/custom/pokemon/boomerangs/metal.png', masks:boomerangMasks},
-	{name: 'Fighting Boomerangs', src:'/img/frames/custom/pokemon/boomerangs/fighting.png', masks:boomerangMasks},
-	{name: 'Fire Boomerangs', src:'/img/frames/custom/pokemon/boomerangs/fire.png', masks:boomerangMasks},
-	{name: 'Grass Boomerangs', src:'/img/frames/custom/pokemon/boomerangs/grass.png', masks:boomerangMasks},
-	{name: 'Colorless Boomerangs', src:'/img/frames/custom/pokemon/boomerangs/colorless.png', masks:boomerangMasks},
-	{name: 'Darkness Boomerangs', src:'/img/frames/custom/pokemon/boomerangs/dark.png', masks:boomerangMasks}
+	{name: 'Psychic Boomerangs', src:'img/frames/custom/pokemon/boomerangs/psychic.png', masks:boomerangMasks},
+	{name: 'Water Boomerangs', src:'img/frames/custom/pokemon/boomerangs/water.png', masks:boomerangMasks},
+	{name: 'Lightning Boomerangs', src:'img/frames/custom/pokemon/boomerangs/lightning.png', masks:boomerangMasks},
+	{name: 'Metal Boomerangs', src:'img/frames/custom/pokemon/boomerangs/metal.png', masks:boomerangMasks},
+	{name: 'Fighting Boomerangs', src:'img/frames/custom/pokemon/boomerangs/fighting.png', masks:boomerangMasks},
+	{name: 'Fire Boomerangs', src:'img/frames/custom/pokemon/boomerangs/fire.png', masks:boomerangMasks},
+	{name: 'Grass Boomerangs', src:'img/frames/custom/pokemon/boomerangs/grass.png', masks:boomerangMasks},
+	{name: 'Colorless Boomerangs', src:'img/frames/custom/pokemon/boomerangs/colorless.png', masks:boomerangMasks},
+	{name: 'Darkness Boomerangs', src:'img/frames/custom/pokemon/boomerangs/dark.png', masks:boomerangMasks}
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;
@@ -37,7 +37,7 @@ document.querySelector('#loadFrameVersion').onclick = async function() {
 	await resetCardIrregularities();
 	//sets card version
 	card.version = 'pokemon';
-	loadScript('/js/frames/manaSymbolsPokemon.js');
+	loadScript('js/frames/manaSymbolsPokemon.js');
 	notify('Use the separate text entry for noncreature cards in order for the text to be spaced differently');
 	notify('Try making keyword abilities bold using {bold}!');
 	//art bounds

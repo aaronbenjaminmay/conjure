@@ -1,51 +1,51 @@
 //Create objects for common properties across available frames
-var masks = [{src:'/img/frames/m15/regular/m15MaskPinline.png', name:'Pinline'}, {src:'/img/frames/m15/regular/m15MaskTitle.png', name:'Title'}, {src:'/img/frames/m15/regular/m15MaskType.png', name:'Type'}, {src:'/img/frames/m15/regular/m15MaskRules.png', name:'Rules'}, {src:'/img/frames/m15/regular/m15MaskFrame.png', name:'Frame'}, {src:'/img/frames/m15/regular/m15MaskBorder.png', name:'Border'}];
+var masks = [{src:'img/frames/m15/regular/m15MaskPinline.png', name:'Pinline'}, {src:'img/frames/m15/regular/m15MaskTitle.png', name:'Title'}, {src:'img/frames/m15/regular/m15MaskType.png', name:'Type'}, {src:'img/frames/m15/regular/m15MaskRules.png', name:'Rules'}, {src:'img/frames/m15/regular/m15MaskFrame.png', name:'Frame'}, {src:'img/frames/m15/regular/m15MaskBorder.png', name:'Border'}];
 var bounds = {x:1555/2010, y:2492/2814, width:353/2010, height:179/2814};
 var crownBounds = {x:0, y:0, width:1, height:341/2814};
 var stampBounds = {x:873/2010, y:2539/2814, width:264/2010, height:131/2814};
 //defines available frames
 availableFrames = [
-	{name:'White Frame', src:'/img/frames/doubleFeature/w.png', masks:masks},
-	{name:'Blue Frame', src:'/img/frames/doubleFeature/u.png', masks:masks},
-	{name:'Black Frame', src:'/img/frames/doubleFeature/b.png', masks:masks},
-	{name:'Red Frame', src:'/img/frames/doubleFeature/r.png', masks:masks},
-	{name:'Green Frame', src:'/img/frames/doubleFeature/g.png', masks:masks},
-	{name:'Multicolored Frame', src:'/img/frames/doubleFeature/m.png', masks:masks},
-	{name:'Artifact Frame', src:'/img/frames/doubleFeature/a.png', masks:masks},
-	{name:'Land Frame', src:'/img/frames/doubleFeature/l.png', masks:masks},
+	{name:'White Frame', src:'img/frames/doubleFeature/w.png', masks:masks},
+	{name:'Blue Frame', src:'img/frames/doubleFeature/u.png', masks:masks},
+	{name:'Black Frame', src:'img/frames/doubleFeature/b.png', masks:masks},
+	{name:'Red Frame', src:'img/frames/doubleFeature/r.png', masks:masks},
+	{name:'Green Frame', src:'img/frames/doubleFeature/g.png', masks:masks},
+	{name:'Multicolored Frame', src:'img/frames/doubleFeature/m.png', masks:masks},
+	{name:'Artifact Frame', src:'img/frames/doubleFeature/a.png', masks:masks},
+	{name:'Land Frame', src:'img/frames/doubleFeature/l.png', masks:masks},
 
-	{name:'White Power/Toughness', src:'/img/frames/doubleFeature/pt/w.png', bounds:bounds},
-	{name:'Blue Power/Toughness', src:'/img/frames/doubleFeature/pt/u.png', bounds:bounds},
-	{name:'Black Power/Toughness', src:'/img/frames/doubleFeature/pt/b.png', bounds:bounds},
-	{name:'Red Power/Toughness', src:'/img/frames/doubleFeature/pt/r.png', bounds:bounds},
-	{name:'Green Power/Toughness', src:'/img/frames/doubleFeature/pt/g.png', bounds:bounds},
-	{name:'Green Power/Toughness', src:'/img/frames/doubleFeature/pt/m.png', bounds:bounds},
-	{name:'Artifact Power/Toughness', src:'/img/frames/doubleFeature/pt/a.png', bounds:bounds},
-	{name:'Land Power/Toughness', src:'/img/frames/doubleFeature/pt/l.png', bounds:bounds},
+	{name:'White Power/Toughness', src:'img/frames/doubleFeature/pt/w.png', bounds:bounds},
+	{name:'Blue Power/Toughness', src:'img/frames/doubleFeature/pt/u.png', bounds:bounds},
+	{name:'Black Power/Toughness', src:'img/frames/doubleFeature/pt/b.png', bounds:bounds},
+	{name:'Red Power/Toughness', src:'img/frames/doubleFeature/pt/r.png', bounds:bounds},
+	{name:'Green Power/Toughness', src:'img/frames/doubleFeature/pt/g.png', bounds:bounds},
+	{name:'Green Power/Toughness', src:'img/frames/doubleFeature/pt/m.png', bounds:bounds},
+	{name:'Artifact Power/Toughness', src:'img/frames/doubleFeature/pt/a.png', bounds:bounds},
+	{name:'Land Power/Toughness', src:'img/frames/doubleFeature/pt/l.png', bounds:bounds},
 
-	{name:'White Land Frame', src:'/img/frames/doubleFeature/wl.png', masks:masks},
-	{name:'Blue Land Frame', src:'/img/frames/doubleFeature/ul.png', masks:masks},
-	{name:'Black Land Frame', src:'/img/frames/doubleFeature/bl.png', masks:masks},
-	{name:'Red Land Frame', src:'/img/frames/doubleFeature/rl.png', masks:masks},
-	{name:'Green Land Frame', src:'/img/frames/doubleFeature/gl.png', masks:masks},
-	{name:'Multicolored Land Frame', src:'/img/frames/doubleFeature/ml.png', masks:masks},	
+	{name:'White Land Frame', src:'img/frames/doubleFeature/wl.png', masks:masks},
+	{name:'Blue Land Frame', src:'img/frames/doubleFeature/ul.png', masks:masks},
+	{name:'Black Land Frame', src:'img/frames/doubleFeature/bl.png', masks:masks},
+	{name:'Red Land Frame', src:'img/frames/doubleFeature/rl.png', masks:masks},
+	{name:'Green Land Frame', src:'img/frames/doubleFeature/gl.png', masks:masks},
+	{name:'Multicolored Land Frame', src:'img/frames/doubleFeature/ml.png', masks:masks},	
 
-	{name:'White Legend Crown', src:'/img/frames/doubleFeature/crowns/w.png', bounds:crownBounds},
-	{name:'Blue Legend Crown', src:'/img/frames/doubleFeature/crowns/u.png', bounds:crownBounds},
-	{name:'Black Legend Crown', src:'/img/frames/doubleFeature/crowns/b.png', bounds:crownBounds},
-	{name:'Red Legend Crown', src:'/img/frames/doubleFeature/crowns/r.png', bounds:crownBounds},
-	{name:'Green Legend Crown', src:'/img/frames/doubleFeature/crowns/g.png', bounds:crownBounds},
-	{name:'Multicolored Legend Crown', src:'/img/frames/doubleFeature/crowns/m.png', bounds:crownBounds},
-	{name:'Artifact Legend Crown', src:'/img/frames/doubleFeature/crowns/a.png', bounds:crownBounds},
-	{name:'Land Legend Crown', src:'/img/frames/doubleFeature/crowns/l.png', bounds:crownBounds},
+	{name:'White Legend Crown', src:'img/frames/doubleFeature/crowns/w.png', bounds:crownBounds},
+	{name:'Blue Legend Crown', src:'img/frames/doubleFeature/crowns/u.png', bounds:crownBounds},
+	{name:'Black Legend Crown', src:'img/frames/doubleFeature/crowns/b.png', bounds:crownBounds},
+	{name:'Red Legend Crown', src:'img/frames/doubleFeature/crowns/r.png', bounds:crownBounds},
+	{name:'Green Legend Crown', src:'img/frames/doubleFeature/crowns/g.png', bounds:crownBounds},
+	{name:'Multicolored Legend Crown', src:'img/frames/doubleFeature/crowns/m.png', bounds:crownBounds},
+	{name:'Artifact Legend Crown', src:'img/frames/doubleFeature/crowns/a.png', bounds:crownBounds},
+	{name:'Land Legend Crown', src:'img/frames/doubleFeature/crowns/l.png', bounds:crownBounds},
 
-	{name:'Holo Stamp', src:'/img/frames/doubleFeature/stamps/stamp.png', bounds:stampBounds},
-	{name:'White Land Holo Stamp', src:'/img/frames/doubleFeature/stamps/w.png', bounds:stampBounds},
-	{name:'Blue Land Holo Stamp', src:'/img/frames/doubleFeature/stamps/u.png', bounds:stampBounds},
-	{name:'Black Land Holo Stamp', src:'/img/frames/doubleFeature/stamps/b.png', bounds:stampBounds},
-	{name:'Red Land Holo Stamp', src:'/img/frames/doubleFeature/stamps/r.png', bounds:stampBounds},
-	{name:'Green Land Holo Stamp', src:'/img/frames/doubleFeature/stamps/g.png', bounds:stampBounds},
-	{name:'Multicolored Land Holo Stamp', src:'/img/frames/doubleFeature/stamps/m.png', bounds:stampBounds}
+	{name:'Holo Stamp', src:'img/frames/doubleFeature/stamps/stamp.png', bounds:stampBounds},
+	{name:'White Land Holo Stamp', src:'img/frames/doubleFeature/stamps/w.png', bounds:stampBounds},
+	{name:'Blue Land Holo Stamp', src:'img/frames/doubleFeature/stamps/u.png', bounds:stampBounds},
+	{name:'Black Land Holo Stamp', src:'img/frames/doubleFeature/stamps/b.png', bounds:stampBounds},
+	{name:'Red Land Holo Stamp', src:'img/frames/doubleFeature/stamps/r.png', bounds:stampBounds},
+	{name:'Green Land Holo Stamp', src:'img/frames/doubleFeature/stamps/g.png', bounds:stampBounds},
+	{name:'Multicolored Land Holo Stamp', src:'img/frames/doubleFeature/stamps/m.png', bounds:stampBounds}
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;

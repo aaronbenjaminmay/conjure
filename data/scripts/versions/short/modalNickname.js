@@ -1,12 +1,12 @@
 if (!loadedVersions.includes('short/modalNickname')) {
 	loadedVersions.push('short/modalNickname')
-	loadMaskImages([['Nickname Title (short modal)', '/data/images/cardImages/short/modal/shortModalNicknameMaskTitle.png']])
+	loadMaskImages([['Nickname Title (short modal)', 'data/images/cardImages/short/modal/shortModalNicknameMaskTitle.png']])
 	loadFrameImages([
-		['White Nickname Title', '/data/images/cardImages/short/modal/shortModalNicknameTitleW.png', 37/1500, 85/2100, 1389/1500, 221/2100, ['Full', 'Nickname Title (short modal)']],
-		['Blue Nickname Title', '/data/images/cardImages/short/modal/shortModalNicknameTitleU.png', 37/1500, 85/2100, 1389/1500, 221/2100, ['Full', 'Nickname Title (short modal)']],
-		['Black Nickname Title', '/data/images/cardImages/short/modal/shortModalNicknameTitleB.png', 37/1500, 85/2100, 1389/1500, 221/2100, ['Full', 'Nickname Title (short modal)']],
-		['Red Nickname Title', '/data/images/cardImages/short/modal/shortModalNicknameTitleR.png', 37/1500, 85/2100, 1389/1500, 221/2100, ['Full', 'Nickname Title (short modal)']],
-		['Green Nickname Title', '/data/images/cardImages/short/modal/shortModalNicknameTitleG.png', 37/1500, 85/2100, 1389/1500, 221/2100, ['Full', 'Nickname Title (short modal)']],
+		['White Nickname Title', 'data/images/cardImages/short/modal/shortModalNicknameTitleW.png', 37/1500, 85/2100, 1389/1500, 221/2100, ['Full', 'Nickname Title (short modal)']],
+		['Blue Nickname Title', 'data/images/cardImages/short/modal/shortModalNicknameTitleU.png', 37/1500, 85/2100, 1389/1500, 221/2100, ['Full', 'Nickname Title (short modal)']],
+		['Black Nickname Title', 'data/images/cardImages/short/modal/shortModalNicknameTitleB.png', 37/1500, 85/2100, 1389/1500, 221/2100, ['Full', 'Nickname Title (short modal)']],
+		['Red Nickname Title', 'data/images/cardImages/short/modal/shortModalNicknameTitleR.png', 37/1500, 85/2100, 1389/1500, 221/2100, ['Full', 'Nickname Title (short modal)']],
+		['Green Nickname Title', 'data/images/cardImages/short/modal/shortModalNicknameTitleG.png', 37/1500, 85/2100, 1389/1500, 221/2100, ['Full', 'Nickname Title (short modal)']],
 	], 'frameClassShortModalNickname')
 }
 

@@ -1,7 +1,7 @@
 //defines available frames
 availableFrames = [
-	{name:'Frame', src:'/img/frames/m15/sdcc15/frame.svg'},
-	{name:'Power/Toughness', src:'/img/frames/m15/sdcc15/pt.svg'}
+	{name:'Frame', src:'img/frames/m15/sdcc15/frame.svg'},
+	{name:'Power/Toughness', src:'img/frames/m15/sdcc15/pt.svg'}
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;

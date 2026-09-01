@@ -1,16 +1,16 @@
 //Create objects for common properties across available frames
-var masks = [{src:'/img/frames/textless/basics/pinline.svg', name:'Pinline'}, {src:'/img/frames/m15/regular/m15MaskTitle.png', name:'Title'}, {src:'/img/frames/textless/basics/type.svg', name:'Type'}, {src:'/img/frames/m15/regular/m15MaskBorder.png', name:'Border'}];
+var masks = [{src:'img/frames/textless/basics/pinline.svg', name:'Pinline'}, {src:'img/frames/m15/regular/m15MaskTitle.png', name:'Title'}, {src:'img/frames/textless/basics/type.svg', name:'Type'}, {src:'img/frames/m15/regular/m15MaskBorder.png', name:'Border'}];
 var bounds = {x:0.7573, y:0.8848, width:0.188, height:0.0733};
 //defines available frames
 availableFrames = [
-	{name:'White Frame', src:'/img/frames/textless/basics/w.png', masks:masks},
-	{name:'Blue Frame', src:'/img/frames/textless/basics/u.png', masks:masks},
-	{name:'Black Frame', src:'/img/frames/textless/basics/b.png', masks:masks},
-	{name:'Red Frame', src:'/img/frames/textless/basics/r.png', masks:masks},
-	{name:'Green Frame', src:'/img/frames/textless/basics/g.png', masks:masks},
-	{name:'Multicolored Frame', src:'/img/frames/textless/basics/m.png', masks:masks},
-	{name:'Artifact Frame', src:'/img/frames/textless/basics/a.png', masks:masks},
-	{name:'Colorless Frame', src:'/img/frames/textless/basics/l.png', masks:masks}
+	{name:'White Frame', src:'img/frames/textless/basics/w.png', masks:masks},
+	{name:'Blue Frame', src:'img/frames/textless/basics/u.png', masks:masks},
+	{name:'Black Frame', src:'img/frames/textless/basics/b.png', masks:masks},
+	{name:'Red Frame', src:'img/frames/textless/basics/r.png', masks:masks},
+	{name:'Green Frame', src:'img/frames/textless/basics/g.png', masks:masks},
+	{name:'Multicolored Frame', src:'img/frames/textless/basics/m.png', masks:masks},
+	{name:'Artifact Frame', src:'img/frames/textless/basics/a.png', masks:masks},
+	{name:'Colorless Frame', src:'img/frames/textless/basics/l.png', masks:masks}
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;

@@ -1,21 +1,21 @@
 //Create objects for common properties across available frames
-var masks = [{src:'/img/frames/m15/spree/pinline.png', name:'Pinline'}, {src:'/img/frames/m15/spree/title.png', name:'Title'}, {src:'/img/frames/m15/regular/m15MaskType.png', name:'Type'}, {src:'/img/frames/m15/regular/m15MaskRules.png', name:'Rules'}, {src:'/img/frames/m15/spree/frame.png', name:'Frame'}, {src:'/img/frames/m15/spree/border.png', name:'Border'}];
+var masks = [{src:'img/frames/m15/spree/pinline.png', name:'Pinline'}, {src:'img/frames/m15/spree/title.png', name:'Title'}, {src:'img/frames/m15/regular/m15MaskType.png', name:'Type'}, {src:'img/frames/m15/regular/m15MaskRules.png', name:'Rules'}, {src:'img/frames/m15/spree/frame.png', name:'Frame'}, {src:'img/frames/m15/spree/border.png', name:'Border'}];
 var bounds = {x:0.7573, y:0.8848, width:0.188, height:0.0733};
 //defines available frames
 availableFrames = [
-	{name:'White Frame', src:'/img/frames/m15/spree/w.png', masks:masks},
-	{name:'Blue Frame', src:'/img/frames/m15/spree/u.png', masks:masks},
-	{name:'Black Frame', src:'/img/frames/m15/spree/b.png', masks:masks},
-	{name:'Red Frame', src:'/img/frames/m15/spree/r.png', masks:masks},
-	{name:'Green Frame', src:'/img/frames/m15/spree/g.png', masks:masks},
-	{name:'Multicolored Frame', src:'/img/frames/m15/spree/m.png', masks:masks},
+	{name:'White Frame', src:'img/frames/m15/spree/w.png', masks:masks},
+	{name:'Blue Frame', src:'img/frames/m15/spree/u.png', masks:masks},
+	{name:'Black Frame', src:'img/frames/m15/spree/b.png', masks:masks},
+	{name:'Red Frame', src:'img/frames/m15/spree/r.png', masks:masks},
+	{name:'Green Frame', src:'img/frames/m15/spree/g.png', masks:masks},
+	{name:'Multicolored Frame', src:'img/frames/m15/spree/m.png', masks:masks},
 
-	{name:'White Snow Frame', src:'/img/frames/m15/spree/snow/w.png', masks:masks},
-	{name:'Blue Snow Frame', src:'/img/frames/m15/spree/snow/u.png', masks:masks},
-	{name:'Black Snow Frame', src:'/img/frames/m15/spree/snow/b.png', masks:masks},
-	{name:'Red Snow Frame', src:'/img/frames/m15/spree/snow/r.png', masks:masks},
-	{name:'Green Snow Frame', src:'/img/frames/m15/spree/snow/g.png', masks:masks},
-	{name:'Multicolored Snow Frame', src:'/img/frames/m15/spree/snow/m.png', masks:masks}
+	{name:'White Snow Frame', src:'img/frames/m15/spree/snow/w.png', masks:masks},
+	{name:'Blue Snow Frame', src:'img/frames/m15/spree/snow/u.png', masks:masks},
+	{name:'Black Snow Frame', src:'img/frames/m15/spree/snow/b.png', masks:masks},
+	{name:'Red Snow Frame', src:'img/frames/m15/spree/snow/r.png', masks:masks},
+	{name:'Green Snow Frame', src:'img/frames/m15/spree/snow/g.png', masks:masks},
+	{name:'Multicolored Snow Frame', src:'img/frames/m15/spree/snow/m.png', masks:masks}
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;

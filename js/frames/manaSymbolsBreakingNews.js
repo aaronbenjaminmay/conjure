@@ -1,6 +1,6 @@
 //checks to see if it needs to run
-if (!card.manaSymbols.includes('/js/frames/manaSymbolsbreakingNews.js')) {
-	card.manaSymbols.push('/js/frames/manaSymbolsbreakingNews.js');
+if (!card.manaSymbols.includes('js/frames/manaSymbolsbreakingNews.js')) {
+	card.manaSymbols.push('js/frames/manaSymbolsbreakingNews.js');
 }
 if (!mana.get('majpw')) {
 	loadManaSymbols([

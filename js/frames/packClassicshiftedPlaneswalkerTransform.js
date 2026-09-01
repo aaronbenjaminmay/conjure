@@ -3,26 +3,26 @@ var bounds = {x:0.9227, y:0.8396, width:0.036, height:0.0505};
 var bounds2 = {x:0.0654, y:0.0467, width:0.052, height:0.0372};
 //defines available frames
 availableFrames = [
-	{name:'Transform Icon', src:'/img/frames/custom/classicshifted/planeswalker/transform/transformIcon.png', bounds:{x:0.0574, y:0.041, width:0.068, height:0.0486}},
-	{name:'White Transform Indicator', src:'/img/frames/custom/classicshifted/planeswalker/transform/w.png', bounds:bounds, complementary:8},
-	{name:'Blue Transform Indicator', src:'/img/frames/custom/classicshifted/planeswalker/transform/u.png', bounds:bounds, complementary:8},
-	{name:'Black Transform Indicator', src:'/img/frames/custom/classicshifted/planeswalker/transform/b.png', bounds:bounds, complementary:8},
-	{name:'Red Transform Indicator', src:'/img/frames/custom/classicshifted/planeswalker/transform/r.png', bounds:bounds, complementary:8},
-	{name:'Green Transform Indicator', src:'/img/frames/custom/classicshifted/planeswalker/transform/g.png', bounds:bounds, complementary:8},
-	{name:'Multicolored Transform Indicator', src:'/img/frames/custom/classicshifted/planeswalker/transform/m.png', bounds:bounds, complementary:8},
-	{name:'Artifact Transform Indicator', src:'/img/frames/custom/classicshifted/planeswalker/transform/a.png', bounds:bounds, complementary:8},
-	{name:'Frame Cutout', src:'/img/frames/custom/classicshifted/planeswalker/transform/cutout.svg', erase:true},
-	{name:'Sun', src:'/img/frames/m15/transform/icons/sun.svg', bounds:bounds2},
-	{name:'Crescent Moon', src:'/img/frames/m15/transform/icons/moon.svg', bounds:bounds2},
-	{name:'Full Moon', src:'/img/frames/m15/transform/icons/fullmoon.svg', bounds:bounds2},
-	{name:'Emrakul', src:'/img/frames/m15/transform/icons/emrakul.svg', bounds:bounds2},
-	{name:'Compass', src:'/img/frames/m15/transform/icons/compass.svg', bounds:bounds2},
-	{name:'Land', src:'/img/frames/m15/transform/icons/land.svg', bounds:bounds2},
-	{name:'Planeswalker Ember', src:'/img/frames/m15/transform/icons/spark.svg', bounds:bounds2},
-	{name:'Planeswalker Spark', src:'/img/frames/m15/transform/icons/planeswalker.svg', bounds:bounds2},
-	{name:'Lesson', src:'/img/frames/m15/transform/icons/lesson.svg', bounds:bounds2},
-	{name:'Closed Fan', src:'/img/frames/m15/transform/icons/fanClosed.svg', bounds:bounds2},
-	{name:'Open Fan', src:'/img/frames/m15/transform/icons/fanOpen.svg', bounds:bounds2},
+	{name:'Transform Icon', src:'img/frames/custom/classicshifted/planeswalker/transform/transformIcon.png', bounds:{x:0.0574, y:0.041, width:0.068, height:0.0486}},
+	{name:'White Transform Indicator', src:'img/frames/custom/classicshifted/planeswalker/transform/w.png', bounds:bounds, complementary:8},
+	{name:'Blue Transform Indicator', src:'img/frames/custom/classicshifted/planeswalker/transform/u.png', bounds:bounds, complementary:8},
+	{name:'Black Transform Indicator', src:'img/frames/custom/classicshifted/planeswalker/transform/b.png', bounds:bounds, complementary:8},
+	{name:'Red Transform Indicator', src:'img/frames/custom/classicshifted/planeswalker/transform/r.png', bounds:bounds, complementary:8},
+	{name:'Green Transform Indicator', src:'img/frames/custom/classicshifted/planeswalker/transform/g.png', bounds:bounds, complementary:8},
+	{name:'Multicolored Transform Indicator', src:'img/frames/custom/classicshifted/planeswalker/transform/m.png', bounds:bounds, complementary:8},
+	{name:'Artifact Transform Indicator', src:'img/frames/custom/classicshifted/planeswalker/transform/a.png', bounds:bounds, complementary:8},
+	{name:'Frame Cutout', src:'img/frames/custom/classicshifted/planeswalker/transform/cutout.svg', erase:true},
+	{name:'Sun', src:'img/frames/m15/transform/icons/sun.svg', bounds:bounds2},
+	{name:'Crescent Moon', src:'img/frames/m15/transform/icons/moon.svg', bounds:bounds2},
+	{name:'Full Moon', src:'img/frames/m15/transform/icons/fullmoon.svg', bounds:bounds2},
+	{name:'Emrakul', src:'img/frames/m15/transform/icons/emrakul.svg', bounds:bounds2},
+	{name:'Compass', src:'img/frames/m15/transform/icons/compass.svg', bounds:bounds2},
+	{name:'Land', src:'img/frames/m15/transform/icons/land.svg', bounds:bounds2},
+	{name:'Planeswalker Ember', src:'img/frames/m15/transform/icons/spark.svg', bounds:bounds2},
+	{name:'Planeswalker Spark', src:'img/frames/m15/transform/icons/planeswalker.svg', bounds:bounds2},
+	{name:'Lesson', src:'img/frames/m15/transform/icons/lesson.svg', bounds:bounds2},
+	{name:'Closed Fan', src:'img/frames/m15/transform/icons/fanClosed.svg', bounds:bounds2},
+	{name:'Open Fan', src:'img/frames/m15/transform/icons/fanOpen.svg', bounds:bounds2},
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;
@@ -32,8 +32,8 @@ document.querySelector('#loadFrameVersion').onclick = async function() {
 	await resetCardIrregularities();
 	//sets card version
 	card.version = 'planeswalkerTransformFront';
-	card.onload = '/js/frames/versionPlaneswalker.js';
-	loadScript('/js/frames/versionPlaneswalker.js');
+	card.onload = 'js/frames/versionPlaneswalker.js';
+	loadScript('js/frames/versionPlaneswalker.js');
 	//art bounds
 	card.artBounds = {x:0.068, y:0.101, width:0.864, height:0.8143};
 	autoFitArt();

@@ -1,31 +1,31 @@
 //Create objects for common properties across available frames
-var masks = [{src:'/img/frames/snc/artDeco/title.svg', name:'Title'}, {src:'/img/frames/snc/artDeco/type.svg', name:'Type'}, {src:'/img/frames/snc/artDeco/pinline.svg', name:'Pinline'}, {src:'/img/frames/snc/artDeco/rules.svg', name:'Rules'}, {src:'/img/frames/snc/artDeco/border.svg', name:'Border'}];
+var masks = [{src:'img/frames/snc/artDeco/title.svg', name:'Title'}, {src:'img/frames/snc/artDeco/type.svg', name:'Type'}, {src:'img/frames/snc/artDeco/pinline.svg', name:'Pinline'}, {src:'img/frames/snc/artDeco/rules.svg', name:'Rules'}, {src:'img/frames/snc/artDeco/border.svg', name:'Border'}];
 var bounds = {x:0.7674, y:0.8862, width:0.194, height:0.0581};
 var bounds2 = {x:0.028, y:0.0205, width:0.944, height:0.0972};
 //defines available frames
 availableFrames = [
-	{name:'White Frame', src:'/img/frames/snc/artDeco/w.png', masks:masks},
-	{name:'Blue Frame', src:'/img/frames/snc/artDeco/u.png', masks:masks},
-	{name:'Black Frame', src:'/img/frames/snc/artDeco/b.png', masks:masks},
-	{name:'Red Frame', src:'/img/frames/snc/artDeco/r.png', masks:masks},
-	{name:'Green Frame', src:'/img/frames/snc/artDeco/g.png', masks:masks},
-	{name:'Multicolored Frame', src:'/img/frames/snc/artDeco/m.png', masks:masks},
-	{name:'Artifact Frame', src:'/img/frames/snc/artDeco/a.png', masks:masks},
-	{name:'White Power/Toughness', src:'/img/frames/snc/artDeco/pt/w.png', bounds:bounds},
-	{name:'Blue Power/Toughness', src:'/img/frames/snc/artDeco/pt/u.png', bounds:bounds},
-	{name:'Black Power/Toughness', src:'/img/frames/snc/artDeco/pt/b.png', bounds:bounds},
-	{name:'Red Power/Toughness', src:'/img/frames/snc/artDeco/pt/r.png', bounds:bounds},
-	{name:'Green Power/Toughness', src:'/img/frames/snc/artDeco/pt/g.png', bounds:bounds},
-	{name:'Multicolored Power/Toughness', src:'/img/frames/snc/artDeco/pt/m.png', bounds:bounds},
-	{name:'Artifact Power/Toughness', src:'/img/frames/snc/artDeco/pt/a.png', bounds:bounds},
-	{name:'White Legend Crown', src:'/img/frames/snc/artDeco/crowns/w.png', bounds:bounds2},
-	{name:'Blue Legend Crown', src:'/img/frames/snc/artDeco/crowns/u.png', bounds:bounds2},
-	{name:'Black Legend Crown', src:'/img/frames/snc/artDeco/crowns/b.png', bounds:bounds2},
-	{name:'Red Legend Crown', src:'/img/frames/snc/artDeco/crowns/r.png', bounds:bounds2},
-	{name:'Green Legend Crown', src:'/img/frames/snc/artDeco/crowns/g.png', bounds:bounds2},
-	{name:'Multicolored Legend Crown', src:'/img/frames/snc/artDeco/crowns/m.png', bounds:bounds2},
-	{name:'Artifact Legend Crown', src:'/img/frames/snc/artDeco/crowns/a.png', bounds:bounds2},
-	{name:'Rare Stamp', src:'/img/frames/snc/stamp.png', bounds:{x:0.4554, y:0.9172, width:0.0894, height:0.0320}}
+	{name:'White Frame', src:'img/frames/snc/artDeco/w.png', masks:masks},
+	{name:'Blue Frame', src:'img/frames/snc/artDeco/u.png', masks:masks},
+	{name:'Black Frame', src:'img/frames/snc/artDeco/b.png', masks:masks},
+	{name:'Red Frame', src:'img/frames/snc/artDeco/r.png', masks:masks},
+	{name:'Green Frame', src:'img/frames/snc/artDeco/g.png', masks:masks},
+	{name:'Multicolored Frame', src:'img/frames/snc/artDeco/m.png', masks:masks},
+	{name:'Artifact Frame', src:'img/frames/snc/artDeco/a.png', masks:masks},
+	{name:'White Power/Toughness', src:'img/frames/snc/artDeco/pt/w.png', bounds:bounds},
+	{name:'Blue Power/Toughness', src:'img/frames/snc/artDeco/pt/u.png', bounds:bounds},
+	{name:'Black Power/Toughness', src:'img/frames/snc/artDeco/pt/b.png', bounds:bounds},
+	{name:'Red Power/Toughness', src:'img/frames/snc/artDeco/pt/r.png', bounds:bounds},
+	{name:'Green Power/Toughness', src:'img/frames/snc/artDeco/pt/g.png', bounds:bounds},
+	{name:'Multicolored Power/Toughness', src:'img/frames/snc/artDeco/pt/m.png', bounds:bounds},
+	{name:'Artifact Power/Toughness', src:'img/frames/snc/artDeco/pt/a.png', bounds:bounds},
+	{name:'White Legend Crown', src:'img/frames/snc/artDeco/crowns/w.png', bounds:bounds2},
+	{name:'Blue Legend Crown', src:'img/frames/snc/artDeco/crowns/u.png', bounds:bounds2},
+	{name:'Black Legend Crown', src:'img/frames/snc/artDeco/crowns/b.png', bounds:bounds2},
+	{name:'Red Legend Crown', src:'img/frames/snc/artDeco/crowns/r.png', bounds:bounds2},
+	{name:'Green Legend Crown', src:'img/frames/snc/artDeco/crowns/g.png', bounds:bounds2},
+	{name:'Multicolored Legend Crown', src:'img/frames/snc/artDeco/crowns/m.png', bounds:bounds2},
+	{name:'Artifact Legend Crown', src:'img/frames/snc/artDeco/crowns/a.png', bounds:bounds2},
+	{name:'Rare Stamp', src:'img/frames/snc/stamp.png', bounds:{x:0.4554, y:0.9172, width:0.0894, height:0.0320}}
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;

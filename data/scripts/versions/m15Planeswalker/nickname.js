@@ -1,17 +1,17 @@
 if (!loadedVersions.includes('m15Planeswalker/nickname')) {
 	loadedVersions.push('m15Planeswalker/nickname')
 	loadFrameImages([
-        ['White Frame', '/data/images/cardImages/planeswalker/nickname/planeswalkerNicknameFrameW.png', 0, 0, 1, 1, ['Full', 'Pinline (planeswalker)', 'Title (planeswalker)', 'Type (planeswalker)', 'Border (planeswalker)']],
-        ['Blue Frame', '/data/images/cardImages/planeswalker/nickname/planeswalkerNicknameFrameU.png', 0, 0, 1, 1, ['Full', 'Pinline (planeswalker)', 'Title (planeswalker)', 'Type (planeswalker)', 'Border (planeswalker)']],
-        ['Black Frame', '/data/images/cardImages/planeswalker/nickname/planeswalkerNicknameFrameB.png', 0, 0, 1, 1, ['Full', 'Pinline (planeswalker)', 'Title (planeswalker)', 'Type (planeswalker)', 'Border (planeswalker)']],
-        ['Red Frame', '/data/images/cardImages/planeswalker/nickname/planeswalkerNicknameFrameR.png', 0, 0, 1, 1, ['Full', 'Pinline (planeswalker)', 'Title (planeswalker)', 'Type (planeswalker)', 'Border (planeswalker)']],
-        ['Green Frame', '/data/images/cardImages/planeswalker/nickname/planeswalkerNicknameFrameG.png', 0, 0, 1, 1, ['Full', 'Pinline (planeswalker)', 'Title (planeswalker)', 'Type (planeswalker)', 'Border (planeswalker)']],
-        ['Multicolored Frame', '/data/images/cardImages/planeswalker/nickname/planeswalkerNicknameFrameM.png', 0, 0, 1, 1, ['Full', 'Pinline (planeswalker)', 'Title (planeswalker)', 'Type (planeswalker)', 'Border (planeswalker)']],
-        ['Artifact Frame', '/data/images/cardImages/planeswalker/nickname/planeswalkerNicknameFrameA.png', 0, 0, 1, 1, ['Full', 'Pinline (planeswalker)', 'Title (planeswalker)', 'Type (planeswalker)', 'Border (planeswalker)']],
-        ['Land Frame', '/data/images/cardImages/planeswalker/nickname/planeswalkerNicknameFrameL.png', 0, 0, 1, 1, ['Full', 'Pinline (planeswalker)', 'Title (planeswalker)', 'Type (planeswalker)', 'Border (planeswalker)']],
-        ['White Border', '/data/images/cardImages/white.png', 0, 0, 1, 1, ['Alternative Border', 'Border (planeswalker)']],
-        ['Silver Border', '/data/images/cardImages/silver.png', 0, 0, 1, 1, ['Alternative Border', 'Border (planeswalker)']],
-        ['Gold Border', '/data/images/cardImages/gold.png', 0, 0, 1, 1, ['Alternative Border', 'Border (planeswalker)']]
+        ['White Frame', 'data/images/cardImages/planeswalker/nickname/planeswalkerNicknameFrameW.png', 0, 0, 1, 1, ['Full', 'Pinline (planeswalker)', 'Title (planeswalker)', 'Type (planeswalker)', 'Border (planeswalker)']],
+        ['Blue Frame', 'data/images/cardImages/planeswalker/nickname/planeswalkerNicknameFrameU.png', 0, 0, 1, 1, ['Full', 'Pinline (planeswalker)', 'Title (planeswalker)', 'Type (planeswalker)', 'Border (planeswalker)']],
+        ['Black Frame', 'data/images/cardImages/planeswalker/nickname/planeswalkerNicknameFrameB.png', 0, 0, 1, 1, ['Full', 'Pinline (planeswalker)', 'Title (planeswalker)', 'Type (planeswalker)', 'Border (planeswalker)']],
+        ['Red Frame', 'data/images/cardImages/planeswalker/nickname/planeswalkerNicknameFrameR.png', 0, 0, 1, 1, ['Full', 'Pinline (planeswalker)', 'Title (planeswalker)', 'Type (planeswalker)', 'Border (planeswalker)']],
+        ['Green Frame', 'data/images/cardImages/planeswalker/nickname/planeswalkerNicknameFrameG.png', 0, 0, 1, 1, ['Full', 'Pinline (planeswalker)', 'Title (planeswalker)', 'Type (planeswalker)', 'Border (planeswalker)']],
+        ['Multicolored Frame', 'data/images/cardImages/planeswalker/nickname/planeswalkerNicknameFrameM.png', 0, 0, 1, 1, ['Full', 'Pinline (planeswalker)', 'Title (planeswalker)', 'Type (planeswalker)', 'Border (planeswalker)']],
+        ['Artifact Frame', 'data/images/cardImages/planeswalker/nickname/planeswalkerNicknameFrameA.png', 0, 0, 1, 1, ['Full', 'Pinline (planeswalker)', 'Title (planeswalker)', 'Type (planeswalker)', 'Border (planeswalker)']],
+        ['Land Frame', 'data/images/cardImages/planeswalker/nickname/planeswalkerNicknameFrameL.png', 0, 0, 1, 1, ['Full', 'Pinline (planeswalker)', 'Title (planeswalker)', 'Type (planeswalker)', 'Border (planeswalker)']],
+        ['White Border', 'data/images/cardImages/white.png', 0, 0, 1, 1, ['Alternative Border', 'Border (planeswalker)']],
+        ['Silver Border', 'data/images/cardImages/silver.png', 0, 0, 1, 1, ['Alternative Border', 'Border (planeswalker)']],
+        ['Gold Border', 'data/images/cardImages/gold.png', 0, 0, 1, 1, ['Alternative Border', 'Border (planeswalker)']]
     ], 'frameClassPlaneswalkerNickname')
 }
 

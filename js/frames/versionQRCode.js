@@ -1,6 +1,6 @@
 //checks to see if it needs to run
-if (!loadedVersions.includes('/js/frames/versionQRCode.js')) {
-	loadedVersions.push('/js/frames/versionQRCode.js');
+if (!loadedVersions.includes('js/frames/versionQRCode.js')) {
+	loadedVersions.push('js/frames/versionQRCode.js');
 	card.qrCode = {
 		x:0.35,
 		y:0.7224,
@@ -38,7 +38,7 @@ if (!loadedVersions.includes('/js/frames/versionQRCode.js')) {
 	</div>-->
 	`;
 	document.querySelector('#creator-menu-sections').appendChild(newHTML);
-	loadScript('/js/qrious.min.js');
+	loadScript('js/qrious.min.js');
 }
 
 function updateQRCode(url = card.qrCode.url) {

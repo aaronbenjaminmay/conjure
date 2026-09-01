@@ -1,6 +1,6 @@
 //checks to see if it needs to run
-if (!loadedVersions.includes('/js/frames/versionPlaneswalker.js')) {
-	loadedVersions.push('/js/frames/versionPlaneswalker.js');
+if (!loadedVersions.includes('js/frames/versionPlaneswalker.js')) {
+	loadedVersions.push('js/frames/versionPlaneswalker.js');
 	sizeCanvas('planeswalkerPreFrame');
 	sizeCanvas('planeswalkerPostFrame');
 	document.querySelector('#creator-menu-tabs').innerHTML += '<h3 class="selectable readable-background" onclick="toggleCreatorTabs(event, `planeswalker`)">Planeswalker</h3>';
@@ -50,18 +50,18 @@ if (!loadedVersions.includes('/js/frames/versionPlaneswalker.js')) {
 	window.planeswalkerAbilityLayout = [[[0.7467], [0.6953, 0.822], [0.6639, 0.7467, 0.8362], [0.6505, 0.72, 0.7905, 0.861]],[[0.72], [0.6391, 0.801], [0.5986, 0.72, 0.8415], [0.5986, 0.6796, 0.7605, 0.8415]]];
 	document.querySelector('#creator-menu-sections').appendChild(newHTML);
 	var plusIcon = new Image();
-	setImageUrl(plusIcon, '/img/frames/planeswalker/planeswalkerPlus.png');
+	setImageUrl(plusIcon, 'img/frames/planeswalker/planeswalkerPlus.png');
 	var minusIcon = new Image();
-	setImageUrl(minusIcon, '/img/frames/planeswalker/planeswalkerMinus.png');
+	setImageUrl(minusIcon, 'img/frames/planeswalker/planeswalkerMinus.png');
 	var neutralIcon = new Image();
-	setImageUrl(neutralIcon, '/img/frames/planeswalker/planeswalkerNeutral.png');
+	setImageUrl(neutralIcon, 'img/frames/planeswalker/planeswalkerNeutral.png');
 	var lightToDark = new Image();
-	setImageUrl(lightToDark, '/img/frames/planeswalker/abilityLineOdd.png');
+	setImageUrl(lightToDark, 'img/frames/planeswalker/abilityLineOdd.png');
 	var darkToLight = new Image();
-	setImageUrl(darkToLight, '/img/frames/planeswalker/abilityLineEven.png');
+	setImageUrl(darkToLight, 'img/frames/planeswalker/abilityLineEven.png');
 	var planeswalkerTextMask = new Image();
 	planeswalkerTextMask.onload = function(){resetPlaneswalkerImages(fixPlaneswalkerInputs(planeswalkerEdited));}
-	setImageUrl(planeswalkerTextMask, '/img/frames/planeswalker/text.svg');
+	setImageUrl(planeswalkerTextMask, 'img/frames/planeswalker/text.svg');
 	var lightColor = 'white';
 	var darkColor = '#a4a4a4';
 } else {
@@ -74,15 +74,15 @@ function planeswalkerEdited() {
 	if (card.version.includes('Tall') || card.version.includes('Compleated')) {
 		planeswalkerTall = 1;
 		if (!(planeswalkerTextMask.src.includes('tall'))) {
-			setImageUrl(planeswalkerTextMask, '/img/frames/planeswalker/tall/planeswalkerTallMaskRules.png');
+			setImageUrl(planeswalkerTextMask, 'img/frames/planeswalker/tall/planeswalkerTallMaskRules.png');
 		}
 	} else if (card.version == 'planeswalkerTransformFront') {
 		if (!planeswalkerTextMask.src.includes('transform/textFront')) {
-			setImageUrl(planeswalkerTextMask, '/img/frames/planeswalker/transform/textFront.svg');
+			setImageUrl(planeswalkerTextMask, 'img/frames/planeswalker/transform/textFront.svg');
 		}
 	} else {
 		if (!planeswalkerTextMask.src.includes('planeswalker/text.svg')) {
-			setImageUrl(planeswalkerTextMask, '/img/frames/planeswalker/text.svg');
+			setImageUrl(planeswalkerTextMask, 'img/frames/planeswalker/text.svg');
 		}
 	}
 	// manage textbox size
@@ -216,11 +216,11 @@ function resetPlaneswalkerImages(callback) {
 		planeswalkerImageFolder = '/sdcc15';
 		planeswalkerImageExtension = 'svg';
 	}
-	setImageUrl(plusIcon, `/img/frames/planeswalker${planeswalkerImageFolder}/planeswalkerPlus.${planeswalkerImageExtension}`);
-	setImageUrl(minusIcon, `/img/frames/planeswalker${planeswalkerImageFolder}/planeswalkerMinus.${planeswalkerImageExtension}`);
-	setImageUrl(neutralIcon, `/img/frames/planeswalker${planeswalkerImageFolder}/planeswalkerNeutral.${planeswalkerImageExtension}`);
-	setImageUrl(lightToDark, `/img/frames/planeswalker${planeswalkerImageFolder}/abilityLineOdd.${planeswalkerImageExtension}`);
-	setImageUrl(darkToLight, `/img/frames/planeswalker${planeswalkerImageFolder}/abilityLineEven.${planeswalkerImageExtension}`);
+	setImageUrl(plusIcon, `img/frames/planeswalker${planeswalkerImageFolder}/planeswalkerPlus.${planeswalkerImageExtension}`);
+	setImageUrl(minusIcon, `img/frames/planeswalker${planeswalkerImageFolder}/planeswalkerMinus.${planeswalkerImageExtension}`);
+	setImageUrl(neutralIcon, `img/frames/planeswalker${planeswalkerImageFolder}/planeswalkerNeutral.${planeswalkerImageExtension}`);
+	setImageUrl(lightToDark, `img/frames/planeswalker${planeswalkerImageFolder}/abilityLineOdd.${planeswalkerImageExtension}`);
+	setImageUrl(darkToLight, `img/frames/planeswalker${planeswalkerImageFolder}/abilityLineEven.${planeswalkerImageExtension}`);
 	if (!darkToLight.onload) {
 		darkToLight.onload = function() {planeswalkerEdited();}
 	}
@@ -242,12 +242,12 @@ function invertPlaneswalkerColors(reverse = false) {
 	if (card.planeswalker.invert) {
 		darkColor = '#5b5b5b';
 		lightColor = 'black';
-		setImageUrl(lightToDark, '/img/frames/planeswalker/abilityLineOddDarkened.png');
-		setImageUrl(darkToLight, '/img/frames/planeswalker/abilityLineEvenDarkened.png');
+		setImageUrl(lightToDark, 'img/frames/planeswalker/abilityLineOddDarkened.png');
+		setImageUrl(darkToLight, 'img/frames/planeswalker/abilityLineEvenDarkened.png');
 	} else {
 		darkColor = '#a4a4a4';
 		lightColor = 'white';
-		setImageUrl(lightToDark, '/img/frames/planeswalker/abilityLineOdd.png');
-		setImageUrl(darkToLight, '/img/frames/planeswalker/abilityLineEven.png');
+		setImageUrl(lightToDark, 'img/frames/planeswalker/abilityLineOdd.png');
+		setImageUrl(darkToLight, 'img/frames/planeswalker/abilityLineEven.png');
 	}
 }

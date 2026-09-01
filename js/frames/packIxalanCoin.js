@@ -4,36 +4,36 @@ var ptBounds = {x:0/1500, y:0/2100, width:1500/1500, height:2100/2100};
 var crownBounds = {x:0/1500, y:0/2100, width:1500/1500, height:2100/2100};
 //defines available frames
 availableFrames = [
-	{name:'White Frame', src:'/img/frames/ixalanCoin/w.png', masks:masks},
-	{name:'Blue Frame', src:'/img/frames/ixalanCoin/u.png', masks:masks},
-	{name:'Black Frame', src:'/img/frames/ixalanCoin/b.png', masks:masks},
-	{name:'Red Frame', src:'/img/frames/ixalanCoin/r.png', masks:masks},
-	{name:'Green Frame', src:'/img/frames/ixalanCoin/g.png', masks:masks},
-	{name:'Multicolored Frame', src:'/img/frames/ixalanCoin/m.png', masks:masks},
-	// {name:'Artifact Frame', src:'/img/frames/ixalanCoin/a.png', masks:masks},
-	// {name:'Colorless Frame', src:'/img/frames/ixalanCoin/c.png', masks:masks},
+	{name:'White Frame', src:'img/frames/ixalanCoin/w.png', masks:masks},
+	{name:'Blue Frame', src:'img/frames/ixalanCoin/u.png', masks:masks},
+	{name:'Black Frame', src:'img/frames/ixalanCoin/b.png', masks:masks},
+	{name:'Red Frame', src:'img/frames/ixalanCoin/r.png', masks:masks},
+	{name:'Green Frame', src:'img/frames/ixalanCoin/g.png', masks:masks},
+	{name:'Multicolored Frame', src:'img/frames/ixalanCoin/m.png', masks:masks},
+	// {name:'Artifact Frame', src:'img/frames/ixalanCoin/a.png', masks:masks},
+	// {name:'Colorless Frame', src:'img/frames/ixalanCoin/c.png', masks:masks},
 
-	{name:'White Power/Toughness', src:'/img/frames/ixalanCoin/pt/w.png', bounds:ptBounds},
-	{name:'Blue Power/Toughness', src:'/img/frames/ixalanCoin/pt/u.png', bounds:ptBounds},
-	{name:'Black Power/Toughness', src:'/img/frames/ixalanCoin/pt/b.png', bounds:ptBounds},
-	{name:'Red Power/Toughness', src:'/img/frames/ixalanCoin/pt/r.png', bounds:ptBounds},
-	{name:'Green Power/Toughness', src:'/img/frames/ixalanCoin/pt/g.png', bounds:ptBounds},
-	{name:'Multicolored Power/Toughness', src:'/img/frames/ixalanCoin/pt/m.png', bounds:ptBounds},
-	// {name:'Artifact Power/Toughness', src:'/img/frames/ixalanCoin/pt/a.png', bounds:ptBounds},
-	// {name:'Colorless Power/Toughness', src:'/img/frames/ixalanCoin/pt/c.png', bounds:ptBounds},
+	{name:'White Power/Toughness', src:'img/frames/ixalanCoin/pt/w.png', bounds:ptBounds},
+	{name:'Blue Power/Toughness', src:'img/frames/ixalanCoin/pt/u.png', bounds:ptBounds},
+	{name:'Black Power/Toughness', src:'img/frames/ixalanCoin/pt/b.png', bounds:ptBounds},
+	{name:'Red Power/Toughness', src:'img/frames/ixalanCoin/pt/r.png', bounds:ptBounds},
+	{name:'Green Power/Toughness', src:'img/frames/ixalanCoin/pt/g.png', bounds:ptBounds},
+	{name:'Multicolored Power/Toughness', src:'img/frames/ixalanCoin/pt/m.png', bounds:ptBounds},
+	// {name:'Artifact Power/Toughness', src:'img/frames/ixalanCoin/pt/a.png', bounds:ptBounds},
+	// {name:'Colorless Power/Toughness', src:'img/frames/ixalanCoin/pt/c.png', bounds:ptBounds},
 
-	{name:'White Legendary Crown', src:'/img/frames/ixalanCoin/crown/w.png', bounds:crownBounds},
-	{name:'Blue Legendary Crown', src:'/img/frames/ixalanCoin/crown/u.png', bounds:crownBounds},
-	{name:'Black Legendary Crown', src:'/img/frames/ixalanCoin/crown/b.png', bounds:crownBounds},
-	{name:'Red Power/Toughness', src:'/img/frames/ixalanCoin/crown/r.png', bounds:crownBounds},
-	{name:'Green Legendary Crown', src:'/img/frames/ixalanCoin/crown/g.png', bounds:crownBounds},
-	{name:'Multicolored Legendary Crown', src:'/img/frames/ixalanCoin/crown/m.png', bounds:crownBounds},
-	// {name:'Artifact Legendary Crown', src:'/img/frames/ixalanCoin/crown/a.png', bounds:crownBounds},
-	// {name:'Colorless Legendary Crown', src:'/img/frames/ixalanCoin/crown/c.png', bounds:crownBounds},
+	{name:'White Legendary Crown', src:'img/frames/ixalanCoin/crown/w.png', bounds:crownBounds},
+	{name:'Blue Legendary Crown', src:'img/frames/ixalanCoin/crown/u.png', bounds:crownBounds},
+	{name:'Black Legendary Crown', src:'img/frames/ixalanCoin/crown/b.png', bounds:crownBounds},
+	{name:'Red Power/Toughness', src:'img/frames/ixalanCoin/crown/r.png', bounds:crownBounds},
+	{name:'Green Legendary Crown', src:'img/frames/ixalanCoin/crown/g.png', bounds:crownBounds},
+	{name:'Multicolored Legendary Crown', src:'img/frames/ixalanCoin/crown/m.png', bounds:crownBounds},
+	// {name:'Artifact Legendary Crown', src:'img/frames/ixalanCoin/crown/a.png', bounds:crownBounds},
+	// {name:'Colorless Legendary Crown', src:'img/frames/ixalanCoin/crown/c.png', bounds:crownBounds},
 
-	{name:'Coin Background', src:'/img/frames/ixalanCoin/coinCover.png'},
-	{name:'Coin', src:'/img/frames/ixalanCoin/coin.png'},
-	{name:'Holo Stamp', src:'/img/frames/ixalanCoin/stamp.png'}
+	{name:'Coin Background', src:'img/frames/ixalanCoin/coinCover.png'},
+	{name:'Coin', src:'img/frames/ixalanCoin/coin.png'},
+	{name:'Holo Stamp', src:'img/frames/ixalanCoin/stamp.png'}
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;

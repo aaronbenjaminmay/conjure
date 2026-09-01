@@ -13,7 +13,7 @@ function fixUri(input) {
 	if (input.includes(prefix) || input.includes('http') || input.includes('data:image') || window.location.href.includes('localhost')) {
 		return input;
 	} else {
-		return prefix + input; //input.replace('/img/frames', prefix + '/img/frames');
+		return prefix + input; //input.replace('img/frames', prefix + 'img/frames');
 	} */
 	return input;
 }
@@ -47,17 +47,17 @@ function getStandardHeight() {
 }
 
 //card object
-var card = {width:getStandardWidth(), height:getStandardHeight(), marginX:0, marginY:0, frames:[], artSource:fixUri('/img/blank.png'), artX:0, artY:0, artZoom:1, artRotate:0, setSymbolSource:fixUri('/img/blank.png'), setSymbolX:0, setSymbolY:0, setSymbolZoom:1, watermarkSource:fixUri('/img/blank.png'), watermarkX:0, watermarkY:0, watermarkZoom:1, watermarkLeft:'none', watermarkRight:'none', watermarkOpacity:0.4, version:'', manaSymbols:[]};
+var card = {width:getStandardWidth(), height:getStandardHeight(), marginX:0, marginY:0, frames:[], artSource:fixUri('img/blank.png'), artX:0, artY:0, artZoom:1, artRotate:0, setSymbolSource:fixUri('img/blank.png'), setSymbolX:0, setSymbolY:0, setSymbolZoom:1, watermarkSource:fixUri('img/blank.png'), watermarkX:0, watermarkY:0, watermarkZoom:1, watermarkLeft:'none', watermarkRight:'none', watermarkOpacity:0.4, version:'', manaSymbols:[]};
 //core images/masks
-const black = new Image(); black.crossOrigin = 'anonymous'; black.src = fixUri('/img/black.png');
-const blank = new Image(); blank.crossOrigin = 'anonymous'; blank.src = fixUri('/img/blank.png');
-const right = new Image(); right.crossOrigin = 'anonymous'; right.src = fixUri('/img/frames/maskRightHalf.png');
-const middle = new Image(); middle.crossOrigin = 'anonymous'; middle.src = fixUri('/img/frames/maskMiddleThird.png');
-const corner = new Image(); corner.crossOrigin = 'anonymous'; corner.src = fixUri('/img/frames/cornerCutout.png');
-const serial = new Image(); serial.crossOrigin = 'anonymous'; serial.src = fixUri('/img/frames/serial.png');
+const black = new Image(); black.crossOrigin = 'anonymous'; black.src = fixUri('img/black.png');
+const blank = new Image(); blank.crossOrigin = 'anonymous'; blank.src = fixUri('img/blank.png');
+const right = new Image(); right.crossOrigin = 'anonymous'; right.src = fixUri('img/frames/maskRightHalf.png');
+const middle = new Image(); middle.crossOrigin = 'anonymous'; middle.src = fixUri('img/frames/maskMiddleThird.png');
+const corner = new Image(); corner.crossOrigin = 'anonymous'; corner.src = fixUri('img/frames/cornerCutout.png');
+const serial = new Image(); serial.crossOrigin = 'anonymous'; serial.src = fixUri('img/frames/serial.png');
 //art
 art = new Image(); art.crossOrigin = 'anonymous'; art.src = blank.src;
-art.onerror = function() {if (!this.src.includes('/img/blank.png')) {this.src = fixUri('/img/blank.png');}}
+art.onerror = function() {if (!this.src.includes('img/blank.png')) {this.src = fixUri('img/blank.png');}}
 art.onload = artEdited;
 //set symbol
 setSymbol = new Image(); setSymbol.crossOrigin = 'anonymous'; setSymbol.src = blank.src;
@@ -65,12 +65,12 @@ setSymbol.onerror = function() {
 	if (this.src.includes('gatherer.wizards.com')) {
 		notify('<a target="_blank" href="http' + this.src.split('http')[2] + '">Loading the set symbol from Gatherer failed. Please check this link to see if it exists. If it does, it may be necessary to manually download and upload the image.</a>', 5);
 	}
-	if (!this.src.includes('/img/blank.png')) {this.src = fixUri('/img/blank.png');}
+	if (!this.src.includes('img/blank.png')) {this.src = fixUri('img/blank.png');}
 }
 setSymbol.onload = setSymbolEdited;
 //watermark
 watermark = new Image(); watermark.crossOrigin = 'anonymous'; watermark.src = blank.src;
-watermark.onerror = function() {if (!this.src.includes('/img/blank.png')) {this.src = fixUri('/img/blank.png');}}
+watermark.onerror = function() {if (!this.src.includes('img/blank.png')) {this.src = fixUri('img/blank.png');}}
 watermark.onload = watermarkEdited;
 //preview canvas
 var previewCanvas = document.querySelector('#previewCanvas');
@@ -367,7 +367,7 @@ function loadManaSymbols(matchColor, manaSymbolPaths, size = [1, 1]) {
 		manaSymbol.height = size[1];
 		manaSymbol.image = new Image();
 		manaSymbol.image.crossOrigin = 'anonymous';
-		var manaSymbolPath = '/img/manaSymbols/' + manaSymbol.path;
+		var manaSymbolPath = 'img/manaSymbols/' + manaSymbol.path;
 		if (!manaSymbolPath.includes('.png')) {
 			manaSymbolPath += '.svg';
 		}
@@ -465,7 +465,7 @@ function loadFramePacks(framePackOptions = []) {
 		}
 		document.querySelector('#selectFramePack').appendChild(framePackOption);
 	});
-	loadScript("/js/frames/pack" + document.querySelector('#selectFramePack').value + ".js");
+	loadScript("js/frames/pack" + document.querySelector('#selectFramePack').value + ".js");
 }
 function loadFramePack(frameOptions = availableFrames) {
 	resetDoubleClick();
@@ -479,7 +479,7 @@ function loadFramePack(frameOptions = availableFrames) {
 		frameOptionImage.onload = function() {
 			this.parentElement.classList.remove('hidden');
 		}
-		if (!item.noThumb && !item.src.includes('/img/black.png')) {
+		if (!item.noThumb && !item.src.includes('img/black.png')) {
 			frameOptionImage.src = fixUri(item.src.replace('.png', 'Thumb.png').replace('.svg', 'Thumb.png'));
 		} else {
 			frameOptionImage.src = fixUri(item.src);
@@ -871,7 +871,7 @@ function autoFrame() {
 	}
 
 	if (autoFramePack != frame) {
-		loadScript('/js/frames/pack' + frame + '.js');
+		loadScript('js/frames/pack' + frame + '.js');
 		autoFramePack = frame;
 	}
 }
@@ -1516,7 +1516,7 @@ function makeM15FrameByLetter(letter, mask = false, maskToRightHalf = false, sty
 	if (mask == "Crown Border Cover") {
 		return {
 			'name': 'Legend Crown Border Cover',
-			'src': '/img/black.png',
+			'src': 'img/black.png',
 			'masks': [],
 			'bounds': {
 				'height': 0.0177,
@@ -1530,7 +1530,7 @@ function makeM15FrameByLetter(letter, mask = false, maskToRightHalf = false, sty
 	if (mask == "Crown") {
 		var frame = {
 			'name': frameName + ' Legend Crown',
-			'src': '/img/frames/m15/crowns/m15Crown' + letter + '.png',
+			'src': 'img/frames/m15/crowns/m15Crown' + letter + '.png',
 			'masks': [],
 			'bounds': {
 				'height': 0.1667,
@@ -1541,7 +1541,7 @@ function makeM15FrameByLetter(letter, mask = false, maskToRightHalf = false, sty
 		}
 		if (maskToRightHalf) {
 			frame.masks.push({
-				'src': '/img/frames/maskRightHalf.png',
+				'src': 'img/frames/maskRightHalf.png',
 				'name': 'Right Half'
 			});
 		}
@@ -1551,7 +1551,7 @@ function makeM15FrameByLetter(letter, mask = false, maskToRightHalf = false, sty
 	if (mask == "Inner Crown") {
 		var frame = {
 			'name': frameName + ' ' + mask + ' (' + style + ')',
-			'src': '/img/frames/m15/innerCrowns/m15InnerCrown' + letter + style + '.png',
+			'src': 'img/frames/m15/innerCrowns/m15InnerCrown' + letter + style + '.png',
 			'masks': [],
 			'bounds': {
 				'height': 0.0239,
@@ -1562,7 +1562,7 @@ function makeM15FrameByLetter(letter, mask = false, maskToRightHalf = false, sty
 		}
 		if (maskToRightHalf) {
 			frame.masks.push({
-				'src': '/img/frames/maskRightHalf.png',
+				'src': 'img/frames/maskRightHalf.png',
 				'name': 'Right Half'
 			});
 		}
@@ -1572,7 +1572,7 @@ function makeM15FrameByLetter(letter, mask = false, maskToRightHalf = false, sty
 	if (mask == 'PT') {
 		return {
 			'name': frameName + ' Power/Toughness',
-			'src': '/img/frames/m15/regular/m15PT' + letter + '.png',
+			'src': 'img/frames/m15/regular/m15PT' + letter + '.png',
 			'masks': [],
 			'bounds': {
 				'height': 0.0733,
@@ -1585,7 +1585,7 @@ function makeM15FrameByLetter(letter, mask = false, maskToRightHalf = false, sty
 
 	var frame = {
 		'name': frameName + ' Frame',
-		'src': '/img/frames/m15/' + style.toLowerCase() + '/m15Frame' + letter + '.png',
+		'src': 'img/frames/m15/' + style.toLowerCase() + '/m15Frame' + letter + '.png',
 	}
 
 	if (style == 'snow') {
@@ -1603,14 +1603,14 @@ function makeM15FrameByLetter(letter, mask = false, maskToRightHalf = false, sty
 	if (mask) {
 		frame.masks = [
 			{
-				'src': '/img/frames/m15/regular/m15Mask' + mask + '.png',
+				'src': 'img/frames/m15/regular/m15Mask' + mask + '.png',
 				'name': mask
 			}
 		]
 
 		if (maskToRightHalf) {
 			frame.masks.push({
-				'src': '/img/frames/maskRightHalf.png',
+				'src': 'img/frames/maskRightHalf.png',
 				'name': 'Right Half'
 			});
 		}
@@ -1655,7 +1655,7 @@ function makeM15NewFrameByLetter(letter, mask = false, maskToRightHalf = false, 
 	if (mask == "Crown Border Cover") {
 		return {
 			'name': 'Legend Crown Border Cover',
-			'src': '/img/black.png',
+			'src': 'img/black.png',
 			'masks': [],
 			'bounds': {x:0, y:0, width:1, height:137/2814}
 		}
@@ -1668,13 +1668,13 @@ function makeM15NewFrameByLetter(letter, mask = false, maskToRightHalf = false, 
 		}
 		var frame = {
 			'name': frameName + ' Legend Crown',
-			'src': '/img/frames/m15/' + framePath + 'crowns/new/' + letter.toLowerCase() + '.png',
+			'src': 'img/frames/m15/' + framePath + 'crowns/new/' + letter.toLowerCase() + '.png',
 			'masks': [],
 			'bounds': {x:44/2010, y:53/2814, width:1922/2010, height:493/2814}
 		}
 		if (maskToRightHalf) {
 			frame.masks.push({
-				'src': '/img/frames/maskRightHalf.png',
+				'src': 'img/frames/maskRightHalf.png',
 				'name': 'Right Half'
 			});
 		}
@@ -1684,13 +1684,13 @@ function makeM15NewFrameByLetter(letter, mask = false, maskToRightHalf = false, 
 	if (mask == "Inner Crown") {
 		var frame = {
 			'name': frameName + ' ' + mask + ' (' + style + ')',
-			'src': '/img/frames/m15/innerCrowns/new/' + style.toLowerCase() + '/' + letter.toLowerCase() + '.png',
+			'src': 'img/frames/m15/innerCrowns/new/' + style.toLowerCase() + '/' + letter.toLowerCase() + '.png',
 			'masks': [],
 			'bounds': {x:329/2010, y:70/2814, width:1353/2010, height:64/2814}
 		};
 		if (maskToRightHalf) {
 			frame.masks.push({
-				'src': '/img/frames/maskRightHalf.png',
+				'src': 'img/frames/maskRightHalf.png',
 				'name': 'Right Half'
 			});
 		}
@@ -1699,13 +1699,13 @@ function makeM15NewFrameByLetter(letter, mask = false, maskToRightHalf = false, 
 		if (style == 'ub') {
 			var frame = {
 				'name': frameName + ' Holo Stamp',
-				'src': '/img/frames/m15/new/ub/stamp/' + letter.toLowerCase() + '.png',
+				'src': 'img/frames/m15/new/ub/stamp/' + letter.toLowerCase() + '.png',
 				'masks': [],
 				'bounds': {x:857/2015, y:2534/2814, width:299/2015, height:137/2814}
 			}
 			if (maskToRightHalf) {
 				frame.masks.push({
-					'src': '/img/frames/maskRightHalf.png',
+					'src': 'img/frames/maskRightHalf.png',
 					'name': 'Right Half'
 				});
 			}
@@ -1714,9 +1714,9 @@ function makeM15NewFrameByLetter(letter, mask = false, maskToRightHalf = false, 
 	}
 
 	if (mask == 'PT') {
-		var path = '/img/frames/m15/regular/m15PT';
+		var path = 'img/frames/m15/regular/m15PT';
 		if (style == 'ub') {
-			path = '/img/frames/m15/ub/pt/';
+			path = 'img/frames/m15/ub/pt/';
 			letter = letter.toLowerCase();
 		}
 		return {
@@ -1738,7 +1738,7 @@ function makeM15NewFrameByLetter(letter, mask = false, maskToRightHalf = false, 
 	}
 	var frame = {
 		'name': frameName + ' Frame',
-		'src': '/img/frames/m15/new/' + stylePath + letter.toLowerCase() + '.png',
+		'src': 'img/frames/m15/new/' + stylePath + letter.toLowerCase() + '.png',
 	}
 
 	// if (letter.includes('L') && letter.length > 1) {
@@ -1748,14 +1748,14 @@ function makeM15NewFrameByLetter(letter, mask = false, maskToRightHalf = false, 
 	if (mask) {
 		frame.masks = [
 			{
-				'src': '/img/frames/m15/new/' + mask.toLowerCase() + '.png',
+				'src': 'img/frames/m15/new/' + mask.toLowerCase() + '.png',
 				'name': mask
 			}
 		]
 
 		if (maskToRightHalf) {
 			frame.masks.push({
-				'src': '/img/frames/maskRightHalf.png',
+				'src': 'img/frames/maskRightHalf.png',
 				'name': 'Right Half'
 			});
 		}
@@ -1795,7 +1795,7 @@ function makeM15EighthFrameByLetter(letter, mask = false, maskToRightHalf = fals
 	if (mask == "Crown Border Cover") {
 		return {
 			'name': 'Legend Crown Border Cover',
-			'src': '/img/black.png',
+			'src': 'img/black.png',
 			'masks': [],
 			'bounds': {
 				'height': 0.0177,
@@ -1809,7 +1809,7 @@ function makeM15EighthFrameByLetter(letter, mask = false, maskToRightHalf = fals
 	if (mask == "Crown") {
 		var frame = {
 			'name': frameName + ' Legend Crown',
-			'src': '/img/frames/m15/crowns/m15Crown' + letter + '.png',
+			'src': 'img/frames/m15/crowns/m15Crown' + letter + '.png',
 			'masks': [],
 			'bounds': {
 				'height': 0.1667,
@@ -1820,7 +1820,7 @@ function makeM15EighthFrameByLetter(letter, mask = false, maskToRightHalf = fals
 		}
 		if (maskToRightHalf) {
 			frame.masks.push({
-				'src': '/img/frames/maskRightHalf.png',
+				'src': 'img/frames/maskRightHalf.png',
 				'name': 'Right Half'
 			});
 		}
@@ -1830,7 +1830,7 @@ function makeM15EighthFrameByLetter(letter, mask = false, maskToRightHalf = fals
 	if (mask == "Inner Crown") {
 		var frame = {
 			'name': frameName + ' ' + mask + ' (' + style + ')',
-			'src': '/img/frames/m15/innerCrowns/m15InnerCrown' + letter + style + '.png',
+			'src': 'img/frames/m15/innerCrowns/m15InnerCrown' + letter + style + '.png',
 			'masks': [],
 			'bounds': {
 				'height': 0.0239,
@@ -1841,7 +1841,7 @@ function makeM15EighthFrameByLetter(letter, mask = false, maskToRightHalf = fals
 		}
 		if (maskToRightHalf) {
 			frame.masks.push({
-				'src': '/img/frames/maskRightHalf.png',
+				'src': 'img/frames/maskRightHalf.png',
 				'name': 'Right Half'
 			});
 		}
@@ -1851,7 +1851,7 @@ function makeM15EighthFrameByLetter(letter, mask = false, maskToRightHalf = fals
 	if (mask == 'PT') {
 		return {
 			'name': frameName + ' Power/Toughness',
-			'src': '/img/frames/m15/regular/m15PT' + letter + '.png',
+			'src': 'img/frames/m15/regular/m15PT' + letter + '.png',
 			'masks': [],
 			'bounds': {
 				'height': 0.0733,
@@ -1864,7 +1864,7 @@ function makeM15EighthFrameByLetter(letter, mask = false, maskToRightHalf = fals
 
 	var frame = {
 		'name': frameName + ' Frame',
-		'src': '/img/frames/custom/m15-eighth/' + style.toLowerCase() + '/' + letter.toLowerCase() + '.png',
+		'src': 'img/frames/custom/m15-eighth/' + style.toLowerCase() + '/' + letter.toLowerCase() + '.png',
 	}
 
 	if (style != 'regular') {
@@ -1875,14 +1875,14 @@ function makeM15EighthFrameByLetter(letter, mask = false, maskToRightHalf = fals
 		if (mask.toLowerCase() == 'border' || mask.toLowerCase() == 'frame') {
 			frame.masks = [
 				{
-					'src': '/img/frames/custom/m15-eighth/regular/' + mask + '.png',
+					'src': 'img/frames/custom/m15-eighth/regular/' + mask + '.png',
 					'name': mask
 				}
 			]
 		} else {
 			frame.masks = [
 				{
-					'src': '/img/frames/m15/regular/m15Mask' + mask + '.png',
+					'src': 'img/frames/m15/regular/m15Mask' + mask + '.png',
 					'name': mask
 				}
 			]
@@ -1890,7 +1890,7 @@ function makeM15EighthFrameByLetter(letter, mask = false, maskToRightHalf = fals
 
 		if (maskToRightHalf) {
 			frame.masks.push({
-				'src': '/img/frames/maskRightHalf.png',
+				'src': 'img/frames/maskRightHalf.png',
 				'name': 'Right Half'
 			});
 		}
@@ -1930,7 +1930,7 @@ function makeM15EighthUBFrameByLetter(letter, mask = false, maskToRightHalf = fa
 	if (mask == "Crown Border Cover") {
 		return {
 			'name': 'Legend Crown Border Cover',
-			'src': '/img/black.png',
+			'src': 'img/black.png',
 			'masks': [],
 			'bounds': {
 				'height': 0.0177,
@@ -1944,7 +1944,7 @@ function makeM15EighthUBFrameByLetter(letter, mask = false, maskToRightHalf = fa
 	if (mask == "Crown") {
 		var frame = {
 			'name': frameName + ' Legend Crown',
-			'src': '/img/frames/m15/ub/crowns/m15Crown' + letter + '.png',
+			'src': 'img/frames/m15/ub/crowns/m15Crown' + letter + '.png',
 			'masks': [],
 			'bounds': {
 				'height': 0.1667,
@@ -1955,7 +1955,7 @@ function makeM15EighthUBFrameByLetter(letter, mask = false, maskToRightHalf = fa
 		}
 		if (maskToRightHalf) {
 			frame.masks.push({
-				'src': '/img/frames/maskRightHalf.png',
+				'src': 'img/frames/maskRightHalf.png',
 				'name': 'Right Half'
 			});
 		}
@@ -1965,7 +1965,7 @@ function makeM15EighthUBFrameByLetter(letter, mask = false, maskToRightHalf = fa
 	if (mask == "Inner Crown") {
 		var frame = {
 			'name': frameName + ' ' + mask + ' (' + style + ')',
-			'src': '/img/frames/m15/innerCrowns/m15InnerCrown' + letter + style + '.png',
+			'src': 'img/frames/m15/innerCrowns/m15InnerCrown' + letter + style + '.png',
 			'masks': [],
 			'bounds': {
 				'height': 0.0239,
@@ -1976,7 +1976,7 @@ function makeM15EighthUBFrameByLetter(letter, mask = false, maskToRightHalf = fa
 		}
 		if (maskToRightHalf) {
 			frame.masks.push({
-				'src': '/img/frames/maskRightHalf.png',
+				'src': 'img/frames/maskRightHalf.png',
 				'name': 'Right Half'
 			});
 		}
@@ -1986,7 +1986,7 @@ function makeM15EighthUBFrameByLetter(letter, mask = false, maskToRightHalf = fa
 	if (mask == 'PT') {
 		return {
 			'name': frameName + ' Power/Toughness',
-			'src': '/img/frames/m15/ub/pt/' + letter + '.png',
+			'src': 'img/frames/m15/ub/pt/' + letter + '.png',
 			'masks': [],
 			'bounds': {
 				'height': 0.0733,
@@ -1999,21 +1999,21 @@ function makeM15EighthUBFrameByLetter(letter, mask = false, maskToRightHalf = fa
 
 	var frame = {
 		'name': frameName + ' Frame',
-		'src': '/img/frames/custom/m15-eighth/ub/' + letter.toLowerCase() + '.png',
+		'src': 'img/frames/custom/m15-eighth/ub/' + letter.toLowerCase() + '.png',
 	}
 
 	if (mask) {
 		if (mask.toLowerCase() == 'border' || mask.toLowerCase() == 'frame') {
 			frame.masks = [
 				{
-					'src': '/img/frames/custom/m15-eighth/regular/' + mask + '.png',
+					'src': 'img/frames/custom/m15-eighth/regular/' + mask + '.png',
 					'name': mask
 				}
 			]
 		} else {
 			frame.masks = [
 				{
-					'src': '/img/frames/m15/regular/m15Mask' + mask + '.png',
+					'src': 'img/frames/m15/regular/m15Mask' + mask + '.png',
 					'name': mask
 				}
 			]
@@ -2021,7 +2021,7 @@ function makeM15EighthUBFrameByLetter(letter, mask = false, maskToRightHalf = fa
 
 		if (maskToRightHalf) {
 			frame.masks.push({
-				'src': '/img/frames/maskRightHalf.png',
+				'src': 'img/frames/maskRightHalf.png',
 				'name': 'Right Half'
 			});
 		}
@@ -2065,7 +2065,7 @@ function makeBorderlessFrameByLetter(letter, mask = false, maskToRightHalf = fal
 	if (mask == "Legend Crown Outline") {
 		return {
 			'name': 'Legend Crown Outline',
-			'src': '/img/frames/m15/crowns/m15CrownFloatingOutline.png',
+			'src': 'img/frames/m15/crowns/m15CrownFloatingOutline.png',
 			'masks': [],
 			'bounds': {
 				'height': 0.1062,
@@ -2080,7 +2080,7 @@ function makeBorderlessFrameByLetter(letter, mask = false, maskToRightHalf = fal
 		return {
 			'name': 'Legend Crown Border Cover',
 			'erase': true,
-			'src': '/img/black.png',
+			'src': 'img/black.png',
 			'masks': [],
 			'bounds': {
 				'height': 0.0177,
@@ -2094,7 +2094,7 @@ function makeBorderlessFrameByLetter(letter, mask = false, maskToRightHalf = fal
 	if (mask == "Crown") {
 		var frame = {
 			'name': frameName + ' Legend Crown',
-			'src': '/img/frames/m15/crowns/m15Crown' + letter + 'Floating.png',
+			'src': 'img/frames/m15/crowns/m15Crown' + letter + 'Floating.png',
 			'masks': [],
 			'bounds': {
 				'height': 0.1024,
@@ -2105,7 +2105,7 @@ function makeBorderlessFrameByLetter(letter, mask = false, maskToRightHalf = fal
 		}
 		if (maskToRightHalf) {
 			frame.masks.push({
-				'src': '/img/frames/maskRightHalf.png',
+				'src': 'img/frames/maskRightHalf.png',
 				'name': 'Right Half'
 			});
 		}
@@ -2115,7 +2115,7 @@ function makeBorderlessFrameByLetter(letter, mask = false, maskToRightHalf = fal
 	if (mask == "Inner Crown") {
 		var frame = {
 			'name': frameName + ' ' + mask + ' (' + style + ')',
-			'src': '/img/frames/m15/innerCrowns/m15InnerCrown' + letter + style + '.png',
+			'src': 'img/frames/m15/innerCrowns/m15InnerCrown' + letter + style + '.png',
 			'masks': [],
 			'bounds': {
 				'height': 0.0239,
@@ -2126,7 +2126,7 @@ function makeBorderlessFrameByLetter(letter, mask = false, maskToRightHalf = fal
 		}
 		if (maskToRightHalf) {
 			frame.masks.push({
-				'src': '/img/frames/maskRightHalf.png',
+				'src': 'img/frames/maskRightHalf.png',
 				'name': 'Right Half'
 			});
 		}
@@ -2136,7 +2136,7 @@ function makeBorderlessFrameByLetter(letter, mask = false, maskToRightHalf = fal
 	if (mask == 'PT') {
 		return {
 			'name': frameName + ' Power/Toughness',
-			'src': '/img/frames/m15/borderless/pt/' + letter.toLowerCase() + '.png',
+			'src': 'img/frames/m15/borderless/pt/' + letter.toLowerCase() + '.png',
 			'masks': [],
 			'bounds': {
 				'height': 0.066666666666,
@@ -2149,7 +2149,7 @@ function makeBorderlessFrameByLetter(letter, mask = false, maskToRightHalf = fal
 
 	var frame = {
 		'name': frameName + ' Frame',
-		'src': '/img/frames/m15/borderless/m15GenericShowcaseFrame' + letter + '.png',
+		'src': 'img/frames/m15/borderless/m15GenericShowcaseFrame' + letter + '.png',
 	}
 
 	if (letter.includes('L') && letter.length > 1) {
@@ -2160,14 +2160,14 @@ function makeBorderlessFrameByLetter(letter, mask = false, maskToRightHalf = fal
 		if (mask == 'Pinline') {
 			frame.masks = [
 				{
-					'src': '/img/frames/m15/genericShowcase/m15GenericShowcaseMask' + mask + '.png',
+					'src': 'img/frames/m15/genericShowcase/m15GenericShowcaseMask' + mask + '.png',
 					'name': mask
 				}
 			];
 		} else {
 			frame.masks = [
 				{
-					'src': '/img/frames/m15/regular/m15Mask' + mask + '.png',
+					'src': 'img/frames/m15/regular/m15Mask' + mask + '.png',
 					'name': mask
 				}
 			];
@@ -2175,7 +2175,7 @@ function makeBorderlessFrameByLetter(letter, mask = false, maskToRightHalf = fal
 
 		if (maskToRightHalf) {
 			frame.masks.push({
-				'src': '/img/frames/maskRightHalf.png',
+				'src': 'img/frames/maskRightHalf.png',
 				'name': 'Right Half'
 			});
 		}
@@ -2222,7 +2222,7 @@ function make8thEditionFrameByLetter(letter, mask = false, maskToRightHalf = fal
 	if (mask == 'PT') {
 		return {
 			'name': frameName + ' Power/Toughness',
-			'src': '/img/frames/8th/pt/' + letter.toLowerCase() + '.png',
+			'src': 'img/frames/8th/pt/' + letter.toLowerCase() + '.png',
 			'masks': [],
 			'bounds': {
 				'height': 0.0839,
@@ -2235,7 +2235,7 @@ function make8thEditionFrameByLetter(letter, mask = false, maskToRightHalf = fal
 
 	var frame = {
 		'name': frameName + ' Frame',
-		'src': '/img/frames/8th/' + letter.toLowerCase() + '.png',
+		'src': 'img/frames/8th/' + letter.toLowerCase() + '.png',
 	}
 
 	if (letter.includes('L') && letter.length > 1) {
@@ -2245,7 +2245,7 @@ function make8thEditionFrameByLetter(letter, mask = false, maskToRightHalf = fal
 	if (mask) {
 		frame.masks = [
 			{
-				'src': '/img/frames/8th/' + mask.toLowerCase() + '.png',
+				'src': 'img/frames/8th/' + mask.toLowerCase() + '.png',
 				'name': mask
 			}
 		]
@@ -2256,7 +2256,7 @@ function make8thEditionFrameByLetter(letter, mask = false, maskToRightHalf = fal
 
 		if (maskToRightHalf) {
 			frame.masks.push({
-				'src': '/img/frames/maskRightHalf.png',
+				'src': 'img/frames/maskRightHalf.png',
 				'name': 'Right Half'
 			});
 		}
@@ -2296,7 +2296,7 @@ function makeExtendedArtFrameByLetter(letter, mask = false, maskToRightHalf = fa
 	if (mask == "Crown Border Cover") {
 		return {
 			'name': 'Legend Crown Border Cover',
-			'src': '/img/black.png',
+			'src': 'img/black.png',
 			'masks': [],
 			'bounds': {
 				'height': 0.0177,
@@ -2310,7 +2310,7 @@ function makeExtendedArtFrameByLetter(letter, mask = false, maskToRightHalf = fa
 	if (mask == "Legend Crown Outline") {
 		return {
 			'name': 'Legend Crown Outline',
-			'src': '/img/frames/m15/crowns/m15CrownFloatingOutline.png',
+			'src': 'img/frames/m15/crowns/m15CrownFloatingOutline.png',
 			'masks': [],
 			'bounds': {
 				'height': 0.1062,
@@ -2324,7 +2324,7 @@ function makeExtendedArtFrameByLetter(letter, mask = false, maskToRightHalf = fa
 	if (mask == "Crown") {
 		var frame = {
 			'name': frameName + ' Legend Crown',
-			'src': '/img/frames/m15/crowns/m15Crown' + letter + 'Floating.png',
+			'src': 'img/frames/m15/crowns/m15Crown' + letter + 'Floating.png',
 			'masks': [],
 			'bounds': {
 				'height': 0.1024,
@@ -2335,7 +2335,7 @@ function makeExtendedArtFrameByLetter(letter, mask = false, maskToRightHalf = fa
 		}
 		if (maskToRightHalf) {
 			frame.masks.push({
-				'src': '/img/frames/maskRightHalf.png',
+				'src': 'img/frames/maskRightHalf.png',
 				'name': 'Right Half'
 			});
 		}
@@ -2345,7 +2345,7 @@ function makeExtendedArtFrameByLetter(letter, mask = false, maskToRightHalf = fa
 	if (mask == "Crown Outline") {
 		var frame = {
 			'name': 'Legend Crown Outline',
-			'src': '/img/frames/m15/crowns/m15CrownFloatingOutline.png',
+			'src': 'img/frames/m15/crowns/m15CrownFloatingOutline.png',
 			'masks': [],
 			'bounds': {
 				'height': 0.1062,
@@ -2356,7 +2356,7 @@ function makeExtendedArtFrameByLetter(letter, mask = false, maskToRightHalf = fa
 		}
 		if (maskToRightHalf) {
 			frame.masks.push({
-				'src': '/img/frames/maskRightHalf.png',
+				'src': 'img/frames/maskRightHalf.png',
 				'name': 'Right Half'
 			});
 		}
@@ -2366,7 +2366,7 @@ function makeExtendedArtFrameByLetter(letter, mask = false, maskToRightHalf = fa
 	if (mask == "Inner Crown") {
 		var frame = {
 			'name': frameName + '(' + style + ')' + mask,
-			'src': '/img/frames/m15/innerCrowns/m15InnerCrown' + letter + style + '.png',
+			'src': 'img/frames/m15/innerCrowns/m15InnerCrown' + letter + style + '.png',
 			'masks': [],
 			'bounds': {
 				'height': 0.0239,
@@ -2377,7 +2377,7 @@ function makeExtendedArtFrameByLetter(letter, mask = false, maskToRightHalf = fa
 		}
 		if (maskToRightHalf) {
 			frame.masks.push({
-				'src': '/img/frames/maskRightHalf.png',
+				'src': 'img/frames/maskRightHalf.png',
 				'name': 'Right Half'
 			});
 		}
@@ -2387,7 +2387,7 @@ function makeExtendedArtFrameByLetter(letter, mask = false, maskToRightHalf = fa
 	if (mask == 'PT') {
 		return {
 			'name': frameName + ' Power/Toughness',
-			'src': '/img/frames/m15/regular/m15PT' + letter + '.png',
+			'src': 'img/frames/m15/regular/m15PT' + letter + '.png',
 			'masks': [],
 			'bounds': {
 				'height': 0.0733,
@@ -2403,14 +2403,14 @@ function makeExtendedArtFrameByLetter(letter, mask = false, maskToRightHalf = fa
 	}
 
 	if (style != 'regular') {
-		frame.src = '/img/frames/extended/regular/' + style.toLowerCase() + '/' + letter.toLowerCase() + '.png';
+		frame.src = 'img/frames/extended/regular/' + style.toLowerCase() + '/' + letter.toLowerCase() + '.png';
 		if (short) {
 			frame.src = frame.src.replace('/regular/', '/shorter/');
 		}
 	} else if (short) {
-		frame.src = '/img/frames/m15/boxTopper/short/' + letter.toLowerCase() + '.png';
+		frame.src = 'img/frames/m15/boxTopper/short/' + letter.toLowerCase() + '.png';
 	} else {
-		frame.src = '/img/frames/m15/boxTopper/m15BoxTopperFrame' + letter + '.png';
+		frame.src = 'img/frames/m15/boxTopper/m15BoxTopperFrame' + letter + '.png';
 	}
 
 	if (mask) {
@@ -2418,14 +2418,14 @@ function makeExtendedArtFrameByLetter(letter, mask = false, maskToRightHalf = fa
 			if (short) {
 				frame.masks = [
 					{
-						'src': '/img/frames/extended/shorter/titleCutout.png',
+						'src': 'img/frames/extended/shorter/titleCutout.png',
 						'name': 'Title Cutout'
 					}
 				]
 			} else {
 				frame.masks = [
 					{
-						'src': '/img/frames/m15/boxTopper/m15BoxTopperTitleCutout.png',
+						'src': 'img/frames/m15/boxTopper/m15BoxTopperTitleCutout.png',
 						'name': 'Title Cutout'
 					}
 				]
@@ -2435,14 +2435,14 @@ function makeExtendedArtFrameByLetter(letter, mask = false, maskToRightHalf = fa
 
 			frame.masks = [
 				{
-					'src': '/img/frames/m15/boxTopper/short/' + mask.toLowerCase().replace('rules', 'text') + extension,
+					'src': 'img/frames/m15/boxTopper/short/' + mask.toLowerCase().replace('rules', 'text') + extension,
 					'name': mask
 				}
 			]
 		} else {
 			frame.masks = [
 				{
-					'src': '/img/frames/m15/regular/m15Mask' + mask + '.png',
+					'src': 'img/frames/m15/regular/m15Mask' + mask + '.png',
 					'name': mask
 				}
 			]
@@ -2450,7 +2450,7 @@ function makeExtendedArtFrameByLetter(letter, mask = false, maskToRightHalf = fa
 
 		if (maskToRightHalf) {
 			frame.masks.push({
-				'src': '/img/frames/maskRightHalf.png',
+				'src': 'img/frames/maskRightHalf.png',
 				'name': 'Right Half'
 			});
 		}
@@ -2495,7 +2495,7 @@ function makeUBFrameByLetter(letter, mask = false, maskToRightHalf = false) {
 	if (mask == "Crown Border Cover") {
 		return {
 			'name': 'Legend Crown Border Cover',
-			'src': '/img/black.png',
+			'src': 'img/black.png',
 			'masks': [],
 			'bounds': {
 				'height': 0.0177,
@@ -2509,7 +2509,7 @@ function makeUBFrameByLetter(letter, mask = false, maskToRightHalf = false) {
 	if (mask == "Crown") {
 		var frame = {
 			'name': frameName + ' Legend Crown',
-			'src': '/img/frames/m15/ub/crowns/m15Crown' + letter + '.png',
+			'src': 'img/frames/m15/ub/crowns/m15Crown' + letter + '.png',
 			'masks': [],
 			'bounds': {
 				'height': 0.1667,
@@ -2520,7 +2520,7 @@ function makeUBFrameByLetter(letter, mask = false, maskToRightHalf = false) {
 		}
 		if (maskToRightHalf) {
 			frame.masks.push({
-				'src': '/img/frames/maskRightHalf.png',
+				'src': 'img/frames/maskRightHalf.png',
 				'name': 'Right Half'
 			});
 		}
@@ -2528,7 +2528,7 @@ function makeUBFrameByLetter(letter, mask = false, maskToRightHalf = false) {
 	} else if (mask == "Stamp") {
 		var frame = {
 			'name': frameName + ' Holo Stamp',
-			'src': '/img/frames/m15/ub/regular/stamp/' + letter.toLowerCase() + '.png',
+			'src': 'img/frames/m15/ub/regular/stamp/' + letter.toLowerCase() + '.png',
 			'masks': [],
 			'bounds': {
 				'height': 0.0486,
@@ -2539,7 +2539,7 @@ function makeUBFrameByLetter(letter, mask = false, maskToRightHalf = false) {
 		}
 		if (maskToRightHalf) {
 			frame.masks.push({
-				'src': '/img/frames/maskRightHalf.png',
+				'src': 'img/frames/maskRightHalf.png',
 				'name': 'Right Half'
 			});
 		}
@@ -2549,7 +2549,7 @@ function makeUBFrameByLetter(letter, mask = false, maskToRightHalf = false) {
 	if (mask == 'PT') {
 		return {
 			'name': frameName + ' Power/Toughness',
-			'src': '/img/frames/m15/ub/pt/' + (letter == 'L' ? 'C' : letter).toLowerCase() + '.png',
+			'src': 'img/frames/m15/ub/pt/' + (letter == 'L' ? 'C' : letter).toLowerCase() + '.png',
 			'masks': [],
 			'bounds': {
 				'height': 0.0733,
@@ -2562,20 +2562,20 @@ function makeUBFrameByLetter(letter, mask = false, maskToRightHalf = false) {
 
 	var frame = {
 		'name': frameName + ' Frame',
-		'src': '/img/frames/m15/ub/regular/' + letter.toLowerCase() + '.png',
+		'src': 'img/frames/m15/ub/regular/' + letter.toLowerCase() + '.png',
 	}
 
 	if (mask) {
 		frame.masks = [
 			{
-				'src': '/img/frames/m15/regular/m15Mask' + mask + '.png',
+				'src': 'img/frames/m15/regular/m15Mask' + mask + '.png',
 				'name': mask
 			}
 		]
 
 		if (maskToRightHalf) {
 			frame.masks.push({
-				'src': '/img/frames/maskRightHalf.png',
+				'src': 'img/frames/maskRightHalf.png',
 				'name': 'Right Half'
 			});
 		}
@@ -2620,7 +2620,7 @@ function makeCircuitFrameByLetter(letter, mask = false, maskToRightHalf = false)
 	if (mask == "Crown Border Cover") {
 		return {
 			'name': 'Legend Crown Border Cover',
-			'src': '/img/black.png',
+			'src': 'img/black.png',
 			'masks': [],
 			'bounds': {
 				'height': 0.0177,
@@ -2634,7 +2634,7 @@ function makeCircuitFrameByLetter(letter, mask = false, maskToRightHalf = false)
 	if (mask == "Crown") {
 		var frame = {
 			'name': frameName + ' Legend Crown',
-			'src': '/img/frames/m15/ub/crowns/m15Crown' + letter + '.png',
+			'src': 'img/frames/m15/ub/crowns/m15Crown' + letter + '.png',
 			'masks': [],
 			'bounds': {
 				'height': 0.1667,
@@ -2645,7 +2645,7 @@ function makeCircuitFrameByLetter(letter, mask = false, maskToRightHalf = false)
 		}
 		if (maskToRightHalf) {
 			frame.masks.push({
-				'src': '/img/frames/maskRightHalf.png',
+				'src': 'img/frames/maskRightHalf.png',
 				'name': 'Right Half'
 			});
 		}
@@ -2655,7 +2655,7 @@ function makeCircuitFrameByLetter(letter, mask = false, maskToRightHalf = false)
 	if (mask == 'PT') {
 		return {
 			'name': frameName + ' Power/Toughness',
-			'src': '/img/frames/m15/ub/pt/' + (letter == 'L' ? 'C' : letter).toLowerCase() + '.png',
+			'src': 'img/frames/m15/ub/pt/' + (letter == 'L' ? 'C' : letter).toLowerCase() + '.png',
 			'masks': [],
 			'bounds': {
 				'height': 0.0733,
@@ -2668,20 +2668,20 @@ function makeCircuitFrameByLetter(letter, mask = false, maskToRightHalf = false)
 
 	var frame = {
 		'name': frameName + ' Frame',
-		'src': '/img/frames/custom/circuit/' + letter.toLowerCase() + '.png',
+		'src': 'img/frames/custom/circuit/' + letter.toLowerCase() + '.png',
 	}
 
 	if (mask) {
 		frame.masks = [
 			{
-				'src': '/img/frames/m15/regular/m15Mask' + mask + '.png',
+				'src': 'img/frames/m15/regular/m15Mask' + mask + '.png',
 				'name': mask
 			}
 		]
 
 		if (maskToRightHalf) {
 			frame.masks.push({
-				'src': '/img/frames/maskRightHalf.png',
+				'src': 'img/frames/maskRightHalf.png',
 				'name': 'Right Half'
 			});
 		}
@@ -2723,7 +2723,7 @@ function makeEtchedFrameByLetter(letter, mask = false, maskToRightHalf = false, 
 	if (mask == "Crown Border Cover") {
 		return {
 			'name': 'Legend Crown Cover',
-			'src': '/img/frames/etched/regular/crowns/cover.svg',
+			'src': 'img/frames/etched/regular/crowns/cover.svg',
 			'masks': [],
 			'bounds': {	}
 		}
@@ -2732,7 +2732,7 @@ function makeEtchedFrameByLetter(letter, mask = false, maskToRightHalf = false, 
 	if (mask == "Crown") {
 		var frame = {
 			'name': frameName + ' Legend Crown',
-			'src': '/img/frames/etched/regular/crowns/' + letter.toLowerCase() + '.png',
+			'src': 'img/frames/etched/regular/crowns/' + letter.toLowerCase() + '.png',
 			'masks': [],
 			'bounds': {
 				'height': 0.092,
@@ -2743,7 +2743,7 @@ function makeEtchedFrameByLetter(letter, mask = false, maskToRightHalf = false, 
 		}
 		if (maskToRightHalf) {
 			frame.masks.push({
-				'src': '/img/frames/maskRightHalf.png',
+				'src': 'img/frames/maskRightHalf.png',
 				'name': 'Right Half'
 			});
 		}
@@ -2753,13 +2753,13 @@ function makeEtchedFrameByLetter(letter, mask = false, maskToRightHalf = false, 
 	if (mask == "Inner Crown") {
 		var frame = {
 			'name': frameName + ' Inner Crown',
-			'src': '/img/frames/etched/regular/innerCrowns/' + style.toLowerCase() + '/' + letter.toLowerCase() + '.png',
+			'src': 'img/frames/etched/regular/innerCrowns/' + style.toLowerCase() + '/' + letter.toLowerCase() + '.png',
 			'masks': [],
 			'bounds': {x:244/1500, y:51/2100, width:1012/1500, height:64/2100}
 		}
 		if (maskToRightHalf) {
 			frame.masks.push({
-				'src': '/img/frames/maskRightHalf.png',
+				'src': 'img/frames/maskRightHalf.png',
 				'name': 'Right Half'
 			});
 		}
@@ -2769,7 +2769,7 @@ function makeEtchedFrameByLetter(letter, mask = false, maskToRightHalf = false, 
 	if (mask == 'PT') {
 		return {
 			'name': frameName + ' Power/Toughness',
-			'src': '/img/frames/etched/regular/pt/' + letter.toLowerCase() + '.png',
+			'src': 'img/frames/etched/regular/pt/' + letter.toLowerCase() + '.png',
 			'masks': [],
 			'bounds': {
 				'height': 0.0733,
@@ -2782,7 +2782,7 @@ function makeEtchedFrameByLetter(letter, mask = false, maskToRightHalf = false, 
 
 	var frame = {
 		'name': frameName + ' Frame',
-		'src': '/img/frames/etched/regular/' + letter.toLowerCase() + '.png',
+		'src': 'img/frames/etched/regular/' + letter.toLowerCase() + '.png',
 	}
 
 	if (style != 'regular') {
@@ -2793,14 +2793,14 @@ function makeEtchedFrameByLetter(letter, mask = false, maskToRightHalf = false, 
 	if (mask) {
 		frame.masks = [
 			{
-				'src': '/img/frames/etched/regular/' + mask.toLowerCase() + '.svg',
+				'src': 'img/frames/etched/regular/' + mask.toLowerCase() + '.svg',
 				'name': mask
 			}
 		]
 
 		if (maskToRightHalf) {
 			frame.masks.push({
-				'src': '/img/frames/maskRightHalf.png',
+				'src': 'img/frames/maskRightHalf.png',
 				'name': 'Right Half'
 			});
 		}
@@ -2846,7 +2846,7 @@ function makePhyrexianFrameByLetter(letter, mask = false, maskToRightHalf = fals
 	if (mask == "Crown") {
 		var frame = {
 			'name': frameName + ' Legendary Crown',
-			'src': '/img/frames/m15/praetors/' + letter.toLowerCase() + 'Crown.png',
+			'src': 'img/frames/m15/praetors/' + letter.toLowerCase() + 'Crown.png',
 			'masks': [],
 			'bounds': {
 				'height': 100/2100,
@@ -2857,7 +2857,7 @@ function makePhyrexianFrameByLetter(letter, mask = false, maskToRightHalf = fals
 		}
 		if (maskToRightHalf) {
 			frame.masks.push({
-				'src': '/img/frames/maskRightHalf.png',
+				'src': 'img/frames/maskRightHalf.png',
 				'name': 'Right Half'
 			});
 		}
@@ -2867,7 +2867,7 @@ function makePhyrexianFrameByLetter(letter, mask = false, maskToRightHalf = fals
 	if (mask == 'PT') {
 		return {
 			'name': frameName + ' Power/Toughness',
-			'src': '/img/frames/m15/praetors/' + letter.toLowerCase() + 'pt.png',
+			'src': 'img/frames/m15/praetors/' + letter.toLowerCase() + 'pt.png',
 			'masks': [],
 			'bounds': {
 				'height': 0.0772,
@@ -2880,20 +2880,20 @@ function makePhyrexianFrameByLetter(letter, mask = false, maskToRightHalf = fals
 
 	var frame = {
 		'name': frameName + ' Frame',
-		'src': '/img/frames/m15/praetors/' + letter.toLowerCase() + '.png',
+		'src': 'img/frames/m15/praetors/' + letter.toLowerCase() + '.png',
 	}
 
 	if (mask == 'Type' || mask == 'Title') {
 		frame.masks = [
 			{
-				'src': '/img/frames/m15/regular/m15Mask' + mask + '.png',
+				'src': 'img/frames/m15/regular/m15Mask' + mask + '.png',
 				'name': mask
 			}
 		]
 
 		if (maskToRightHalf) {
 			frame.masks.push({
-				'src': '/img/frames/maskRightHalf.png',
+				'src': 'img/frames/maskRightHalf.png',
 				'name': 'Right Half'
 			});
 		}
@@ -2909,14 +2909,14 @@ function makePhyrexianFrameByLetter(letter, mask = false, maskToRightHalf = fals
 
 		frame.masks = [
 			{
-				'src': '/img/frames/m15/praetors/' + name + '.' + extension,
+				'src': 'img/frames/m15/praetors/' + name + '.' + extension,
 				'name': mask
 			}
 		]
 
 		if (maskToRightHalf) {
 			frame.masks.push({
-				'src': '/img/frames/maskRightHalf.png',
+				'src': 'img/frames/maskRightHalf.png',
 				'name': 'Right Half'
 			});
 		}
@@ -2958,21 +2958,21 @@ function makeSeventhEditionFrameByLetter(letter, mask = false, maskToRightHalf =
 
 	var frame = {
 		'name': frameName + ' Frame',
-		'src': '/img/frames/seventh/regular/' + letter.toLowerCase() + '.png'
+		'src': 'img/frames/seventh/regular/' + letter.toLowerCase() + '.png'
 	};
 
 	if (mask) {
 		if (mask == 'Textbox Pinline') {
 			frame.masks = [
 				{
-					'src': '/img/frames/seventh/regular/trim.svg',
+					'src': 'img/frames/seventh/regular/trim.svg',
 					'name': 'Textbox Pinline'
 				}
 			]
 		} else {
 			frame.masks = [
 				{
-					'src': '/img/frames/seventh/regular/' + mask.toLowerCase() + '.svg',
+					'src': 'img/frames/seventh/regular/' + mask.toLowerCase() + '.svg',
 					'name': mask
 				}
 			]
@@ -2980,7 +2980,7 @@ function makeSeventhEditionFrameByLetter(letter, mask = false, maskToRightHalf =
 
 		if (maskToRightHalf) {
 			frame.masks.push({
-				'src': '/img/frames/maskRightHalf.png',
+				'src': 'img/frames/maskRightHalf.png',
 				'name': 'Right Half'
 			});
 		}
@@ -3023,7 +3023,7 @@ async function addFrame(additionalMasks = [], loadingFrame = false) {
 		}
 	} else {
 		frameToAdd = loadingFrame;
-		if (frameToAdd.masks.length == 0 || (frameToAdd.masks[0].src.includes('/img/frames/mask'))) {
+		if (frameToAdd.masks.length == 0 || (frameToAdd.masks[0].src.includes('img/frames/mask'))) {
 			maskThumbnail = false;
 		}
 	}
@@ -3057,7 +3057,7 @@ async function addFrame(additionalMasks = [], loadingFrame = false) {
 	frameElement.ontouchmove = touchMove;
 	frameElement.onclick = frameElementClicked;
 	var frameElementImage = document.createElement('img');
-	if (frameToAdd.noThumb || frameToAdd.src.includes('/img/black.png')) {
+	if (frameToAdd.noThumb || frameToAdd.src.includes('img/black.png')) {
 		frameElementImage.src = fixUri(frameToAdd.src);
 	} else {
 		frameElementImage.src = fixUri(frameToAdd.src.replace('.png', 'Thumb.png'));
@@ -4306,9 +4306,9 @@ function fetchSetSymbol() {
 	}
 	var setRarity = document.querySelector('#set-symbol-rarity').value.toLowerCase().replace('uncommon', 'u').replace('common', 'c').replace('rare', 'r').replace('mythic', 'm') || 'c';
 	if (['sld', 'a22', 'a23', 'j22'].includes(setCode.toLowerCase())) {
-		uploadSetSymbol(fixUri(`/img/setSymbols/custom/${setCode.toLowerCase()}-${setRarity}.png`), 'resetSetSymbol');
+		uploadSetSymbol(fixUri(`img/setSymbols/custom/${setCode.toLowerCase()}-${setRarity}.png`), 'resetSetSymbol');
 	} else if (['cc', 'logan', 'joe'].includes(setCode.toLowerCase())) {
-		uploadSetSymbol(fixUri(`/img/setSymbols/custom/${setCode.toLowerCase()}-${setRarity}.svg`), 'resetSetSymbol');
+		uploadSetSymbol(fixUri(`img/setSymbols/custom/${setCode.toLowerCase()}-${setRarity}.svg`), 'resetSetSymbol');
 	} else if (document.querySelector("#set-symbol-source").value == 'gatherer') {
 		if (setSymbolAliases.has(setCode.toLowerCase())) setCode = setSymbolAliases.get(setCode.toLowerCase());
 		uploadSetSymbol('http://gatherer.wizards.com/Handlers/Image.ashx?type=symbol&set=' + setCode + '&size=large&rarity=' + setRarity, 'resetSetSymbol');
@@ -4321,7 +4321,7 @@ function fetchSetSymbol() {
 			extension = 'png';
 		}
 		if (setSymbolAliases.has(setCode.toLowerCase())) setCode = setSymbolAliases.get(setCode.toLowerCase());
-		uploadSetSymbol(fixUri(`/img/setSymbols/official/${setCode.toLowerCase()}-${setRarity}.` + extension), 'resetSetSymbol');
+		uploadSetSymbol(fixUri(`img/setSymbols/official/${setCode.toLowerCase()}-${setRarity}.` + extension), 'resetSetSymbol');
 	}
 }
 function lockSetSymbolCode() {
@@ -4704,7 +4704,7 @@ function drawCard() {
 }
 //DOWNLOADING
 function downloadCard(alt = false, jpeg = false) {
-	if (card.infoArtist.replace(/ /g, '') == '' && !card.artSource.includes('/img/blank.png') && !card.artZoom == 0) {
+	if (card.infoArtist.replace(/ /g, '') == '' && !card.artSource.includes('img/blank.png') && !card.artZoom == 0) {
 		notify('You must enter a proxy title before downloading!', 5);
 	} else {
 		// Prep file information
@@ -5326,7 +5326,7 @@ async function imageLocal(event, destination, otherParams) {
 		destination(reader.result, otherParams);
 	}
 	reader.onerror = function () {
-		destination('/img/blank.png', otherParams);
+		destination('img/blank.png', otherParams);
 	}
 	await reader.readAsDataURL(event.target.files[0]);
 }
@@ -5595,6 +5595,6 @@ bindInputs('#frame-editor-hsl-lightness', '#frame-editor-hsl-lightness-slider');
 bindInputs('#show-guidelines', '#show-guidelines-2', true);
 
 // Load / init whatever
-loadScript('/js/frames/groupStandard-3.js');
+loadScript('js/frames/groupStandard-3.js');
 loadAvailableCards();
 initDraggableArt();

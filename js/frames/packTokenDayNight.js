@@ -1,6 +1,6 @@
 //defines available frames
 availableFrames = [
-	{name:'White Frame', src:'/img/frames/token/dayNight/dayNight.png'}
+	{name:'White Frame', src:'img/frames/token/dayNight/dayNight.png'}
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;

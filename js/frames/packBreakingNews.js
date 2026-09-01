@@ -4,33 +4,33 @@ var ptBounds = {x:1507/2010, y:2464/2814, width:406/2010, height:200/2814};
 var crownBounds = {x:4/2010, y:2/2814, width:1965/2010, height:72/2814};
 //defines available frames
 availableFrames = [
-	{name:'White Frame', src:'/img/frames/breakingNews/w.png', masks:masks},
-	{name:'Blue Frame', src:'/img/frames/breakingNews/u.png', masks:masks},
-	{name:'Black Frame', src:'/img/frames/breakingNews/b.png', masks:masks},
-	{name:'Red Frame', src:'/img/frames/breakingNews/r.png', masks:masks},
-	{name:'Green Frame', src:'/img/frames/breakingNews/g.png', masks:masks},
-	{name:'Multicolored Frame', src:'/img/frames/breakingNews/m.png', masks:masks},
-	{name:'Artifact Frame', src:'/img/frames/breakingNews/a.png', masks:masks},
-	{name:'Land Frame', src:'/img/frames/breakingNews/l.png', masks:masks},
+	{name:'White Frame', src:'img/frames/breakingNews/w.png', masks:masks},
+	{name:'Blue Frame', src:'img/frames/breakingNews/u.png', masks:masks},
+	{name:'Black Frame', src:'img/frames/breakingNews/b.png', masks:masks},
+	{name:'Red Frame', src:'img/frames/breakingNews/r.png', masks:masks},
+	{name:'Green Frame', src:'img/frames/breakingNews/g.png', masks:masks},
+	{name:'Multicolored Frame', src:'img/frames/breakingNews/m.png', masks:masks},
+	{name:'Artifact Frame', src:'img/frames/breakingNews/a.png', masks:masks},
+	{name:'Land Frame', src:'img/frames/breakingNews/l.png', masks:masks},
 
-	{name:'White Power/Toughness Box', src:'/img/frames/breakingNews/pt/w.png', bounds:ptBounds},
-	{name:'Blue Power/Toughness Box', src:'/img/frames/breakingNews/pt/u.png', bounds:ptBounds},
-	{name:'Black Power/Toughness Box', src:'/img/frames/breakingNews/pt/b.png', bounds:ptBounds},
-	{name:'Red Power/Toughness Box', src:'/img/frames/breakingNews/pt/r.png', bounds:ptBounds},
-	{name:'Green Power/Toughness Box', src:'/img/frames/breakingNews/pt/g.png', bounds:ptBounds},
-	{name:'Multicolored Power/Toughness Box', src:'/img/frames/breakingNews/pt/m.png', bounds:ptBounds},
-	{name:'Artifact Power/Toughness Box', src:'/img/frames/breakingNews/pt/a.png', bounds:ptBounds},
+	{name:'White Power/Toughness Box', src:'img/frames/breakingNews/pt/w.png', bounds:ptBounds},
+	{name:'Blue Power/Toughness Box', src:'img/frames/breakingNews/pt/u.png', bounds:ptBounds},
+	{name:'Black Power/Toughness Box', src:'img/frames/breakingNews/pt/b.png', bounds:ptBounds},
+	{name:'Red Power/Toughness Box', src:'img/frames/breakingNews/pt/r.png', bounds:ptBounds},
+	{name:'Green Power/Toughness Box', src:'img/frames/breakingNews/pt/g.png', bounds:ptBounds},
+	{name:'Multicolored Power/Toughness Box', src:'img/frames/breakingNews/pt/m.png', bounds:ptBounds},
+	{name:'Artifact Power/Toughness Box', src:'img/frames/breakingNews/pt/a.png', bounds:ptBounds},
 
-	{name:'White Legendary Crown', src:'/img/frames/breakingNews/crown/w.png', bounds:crownBounds},
-	{name:'Blue Legendary Crown', src:'/img/frames/breakingNews/crown/u.png', bounds:crownBounds},
-	{name:'Black Legendary Crown', src:'/img/frames/breakingNews/crown/b.png', bounds:crownBounds},
-	{name:'Red Legendary Crown', src:'/img/frames/breakingNews/crown/r.png', bounds:crownBounds},
-	{name:'Green Legendary Crown', src:'/img/frames/breakingNews/crown/g.png', bounds:crownBounds},
-	{name:'Multicolored Legendary Crown', src:'/img/frames/breakingNews/crown/m.png', bounds:crownBounds},
-	{name:'Artifact Legendary Crown', src:'/img/frames/breakingNews/crown/a.png', bounds:crownBounds},
-	{name:'Land Legendary Crown', src:'/img/frames/breakingNews/crown/l.png', bounds:crownBounds},
+	{name:'White Legendary Crown', src:'img/frames/breakingNews/crown/w.png', bounds:crownBounds},
+	{name:'Blue Legendary Crown', src:'img/frames/breakingNews/crown/u.png', bounds:crownBounds},
+	{name:'Black Legendary Crown', src:'img/frames/breakingNews/crown/b.png', bounds:crownBounds},
+	{name:'Red Legendary Crown', src:'img/frames/breakingNews/crown/r.png', bounds:crownBounds},
+	{name:'Green Legendary Crown', src:'img/frames/breakingNews/crown/g.png', bounds:crownBounds},
+	{name:'Multicolored Legendary Crown', src:'img/frames/breakingNews/crown/m.png', bounds:crownBounds},
+	{name:'Artifact Legendary Crown', src:'img/frames/breakingNews/crown/a.png', bounds:crownBounds},
+	{name:'Land Legendary Crown', src:'img/frames/breakingNews/crown/l.png', bounds:crownBounds},
 
-	{name:'Holo Stamp', src:'/img/frames/breakingNews/stamp.png', bounds:{x:781/2010, y:2555/2814, width:447/2010, height:116/2814}}
+	{name:'Holo Stamp', src:'img/frames/breakingNews/stamp.png', bounds:{x:781/2010, y:2555/2814, width:447/2010, height:116/2814}}
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;
@@ -43,7 +43,7 @@ document.querySelector('#loadFrameVersion').onclick = async function() {
 
 	card.hideBottomInfoBorder = true;
 
-	loadScript('/js/frames/manaSymbolsBreakingNews.js');
+	loadScript('js/frames/manaSymbolsBreakingNews.js');
 
 	//art bounds
 	card.artBounds = {x:106/2010, y:479/2814, width:1802/2010, height:1135/2814};

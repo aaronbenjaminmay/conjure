@@ -1,16 +1,16 @@
 //Create objects for common properties across available frames
-var masks = [{src:'/img/frames/token/old/frame2.svg', name:'Colored Frame'}, {src:'/img/frames/token/old/text.svg', name:'Rules'}, {src:'/img/frames/token/old/frame.svg', name:'Generic Frame'}, {src:'/img/frames/token/old/border.svg', name:'Border'}];
+var masks = [{src:'img/frames/token/old/frame2.svg', name:'Colored Frame'}, {src:'img/frames/token/old/text.svg', name:'Rules'}, {src:'img/frames/token/old/frame.svg', name:'Generic Frame'}, {src:'img/frames/token/old/border.svg', name:'Border'}];
 //defines available frames
 availableFrames = [
-	{name:'White Frame', src:'/img/frames/token/old/w.png', masks:masks},
-	{name:'Blue Frame', src:'/img/frames/token/old/u.png', masks:masks},
-	{name:'Black Frame', src:'/img/frames/token/old/b.png', masks:masks},
-	{name:'Red Frame', src:'/img/frames/token/old/r.png', masks:masks},
-	{name:'Green Frame', src:'/img/frames/token/old/g.png', masks:masks},
-	{name:'Multicolored Frame', src:'/img/frames/token/old/m.png', masks:masks},
-	{name:'Artifact Frame', src:'/img/frames/token/old/a.png', masks:masks},
-	{name:'Land Frame', src:'/img/frames/token/old/l.png', masks:masks},
-	{name:'Colorless Frame', src:'/img/frames/token/old/c.png', masks:masks}
+	{name:'White Frame', src:'img/frames/token/old/w.png', masks:masks},
+	{name:'Blue Frame', src:'img/frames/token/old/u.png', masks:masks},
+	{name:'Black Frame', src:'img/frames/token/old/b.png', masks:masks},
+	{name:'Red Frame', src:'img/frames/token/old/r.png', masks:masks},
+	{name:'Green Frame', src:'img/frames/token/old/g.png', masks:masks},
+	{name:'Multicolored Frame', src:'img/frames/token/old/m.png', masks:masks},
+	{name:'Artifact Frame', src:'img/frames/token/old/a.png', masks:masks},
+	{name:'Land Frame', src:'img/frames/token/old/l.png', masks:masks},
+	{name:'Colorless Frame', src:'img/frames/token/old/c.png', masks:masks}
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;

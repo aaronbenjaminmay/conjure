@@ -1,13 +1,13 @@
 //defines available frames
 availableFrames = [
-	{name:'White Frame', src:'/img/frames/token/unglued/w.png'},
-	{name:'Blue Frame', src:'/img/frames/token/unglued/u.png'},
-	{name:'Black Frame', src:'/img/frames/token/unglued/b.png'},
-	{name:'Red Frame', src:'/img/frames/token/unglued/r.png'},
-	{name:'Green Frame', src:'/img/frames/token/unglued/g.png'},
-	{name:'Multicolored Frame', src:'/img/frames/token/unglued/m.png'},
-	{name:'Artifact Frame', src:'/img/frames/token/unglued/a.png'},
-	{name:'Land Frame', src:'/img/frames/token/unglued/l.png'}
+	{name:'White Frame', src:'img/frames/token/unglued/w.png'},
+	{name:'Blue Frame', src:'img/frames/token/unglued/u.png'},
+	{name:'Black Frame', src:'img/frames/token/unglued/b.png'},
+	{name:'Red Frame', src:'img/frames/token/unglued/r.png'},
+	{name:'Green Frame', src:'img/frames/token/unglued/g.png'},
+	{name:'Multicolored Frame', src:'img/frames/token/unglued/m.png'},
+	{name:'Artifact Frame', src:'img/frames/token/unglued/a.png'},
+	{name:'Land Frame', src:'img/frames/token/unglued/l.png'}
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;

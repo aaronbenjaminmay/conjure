@@ -1,6 +1,6 @@
 //checks to see if it needs to run
-if (!card.manaSymbols.includes('/js/frames/manaSymbolsPokemon.js')) {
-	card.manaSymbols.push('/js/frames/manaSymbolsPokemon.js');
+if (!card.manaSymbols.includes('js/frames/manaSymbolsPokemon.js')) {
+	card.manaSymbols.push('js/frames/manaSymbolsPokemon.js');
 }
 if (!mana.get('pokemonw')) {
 	loadManaSymbols([

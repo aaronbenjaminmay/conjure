@@ -1,27 +1,27 @@
 //Create objects for common properties across available frames
-var masks = [{src:'/img/frames/seventh/regular/pinline.svg', name:'Pinline'}, {src:'/img/frames/seventh/regular/rules.svg', name:'Rules'}, {src:'/img/frames/seventh/regular/frame.svg', name:'Frame'}, {src:'/img/frames/seventh/regular/trim.svg', name:'Textbox Pinline'}, {src:'/img/frames/seventh/regular/dual.svg', name:'Dual Land'}, {src:'/img/frames/seventh/regular/border.svg', name:'Border'}];
-var borderMask = [{src:'/img/frames/seventh/regular/border.svg', name:'Border'}];
+var masks = [{src:'img/frames/seventh/regular/pinline.svg', name:'Pinline'}, {src:'img/frames/seventh/regular/rules.svg', name:'Rules'}, {src:'img/frames/seventh/regular/frame.svg', name:'Frame'}, {src:'img/frames/seventh/regular/trim.svg', name:'Textbox Pinline'}, {src:'img/frames/seventh/regular/dual.svg', name:'Dual Land'}, {src:'img/frames/seventh/regular/border.svg', name:'Border'}];
+var borderMask = [{src:'img/frames/seventh/regular/border.svg', name:'Border'}];
 var bounds = {x:0.3354, y:0.6239, width:0.33, height:0.2386};
 //defines available frames
 availableFrames = [
-	{name:'White Frame', src:'/img/frames/seventh/snowlands/wl.png', masks:masks},
-	{name:'Blue Frame', src:'/img/frames/seventh/snowlands/ul.png', masks:masks},
-	{name:'Black Frame', src:'/img/frames/seventh/snowlands/bl.png', masks:masks},
-	{name:'Red Frame', src:'/img/frames/seventh/snowlands/rl.png', masks:masks},
-	{name:'Green Frame', src:'/img/frames/seventh/snowlands/gl.png', masks:masks},
-	{name:'Land Frame', src:'/img/frames/seventh/snowlands/l.png', masks:masks},
-	{name:'Tombstone Icon', src:'/img/frames/old/icons/tombstone.svg', bounds: {x:0.0687, y:0.0491, width:0.0338, height:0.0329}},
-	{name:'Plains Watermark', src:'/img/frames/m15/basics/w.png', bounds:bounds},
-	{name:'Island Watermark', src:'/img/frames/m15/basics/u.png', bounds:bounds},
-	{name:'Swamp Watermark', src:'/img/frames/m15/basics/b.png', bounds:bounds},
-	{name:'Mountain Watermark', src:'/img/frames/m15/basics/r.png', bounds:bounds},
-	{name:'Forest Watermark', src:'/img/frames/m15/basics/g.png', bounds:bounds},
-	{name:'Wastes Watermark', src:'/img/frames/m15/basics/c.png', bounds:bounds},
-	{name:'DCI Star', src:'/img/frames/seventh/foilStar.svg'},
-	{name:'Foil Layer', src:'/img/frames/effects/foil.png', opacity:20, masks:[{src:'/img/frames/seventh/foil.svg', name:'With Star'}, {src:'/img/frames/seventh/foil2.svg', name:'Without Star'}]},
-	{name:'White Border', src:'/img/frames/white.png', masks:borderMask, noDefaultMask:true},
-	{name:'Silver Border', src:'/img/frames/silver.png', masks:borderMask, noDefaultMask:true},
-	{name:'Gold Border', src:'/img/frames/gold.png', masks:borderMask, noDefaultMask:true}
+	{name:'White Frame', src:'img/frames/seventh/snowlands/wl.png', masks:masks},
+	{name:'Blue Frame', src:'img/frames/seventh/snowlands/ul.png', masks:masks},
+	{name:'Black Frame', src:'img/frames/seventh/snowlands/bl.png', masks:masks},
+	{name:'Red Frame', src:'img/frames/seventh/snowlands/rl.png', masks:masks},
+	{name:'Green Frame', src:'img/frames/seventh/snowlands/gl.png', masks:masks},
+	{name:'Land Frame', src:'img/frames/seventh/snowlands/l.png', masks:masks},
+	{name:'Tombstone Icon', src:'img/frames/old/icons/tombstone.svg', bounds: {x:0.0687, y:0.0491, width:0.0338, height:0.0329}},
+	{name:'Plains Watermark', src:'img/frames/m15/basics/w.png', bounds:bounds},
+	{name:'Island Watermark', src:'img/frames/m15/basics/u.png', bounds:bounds},
+	{name:'Swamp Watermark', src:'img/frames/m15/basics/b.png', bounds:bounds},
+	{name:'Mountain Watermark', src:'img/frames/m15/basics/r.png', bounds:bounds},
+	{name:'Forest Watermark', src:'img/frames/m15/basics/g.png', bounds:bounds},
+	{name:'Wastes Watermark', src:'img/frames/m15/basics/c.png', bounds:bounds},
+	{name:'DCI Star', src:'img/frames/seventh/foilStar.svg'},
+	{name:'Foil Layer', src:'img/frames/effects/foil.png', opacity:20, masks:[{src:'img/frames/seventh/foil.svg', name:'With Star'}, {src:'img/frames/seventh/foil2.svg', name:'Without Star'}]},
+	{name:'White Border', src:'img/frames/white.png', masks:borderMask, noDefaultMask:true},
+	{name:'Silver Border', src:'img/frames/silver.png', masks:borderMask, noDefaultMask:true},
+	{name:'Gold Border', src:'img/frames/gold.png', masks:borderMask, noDefaultMask:true}
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;

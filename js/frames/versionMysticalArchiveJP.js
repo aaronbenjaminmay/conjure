@@ -1,6 +1,6 @@
 //checks to see if it needs to run
-if (!loadedVersions.includes('/js/frames/versionMysticalArchiveJP.js')) {
-	loadedVersions.push('/js/frames/versionMysticalArchiveJP.js');
+if (!loadedVersions.includes('js/frames/versionMysticalArchiveJP.js')) {
+	loadedVersions.push('js/frames/versionMysticalArchiveJP.js');
 	document.querySelector('#creator-menu-tabs').innerHTML += '<h3 class="selectable readable-background" onclick="toggleCreatorTabs(event, `mysticalArchive`)">Mystical Archive</h3>';
 	var newHTML = document.createElement('div');
 	newHTML.id = 'creator-menu-mysticalArchive';
@@ -19,7 +19,7 @@ if (!loadedVersions.includes('/js/frames/versionMysticalArchiveJP.js')) {
 		<input id='ma-targets' class='input' type='text' oninput='stretchMysticalArchive();'>
 	</div> -->`;
 	document.querySelector('#creator-menu-sections').appendChild(newHTML);
-	loadScript('/js/frames/manaSymbolsMysticalArchiveJP.js');
+	loadScript('js/frames/manaSymbolsMysticalArchiveJP.js');
 }
 
 function stretchMysticalArchive() {

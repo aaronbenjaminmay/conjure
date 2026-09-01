@@ -1,44 +1,44 @@
 //Create objects for common properties across available frames
-var masks = [{src:'/img/frames/m15/regular/m15MaskPinlineSuper.png', name:'Pinline'}, {src:'/img/frames/m15/regular/m15MaskType.png', name:'Type'}, {src:'/img/frames/m15/regular/m15MaskRules.png', name:'Rules'}, {src:'/img/frames/m15/regular/m15MaskBorder.png', name:'Border'}];
-var masks2 = [{src:'/img/frames/m15/nickname/m15MaskNicknameLegendCrownStrokeless.png', name:'Strokeless Crown'}, {src:'/img/frames/m15/regular/m15MaskTitle.png', name:'Title'}, {src:'/img/frames/m15/nickname/m15NicknameMaskTrueName.png', name:'True Title'}];
-var masks3 = [{src:'/img/frames/m15/nickname/m15MaskNicknameTitleStrokeless.png', name:'Strokeless Title'}, {src:'/img/frames/m15/regular/m15MaskTitle.png', name:'Title'}, {src:'/img/frames/m15/nickname/m15NicknameMaskTrueName.png', name:'True Title'}, {src:'/img/frames/m15/nickname/truenameAddon.svg', name:'Lower Section'}];
+var masks = [{src:'img/frames/m15/regular/m15MaskPinlineSuper.png', name:'Pinline'}, {src:'img/frames/m15/regular/m15MaskType.png', name:'Type'}, {src:'img/frames/m15/regular/m15MaskRules.png', name:'Rules'}, {src:'img/frames/m15/regular/m15MaskBorder.png', name:'Border'}];
+var masks2 = [{src:'img/frames/m15/nickname/m15MaskNicknameLegendCrownStrokeless.png', name:'Strokeless Crown'}, {src:'img/frames/m15/regular/m15MaskTitle.png', name:'Title'}, {src:'img/frames/m15/nickname/m15NicknameMaskTrueName.png', name:'True Title'}];
+var masks3 = [{src:'img/frames/m15/nickname/m15MaskNicknameTitleStrokeless.png', name:'Strokeless Title'}, {src:'img/frames/m15/regular/m15MaskTitle.png', name:'Title'}, {src:'img/frames/m15/nickname/m15NicknameMaskTrueName.png', name:'True Title'}, {src:'img/frames/m15/nickname/truenameAddon.svg', name:'Lower Section'}];
 var bounds = {x:0.7573, y:0.8848, width:0.188, height:0.0733};
 var bounds2 = {x:0.024, y:0.0172, width:0.952, height:0.1286};
 var bounds3 = {x:0.0494, y:0.0405, width:0.9014, height:0.1053};
 //defines available frames
 availableFrames = [
-	{name:'White Frame', src:'/img/frames/m15/nickname/m15NicknameFrameW.png', masks:masks},
-	{name:'Blue Frame', src:'/img/frames/m15/nickname/m15NicknameFrameU.png', masks:masks},
-	{name:'Black Frame', src:'/img/frames/m15/nickname/m15NicknameFrameB.png', masks:masks},
-	{name:'Red Frame', src:'/img/frames/m15/nickname/m15NicknameFrameR.png', masks:masks},
-	{name:'Green Frame', src:'/img/frames/m15/nickname/m15NicknameFrameG.png', masks:masks},
-	{name:'Multicolored Frame', src:'/img/frames/m15/nickname/m15NicknameFrameM.png', masks:masks},
-	{name:'Artifact Frame', src:'/img/frames/m15/nickname/m15NicknameFrameA.png', masks:masks},
-	{name:'Land Frame', src:'/img/frames/m15/nickname/m15NicknameFrameL.png', masks:masks},
-	{name:'White Crown', src:'/img/frames/m15/nickname/m15NicknameCrownW.png', masks:masks2, bounds:bounds2},
-	{name:'Blue Crown', src:'/img/frames/m15/nickname/m15NicknameCrownU.png', masks:masks2, bounds:bounds2},
-	{name:'Black Crown', src:'/img/frames/m15/nickname/m15NicknameCrownB.png', masks:masks2, bounds:bounds2},
-	{name:'Red Crown', src:'/img/frames/m15/nickname/m15NicknameCrownR.png', masks:masks2, bounds:bounds2},
-	{name:'Green Crown', src:'/img/frames/m15/nickname/m15NicknameCrownG.png', masks:masks2, bounds:bounds2},
-	{name:'Multicolored Crown', src:'/img/frames/m15/nickname/m15NicknameCrownM.png', masks:masks2, bounds:bounds2},
-	{name:'Artifact Crown', src:'/img/frames/m15/nickname/m15NicknameCrownA.png', masks:masks2, bounds:bounds2},
-	{name:'Land Crown', src:'/img/frames/m15/nickname/m15NicknameCrownL.png', masks:masks2, bounds:bounds2},
-	{name:'White Title', src:'/img/frames/m15/nickname/m15NicknameTitleW.png', masks:masks3, bounds:bounds3},
-	{name:'Blue Title', src:'/img/frames/m15/nickname/m15NicknameTitleU.png', masks:masks3, bounds:bounds3},
-	{name:'Black Title', src:'/img/frames/m15/nickname/m15NicknameTitleB.png', masks:masks3, bounds:bounds3},
-	{name:'Red Title', src:'/img/frames/m15/nickname/m15NicknameTitleR.png', masks:masks3, bounds:bounds3},
-	{name:'Green Title', src:'/img/frames/m15/nickname/m15NicknameTitleG.png', masks:masks3, bounds:bounds3},
-	{name:'Multicolored Title', src:'/img/frames/m15/nickname/m15NicknameTitleM.png', masks:masks3, bounds:bounds3},
-	{name:'Artifact Title', src:'/img/frames/m15/nickname/m15NicknameTitleA.png', masks:masks3, bounds:bounds3},
-	{name:'Land Title', src:'/img/frames/m15/nickname/m15NicknameTitleL.png', masks:masks3, bounds:bounds3},
-	{name:'White Power/Toughness', src:'/img/frames/m15/nickname/m15NicknamePTW.png', bounds:bounds},
-	{name:'Blue Power/Toughness', src:'/img/frames/m15/nickname/m15NicknamePTU.png', bounds:bounds},
-	{name:'Black Power/Toughness', src:'/img/frames/m15/nickname/m15NicknamePTB.png', bounds:bounds},
-	{name:'Red Power/Toughness', src:'/img/frames/m15/nickname/m15NicknamePTR.png', bounds:bounds},
-	{name:'Green Power/Toughness', src:'/img/frames/m15/nickname/m15NicknamePTG.png', bounds:bounds},
-	{name:'Multicolored Power/Toughness', src:'/img/frames/m15/nickname/m15NicknamePTM.png', bounds:bounds},
-	{name:'Artifact Power/Toughness', src:'/img/frames/m15/nickname/m15NicknamePTA.png', bounds:bounds},
-	{name:'Colorless Power/Toughness', src:'/img/frames/m15/nickname/m15NicknamePTC.png', bounds:bounds}
+	{name:'White Frame', src:'img/frames/m15/nickname/m15NicknameFrameW.png', masks:masks},
+	{name:'Blue Frame', src:'img/frames/m15/nickname/m15NicknameFrameU.png', masks:masks},
+	{name:'Black Frame', src:'img/frames/m15/nickname/m15NicknameFrameB.png', masks:masks},
+	{name:'Red Frame', src:'img/frames/m15/nickname/m15NicknameFrameR.png', masks:masks},
+	{name:'Green Frame', src:'img/frames/m15/nickname/m15NicknameFrameG.png', masks:masks},
+	{name:'Multicolored Frame', src:'img/frames/m15/nickname/m15NicknameFrameM.png', masks:masks},
+	{name:'Artifact Frame', src:'img/frames/m15/nickname/m15NicknameFrameA.png', masks:masks},
+	{name:'Land Frame', src:'img/frames/m15/nickname/m15NicknameFrameL.png', masks:masks},
+	{name:'White Crown', src:'img/frames/m15/nickname/m15NicknameCrownW.png', masks:masks2, bounds:bounds2},
+	{name:'Blue Crown', src:'img/frames/m15/nickname/m15NicknameCrownU.png', masks:masks2, bounds:bounds2},
+	{name:'Black Crown', src:'img/frames/m15/nickname/m15NicknameCrownB.png', masks:masks2, bounds:bounds2},
+	{name:'Red Crown', src:'img/frames/m15/nickname/m15NicknameCrownR.png', masks:masks2, bounds:bounds2},
+	{name:'Green Crown', src:'img/frames/m15/nickname/m15NicknameCrownG.png', masks:masks2, bounds:bounds2},
+	{name:'Multicolored Crown', src:'img/frames/m15/nickname/m15NicknameCrownM.png', masks:masks2, bounds:bounds2},
+	{name:'Artifact Crown', src:'img/frames/m15/nickname/m15NicknameCrownA.png', masks:masks2, bounds:bounds2},
+	{name:'Land Crown', src:'img/frames/m15/nickname/m15NicknameCrownL.png', masks:masks2, bounds:bounds2},
+	{name:'White Title', src:'img/frames/m15/nickname/m15NicknameTitleW.png', masks:masks3, bounds:bounds3},
+	{name:'Blue Title', src:'img/frames/m15/nickname/m15NicknameTitleU.png', masks:masks3, bounds:bounds3},
+	{name:'Black Title', src:'img/frames/m15/nickname/m15NicknameTitleB.png', masks:masks3, bounds:bounds3},
+	{name:'Red Title', src:'img/frames/m15/nickname/m15NicknameTitleR.png', masks:masks3, bounds:bounds3},
+	{name:'Green Title', src:'img/frames/m15/nickname/m15NicknameTitleG.png', masks:masks3, bounds:bounds3},
+	{name:'Multicolored Title', src:'img/frames/m15/nickname/m15NicknameTitleM.png', masks:masks3, bounds:bounds3},
+	{name:'Artifact Title', src:'img/frames/m15/nickname/m15NicknameTitleA.png', masks:masks3, bounds:bounds3},
+	{name:'Land Title', src:'img/frames/m15/nickname/m15NicknameTitleL.png', masks:masks3, bounds:bounds3},
+	{name:'White Power/Toughness', src:'img/frames/m15/nickname/m15NicknamePTW.png', bounds:bounds},
+	{name:'Blue Power/Toughness', src:'img/frames/m15/nickname/m15NicknamePTU.png', bounds:bounds},
+	{name:'Black Power/Toughness', src:'img/frames/m15/nickname/m15NicknamePTB.png', bounds:bounds},
+	{name:'Red Power/Toughness', src:'img/frames/m15/nickname/m15NicknamePTR.png', bounds:bounds},
+	{name:'Green Power/Toughness', src:'img/frames/m15/nickname/m15NicknamePTG.png', bounds:bounds},
+	{name:'Multicolored Power/Toughness', src:'img/frames/m15/nickname/m15NicknamePTM.png', bounds:bounds},
+	{name:'Artifact Power/Toughness', src:'img/frames/m15/nickname/m15NicknamePTA.png', bounds:bounds},
+	{name:'Colorless Power/Toughness', src:'img/frames/m15/nickname/m15NicknamePTC.png', bounds:bounds}
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;

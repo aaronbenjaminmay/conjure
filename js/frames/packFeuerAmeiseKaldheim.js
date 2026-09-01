@@ -1,17 +1,17 @@
 //Create objects for common properties across available frames
-var masks = [{src:'/img/frames/custom/feuerAmeise/kaldheim/pinline.svg', name:'Pinline'}, {src:'/img/frames/custom/feuerAmeise/kaldheim/pinline2.svg', name:'Pinline (Light)'}, {src:'/img/frames/custom/feuerAmeise/kaldheim/background.svg', name:'Background'}];
+var masks = [{src:'img/frames/custom/feuerAmeise/kaldheim/pinline.svg', name:'Pinline'}, {src:'img/frames/custom/feuerAmeise/kaldheim/pinline2.svg', name:'Pinline (Light)'}, {src:'img/frames/custom/feuerAmeise/kaldheim/background.svg', name:'Background'}];
 //defines available frames
 availableFrames = [
-	{name:'White Frame', src:'/img/frames/custom/feuerAmeise/kaldheim/w.png', masks:masks},
-	{name:'Blue Frame', src:'/img/frames/custom/feuerAmeise/kaldheim/u.png', masks:masks},
-	{name:'Black Frame', src:'/img/frames/custom/feuerAmeise/kaldheim/b.png', masks:masks},
-	{name:'Red Frame', src:'/img/frames/custom/feuerAmeise/kaldheim/r.png', masks:masks},
-	{name:'Green Frame', src:'/img/frames/custom/feuerAmeise/kaldheim/g.png', masks:masks},
-	{name:'Multicolored Frame', src:'/img/frames/custom/feuerAmeise/kaldheim/m.png', masks:masks},
-	{name:'Artifact Frame', src:'/img/frames/custom/feuerAmeise/kaldheim/a.png', masks:masks},
-	{name:'Land Frame', src:'/img/frames/custom/feuerAmeise/kaldheim/l.png', masks:masks},
-	{name:'Snow Overlay', src:'/img/frames/custom/feuerAmeise/kaldheim/snow.png'},
-	{name:'Textbox', src:'/img/frames/custom/feuerAmeise/kaldheim/textbox.svg'}
+	{name:'White Frame', src:'img/frames/custom/feuerAmeise/kaldheim/w.png', masks:masks},
+	{name:'Blue Frame', src:'img/frames/custom/feuerAmeise/kaldheim/u.png', masks:masks},
+	{name:'Black Frame', src:'img/frames/custom/feuerAmeise/kaldheim/b.png', masks:masks},
+	{name:'Red Frame', src:'img/frames/custom/feuerAmeise/kaldheim/r.png', masks:masks},
+	{name:'Green Frame', src:'img/frames/custom/feuerAmeise/kaldheim/g.png', masks:masks},
+	{name:'Multicolored Frame', src:'img/frames/custom/feuerAmeise/kaldheim/m.png', masks:masks},
+	{name:'Artifact Frame', src:'img/frames/custom/feuerAmeise/kaldheim/a.png', masks:masks},
+	{name:'Land Frame', src:'img/frames/custom/feuerAmeise/kaldheim/l.png', masks:masks},
+	{name:'Snow Overlay', src:'img/frames/custom/feuerAmeise/kaldheim/snow.png'},
+	{name:'Textbox', src:'img/frames/custom/feuerAmeise/kaldheim/textbox.svg'}
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;

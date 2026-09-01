@@ -1,6 +1,6 @@
 //checks to see if it needs to run
-if (!loadedVersions.includes('/js/frames/versionSaga.js')) {
-	loadedVersions.push('/js/frames/versionSaga.js');
+if (!loadedVersions.includes('js/frames/versionSaga.js')) {
+	loadedVersions.push('js/frames/versionSaga.js');
 	sizeCanvas('saga');
 	document.querySelector('#creator-menu-tabs').innerHTML += '<h3 class="selectable readable-background" onclick="toggleCreatorTabs(event, `saga`)">Saga</h3>';
 	var newHTML = document.createElement('div');
@@ -35,9 +35,9 @@ if (!loadedVersions.includes('/js/frames/versionSaga.js')) {
 	}
 	document.querySelector('#creator-menu-sections').appendChild(newHTML);
 	var sagaChapter = new Image();
-	setImageUrl(sagaChapter, '/img/frames/saga/sagaChapter.png');
+	setImageUrl(sagaChapter, 'img/frames/saga/sagaChapter.png');
 	var sagaDivider = new Image();
-	setImageUrl(sagaDivider, '/img/frames/saga/sagaDivider.png');
+	setImageUrl(sagaDivider, 'img/frames/saga/sagaDivider.png');
 	sagaChapter.onload = sagaDivider.onload = sagaEdited;
 	fixSagaInputs(sagaEdited);
 }

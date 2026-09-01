@@ -165,7 +165,7 @@ body,
 .creator-menu select.input {
 	appearance: none;
 	-webkit-appearance: none;
-	background-image: url('/img/quickMode/chevron-down.svg');
+	background-image: url('img/quickMode/chevron-down.svg');
 	background-repeat: no-repeat;
 	background-position: right 16px center;
 	background-size: 14px;
@@ -201,7 +201,7 @@ body,
 	height: 100%;
 	border: none;
 	transform: none;
-	background-image: url('/img/quickMode/check.svg');
+	background-image: url('img/quickMode/check.svg');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 12px;

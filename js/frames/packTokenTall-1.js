@@ -1,26 +1,26 @@
 //Create objects for common properties across available frames
-var masks = [{src:'/img/frames/m15/regular/m15MaskPinline.png', name:'Pinline'}, {src:'/img/frames/m15/regular/m15MaskTitle.png', name:'Title'}, {src:'/img/frames/m15/regular/m15MaskType.png', name:'Type'}, {src:'/img/frames/m15/regular/m15MaskRules.png', name:'Rules'}, {src:'/img/frames/m15/regular/m15MaskBorder.png', name:'Border'}];
+var masks = [{src:'img/frames/m15/regular/m15MaskPinline.png', name:'Pinline'}, {src:'img/frames/m15/regular/m15MaskTitle.png', name:'Title'}, {src:'img/frames/m15/regular/m15MaskType.png', name:'Type'}, {src:'img/frames/m15/regular/m15MaskRules.png', name:'Rules'}, {src:'img/frames/m15/regular/m15MaskBorder.png', name:'Border'}];
 var bounds = {x:0.7573, y:0.8848, width:0.188, height:0.0733};
 //defines available frames
 availableFrames = [
-	{name:'White Frame', src:'/img/frames/token/tall/tokenFrameWTall.png', masks:masks},
-	{name:'Blue Frame', src:'/img/frames/token/tall/tokenFrameUTall.png', masks:masks},
-	{name:'Black Frame', src:'/img/frames/token/tall/tokenFrameBTall.png', masks:masks},
-	{name:'Red Frame', src:'/img/frames/token/tall/tokenFrameRTall.png', masks:masks},
-	{name:'Green Frame', src:'/img/frames/token/tall/tokenFrameGTall.png', masks:masks},
-	{name:'Multicolored Frame', src:'/img/frames/token/tall/tokenFrameMTall.png', masks:masks},
-	{name:'Artifact Frame', src:'/img/frames/token/tall/tokenFrameATall.png', masks:masks},
-	{name:'Land Frame', src:'/img/frames/token/tall/tokenFrameLTall.png', masks:masks},
-	{name:'Colorless Frame', src:'/img/frames/token/tall/frameC.png', masks:masks},
-	{name:'Snow Frame', src:'/img/frames/token/tall/snow.png', masks:masks},
-	{name:'White Power/Toughness', src:'/img/frames/m15/regular/m15PTW.png', bounds:bounds},
-	{name:'Blue Power/Toughness', src:'/img/frames/m15/regular/m15PTU.png', bounds:bounds},
-	{name:'Black Power/Toughness', src:'/img/frames/m15/regular/m15PTB.png', bounds:bounds},
-	{name:'Red Power/Toughness', src:'/img/frames/m15/regular/m15PTR.png', bounds:bounds},
-	{name:'Green Power/Toughness', src:'/img/frames/m15/regular/m15PTG.png', bounds:bounds},
-	{name:'Multicolored Power/Toughness', src:'/img/frames/m15/regular/m15PTM.png', bounds:bounds},
-	{name:'Artifact Power/Toughness', src:'/img/frames/m15/regular/m15PTA.png', bounds:bounds},
-	{name:'Colorless Power/Toughness', src:'/img/frames/m15/regular/m15PTC.png', bounds:bounds}
+	{name:'White Frame', src:'img/frames/token/tall/tokenFrameWTall.png', masks:masks},
+	{name:'Blue Frame', src:'img/frames/token/tall/tokenFrameUTall.png', masks:masks},
+	{name:'Black Frame', src:'img/frames/token/tall/tokenFrameBTall.png', masks:masks},
+	{name:'Red Frame', src:'img/frames/token/tall/tokenFrameRTall.png', masks:masks},
+	{name:'Green Frame', src:'img/frames/token/tall/tokenFrameGTall.png', masks:masks},
+	{name:'Multicolored Frame', src:'img/frames/token/tall/tokenFrameMTall.png', masks:masks},
+	{name:'Artifact Frame', src:'img/frames/token/tall/tokenFrameATall.png', masks:masks},
+	{name:'Land Frame', src:'img/frames/token/tall/tokenFrameLTall.png', masks:masks},
+	{name:'Colorless Frame', src:'img/frames/token/tall/frameC.png', masks:masks},
+	{name:'Snow Frame', src:'img/frames/token/tall/snow.png', masks:masks},
+	{name:'White Power/Toughness', src:'img/frames/m15/regular/m15PTW.png', bounds:bounds},
+	{name:'Blue Power/Toughness', src:'img/frames/m15/regular/m15PTU.png', bounds:bounds},
+	{name:'Black Power/Toughness', src:'img/frames/m15/regular/m15PTB.png', bounds:bounds},
+	{name:'Red Power/Toughness', src:'img/frames/m15/regular/m15PTR.png', bounds:bounds},
+	{name:'Green Power/Toughness', src:'img/frames/m15/regular/m15PTG.png', bounds:bounds},
+	{name:'Multicolored Power/Toughness', src:'img/frames/m15/regular/m15PTM.png', bounds:bounds},
+	{name:'Artifact Power/Toughness', src:'img/frames/m15/regular/m15PTA.png', bounds:bounds},
+	{name:'Colorless Power/Toughness', src:'img/frames/m15/regular/m15PTC.png', bounds:bounds}
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;

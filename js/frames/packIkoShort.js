@@ -1,36 +1,36 @@
 //Create objects for common properties across available frames
-var masks = [{src:'/img/frames/iko/short/pinline.svg', name:'Pinline'}, {src:'/img/frames/m15/regular/m15MaskTitle.png', name:'Title'}, {src:'/img/frames/iko/short/type.svg', name:'Type'}, {src:'/img/frames/iko/short/rules.svg', name:'Rules'}, {src:'/img/frames/m15/regular/m15MaskBorder.png', name:'Border'}];
+var masks = [{src:'img/frames/iko/short/pinline.svg', name:'Pinline'}, {src:'img/frames/m15/regular/m15MaskTitle.png', name:'Title'}, {src:'img/frames/iko/short/type.svg', name:'Type'}, {src:'img/frames/iko/short/rules.svg', name:'Rules'}, {src:'img/frames/m15/regular/m15MaskBorder.png', name:'Border'}];
 var bounds = {x:0.7573, y:0.8848, width:0.188, height:0.0733};
 //defines available frames
 availableFrames = [
-	{name:'White Frame', src:'/img/frames/iko/short/w.png', masks:masks},
-	{name:'Blue Frame', src:'/img/frames/iko/short/u.png', masks:masks},
-	{name:'Black Frame', src:'/img/frames/iko/short/b.png', masks:masks},
-	{name:'Red Frame', src:'/img/frames/iko/short/r.png', masks:masks},
-	{name:'Green Frame', src:'/img/frames/iko/short/g.png', masks:masks},
-	{name:'Multicolored Frame', src:'/img/frames/iko/short/m.png', masks:masks},
-	{name:'Artifact Frame', src:'/img/frames/iko/short/a.png', masks:masks},
-	{name:'Artifact Frame (Alt)', src:'/img/frames/iko/short/a2.png', masks:masks},
-	{name:'Land Frame', src:'/img/frames/iko/short/l.png', masks:masks},
+	{name:'White Frame', src:'img/frames/iko/short/w.png', masks:masks},
+	{name:'Blue Frame', src:'img/frames/iko/short/u.png', masks:masks},
+	{name:'Black Frame', src:'img/frames/iko/short/b.png', masks:masks},
+	{name:'Red Frame', src:'img/frames/iko/short/r.png', masks:masks},
+	{name:'Green Frame', src:'img/frames/iko/short/g.png', masks:masks},
+	{name:'Multicolored Frame', src:'img/frames/iko/short/m.png', masks:masks},
+	{name:'Artifact Frame', src:'img/frames/iko/short/a.png', masks:masks},
+	{name:'Artifact Frame (Alt)', src:'img/frames/iko/short/a2.png', masks:masks},
+	{name:'Land Frame', src:'img/frames/iko/short/l.png', masks:masks},
 
-	{name:'White Power/Toughness', src:'/img/frames/m15/nickname/m15NicknamePTW.png', bounds:bounds},
-	{name:'Blue Power/Toughness', src:'/img/frames/m15/nickname/m15NicknamePTU.png', bounds:bounds},
-	{name:'Black Power/Toughness', src:'/img/frames/m15/nickname/m15NicknamePTB.png', bounds:bounds},
-	{name:'Red Power/Toughness', src:'/img/frames/m15/nickname/m15NicknamePTR.png', bounds:bounds},
-	{name:'Green Power/Toughness', src:'/img/frames/m15/nickname/m15NicknamePTG.png', bounds:bounds},
-	{name:'Multicolored Power/Toughness', src:'/img/frames/m15/nickname/m15NicknamePTM.png', bounds:bounds},
-	{name:'Artifact Power/Toughness', src:'/img/frames/m15/nickname/m15NicknamePTA.png', bounds:bounds},
-	{name:'Colorless Power/Toughness', src:'/img/frames/m15/nickname/m15NicknamePTC.png', bounds:bounds},
+	{name:'White Power/Toughness', src:'img/frames/m15/nickname/m15NicknamePTW.png', bounds:bounds},
+	{name:'Blue Power/Toughness', src:'img/frames/m15/nickname/m15NicknamePTU.png', bounds:bounds},
+	{name:'Black Power/Toughness', src:'img/frames/m15/nickname/m15NicknamePTB.png', bounds:bounds},
+	{name:'Red Power/Toughness', src:'img/frames/m15/nickname/m15NicknamePTR.png', bounds:bounds},
+	{name:'Green Power/Toughness', src:'img/frames/m15/nickname/m15NicknamePTG.png', bounds:bounds},
+	{name:'Multicolored Power/Toughness', src:'img/frames/m15/nickname/m15NicknamePTM.png', bounds:bounds},
+	{name:'Artifact Power/Toughness', src:'img/frames/m15/nickname/m15NicknamePTA.png', bounds:bounds},
+	{name:'Colorless Power/Toughness', src:'img/frames/m15/nickname/m15NicknamePTC.png', bounds:bounds},
 
-	{name:'White Frame (Colored Textboxes)', src:'/img/frames/iko/short/colored/w.png', masks:masks},
-	{name:'Blue Frame (Colored Textboxes)', src:'/img/frames/iko/short/colored/u.png', masks:masks},
-	{name:'Black Frame (Colored Textboxes)', src:'/img/frames/iko/short/colored/b.png', masks:masks},
-	{name:'Red Frame (Colored Textboxes)', src:'/img/frames/iko/short/colored/r.png', masks:masks},
-	{name:'Green Frame (Colored Textboxes)', src:'/img/frames/iko/short/colored/g.png', masks:masks},
-	{name:'Multicolored Frame (Colored Textboxes)', src:'/img/frames/iko/short/colored/m.png', masks:masks},
-	{name:'Artifact Frame (Colored Textboxes)', src:'/img/frames/iko/short/colored/a.png', masks:masks},
-	{name:'Artifact Frame (Alt, Colored Textboxes)', src:'/img/frames/iko/short/colored/a2.png', masks:masks},
-	{name:'Land Frame (Colored Textboxes)', src:'/img/frames/iko/short/colored/l.png', masks:masks},
+	{name:'White Frame (Colored Textboxes)', src:'img/frames/iko/short/colored/w.png', masks:masks},
+	{name:'Blue Frame (Colored Textboxes)', src:'img/frames/iko/short/colored/u.png', masks:masks},
+	{name:'Black Frame (Colored Textboxes)', src:'img/frames/iko/short/colored/b.png', masks:masks},
+	{name:'Red Frame (Colored Textboxes)', src:'img/frames/iko/short/colored/r.png', masks:masks},
+	{name:'Green Frame (Colored Textboxes)', src:'img/frames/iko/short/colored/g.png', masks:masks},
+	{name:'Multicolored Frame (Colored Textboxes)', src:'img/frames/iko/short/colored/m.png', masks:masks},
+	{name:'Artifact Frame (Colored Textboxes)', src:'img/frames/iko/short/colored/a.png', masks:masks},
+	{name:'Artifact Frame (Alt, Colored Textboxes)', src:'img/frames/iko/short/colored/a2.png', masks:masks},
+	{name:'Land Frame (Colored Textboxes)', src:'img/frames/iko/short/colored/l.png', masks:masks},
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;

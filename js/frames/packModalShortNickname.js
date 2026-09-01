@@ -1,13 +1,13 @@
 //Create objects for common properties across available frames
-var masks = [{src:'/img/frames/modal/shortNickname/maskTitle.png', name:'Title'}];
+var masks = [{src:'img/frames/modal/shortNickname/maskTitle.png', name:'Title'}];
 var bounds = {x:0.0247, y:0.0405, width:0.926, height:0.1053};
 //defines available frames
 availableFrames = [
-	{name:'White Frame', src:'/img/frames/modal/shortNickname/titleW.png', masks:masks, bounds:bounds},
-	{name:'Blue Frame', src:'/img/frames/modal/shortNickname/titleU.png', masks:masks, bounds:bounds},
-	{name:'Black Frame', src:'/img/frames/modal/shortNickname/titleB.png', masks:masks, bounds:bounds},
-	{name:'Red Frame', src:'/img/frames/modal/shortNickname/titleR.png', masks:masks, bounds:bounds},
-	{name:'Green Frame', src:'/img/frames/modal/shortNickname/titleG.png', masks:masks, bounds:bounds}
+	{name:'White Frame', src:'img/frames/modal/shortNickname/titleW.png', masks:masks, bounds:bounds},
+	{name:'Blue Frame', src:'img/frames/modal/shortNickname/titleU.png', masks:masks, bounds:bounds},
+	{name:'Black Frame', src:'img/frames/modal/shortNickname/titleB.png', masks:masks, bounds:bounds},
+	{name:'Red Frame', src:'img/frames/modal/shortNickname/titleR.png', masks:masks, bounds:bounds},
+	{name:'Green Frame', src:'img/frames/modal/shortNickname/titleG.png', masks:masks, bounds:bounds}
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;

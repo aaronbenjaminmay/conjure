@@ -4,25 +4,25 @@ var bounds = {x:115/1500, y:45/2100, width:1270/1500, height:450/2100};
 var stampBounds = {x:662/1500, y:1909/2100, width:176/1500, height:80/2100};
 //defines available frames
 availableFrames = [
-	{name:'White Frame', src:'/img/frames/tardis/w.png', masks:masks},
-	{name:'Blue Frame', src:'/img/frames/tardis/u.png', masks:masks},
-	{name:'Black Frame', src:'/img/frames/tardis/b.png', masks:masks},
-	{name:'Red Frame', src:'/img/frames/tardis/r.png', masks:masks},
-	{name:'Green Frame', src:'/img/frames/tardis/g.png', masks:masks},
-	{name:'Multicolored Frame', src:'/img/frames/tardis/m.png', masks:masks},
-	{name:'Artifact Frame', src:'/img/frames/tardis/a.png', masks:masks},
-	{name:'Land Frame', src:'/img/frames/tardis/l.png', masks:masks},
-	{name:'Power/Toughness', src:'/img/frames/tardis/pt.png', bounds:{x:1133/1500, y:1850/2100, width:299/1500, height:173/2100}},
-	{name:'White Legendary Crown', src:'/img/frames/tardis/crowns/w.png', bounds:bounds},
-	{name:'Blue Legendary Crown', src:'/img/frames/tardis/crowns/u.png', bounds:bounds},
-	{name:'Black Legendary Crown', src:'/img/frames/tardis/crowns/b.png', bounds:bounds},
-	{name:'Red Legendary Crown', src:'/img/frames/tardis/crowns/r.png', bounds:bounds},
-	{name:'Green Legendary Crown', src:'/img/frames/tardis/crowns/g.png', bounds:bounds},
-	{name:'Multicolored Legendary Crown', src:'/img/frames/tardis/crowns/m.png', bounds:bounds},
-	{name:'Artifact Legendary Crown', src:'/img/frames/tardis/crowns/a.png', bounds:bounds},
-	{name:'Land Legendary Crown', src:'/img/frames/tardis/crowns/l.png', bounds:bounds},
-	{name:'Gold Holo Stamp', src: '/img/frames/tardis/stamp.png', bounds:stampBounds},
-	{name:'Gray Holo Stamp', src: '/img/frames/tardis/grayStamp.png', bounds:stampBounds}
+	{name:'White Frame', src:'img/frames/tardis/w.png', masks:masks},
+	{name:'Blue Frame', src:'img/frames/tardis/u.png', masks:masks},
+	{name:'Black Frame', src:'img/frames/tardis/b.png', masks:masks},
+	{name:'Red Frame', src:'img/frames/tardis/r.png', masks:masks},
+	{name:'Green Frame', src:'img/frames/tardis/g.png', masks:masks},
+	{name:'Multicolored Frame', src:'img/frames/tardis/m.png', masks:masks},
+	{name:'Artifact Frame', src:'img/frames/tardis/a.png', masks:masks},
+	{name:'Land Frame', src:'img/frames/tardis/l.png', masks:masks},
+	{name:'Power/Toughness', src:'img/frames/tardis/pt.png', bounds:{x:1133/1500, y:1850/2100, width:299/1500, height:173/2100}},
+	{name:'White Legendary Crown', src:'img/frames/tardis/crowns/w.png', bounds:bounds},
+	{name:'Blue Legendary Crown', src:'img/frames/tardis/crowns/u.png', bounds:bounds},
+	{name:'Black Legendary Crown', src:'img/frames/tardis/crowns/b.png', bounds:bounds},
+	{name:'Red Legendary Crown', src:'img/frames/tardis/crowns/r.png', bounds:bounds},
+	{name:'Green Legendary Crown', src:'img/frames/tardis/crowns/g.png', bounds:bounds},
+	{name:'Multicolored Legendary Crown', src:'img/frames/tardis/crowns/m.png', bounds:bounds},
+	{name:'Artifact Legendary Crown', src:'img/frames/tardis/crowns/a.png', bounds:bounds},
+	{name:'Land Legendary Crown', src:'img/frames/tardis/crowns/l.png', bounds:bounds},
+	{name:'Gold Holo Stamp', src: 'img/frames/tardis/stamp.png', bounds:stampBounds},
+	{name:'Gray Holo Stamp', src: 'img/frames/tardis/grayStamp.png', bounds:stampBounds}
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;

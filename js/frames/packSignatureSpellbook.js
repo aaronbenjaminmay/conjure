@@ -2,13 +2,13 @@
 var bounds = {x:0.7573, y:0.8848, width:0.188, height:0.0733};
 //defines available frames
 availableFrames = [
-	{name:'White Frame (Gideon)', src:'/img/frames/m15/signatureSpellbook/gideon.png'},
-	{name:'Blue Frame (Jace)', src:'/img/frames/m15/signatureSpellbook/jace.png'},
-	{name:'Artifact Frame (Gideon)', src:'/img/frames/m15/signatureSpellbook/artifact.png'},
-	{name:'White Power/Toughness', src:'/img/frames/m15/signatureSpellbook/gideonPT.png', bounds:bounds},
-	{name:'Blue Power/Toughness', src:'/img/frames/m15/signatureSpellbook/jacePT.png', bounds:bounds},
-	{name:'Artifact Power/Toughness', src:'/img/frames/m15/signatureSpellbook/artifactPT.png', bounds:bounds},
-	{name:'Holo Stamp', src:'/img/frames/m15/m21/m15M21Stamp.png', bounds:{x:0.4727, y:0.892, width:0.0547, height:0.0391}},
+	{name:'White Frame (Gideon)', src:'img/frames/m15/signatureSpellbook/gideon.png'},
+	{name:'Blue Frame (Jace)', src:'img/frames/m15/signatureSpellbook/jace.png'},
+	{name:'Artifact Frame (Gideon)', src:'img/frames/m15/signatureSpellbook/artifact.png'},
+	{name:'White Power/Toughness', src:'img/frames/m15/signatureSpellbook/gideonPT.png', bounds:bounds},
+	{name:'Blue Power/Toughness', src:'img/frames/m15/signatureSpellbook/jacePT.png', bounds:bounds},
+	{name:'Artifact Power/Toughness', src:'img/frames/m15/signatureSpellbook/artifactPT.png', bounds:bounds},
+	{name:'Holo Stamp', src:'img/frames/m15/m21/m15M21Stamp.png', bounds:{x:0.4727, y:0.892, width:0.0547, height:0.0391}},
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;
@@ -18,7 +18,7 @@ document.querySelector('#loadFrameVersion').onclick = async function() {
 	await resetCardIrregularities();
 	//sets card version
 	card.version = 'signatureSpellbook';
-	loadScript('/js/frames/manaSymbolsM21.js');
+	loadScript('js/frames/manaSymbolsM21.js');
 	// notify('To use the darker mana symbols on white cards, place a "DM21" (for "Dark M21") before the following mana symbols: wubrg, 0-9, and x.');
 	//art bounds
 	card.artBounds = {x:0.0767, y:0.1129, width:0.8476, height:0.4429};

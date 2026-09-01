@@ -1,6 +1,6 @@
 if (!loadedVersions.includes('modal/version')) {
 	loadedVersions.push('modal/version')
-	loadMaskImages([['Flipside (modal)', '/data/images/cardImages/modal/modalMaskFlipside.png'], ['Border (modal)', '/data/images/cardImages/modal/modalMaskBorder.png'], ['Pinline (modal)', '/data/images/cardImages/modal/modalMaskPinline.png'], ['Title (modal)', '/data/images/cardImages/modal/modalMaskTitle.png'], ['Rules (modal)', '/data/images/cardImages/modal/modalMaskText.png'], ['Frame (modal)', '/data/images/cardImages/modal/modalMaskFrame.png']])
+	loadMaskImages([['Flipside (modal)', 'data/images/cardImages/modal/modalMaskFlipside.png'], ['Border (modal)', 'data/images/cardImages/modal/modalMaskBorder.png'], ['Pinline (modal)', 'data/images/cardImages/modal/modalMaskPinline.png'], ['Title (modal)', 'data/images/cardImages/modal/modalMaskTitle.png'], ['Rules (modal)', 'data/images/cardImages/modal/modalMaskText.png'], ['Frame (modal)', 'data/images/cardImages/modal/modalMaskFrame.png']])
 	notify("The front halves of modal cards are fully functional, but at this moment we do not have the back faces complete.", '#ffffaae0')
 }
 

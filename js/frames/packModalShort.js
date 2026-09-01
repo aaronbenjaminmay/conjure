@@ -1,23 +1,23 @@
 //Create objects for common properties across available frames
-var masks = [{src:'/img/frames/modal/short/shortModalMaskPinline.png', name:'Pinline'}, {src:'/img/frames/modal/modalMaskTitle.png', name:'Title'}, {src:'/img/frames/modal/short/shortMaskType.png', name:'Type'}, {src:'/img/frames/modal/short/shortModalMaskText.png', name:'Rules'}, {src:'/img/frames/modal/titleMDFCArrow.svg', name:'MDFC Arrow'}, {src:'/img/frames/modal/modalMaskReminder.png', name:'Flipside'}, {src:'/img/frames/modal/short/shortModalMaskBorder.png', name:'Border'}];
+var masks = [{src:'img/frames/modal/short/shortModalMaskPinline.png', name:'Pinline'}, {src:'img/frames/modal/modalMaskTitle.png', name:'Title'}, {src:'img/frames/modal/short/shortMaskType.png', name:'Type'}, {src:'img/frames/modal/short/shortModalMaskText.png', name:'Rules'}, {src:'img/frames/modal/titleMDFCArrow.svg', name:'MDFC Arrow'}, {src:'img/frames/modal/modalMaskReminder.png', name:'Flipside'}, {src:'img/frames/modal/short/shortModalMaskBorder.png', name:'Border'}];
 var bounds = {x:0.7573, y:0.8848, width:0.188, height:0.0733};
 //defines available frames
 availableFrames = [
-	{name:'White Frame (Front)', src:'/img/frames/modal/short/shortModalFrameWF.png', masks:masks},
-	{name:'Blue Frame (Front)', src:'/img/frames/modal/short/shortModalFrameUF.png', masks:masks},
-	{name:'Black Frame (Front)', src:'/img/frames/modal/short/shortModalFrameBF.png', masks:masks},
-	{name:'Red Frame (Front)', src:'/img/frames/modal/short/shortModalFrameRF.png', masks:masks},
-	{name:'Green Frame (Front)', src:'/img/frames/modal/short/shortModalFrameGF.png', masks:masks},
-	{name:'White Frame (Back)', src:'/img/frames/modal/short/shortModalFrameWB.png', masks:masks},
-	{name:'Blue Frame (Back)', src:'/img/frames/modal/short/shortModalFrameUB.png', masks:masks},
-	{name:'Black Frame (Back)', src:'/img/frames/modal/short/shortModalFrameBB.png', masks:masks},
-	{name:'Red Frame (Back)', src:'/img/frames/modal/short/shortModalFrameRB.png', masks:masks},
-	{name:'Green Frame (Back)', src:'/img/frames/modal/short/shortModalFrameGB.png', masks:masks},
-	{name:'White Power/Toughness', src:'/img/frames/m15/regular/m15PTW.png', bounds:bounds},
-	{name:'Blue Power/Toughness', src:'/img/frames/m15/regular/m15PTU.png', bounds:bounds},
-	{name:'Black Power/Toughness', src:'/img/frames/m15/regular/m15PTB.png', bounds:bounds},
-	{name:'Red Power/Toughness', src:'/img/frames/m15/regular/m15PTR.png', bounds:bounds},
-	{name:'Green Power/Toughness', src:'/img/frames/m15/regular/m15PTG.png', bounds:bounds}
+	{name:'White Frame (Front)', src:'img/frames/modal/short/shortModalFrameWF.png', masks:masks},
+	{name:'Blue Frame (Front)', src:'img/frames/modal/short/shortModalFrameUF.png', masks:masks},
+	{name:'Black Frame (Front)', src:'img/frames/modal/short/shortModalFrameBF.png', masks:masks},
+	{name:'Red Frame (Front)', src:'img/frames/modal/short/shortModalFrameRF.png', masks:masks},
+	{name:'Green Frame (Front)', src:'img/frames/modal/short/shortModalFrameGF.png', masks:masks},
+	{name:'White Frame (Back)', src:'img/frames/modal/short/shortModalFrameWB.png', masks:masks},
+	{name:'Blue Frame (Back)', src:'img/frames/modal/short/shortModalFrameUB.png', masks:masks},
+	{name:'Black Frame (Back)', src:'img/frames/modal/short/shortModalFrameBB.png', masks:masks},
+	{name:'Red Frame (Back)', src:'img/frames/modal/short/shortModalFrameRB.png', masks:masks},
+	{name:'Green Frame (Back)', src:'img/frames/modal/short/shortModalFrameGB.png', masks:masks},
+	{name:'White Power/Toughness', src:'img/frames/m15/regular/m15PTW.png', bounds:bounds},
+	{name:'Blue Power/Toughness', src:'img/frames/m15/regular/m15PTU.png', bounds:bounds},
+	{name:'Black Power/Toughness', src:'img/frames/m15/regular/m15PTB.png', bounds:bounds},
+	{name:'Red Power/Toughness', src:'img/frames/m15/regular/m15PTR.png', bounds:bounds},
+	{name:'Green Power/Toughness', src:'img/frames/m15/regular/m15PTG.png', bounds:bounds}
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;

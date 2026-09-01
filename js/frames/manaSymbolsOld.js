@@ -1,6 +1,6 @@
 //checks to see if it needs to run
-if (!card.manaSymbols.includes('/js/frames/manaSymbolsOld.js')) {
-	card.manaSymbols.push('/js/frames/manaSymbolsOld.js');
+if (!card.manaSymbols.includes('js/frames/manaSymbolsOld.js')) {
+	card.manaSymbols.push('js/frames/manaSymbolsOld.js');
 }
 if (!mana.get('old')) {
 	loadManaSymbols([

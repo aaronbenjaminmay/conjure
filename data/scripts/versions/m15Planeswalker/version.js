@@ -1,7 +1,7 @@
 if (!loadedVersions.includes('m15Planeswalker/version')) {
 	loadedVersions.push('m15Planeswalker/version')
 	newCanvas('planeswalker')
-	loadMaskImages([['Pinline (planeswalker)', '/data/images/cardImages/planeswalker/planeswalkerMaskPinline.png'], ['Border (planeswalker)', '/data/images/cardImages/planeswalker/planeswalkerMaskBorder.png'], ['Title (planeswalker)', '/data/images/cardImages/planeswalker/planeswalkerMaskTitle.png'], ['Type (planeswalker)', '/data/images/cardImages/planeswalker/planeswalkerMaskType.png'], ['Frame (planeswalker)', '/data/images/cardImages/planeswalker/planeswalkerMaskFrame.png'], ['Rules Text (planeswalker)', '/data/images/cardImages/planeswalker/planeswalkerMaskText.png']])
+	loadMaskImages([['Pinline (planeswalker)', 'data/images/cardImages/planeswalker/planeswalkerMaskPinline.png'], ['Border (planeswalker)', 'data/images/cardImages/planeswalker/planeswalkerMaskBorder.png'], ['Title (planeswalker)', 'data/images/cardImages/planeswalker/planeswalkerMaskTitle.png'], ['Type (planeswalker)', 'data/images/cardImages/planeswalker/planeswalkerMaskType.png'], ['Frame (planeswalker)', 'data/images/cardImages/planeswalker/planeswalkerMaskFrame.png'], ['Rules Text (planeswalker)', 'data/images/cardImages/planeswalker/planeswalkerMaskText.png']])
 
 	document.getElementById('tabPicker').innerHTML += `<div onclick='toggleTabs(this, "planeswalkerTab")' class='interactable'>Planeswalker</div>`
     var planeswalkerTab = document.createElement("div")
@@ -20,26 +20,26 @@ if (!loadedVersions.includes('m15Planeswalker/version')) {
     document.getElementById('tabOptions').appendChild(planeswalkerTab)
     var planeswalkerPlus = new Image()
     planeswalkerPlus.crossOrigin = 'anonymous'
-    planeswalkerPlus.src = '/data/images/cardImages/planeswalker/planeswalkerPlus.png'
+    planeswalkerPlus.src = 'data/images/cardImages/planeswalker/planeswalkerPlus.png'
     var planeswalkerNeutral = new Image()
     planeswalkerNeutral.crossOrigin = "anonymous"
-    planeswalkerNeutral.src = '/data/images/cardImages/planeswalker/planeswalkerNeutral.png'
+    planeswalkerNeutral.src = 'data/images/cardImages/planeswalker/planeswalkerNeutral.png'
     var planeswalkerMinus = new Image()
     planeswalkerMinus.crossOrigin = "anonymous"
-    planeswalkerMinus.src = '/data/images/cardImages/planeswalker/planeswalkerMinus.png'
+    planeswalkerMinus.src = 'data/images/cardImages/planeswalker/planeswalkerMinus.png'
     var lightToDarkPlaneswalker = new Image()
     lightToDarkPlaneswalker.crossOrigin = 'anonymous'
-    lightToDarkPlaneswalker.src = '/data/images/cardImages/planeswalker/abilityLineOdd.png'
+    lightToDarkPlaneswalker.src = 'data/images/cardImages/planeswalker/abilityLineOdd.png'
     var darkToLightPlaneswalker = new Image()
     darkToLightPlaneswalker.crossOrigin = 'anonymous'
-    darkToLightPlaneswalker.src = '/data/images/cardImages/planeswalker/abilityLineEven.png'
+    darkToLightPlaneswalker.src = 'data/images/cardImages/planeswalker/abilityLineEven.png'
     var lightToDarkPlaneswalkerDarkened= new Image()
     lightToDarkPlaneswalkerDarkened.crossOrigin = 'anonymous'
-    lightToDarkPlaneswalkerDarkened.src = '/data/images/cardImages/planeswalker/abilityLineOddDarkened.png'
+    lightToDarkPlaneswalkerDarkened.src = 'data/images/cardImages/planeswalker/abilityLineOddDarkened.png'
     var darkToLightPlaneswalkerDarkened = new Image()
     darkToLightPlaneswalkerDarkened.crossOrigin = 'anonymous'
     darkToLightPlaneswalkerDarkened.onload = function() {invertPlaneswalkerColors()}
-    darkToLightPlaneswalkerDarkened.src = '/data/images/cardImages/planeswalker/abilityLineEvenDarkened.png'
+    darkToLightPlaneswalkerDarkened.src = 'data/images/cardImages/planeswalker/abilityLineEvenDarkened.png'
     setTimeout(planeswalkerAbilities, 1000)
     //placeholders:
     var darkColor = '#a4a4a4'

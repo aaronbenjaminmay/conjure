@@ -1,29 +1,29 @@
 //Create objects for common properties across available frames
-var masks = [{src:'/img/frames/neo/samurai/frame.svg', name:'Frame'}, {src:'/img/frames/neo/samurai/frame2.svg', name:'Rules & Accents'}];
+var masks = [{src:'img/frames/neo/samurai/frame.svg', name:'Frame'}, {src:'img/frames/neo/samurai/frame2.svg', name:'Rules & Accents'}];
 var bounds = {x:0.7634, y:0.8858, width:0.1954, height:0.0677};
 var bounds2 = {x:0.0294, y:0.0162, width:0.942, height:0.0753};
 //defines available frames
 availableFrames = [
-	{name:'White Frame', src:'/img/frames/neo/samurai/w.png', masks:masks},
-	{name:'Blue Frame', src:'/img/frames/neo/samurai/u.png', masks:masks},
-	{name:'Black Frame', src:'/img/frames/neo/samurai/b.png', masks:masks},
-	{name:'Red Frame', src:'/img/frames/neo/samurai/r.png', masks:masks},
-	{name:'Green Frame', src:'/img/frames/neo/samurai/g.png', masks:masks},
-	{name:'Multicolored Frame', src:'/img/frames/neo/samurai/m.png', masks:masks},
-	{name:'Artifact Overlay', src:'/img/frames/neo/samurai/a.png', masks:masks},
-	{name:'White Power/Toughness', src:'/img/frames/neo/samurai/pt/w.png', bounds:bounds},
-	{name:'Blue Power/Toughness', src:'/img/frames/neo/samurai/pt/u.png', bounds:bounds},
-	{name:'Black Power/Toughness', src:'/img/frames/neo/samurai/pt/b.png', bounds:bounds},
-	{name:'Red Power/Toughness', src:'/img/frames/neo/samurai/pt/r.png', bounds:bounds},
-	{name:'Green Power/Toughness', src:'/img/frames/neo/samurai/pt/g.png', bounds:bounds},
-	{name:'Multicolored Power/Toughness', src:'/img/frames/neo/samurai/pt/m.png', bounds:bounds},
-	{name:'White Legend Crown', src:'/img/frames/neo/samurai/crown/w.png', bounds:bounds2},
-	{name:'Blue Legend Crown', src:'/img/frames/neo/samurai/crown/u.png', bounds:bounds2},
-	{name:'Black Legend Crown', src:'/img/frames/neo/samurai/crown/b.png', bounds:bounds2},
-	{name:'Red Legend Crown', src:'/img/frames/neo/samurai/crown/r.png', bounds:bounds2},
-	{name:'Green Legend Crown', src:'/img/frames/neo/samurai/crown/g.png', bounds:bounds2},
-	{name:'Multicolored Legend Crown', src:'/img/frames/neo/samurai/crown/m.png', bounds:bounds2},
-	{name:'Rare Stamp', src:'/img/frames/neo/samurai/stamp.png', bounds:{x:0.4354, y:0.9072, width:0.1294, height:0.042}}
+	{name:'White Frame', src:'img/frames/neo/samurai/w.png', masks:masks},
+	{name:'Blue Frame', src:'img/frames/neo/samurai/u.png', masks:masks},
+	{name:'Black Frame', src:'img/frames/neo/samurai/b.png', masks:masks},
+	{name:'Red Frame', src:'img/frames/neo/samurai/r.png', masks:masks},
+	{name:'Green Frame', src:'img/frames/neo/samurai/g.png', masks:masks},
+	{name:'Multicolored Frame', src:'img/frames/neo/samurai/m.png', masks:masks},
+	{name:'Artifact Overlay', src:'img/frames/neo/samurai/a.png', masks:masks},
+	{name:'White Power/Toughness', src:'img/frames/neo/samurai/pt/w.png', bounds:bounds},
+	{name:'Blue Power/Toughness', src:'img/frames/neo/samurai/pt/u.png', bounds:bounds},
+	{name:'Black Power/Toughness', src:'img/frames/neo/samurai/pt/b.png', bounds:bounds},
+	{name:'Red Power/Toughness', src:'img/frames/neo/samurai/pt/r.png', bounds:bounds},
+	{name:'Green Power/Toughness', src:'img/frames/neo/samurai/pt/g.png', bounds:bounds},
+	{name:'Multicolored Power/Toughness', src:'img/frames/neo/samurai/pt/m.png', bounds:bounds},
+	{name:'White Legend Crown', src:'img/frames/neo/samurai/crown/w.png', bounds:bounds2},
+	{name:'Blue Legend Crown', src:'img/frames/neo/samurai/crown/u.png', bounds:bounds2},
+	{name:'Black Legend Crown', src:'img/frames/neo/samurai/crown/b.png', bounds:bounds2},
+	{name:'Red Legend Crown', src:'img/frames/neo/samurai/crown/r.png', bounds:bounds2},
+	{name:'Green Legend Crown', src:'img/frames/neo/samurai/crown/g.png', bounds:bounds2},
+	{name:'Multicolored Legend Crown', src:'img/frames/neo/samurai/crown/m.png', bounds:bounds2},
+	{name:'Rare Stamp', src:'img/frames/neo/samurai/stamp.png', bounds:{x:0.4354, y:0.9072, width:0.1294, height:0.042}}
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;

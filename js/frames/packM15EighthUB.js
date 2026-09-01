@@ -1,36 +1,36 @@
 //Create objects for common properties across available frames
-var masks = [{src:'/img/frames/m15/regular/m15MaskPinline.png', name:'Pinline'}, {src:'/img/frames/m15/regular/m15MaskTitle.png', name:'Title'}, {src:'/img/frames/m15/regular/m15MaskType.png', name:'Type'}, {src:'/img/frames/m15/regular/m15MaskRules.png', name:'Rules'}, {src:'/img/frames/custom/m15-eighth/regular/Frame.png', name:'Frame'}, {src:'/img/frames/custom/m15-eighth/regular/Border.png', name:'Border'}];
+var masks = [{src:'img/frames/m15/regular/m15MaskPinline.png', name:'Pinline'}, {src:'img/frames/m15/regular/m15MaskTitle.png', name:'Title'}, {src:'img/frames/m15/regular/m15MaskType.png', name:'Type'}, {src:'img/frames/m15/regular/m15MaskRules.png', name:'Rules'}, {src:'img/frames/custom/m15-eighth/regular/Frame.png', name:'Frame'}, {src:'img/frames/custom/m15-eighth/regular/Border.png', name:'Border'}];
 var bounds = {x:0.7573, y:1901/2100, width:0.188, height:0.0733};
 //defines available frames
 availableFrames = [
-	{name:'White Frame', src:'/img/frames/custom/m15-eighth/ub/w.png', masks:masks},
-	{name:'Blue Frame', src:'/img/frames/custom/m15-eighth/ub/u.png', masks:masks},
-	{name:'Black Frame', src:'/img/frames/custom/m15-eighth/ub/b.png', masks:masks},
-	{name:'Red Frame', src:'/img/frames/custom/m15-eighth/ub/r.png', masks:masks},
-	{name:'Green Frame', src:'/img/frames/custom/m15-eighth/ub/g.png', masks:masks},
-	{name:'Multicolored Frame', src:'/img/frames/custom/m15-eighth/ub/m.png', masks:masks},
-	{name:'Artifact Frame', src:'/img/frames/custom/m15-eighth/ub/a.png', masks:masks},
-	{name:'Land Frame', src:'/img/frames/custom/m15-eighth/ub/l.png', masks:masks},
-	{name:'Vehicle Frame', src:'/img/frames/custom/m15-eighth/ub/v.png', masks:masks},
+	{name:'White Frame', src:'img/frames/custom/m15-eighth/ub/w.png', masks:masks},
+	{name:'Blue Frame', src:'img/frames/custom/m15-eighth/ub/u.png', masks:masks},
+	{name:'Black Frame', src:'img/frames/custom/m15-eighth/ub/b.png', masks:masks},
+	{name:'Red Frame', src:'img/frames/custom/m15-eighth/ub/r.png', masks:masks},
+	{name:'Green Frame', src:'img/frames/custom/m15-eighth/ub/g.png', masks:masks},
+	{name:'Multicolored Frame', src:'img/frames/custom/m15-eighth/ub/m.png', masks:masks},
+	{name:'Artifact Frame', src:'img/frames/custom/m15-eighth/ub/a.png', masks:masks},
+	{name:'Land Frame', src:'img/frames/custom/m15-eighth/ub/l.png', masks:masks},
+	{name:'Vehicle Frame', src:'img/frames/custom/m15-eighth/ub/v.png', masks:masks},
 
-	{name:'White Power/Toughness', src:'/img/frames/m15/ub/pt/w.png', bounds:bounds},
-	{name:'Blue Power/Toughness', src:'/img/frames/m15/ub/pt/u.png', bounds:bounds},
-	{name:'Black Power/Toughness', src:'/img/frames/m15/ub/pt/b.png', bounds:bounds},
-	{name:'Red Power/Toughness', src:'/img/frames/m15/ub/pt/r.png', bounds:bounds},
-	{name:'Green Power/Toughness', src:'/img/frames/m15/ub/pt/g.png', bounds:bounds},
-	{name:'Multicolored Power/Toughness', src:'/img/frames/m15/ub/pt/m.png', bounds:bounds},
-	{name:'Artifact Power/Toughness', src:'/img/frames/m15/ub/pt/a.png', bounds:bounds},
-	{name:'Vehicle Power/Toughness', src:'/img/frames/m15/ub/pt/v.png', bounds:bounds},
-	{name:'Colorless Power/Toughness', src:'/img/frames/m15/ub/pt/c.png', bounds:bounds},
+	{name:'White Power/Toughness', src:'img/frames/m15/ub/pt/w.png', bounds:bounds},
+	{name:'Blue Power/Toughness', src:'img/frames/m15/ub/pt/u.png', bounds:bounds},
+	{name:'Black Power/Toughness', src:'img/frames/m15/ub/pt/b.png', bounds:bounds},
+	{name:'Red Power/Toughness', src:'img/frames/m15/ub/pt/r.png', bounds:bounds},
+	{name:'Green Power/Toughness', src:'img/frames/m15/ub/pt/g.png', bounds:bounds},
+	{name:'Multicolored Power/Toughness', src:'img/frames/m15/ub/pt/m.png', bounds:bounds},
+	{name:'Artifact Power/Toughness', src:'img/frames/m15/ub/pt/a.png', bounds:bounds},
+	{name:'Vehicle Power/Toughness', src:'img/frames/m15/ub/pt/v.png', bounds:bounds},
+	{name:'Colorless Power/Toughness', src:'img/frames/m15/ub/pt/c.png', bounds:bounds},
 
-	{name:'White Land Frame', src:'/img/frames/custom/m15-eighth/ub/wl.png', masks:masks},
-	{name:'Blue Land Frame', src:'/img/frames/custom/m15-eighth/ub/ul.png', masks:masks},
-	{name:'Black Land Frame', src:'/img/frames/custom/m15-eighth/ub/bl.png', masks:masks},
-	{name:'Red Land Frame', src:'/img/frames/custom/m15-eighth/ub/rl.png', masks:masks},
-	{name:'Green Land Frame', src:'/img/frames/custom/m15-eighth/ub/gl.png', masks:masks},
-	{name:'Multicolored Land Frame', src:'/img/frames/custom/m15-eighth/ub/ml.png', masks:masks},
+	{name:'White Land Frame', src:'img/frames/custom/m15-eighth/ub/wl.png', masks:masks},
+	{name:'Blue Land Frame', src:'img/frames/custom/m15-eighth/ub/ul.png', masks:masks},
+	{name:'Black Land Frame', src:'img/frames/custom/m15-eighth/ub/bl.png', masks:masks},
+	{name:'Red Land Frame', src:'img/frames/custom/m15-eighth/ub/rl.png', masks:masks},
+	{name:'Green Land Frame', src:'img/frames/custom/m15-eighth/ub/gl.png', masks:masks},
+	{name:'Multicolored Land Frame', src:'img/frames/custom/m15-eighth/ub/ml.png', masks:masks},
 
-	{name:'M15 Border', src:'/img/frames/m15/regular/m15MaskBorder.png'}
+	{name:'M15 Border', src:'img/frames/m15/regular/m15MaskBorder.png'}
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;

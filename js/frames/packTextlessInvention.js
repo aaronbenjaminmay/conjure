@@ -1,27 +1,27 @@
 //Create objects for common properties across available frames
-var masks = [{src:'/img/frames/textless/m15TextlessMaskPinline.png', name:'Pinline'}, {src:'/img/frames/m15/regular/m15MaskTitle.png', name:'Title'}, {src:'/img/frames/textless/m15TextlessMaskType.png', name:'Type'}, {src:'/img/frames/textless/invention/m15TextlessMaskInvention.png', name:'Frame'}, {src:'/img/frames/m15/regular/m15MaskBorder.png', name:'Border'}];
+var masks = [{src:'img/frames/textless/m15TextlessMaskPinline.png', name:'Pinline'}, {src:'img/frames/m15/regular/m15MaskTitle.png', name:'Title'}, {src:'img/frames/textless/m15TextlessMaskType.png', name:'Type'}, {src:'img/frames/textless/invention/m15TextlessMaskInvention.png', name:'Frame'}, {src:'img/frames/m15/regular/m15MaskBorder.png', name:'Border'}];
 var bounds = {x:0.7573, y:0.8848, width:0.188, height:0.0733};
 //defines available frames
 availableFrames = [
-	{name:'Invention Frame', src:'/img/frames/textless/invention/m15TextlessFrameInvention.png', masks:masks},
-	{name:'White Frame', src:'/img/frames/textless/invention/m15TextlessFrameInventionW.png', masks:masks},
-	{name:'Blue Frame', src:'/img/frames/textless/invention/m15TextlessFrameInventionU.png', masks:masks},
-	{name:'Black Frame', src:'/img/frames/textless/invention/m15TextlessFrameInventionB.png', masks:masks},
-	{name:'Red Frame', src:'/img/frames/textless/invention/m15TextlessFrameInventionR.png', masks:masks},
-	{name:'Green Frame', src:'/img/frames/textless/invention/m15TextlessFrameInventionG.png', masks:masks},
-	{name:'Multicolored Frame', src:'/img/frames/textless/invention/m15TextlessFrameInventionM.png', masks:masks},
-	{name:'Artifact Frame', src:'/img/frames/textless/invention/m15TextlessFrameInventionA.png', masks:masks},
-	{name:'Colorless Frame', src:'/img/frames/textless/invention/m15TextlessFrameInventionL.png', masks:masks},
-	{name:'Phyrexian Frame', src:'/img/frames/textless/invention/m15TextlessFrameInventionPhyrexian.png', masks:masks},
-	{name:'Invention Power/Toughness', src:'/img/frames/m15/invention/inventionPT.png', bounds:bounds},
-	{name:'White Power/Toughness', src:'/img/frames/m15/regular/m15PTW.png', bounds:bounds},
-	{name:'Blue Power/Toughness', src:'/img/frames/m15/regular/m15PTU.png', bounds:bounds},
-	{name:'Black Power/Toughness', src:'/img/frames/m15/regular/m15PTB.png', bounds:bounds},
-	{name:'Red Power/Toughness', src:'/img/frames/m15/regular/m15PTR.png', bounds:bounds},
-	{name:'Green Power/Toughness', src:'/img/frames/m15/regular/m15PTG.png', bounds:bounds},
-	{name:'Multicolored Power/Toughness', src:'/img/frames/m15/regular/m15PTM.png', bounds:bounds},
-	{name:'Artifact Power/Toughness', src:'/img/frames/m15/regular/m15PTA.png', bounds:bounds},
-	{name:'Colorless Power/Toughness', src:'/img/frames/m15/regular/m15PTC.png', bounds:bounds}
+	{name:'Invention Frame', src:'img/frames/textless/invention/m15TextlessFrameInvention.png', masks:masks},
+	{name:'White Frame', src:'img/frames/textless/invention/m15TextlessFrameInventionW.png', masks:masks},
+	{name:'Blue Frame', src:'img/frames/textless/invention/m15TextlessFrameInventionU.png', masks:masks},
+	{name:'Black Frame', src:'img/frames/textless/invention/m15TextlessFrameInventionB.png', masks:masks},
+	{name:'Red Frame', src:'img/frames/textless/invention/m15TextlessFrameInventionR.png', masks:masks},
+	{name:'Green Frame', src:'img/frames/textless/invention/m15TextlessFrameInventionG.png', masks:masks},
+	{name:'Multicolored Frame', src:'img/frames/textless/invention/m15TextlessFrameInventionM.png', masks:masks},
+	{name:'Artifact Frame', src:'img/frames/textless/invention/m15TextlessFrameInventionA.png', masks:masks},
+	{name:'Colorless Frame', src:'img/frames/textless/invention/m15TextlessFrameInventionL.png', masks:masks},
+	{name:'Phyrexian Frame', src:'img/frames/textless/invention/m15TextlessFrameInventionPhyrexian.png', masks:masks},
+	{name:'Invention Power/Toughness', src:'img/frames/m15/invention/inventionPT.png', bounds:bounds},
+	{name:'White Power/Toughness', src:'img/frames/m15/regular/m15PTW.png', bounds:bounds},
+	{name:'Blue Power/Toughness', src:'img/frames/m15/regular/m15PTU.png', bounds:bounds},
+	{name:'Black Power/Toughness', src:'img/frames/m15/regular/m15PTB.png', bounds:bounds},
+	{name:'Red Power/Toughness', src:'img/frames/m15/regular/m15PTR.png', bounds:bounds},
+	{name:'Green Power/Toughness', src:'img/frames/m15/regular/m15PTG.png', bounds:bounds},
+	{name:'Multicolored Power/Toughness', src:'img/frames/m15/regular/m15PTM.png', bounds:bounds},
+	{name:'Artifact Power/Toughness', src:'img/frames/m15/regular/m15PTA.png', bounds:bounds},
+	{name:'Colorless Power/Toughness', src:'img/frames/m15/regular/m15PTC.png', bounds:bounds}
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;

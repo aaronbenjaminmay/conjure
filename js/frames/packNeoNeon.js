@@ -1,33 +1,33 @@
 //Create objects for common properties across available frames
-var masks = [{src:'/img/frames/neo/neon/frame.svg', name:'Frame'}];
+var masks = [{src:'img/frames/neo/neon/frame.svg', name:'Frame'}];
 var bounds = {x:0.7627, y:0.8886, width:0.1967, height:0.06};
 var bounds2 = {x:0.1567, y:0.021, width:0.6867, height:0.0486};
 //defines available frames
 availableFrames = [
-	{name:'White Frame', src:'/img/frames/neo/neon/w.png', masks:masks},
-	{name:'Blue Frame', src:'/img/frames/neo/neon/u.png', masks:masks},
-	{name:'Black Frame', src:'/img/frames/neo/neon/b.png', masks:masks},
-	{name:'Red Frame', src:'/img/frames/neo/neon/r.png', masks:masks},
-	{name:'Green Frame', src:'/img/frames/neo/neon/g.png', masks:masks},
-	{name:'Multicolored Frame', src:'/img/frames/neo/neon/m.png', masks:masks},
-	{name:'Artifact Frame', src:'/img/frames/neo/neon/a.png', masks:masks},
-	{name:'Vehicle Frame', src:'/img/frames/neo/neon/v.png', masks:masks},
-	{name:'White Power/Toughness', src:'/img/frames/neo/neon/pt/w.png', bounds:bounds},
-	{name:'Blue Power/Toughness', src:'/img/frames/neo/neon/pt/u.png', bounds:bounds},
-	{name:'Black Power/Toughness', src:'/img/frames/neo/neon/pt/b.png', bounds:bounds},
-	{name:'Red Power/Toughness', src:'/img/frames/neo/neon/pt/r.png', bounds:bounds},
-	{name:'Green Power/Toughness', src:'/img/frames/neo/neon/pt/g.png', bounds:bounds},
-	{name:'Multicolored Power/Toughness', src:'/img/frames/neo/neon/pt/m.png', bounds:bounds},
-	{name:'Artifact Power/Toughness', src:'/img/frames/neo/neon/pt/a.png', bounds:bounds},
-	{name:'Vehicle Power/Toughness', src:'/img/frames/neo/neon/pt/v.png', bounds:bounds},
-	{name:'White Legend Crown', src:'/img/frames/neo/neon/crown/w.png', bounds:bounds2},
-	{name:'Blue Legend Crown', src:'/img/frames/neo/neon/crown/u.png', bounds:bounds2},
-	{name:'Black Legend Crown', src:'/img/frames/neo/neon/crown/b.png', bounds:bounds2},
-	{name:'Red Legend Crown', src:'/img/frames/neo/neon/crown/r.png', bounds:bounds2},
-	{name:'Green Legend Crown', src:'/img/frames/neo/neon/crown/g.png', bounds:bounds2},
-	{name:'Multicolored Legend Crown', src:'/img/frames/neo/neon/crown/m.png', bounds:bounds2},
-	{name:'Artifact Legend Crown', src:'/img/frames/neo/neon/crown/a.png', bounds:bounds2},
-	{name:'Rare Stamp', src:'/img/frames/neo/stamp.png', bounds:{x:0.4554, y:0.9172, width:0.0894, height:0.0320}}
+	{name:'White Frame', src:'img/frames/neo/neon/w.png', masks:masks},
+	{name:'Blue Frame', src:'img/frames/neo/neon/u.png', masks:masks},
+	{name:'Black Frame', src:'img/frames/neo/neon/b.png', masks:masks},
+	{name:'Red Frame', src:'img/frames/neo/neon/r.png', masks:masks},
+	{name:'Green Frame', src:'img/frames/neo/neon/g.png', masks:masks},
+	{name:'Multicolored Frame', src:'img/frames/neo/neon/m.png', masks:masks},
+	{name:'Artifact Frame', src:'img/frames/neo/neon/a.png', masks:masks},
+	{name:'Vehicle Frame', src:'img/frames/neo/neon/v.png', masks:masks},
+	{name:'White Power/Toughness', src:'img/frames/neo/neon/pt/w.png', bounds:bounds},
+	{name:'Blue Power/Toughness', src:'img/frames/neo/neon/pt/u.png', bounds:bounds},
+	{name:'Black Power/Toughness', src:'img/frames/neo/neon/pt/b.png', bounds:bounds},
+	{name:'Red Power/Toughness', src:'img/frames/neo/neon/pt/r.png', bounds:bounds},
+	{name:'Green Power/Toughness', src:'img/frames/neo/neon/pt/g.png', bounds:bounds},
+	{name:'Multicolored Power/Toughness', src:'img/frames/neo/neon/pt/m.png', bounds:bounds},
+	{name:'Artifact Power/Toughness', src:'img/frames/neo/neon/pt/a.png', bounds:bounds},
+	{name:'Vehicle Power/Toughness', src:'img/frames/neo/neon/pt/v.png', bounds:bounds},
+	{name:'White Legend Crown', src:'img/frames/neo/neon/crown/w.png', bounds:bounds2},
+	{name:'Blue Legend Crown', src:'img/frames/neo/neon/crown/u.png', bounds:bounds2},
+	{name:'Black Legend Crown', src:'img/frames/neo/neon/crown/b.png', bounds:bounds2},
+	{name:'Red Legend Crown', src:'img/frames/neo/neon/crown/r.png', bounds:bounds2},
+	{name:'Green Legend Crown', src:'img/frames/neo/neon/crown/g.png', bounds:bounds2},
+	{name:'Multicolored Legend Crown', src:'img/frames/neo/neon/crown/m.png', bounds:bounds2},
+	{name:'Artifact Legend Crown', src:'img/frames/neo/neon/crown/a.png', bounds:bounds2},
+	{name:'Rare Stamp', src:'img/frames/neo/stamp.png', bounds:{x:0.4554, y:0.9172, width:0.0894, height:0.0320}}
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;

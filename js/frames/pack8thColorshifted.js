@@ -1,20 +1,20 @@
 //Create objects for common properties across available frames
-var masks = [{src:'/img/frames/8th/pinline.png', name:'Pinline'}, {src:'/img/frames/8th/title.png', name:'Title'}, {src:'/img/frames/8th/type.png', name:'Type'}, {src:'/img/frames/8th/rules.png', name:'Rules'}, {src:'/img/frames/8th/frame.png', name:'Frame'}];
+var masks = [{src:'img/frames/8th/pinline.png', name:'Pinline'}, {src:'img/frames/8th/title.png', name:'Title'}, {src:'img/frames/8th/type.png', name:'Type'}, {src:'img/frames/8th/rules.png', name:'Rules'}, {src:'img/frames/8th/frame.png', name:'Frame'}];
 var bounds = {x:0.7234, y:0.881, width:0.204, height:0.0772};
 //defines available frames
 availableFrames = [
-	{name:'White Frame', src:'/img/frames/8th/colorshifted/w.png', masks:masks},
-	{name:'Blue Frame', src:'/img/frames/8th/colorshifted/u.png', masks:masks},
-	{name:'Black Frame', src:'/img/frames/8th/colorshifted/b.png', masks:masks},
-	{name:'Red Frame', src:'/img/frames/8th/colorshifted/r.png', masks:masks},
-	{name:'Green Frame', src:'/img/frames/8th/colorshifted/g.png', masks:masks},
-	{name:'Artifact Frame', src:'/img/frames/8th/colorshifted/a.png', masks:masks},
-	{name:'White Power/Toughness', src:'/img/frames/m15/colorshifted/wpt.png', bounds:bounds},
-	{name:'Blue Power/Toughness', src:'/img/frames/m15/colorshifted/upt.png', bounds:bounds},
-	{name:'Black Power/Toughness', src:'/img/frames/m15/colorshifted/bpt.png', bounds:bounds},
-	{name:'Red Power/Toughness', src:'/img/frames/m15/colorshifted/rpt.png', bounds:bounds},
-	{name:'Green Power/Toughness', src:'/img/frames/m15/colorshifted/gpt.png', bounds:bounds},
-	{name:'Artifact Power/Toughness', src:'/img/frames/m15/colorshifted/apt.png', bounds:bounds}
+	{name:'White Frame', src:'img/frames/8th/colorshifted/w.png', masks:masks},
+	{name:'Blue Frame', src:'img/frames/8th/colorshifted/u.png', masks:masks},
+	{name:'Black Frame', src:'img/frames/8th/colorshifted/b.png', masks:masks},
+	{name:'Red Frame', src:'img/frames/8th/colorshifted/r.png', masks:masks},
+	{name:'Green Frame', src:'img/frames/8th/colorshifted/g.png', masks:masks},
+	{name:'Artifact Frame', src:'img/frames/8th/colorshifted/a.png', masks:masks},
+	{name:'White Power/Toughness', src:'img/frames/m15/colorshifted/wpt.png', bounds:bounds},
+	{name:'Blue Power/Toughness', src:'img/frames/m15/colorshifted/upt.png', bounds:bounds},
+	{name:'Black Power/Toughness', src:'img/frames/m15/colorshifted/bpt.png', bounds:bounds},
+	{name:'Red Power/Toughness', src:'img/frames/m15/colorshifted/rpt.png', bounds:bounds},
+	{name:'Green Power/Toughness', src:'img/frames/m15/colorshifted/gpt.png', bounds:bounds},
+	{name:'Artifact Power/Toughness', src:'img/frames/m15/colorshifted/apt.png', bounds:bounds}
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;

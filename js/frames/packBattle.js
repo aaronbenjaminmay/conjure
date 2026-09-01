@@ -1,18 +1,18 @@
 //Create objects for common properties across available frames
-var masks = [{src:'/img/frames/m15/battle/maskPinline.png', name:'Pinline'}, {src:'/img/frames/m15/battle/maskTitle.png', name:'Title'}, {src:'/img/frames/m15/battle/maskType.png', name:'Type'}, {src:'/img/frames/m15/battle/maskRules.png', name:'Rules'}, {src:'/img/frames/m15/battle/maskDefense.png', name:'Defense'}, {src:'/img/frames/m15/battle/maskBorder.png', name:'Border'}];
+var masks = [{src:'img/frames/m15/battle/maskPinline.png', name:'Pinline'}, {src:'img/frames/m15/battle/maskTitle.png', name:'Title'}, {src:'img/frames/m15/battle/maskType.png', name:'Type'}, {src:'img/frames/m15/battle/maskRules.png', name:'Rules'}, {src:'img/frames/m15/battle/maskDefense.png', name:'Defense'}, {src:'img/frames/m15/battle/maskBorder.png', name:'Border'}];
 //defines available frames
 availableFrames = [
-	{name:'White Frame', src:'/img/frames/m15/battle/w.png', masks:masks},
-	{name:'Blue Frame', src:'/img/frames/m15/battle/u.png', masks:masks},
-	{name:'Black Frame', src:'/img/frames/m15/battle/b.png', masks:masks},
-	{name:'Red Frame', src:'/img/frames/m15/battle/r.png', masks:masks},
-	{name:'Green Frame', src:'/img/frames/m15/battle/g.png', masks:masks},
-	{name:'Multicolored Frame', src:'/img/frames/m15/battle/m.png', masks:masks},
-	{name:'Artifact Frame', src:'/img/frames/m15/battle/a.png', masks:masks},
-	{name:'Land Frame', src:'/img/frames/m15/battle/l.png', masks:masks},
-	{name:'Colorless Frame', src:'/img/frames/m15/battle/c.png', masks:masks},
+	{name:'White Frame', src:'img/frames/m15/battle/w.png', masks:masks},
+	{name:'Blue Frame', src:'img/frames/m15/battle/u.png', masks:masks},
+	{name:'Black Frame', src:'img/frames/m15/battle/b.png', masks:masks},
+	{name:'Red Frame', src:'img/frames/m15/battle/r.png', masks:masks},
+	{name:'Green Frame', src:'img/frames/m15/battle/g.png', masks:masks},
+	{name:'Multicolored Frame', src:'img/frames/m15/battle/m.png', masks:masks},
+	{name:'Artifact Frame', src:'img/frames/m15/battle/a.png', masks:masks},
+	{name:'Land Frame', src:'img/frames/m15/battle/l.png', masks:masks},
+	{name:'Colorless Frame', src:'img/frames/m15/battle/c.png', masks:masks},
 
-	{name:'Holo Stamp', src:'/img/frames/m15/battle/holostamp.png', bounds:{x:103/2100, y:657/1500, width:93/2100, height:186/1500}}
+	{name:'Holo Stamp', src:'img/frames/m15/battle/holostamp.png', bounds:{x:103/2100, y:657/1500, width:93/2100, height:186/1500}}
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;
@@ -22,7 +22,7 @@ document.querySelector('#loadFrameVersion').onclick = async function() {
 	//resets things so that every frame doesn't have to
 	var previousCardHeight = card.height
 	await resetCardIrregularities({canvas:[2814, 2010, 0, 0]});
-	replacementMasks = {'Right Half':'/img/frames/m15/battle/maskRightHalf.png'};
+	replacementMasks = {'Right Half':'img/frames/m15/battle/maskRightHalf.png'};
 	//sets card version
 	card.version = 'battle';
 	//rotation

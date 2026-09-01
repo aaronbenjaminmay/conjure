@@ -1,24 +1,24 @@
 //Create objects for common properties across available frames
-var masks = [{src:'/img/frames/m15/equinox/textless/pinline.svg', name:'Pinline'}, {src:'/img/frames/m15/equinox/textless/title.svg', name:'Title'}, {src:'/img/frames/m15/equinox/textless/type.svg', name:'Type'}];
+var masks = [{src:'img/frames/m15/equinox/textless/pinline.svg', name:'Pinline'}, {src:'img/frames/m15/equinox/textless/title.svg', name:'Title'}, {src:'img/frames/m15/equinox/textless/type.svg', name:'Type'}];
 var bounds = {x:0.7794, y:0.8839, width:0.1827, height:0.0639};
 //defines available frames
 availableFrames = [
-	{name:'White Frame', src:'/img/frames/m15/equinox/textless/w.png', masks:masks},
-	{name:'Blue Frame', src:'/img/frames/m15/equinox/textless/u.png', masks:masks},
-	{name:'Black Frame', src:'/img/frames/m15/equinox/textless/b.png', masks:masks},
-	{name:'Red Frame', src:'/img/frames/m15/equinox/textless/r.png', masks:masks},
-	{name:'Green Frame', src:'/img/frames/m15/equinox/textless/g.png', masks:masks},
-	{name:'Multicolored Frame', src:'/img/frames/m15/equinox/textless/m.png', masks:masks},
-	{name:'Artifact Frame', src:'/img/frames/m15/equinox/textless/a.png', masks:masks},
-	{name:'Land Frame', src:'/img/frames/m15/equinox/textless/l.png', masks:masks},
-	{name:'White Power/Toughness', src:'/img/frames/m15/equinox/back/pt/w.png', bounds:bounds},
-	{name:'Blue Power/Toughness', src:'/img/frames/m15/equinox/back/pt/u.png', bounds:bounds},
-	{name:'Black Power/Toughness', src:'/img/frames/m15/equinox/back/pt/b.png', bounds:bounds},
-	{name:'Red Power/Toughness', src:'/img/frames/m15/equinox/back/pt/r.png', bounds:bounds},
-	{name:'Green Power/Toughness', src:'/img/frames/m15/equinox/back/pt/g.png', bounds:bounds},
-	{name:'Multicolored Power/Toughness', src:'/img/frames/m15/equinox/back/pt/m.png', bounds:bounds},
-	{name:'Artifact Power/Toughness', src:'/img/frames/m15/equinox/back/pt/a.png', bounds:bounds},
-	{name:'Land Power/Toughness', src:'/img/frames/m15/equinox/back/pt/l.png', bounds:bounds}
+	{name:'White Frame', src:'img/frames/m15/equinox/textless/w.png', masks:masks},
+	{name:'Blue Frame', src:'img/frames/m15/equinox/textless/u.png', masks:masks},
+	{name:'Black Frame', src:'img/frames/m15/equinox/textless/b.png', masks:masks},
+	{name:'Red Frame', src:'img/frames/m15/equinox/textless/r.png', masks:masks},
+	{name:'Green Frame', src:'img/frames/m15/equinox/textless/g.png', masks:masks},
+	{name:'Multicolored Frame', src:'img/frames/m15/equinox/textless/m.png', masks:masks},
+	{name:'Artifact Frame', src:'img/frames/m15/equinox/textless/a.png', masks:masks},
+	{name:'Land Frame', src:'img/frames/m15/equinox/textless/l.png', masks:masks},
+	{name:'White Power/Toughness', src:'img/frames/m15/equinox/back/pt/w.png', bounds:bounds},
+	{name:'Blue Power/Toughness', src:'img/frames/m15/equinox/back/pt/u.png', bounds:bounds},
+	{name:'Black Power/Toughness', src:'img/frames/m15/equinox/back/pt/b.png', bounds:bounds},
+	{name:'Red Power/Toughness', src:'img/frames/m15/equinox/back/pt/r.png', bounds:bounds},
+	{name:'Green Power/Toughness', src:'img/frames/m15/equinox/back/pt/g.png', bounds:bounds},
+	{name:'Multicolored Power/Toughness', src:'img/frames/m15/equinox/back/pt/m.png', bounds:bounds},
+	{name:'Artifact Power/Toughness', src:'img/frames/m15/equinox/back/pt/a.png', bounds:bounds},
+	{name:'Land Power/Toughness', src:'img/frames/m15/equinox/back/pt/l.png', bounds:bounds}
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;

@@ -1,24 +1,24 @@
 //Create objects for common properties across available frames
-var masks = [{src:'/img/frames/textless/2022/maskPinline.png', name:'Pinline'}, {src:'/img/frames/m15/regular/m15MaskTitle.png', name:'Title'}, {src:'/img/frames/textless/2022/maskType.png', name:'Type'}, {src:'/img/frames/textless/2022/maskBorder.png', name:'Border'}];
+var masks = [{src:'img/frames/textless/2022/maskPinline.png', name:'Pinline'}, {src:'img/frames/m15/regular/m15MaskTitle.png', name:'Title'}, {src:'img/frames/textless/2022/maskType.png', name:'Type'}, {src:'img/frames/textless/2022/maskBorder.png', name:'Border'}];
 var bounds = {x:62/1500, y:1752/2100, width:168/1500, height:168/2100};
 var stampBounds = {x:657/1500, y:1907/2100, width:186/1500, height:82/2100};
 //defines available frames
 availableFrames = [
-	{name:'White Frame', src:'/img/frames/textless/2022/ub/w.png', masks:masks},
-	{name:'Blue Frame', src:'/img/frames/textless/2022/ub/u.png', masks:masks},
-	{name:'Black Frame', src:'/img/frames/textless/2022/ub/b.png', masks:masks},
-	{name:'Red Frame', src:'/img/frames/textless/2022/ub/r.png', masks:masks},
-	{name:'Green Frame', src:'/img/frames/textless/2022/ub/g.png', masks:masks},
-	{name:'Multicolored Frame', src:'/img/frames/textless/2022/ub/m.png', masks:masks},
-	{name:'Colorless Frame', src:'/img/frames/textless/2022/ub/l.png', masks:masks},
-	{name:'White Mana Symbol', src:'/img/frames/textless/2022/sw.png', bounds:bounds},
-	{name:'Blue Mana Symbol', src:'/img/frames/textless/2022/su.png', bounds:bounds},
-	{name:'Black Mana Symbol', src:'/img/frames/textless/2022/sb.png', bounds:bounds},
-	{name:'Red Mana Symbol', src:'/img/frames/textless/2022/sr.png', bounds:bounds},
-	{name:'Green Mana Symbol', src:'/img/frames/textless/2022/sg.png', bounds:bounds},
-	{name:'Colorless Mana Symbol', src:'/img/frames/textless/2022/sc.png', bounds:bounds},
-	{name:'Gold Holo Stamp', src:'/img/frames/textless/2022/ub/stamp.png', bounds:stampBounds},
-	{name:'Gray Holo Stamp', src:'/img/frames/textless/2022/ub/grayStamp.png', bounds:stampBounds}
+	{name:'White Frame', src:'img/frames/textless/2022/ub/w.png', masks:masks},
+	{name:'Blue Frame', src:'img/frames/textless/2022/ub/u.png', masks:masks},
+	{name:'Black Frame', src:'img/frames/textless/2022/ub/b.png', masks:masks},
+	{name:'Red Frame', src:'img/frames/textless/2022/ub/r.png', masks:masks},
+	{name:'Green Frame', src:'img/frames/textless/2022/ub/g.png', masks:masks},
+	{name:'Multicolored Frame', src:'img/frames/textless/2022/ub/m.png', masks:masks},
+	{name:'Colorless Frame', src:'img/frames/textless/2022/ub/l.png', masks:masks},
+	{name:'White Mana Symbol', src:'img/frames/textless/2022/sw.png', bounds:bounds},
+	{name:'Blue Mana Symbol', src:'img/frames/textless/2022/su.png', bounds:bounds},
+	{name:'Black Mana Symbol', src:'img/frames/textless/2022/sb.png', bounds:bounds},
+	{name:'Red Mana Symbol', src:'img/frames/textless/2022/sr.png', bounds:bounds},
+	{name:'Green Mana Symbol', src:'img/frames/textless/2022/sg.png', bounds:bounds},
+	{name:'Colorless Mana Symbol', src:'img/frames/textless/2022/sc.png', bounds:bounds},
+	{name:'Gold Holo Stamp', src:'img/frames/textless/2022/ub/stamp.png', bounds:stampBounds},
+	{name:'Gray Holo Stamp', src:'img/frames/textless/2022/ub/grayStamp.png', bounds:stampBounds}
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;

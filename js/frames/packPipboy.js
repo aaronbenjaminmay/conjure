@@ -1,32 +1,32 @@
 //Create objects for common properties across available frames
-var masks = [{src:'/img/frames/m15/regular/m15MaskPinline.png', name:'Pinline'}, {src:'/img/frames/m15/regular/m15MaskTitle.png', name:'Title'}, {src:'/img/frames/m15/regular/m15MaskType.png', name:'Type'}, {src:'/img/frames/m15/regular/m15MaskRules.png', name:'Rules'}, {src:'/img/frames/m15/regular/m15MaskFrame.png', name:'Frame'}, {src:'/img/frames/m15/regular/m15MaskBorder.png', name:'Border'}];
+var masks = [{src:'img/frames/m15/regular/m15MaskPinline.png', name:'Pinline'}, {src:'img/frames/m15/regular/m15MaskTitle.png', name:'Title'}, {src:'img/frames/m15/regular/m15MaskType.png', name:'Type'}, {src:'img/frames/m15/regular/m15MaskRules.png', name:'Rules'}, {src:'img/frames/m15/regular/m15MaskFrame.png', name:'Frame'}, {src:'img/frames/m15/regular/m15MaskBorder.png', name:'Border'}];
 var bounds = {x:157/2010, y:362/2814, width:1697/2010, height:1152/2814};
 var crownBounds = {x:41/2010, y:39/2814, width:1794/2010, height:143/2814};
 //defines available frames
 availableFrames = [
-	{name:'White Frame', src:'/img/frames/pipboy/w.png'},
-	{name:'Blue Frame', src:'/img/frames/pipboy/u.png'},
-	{name:'Black Frame', src:'/img/frames/pipboy/b.png'},
-	{name:'Red Frame', src:'/img/frames/pipboy/r.png'},
-	{name:'Green Frame', src:'/img/frames/pipboy/g.png'},
-	{name:'Multicolored Frame', src:'/img/frames/pipboy/m.png'},
-	{name:'Artifact Frame', src:'/img/frames/pipboy/a.png'},
+	{name:'White Frame', src:'img/frames/pipboy/w.png'},
+	{name:'Blue Frame', src:'img/frames/pipboy/u.png'},
+	{name:'Black Frame', src:'img/frames/pipboy/b.png'},
+	{name:'Red Frame', src:'img/frames/pipboy/r.png'},
+	{name:'Green Frame', src:'img/frames/pipboy/g.png'},
+	{name:'Multicolored Frame', src:'img/frames/pipboy/m.png'},
+	{name:'Artifact Frame', src:'img/frames/pipboy/a.png'},
 
-	{name:'Power/Toughness Box', src: '/img/frames/pipboy/pt.png', bounds:{x:1515/2010, y:2034/2814, width:461/2010, height:639/2814}},
+	{name:'Power/Toughness Box', src: 'img/frames/pipboy/pt.png', bounds:{x:1515/2010, y:2034/2814, width:461/2010, height:639/2814}},
 
-	{name:'White Legend Crown', src:'/img/frames/pipboy/crown/w.png', bounds: crownBounds},
-	{name:'Blue Legend Crown', src:'/img/frames/pipboy/crown/u.png', bounds: crownBounds},
-	{name:'Black Legend Crown', src:'/img/frames/pipboy/crown/b.png', bounds: crownBounds},
-	{name:'Red Legend Crown', src:'/img/frames/pipboy/crown/r.png', bounds: crownBounds},
-	{name:'Green Legend Crown', src:'/img/frames/pipboy/crown/g.png', bounds: crownBounds},
-	{name:'Multicolored Legend Crown', src:'/img/frames/pipboy/crown/m.png', bounds: crownBounds},
-	{name:'Artifact Legend Crown', src:'/img/frames/pipboy/crown/a.png', bounds: crownBounds},
+	{name:'White Legend Crown', src:'img/frames/pipboy/crown/w.png', bounds: crownBounds},
+	{name:'Blue Legend Crown', src:'img/frames/pipboy/crown/u.png', bounds: crownBounds},
+	{name:'Black Legend Crown', src:'img/frames/pipboy/crown/b.png', bounds: crownBounds},
+	{name:'Red Legend Crown', src:'img/frames/pipboy/crown/r.png', bounds: crownBounds},
+	{name:'Green Legend Crown', src:'img/frames/pipboy/crown/g.png', bounds: crownBounds},
+	{name:'Multicolored Legend Crown', src:'img/frames/pipboy/crown/m.png', bounds: crownBounds},
+	{name:'Artifact Legend Crown', src:'img/frames/pipboy/crown/a.png', bounds: crownBounds},
 
-	{name:'Gold Holo Stamp', src: '/img/frames/pipboy/stamp.png', bounds: {x:849/2010, y:2513/2814, width:312/2010, height: 188/2814}},
-	{name:'Gray Holo Stamp', src: '/img/frames/pipboy/stampGray.png', bounds: {x:849/2010, y:2513/2814, width:312/2010, height: 188/2814}},
+	{name:'Gold Holo Stamp', src: 'img/frames/pipboy/stamp.png', bounds: {x:849/2010, y:2513/2814, width:312/2010, height: 188/2814}},
+	{name:'Gray Holo Stamp', src: 'img/frames/pipboy/stampGray.png', bounds: {x:849/2010, y:2513/2814, width:312/2010, height: 188/2814}},
 
-	{name:'Nickname Overlay', src: '/img/frames/pipboy/nickname.png', complementary: 18},
-	{name:'Screen Cover', src: '/img/frames/pipboy/cover.png', erase: true}
+	{name:'Nickname Overlay', src: 'img/frames/pipboy/nickname.png', complementary: 18},
+	{name:'Screen Cover', src: 'img/frames/pipboy/cover.png', erase: true}
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;
@@ -34,7 +34,7 @@ document.querySelector('#loadFrameVersion').disabled = false;
 document.querySelector('#loadFrameVersion').onclick = async function() {
 	//resets things so that every frame doesn't have to
 	await resetCardIrregularities();
-	replacementMasks = {'Right Half':'/img/frames/pipboy/maskRight.png'};
+	replacementMasks = {'Right Half':'img/frames/pipboy/maskRight.png'};
 	//sets card version
 	card.version = 'pipboy';
 	//art bounds

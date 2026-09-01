@@ -1,6 +1,6 @@
 //defines available frames
 availableFrames = [
-	{name:'Frame', src:'/img/frames/token/jmpFront/frame.svg'}
+	{name:'Frame', src:'img/frames/token/jmpFront/frame.svg'}
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;

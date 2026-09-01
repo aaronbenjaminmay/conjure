@@ -1,6 +1,6 @@
 //checks to see if it needs to run
-if (!card.manaSymbols.includes('/js/frames/manaSymbolsNeon.js')) {
-	card.manaSymbols.push('/js/frames/manaSymbolsNeon.js');
+if (!card.manaSymbols.includes('js/frames/manaSymbolsNeon.js')) {
+	card.manaSymbols.push('js/frames/manaSymbolsNeon.js');
 }
 if (!mana.get('neonw')) {
 	loadManaSymbols([

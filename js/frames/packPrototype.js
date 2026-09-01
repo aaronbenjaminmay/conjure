@@ -1,39 +1,39 @@
 //Create objects for common properties across available frames
-var masks = [{src:'/img/frames/m15/regular/m15MaskPinline.png', name:'Pinline'}, {src:'/img/frames/m15/regular/m15MaskTitle.png', name:'Title'}, {src:'/img/frames/m15/regular/m15MaskType.png', name:'Type'}, {src:'/img/frames/m15/regular/m15MaskRules.png', name:'Rules'}, {src:'/img/frames/m15/regular/m15MaskFrame.png', name:'Frame'}, {src:'/img/frames/m15/regular/m15MaskBorder.png', name:'Border'}];
-var masks2 = [{src:'/img/frames/m15/prototype/regular/maskPinline.png', name:'Pinline'}];
+var masks = [{src:'img/frames/m15/regular/m15MaskPinline.png', name:'Pinline'}, {src:'img/frames/m15/regular/m15MaskTitle.png', name:'Title'}, {src:'img/frames/m15/regular/m15MaskType.png', name:'Type'}, {src:'img/frames/m15/regular/m15MaskRules.png', name:'Rules'}, {src:'img/frames/m15/regular/m15MaskFrame.png', name:'Frame'}, {src:'img/frames/m15/regular/m15MaskBorder.png', name:'Border'}];
+var masks2 = [{src:'img/frames/m15/prototype/regular/maskPinline.png', name:'Pinline'}];
 var bounds = {x:0.7573, y:0.8848, width:0.188, height:0.0733};
 
 //defines available frames
 availableFrames = [
-	{name:'Artifact Frame', src:'/img/frames/m15/regular/m15FrameA.png', masks:masks},
-	{name:'Artifact Power/Toughness', src:'/img/frames/m15/regular/m15PTA.png', bounds:bounds},
+	{name:'Artifact Frame', src:'img/frames/m15/regular/m15FrameA.png', masks:masks},
+	{name:'Artifact Power/Toughness', src:'img/frames/m15/regular/m15PTA.png', bounds:bounds},
 
-	{name:'White Prototype Rules', src:'/img/frames/m15/prototype/regular/rulesW.png', masks:masks2},
-	{name:'Blue Prototype Rules', src:'/img/frames/m15/prototype/regular/rulesU.png', masks:masks2},
-	{name:'Black Prototype Rules', src:'/img/frames/m15/prototype/regular/rulesB.png', masks:masks2},
-	{name:'Red Prototype Rules', src:'/img/frames/m15/prototype/regular/rulesR.png', masks:masks2},
-	{name:'Green Prototype Rules', src:'/img/frames/m15/prototype/regular/rulesG.png', masks:masks2},
-	{name:'Multicolor Prototype Rules', src:'/img/frames/m15/prototype/regular/rulesM.png', masks:masks2},
+	{name:'White Prototype Rules', src:'img/frames/m15/prototype/regular/rulesW.png', masks:masks2},
+	{name:'Blue Prototype Rules', src:'img/frames/m15/prototype/regular/rulesU.png', masks:masks2},
+	{name:'Black Prototype Rules', src:'img/frames/m15/prototype/regular/rulesB.png', masks:masks2},
+	{name:'Red Prototype Rules', src:'img/frames/m15/prototype/regular/rulesR.png', masks:masks2},
+	{name:'Green Prototype Rules', src:'img/frames/m15/prototype/regular/rulesG.png', masks:masks2},
+	{name:'Multicolor Prototype Rules', src:'img/frames/m15/prototype/regular/rulesM.png', masks:masks2},
 
-	{name:'White Prototype Mana Cost (Short)', src:'/img/frames/m15/prototype/regular/manaCostW.png'},
-	{name:'White Prototype Mana Cost (Long)', src:'/img/frames/m15/prototype/regular/manaCostLongW.png'},
-	{name:'Blue Prototype Mana Cost (Short)', src:'/img/frames/m15/prototype/regular/manaCostU.png'},
-	{name:'Blue Prototype Mana Cost (Long)', src:'/img/frames/m15/prototype/regular/manaCostLongU.png'},
-	{name:'Black Prototype Mana Cost (Short)', src:'/img/frames/m15/prototype/regular/manaCostB.png'},
-	{name:'Black Prototype Mana Cost (Long)', src:'/img/frames/m15/prototype/regular/manaCostLongB.png'},
-	{name:'Red Prototype Mana Cost (Short)', src:'/img/frames/m15/prototype/regular/manaCostR.png'},
-	{name:'Red Prototype Mana Cost (Long)', src:'/img/frames/m15/prototype/regular/manaCostLongR.png'},
-	{name:'Green Prototype Mana Cost (Short)', src:'/img/frames/m15/prototype/regular/manaCostG.png'},
-	{name:'Green Prototype Mana Cost (Long)', src:'/img/frames/m15/prototype/regular/manaCostLongG.png'},
-	{name:'Multicolor Prototype Mana Cost (Short)', src:'/img/frames/m15/prototype/regular/manaCostM.png'},
-	{name:'Multicolor Prototype Mana Cost (Long)', src:'/img/frames/m15/prototype/regular/manaCostLongM.png'},
+	{name:'White Prototype Mana Cost (Short)', src:'img/frames/m15/prototype/regular/manaCostW.png'},
+	{name:'White Prototype Mana Cost (Long)', src:'img/frames/m15/prototype/regular/manaCostLongW.png'},
+	{name:'Blue Prototype Mana Cost (Short)', src:'img/frames/m15/prototype/regular/manaCostU.png'},
+	{name:'Blue Prototype Mana Cost (Long)', src:'img/frames/m15/prototype/regular/manaCostLongU.png'},
+	{name:'Black Prototype Mana Cost (Short)', src:'img/frames/m15/prototype/regular/manaCostB.png'},
+	{name:'Black Prototype Mana Cost (Long)', src:'img/frames/m15/prototype/regular/manaCostLongB.png'},
+	{name:'Red Prototype Mana Cost (Short)', src:'img/frames/m15/prototype/regular/manaCostR.png'},
+	{name:'Red Prototype Mana Cost (Long)', src:'img/frames/m15/prototype/regular/manaCostLongR.png'},
+	{name:'Green Prototype Mana Cost (Short)', src:'img/frames/m15/prototype/regular/manaCostG.png'},
+	{name:'Green Prototype Mana Cost (Long)', src:'img/frames/m15/prototype/regular/manaCostLongG.png'},
+	{name:'Multicolor Prototype Mana Cost (Short)', src:'img/frames/m15/prototype/regular/manaCostM.png'},
+	{name:'Multicolor Prototype Mana Cost (Long)', src:'img/frames/m15/prototype/regular/manaCostLongM.png'},
 
-	{name:'White Prototype P/T', src:'/img/frames/m15/prototype/regular/ptW.png'},
-	{name:'Blue Prototype P/T', src:'/img/frames/m15/prototype/regular/ptU.png'},
-	{name:'Black Prototype P/T', src:'/img/frames/m15/prototype/regular/ptB.png'},
-	{name:'Red Prototype P/T', src:'/img/frames/m15/prototype/regular/ptR.png'},
-	{name:'Green Prototype P/T', src:'/img/frames/m15/prototype/regular/ptG.png'},
-	{name:'Multicolor Prototype P/T', src:'/img/frames/m15/prototype/regular/ptM.png'}
+	{name:'White Prototype P/T', src:'img/frames/m15/prototype/regular/ptW.png'},
+	{name:'Blue Prototype P/T', src:'img/frames/m15/prototype/regular/ptU.png'},
+	{name:'Black Prototype P/T', src:'img/frames/m15/prototype/regular/ptB.png'},
+	{name:'Red Prototype P/T', src:'img/frames/m15/prototype/regular/ptR.png'},
+	{name:'Green Prototype P/T', src:'img/frames/m15/prototype/regular/ptG.png'},
+	{name:'Multicolor Prototype P/T', src:'img/frames/m15/prototype/regular/ptM.png'}
 ];
 
 //disables/enables the "Load Frame Version" button

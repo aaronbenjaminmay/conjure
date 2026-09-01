@@ -1,14 +1,14 @@
 //Create objects for common properties across available frames
-var masks = [{src:'/img/frames/planeswalker/transform/pinline.svg', name:'Pinline'}, {src:'/img/frames/planeswalker/transform/title.svg', name:'Title'}, {src:'/img/frames/planeswalker/regular/planeswalkerMaskType.png', name:'Type'}, {src:'/img/frames/planeswalker/transform/frame.svg', name:'Frame'}, {src:'/img/frames/planeswalker/regular/planeswalkerMaskBorder.png', name:'Border'}];
+var masks = [{src:'img/frames/planeswalker/transform/pinline.svg', name:'Pinline'}, {src:'img/frames/planeswalker/transform/title.svg', name:'Title'}, {src:'img/frames/planeswalker/regular/planeswalkerMaskType.png', name:'Type'}, {src:'img/frames/planeswalker/transform/frame.svg', name:'Frame'}, {src:'img/frames/planeswalker/regular/planeswalkerMaskBorder.png', name:'Border'}];
 //defines available frames
 availableFrames = [
-	{name:'White Frame (Back)', src:'/img/frames/planeswalker/transform/wb.png', masks:masks},
-	{name:'Blue Frame (Back)', src:'/img/frames/planeswalker/transform/ub.png', masks:masks},
-	{name:'Black Frame (Back)', src:'/img/frames/planeswalker/transform/bb.png', masks:masks},
-	{name:'Red Frame (Back)', src:'/img/frames/planeswalker/transform/rb.png', masks:masks},
-	{name:'Green Frame (Back)', src:'/img/frames/planeswalker/transform/gb.png', masks:masks},
-	{name:'Multicolored Frame (Back)', src:'/img/frames/planeswalker/transform/mb.png', masks:masks},
-	{name:'Loyalty Box', src:'/img/frames/planeswalker/transform/loyalty.png', bounds:{x:0.8, y:0.8796, width:0.152, height:0.0677}}
+	{name:'White Frame (Back)', src:'img/frames/planeswalker/transform/wb.png', masks:masks},
+	{name:'Blue Frame (Back)', src:'img/frames/planeswalker/transform/ub.png', masks:masks},
+	{name:'Black Frame (Back)', src:'img/frames/planeswalker/transform/bb.png', masks:masks},
+	{name:'Red Frame (Back)', src:'img/frames/planeswalker/transform/rb.png', masks:masks},
+	{name:'Green Frame (Back)', src:'img/frames/planeswalker/transform/gb.png', masks:masks},
+	{name:'Multicolored Frame (Back)', src:'img/frames/planeswalker/transform/mb.png', masks:masks},
+	{name:'Loyalty Box', src:'img/frames/planeswalker/transform/loyalty.png', bounds:{x:0.8, y:0.8796, width:0.152, height:0.0677}}
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;
@@ -18,8 +18,8 @@ document.querySelector('#loadFrameVersion').onclick = async function() {
 	await resetCardIrregularities();
 	//sets card version
 	card.version = 'planeswalkerTransformBack';
-	card.onload = '/js/frames/versionPlaneswalker.js';
-	loadScript('/js/frames/versionPlaneswalker.js');
+	card.onload = 'js/frames/versionPlaneswalker.js';
+	loadScript('js/frames/versionPlaneswalker.js');
 	//art bounds
 	card.artBounds = {x:0.068, y:0.101, width:0.864, height:0.8143};
 	autoFitArt();

@@ -1,17 +1,17 @@
 //Create objects for common properties across available frames
-var masks = [{src:'/img/frames/seventh/textless/seventhTextlessMaskPinline.png', name:'Pinline'}];
+var masks = [{src:'img/frames/seventh/textless/seventhTextlessMaskPinline.png', name:'Pinline'}];
 //defines available frames
 availableFrames = [
-	{name:'White Frame', src:'/img/frames/seventh/textless/seventhTextlessFrameW.png', masks:masks},
-	{name:'Blue Frame', src:'/img/frames/seventh/textless/seventhTextlessFrameU.png', masks:masks},
-	{name:'Black Frame', src:'/img/frames/seventh/textless/seventhTextlessFrameB.png', masks:masks},
-	{name:'Red Frame', src:'/img/frames/seventh/textless/seventhTextlessFrameR.png', masks:masks},
-	{name:'Green Frame', src:'/img/frames/seventh/textless/seventhTextlessFrameG.png', masks:masks},
-	{name:'Multicolored Frame', src:'/img/frames/seventh/textless/seventhTextlessFrameM.png', masks:masks},
-	{name:'Artifact Frame', src:'/img/frames/seventh/textless/seventhTextlessFrameA.png', masks:masks},
-	{name:'Land Frame', src:'/img/frames/seventh/textless/seventhTextlessFrameL.png', masks:masks},
-	{name:'Tombstone Icon', src:'/img/frames/old/icons/tombstone.svg', bounds: {x:0.0687, y:0.0491, width:0.0338, height:0.0329}},
-	{name:'Textbox', src:'/img/frames/seventh/textless/textbox.svg', bounds:{x:0.116, y:0.5896, width:0.768, height:0.2858}}
+	{name:'White Frame', src:'img/frames/seventh/textless/seventhTextlessFrameW.png', masks:masks},
+	{name:'Blue Frame', src:'img/frames/seventh/textless/seventhTextlessFrameU.png', masks:masks},
+	{name:'Black Frame', src:'img/frames/seventh/textless/seventhTextlessFrameB.png', masks:masks},
+	{name:'Red Frame', src:'img/frames/seventh/textless/seventhTextlessFrameR.png', masks:masks},
+	{name:'Green Frame', src:'img/frames/seventh/textless/seventhTextlessFrameG.png', masks:masks},
+	{name:'Multicolored Frame', src:'img/frames/seventh/textless/seventhTextlessFrameM.png', masks:masks},
+	{name:'Artifact Frame', src:'img/frames/seventh/textless/seventhTextlessFrameA.png', masks:masks},
+	{name:'Land Frame', src:'img/frames/seventh/textless/seventhTextlessFrameL.png', masks:masks},
+	{name:'Tombstone Icon', src:'img/frames/old/icons/tombstone.svg', bounds: {x:0.0687, y:0.0491, width:0.0338, height:0.0329}},
+	{name:'Textbox', src:'img/frames/seventh/textless/textbox.svg', bounds:{x:0.116, y:0.5896, width:0.768, height:0.2858}}
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;

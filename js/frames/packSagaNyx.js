@@ -1,26 +1,26 @@
 //Create objects for common properties across available frames
-var masks = [{src:'/img/frames/saga/sagaMaskPinline.png', name:'Pinline'}, {src:'/img/frames/m15/regular/m15MaskTitle.png', name:'Title'}, {src:'/img/frames/saga/sagaMaskType.png', name:'Type'}, {src:'/img/frames/saga/sagaMaskFrame.png', name:'Frame'}, {src:'/img/frames/saga/sagaMaskBanner.png', name:'Banner'}, {src:'/img/frames/saga/sagaMaskBannerRight.png', name:'Banner (Right)'}, {src:'/img/frames/saga/sagaMaskText.png', name:'Text'}, {src:'/img/frames/saga/sagaMaskTextRight.png', name:'Text (Right)'}, {src:'/img/frames/saga/sagaMaskBorder.png', name:'Border'}];
+var masks = [{src:'img/frames/saga/sagaMaskPinline.png', name:'Pinline'}, {src:'img/frames/m15/regular/m15MaskTitle.png', name:'Title'}, {src:'img/frames/saga/sagaMaskType.png', name:'Type'}, {src:'img/frames/saga/sagaMaskFrame.png', name:'Frame'}, {src:'img/frames/saga/sagaMaskBanner.png', name:'Banner'}, {src:'img/frames/saga/sagaMaskBannerRight.png', name:'Banner (Right)'}, {src:'img/frames/saga/sagaMaskText.png', name:'Text'}, {src:'img/frames/saga/sagaMaskTextRight.png', name:'Text (Right)'}, {src:'img/frames/saga/sagaMaskBorder.png', name:'Border'}];
 var bounds = {x:1179/1500, y:1766/2100, width:237/1500, height:154/2100};
 //defines available frames
 availableFrames = [
-	{name:'White Frame', src:'/img/frames/saga/nyx/w.png', masks:masks},
-	{name:'Blue Frame', src:'/img/frames/saga/nyx/u.png', masks:masks},
-	{name:'Black Frame', src:'/img/frames/saga/nyx/b.png', masks:masks},
-	{name:'Red Frame', src:'/img/frames/saga/nyx/r.png', masks:masks},
-	{name:'Green Frame', src:'/img/frames/saga/nyx/g.png', masks:masks},
-	{name:'Multicolored Frame', src:'/img/frames/saga/nyx/m.png', masks:masks},
-	{name:'Artifact Frame', src:'/img/frames/saga/nyx/a.png', masks:masks},
-	{name:'Banner Pinstripe (Multicolored)', src:'/img/frames/saga/sagaMidStripe.png', bounds:{x:0.0727, y:0.3058, width:0.0087, height:0.4762}},
+	{name:'White Frame', src:'img/frames/saga/nyx/w.png', masks:masks},
+	{name:'Blue Frame', src:'img/frames/saga/nyx/u.png', masks:masks},
+	{name:'Black Frame', src:'img/frames/saga/nyx/b.png', masks:masks},
+	{name:'Red Frame', src:'img/frames/saga/nyx/r.png', masks:masks},
+	{name:'Green Frame', src:'img/frames/saga/nyx/g.png', masks:masks},
+	{name:'Multicolored Frame', src:'img/frames/saga/nyx/m.png', masks:masks},
+	{name:'Artifact Frame', src:'img/frames/saga/nyx/a.png', masks:masks},
+	{name:'Banner Pinstripe (Multicolored)', src:'img/frames/saga/sagaMidStripe.png', bounds:{x:0.0727, y:0.3058, width:0.0087, height:0.4762}},
 
-	{name:'White Power/Toughness', src:'/img/frames/saga/pt/w.png', bounds: bounds},
-	{name:'Blue Power/Toughness', src:'/img/frames/saga/pt/u.png', bounds: bounds},
-	{name:'Black Power/Toughness', src:'/img/frames/saga/pt/b.png', bounds: bounds},
-	{name:'Red Power/Toughness', src:'/img/frames/saga/pt/r.png', bounds: bounds},
-	{name:'Green Power/Toughness', src:'/img/frames/saga/pt/g.png', bounds: bounds},
-	{name:'Multicolored Power/Toughness', src:'/img/frames/saga/pt/m.png', bounds: bounds},
-	{name:'Artifact Power/Toughness', src:'/img/frames/saga/pt/a.png', bounds: bounds},
+	{name:'White Power/Toughness', src:'img/frames/saga/pt/w.png', bounds: bounds},
+	{name:'Blue Power/Toughness', src:'img/frames/saga/pt/u.png', bounds: bounds},
+	{name:'Black Power/Toughness', src:'img/frames/saga/pt/b.png', bounds: bounds},
+	{name:'Red Power/Toughness', src:'img/frames/saga/pt/r.png', bounds: bounds},
+	{name:'Green Power/Toughness', src:'img/frames/saga/pt/g.png', bounds: bounds},
+	{name:'Multicolored Power/Toughness', src:'img/frames/saga/pt/m.png', bounds: bounds},
+	{name:'Artifact Power/Toughness', src:'img/frames/saga/pt/a.png', bounds: bounds},
 
-	{name:'Holo Stamp', src:'/img/frames/saga/stamp.png', bounds:{x:0.438, y:0.912, width:0.124, height:0.0372}}
+	{name:'Holo Stamp', src:'img/frames/saga/stamp.png', bounds:{x:0.438, y:0.912, width:0.124, height:0.0372}}
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;
@@ -30,8 +30,8 @@ document.querySelector('#loadFrameVersion').onclick = async function() {
 	await resetCardIrregularities();
 	//sets card version
 	card.version = 'sagaNyx';
-	card.onload = '/js/frames/versionSaga.js';
-	loadScript('/js/frames/versionSaga.js');
+	card.onload = 'js/frames/versionSaga.js';
+	loadScript('js/frames/versionSaga.js');
 	//art bounds
 	card.artBounds = {x:0.5, y:0.1124, width:0.4247, height:0.7253};
 	autoFitArt();

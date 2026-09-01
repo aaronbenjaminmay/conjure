@@ -1,16 +1,16 @@
 //Create objects for common properties across available frames
-var masks = [{src:'/img/frames/saga/dfc/pinline.svg', name:'Pinline'}, {src:'/img/frames/m15/transform/regular/maskTitle.png', name:'Title'}, {src:'/img/frames/saga/sagaMaskType.png', name:'Type'}, {src:'/img/frames/saga/dfc/frame.svg', name:'Frame'}, {src:'/img/frames/saga/dfc/banner.svg', name:'Banner'}, {src:'/img/frames/saga/dfc/bannerRight.svg', name:'Banner (Right)'}, {src:'/img/frames/saga/dfc/rules.svg', name:'Rules'}, {src:'/img/frames/saga/sagaMaskTextRight.png', name:'Rules (Right)'}, {src:'/img/frames/saga/sagaMaskBorder.png', name:'Border'}];
+var masks = [{src:'img/frames/saga/dfc/pinline.svg', name:'Pinline'}, {src:'img/frames/m15/transform/regular/maskTitle.png', name:'Title'}, {src:'img/frames/saga/sagaMaskType.png', name:'Type'}, {src:'img/frames/saga/dfc/frame.svg', name:'Frame'}, {src:'img/frames/saga/dfc/banner.svg', name:'Banner'}, {src:'img/frames/saga/dfc/bannerRight.svg', name:'Banner (Right)'}, {src:'img/frames/saga/dfc/rules.svg', name:'Rules'}, {src:'img/frames/saga/sagaMaskTextRight.png', name:'Rules (Right)'}, {src:'img/frames/saga/sagaMaskBorder.png', name:'Border'}];
 //defines available frames
 availableFrames = [
-	{name:'White Frame', src:'/img/frames/saga/dfc/w.png', masks:masks},
-	{name:'Blue Frame', src:'/img/frames/saga/dfc/u.png', masks:masks},
-	{name:'Black Frame', src:'/img/frames/saga/dfc/b.png', masks:masks},
-	{name:'Red Frame', src:'/img/frames/saga/dfc/r.png', masks:masks},
-	{name:'Green Frame', src:'/img/frames/saga/dfc/g.png', masks:masks},
-	{name:'Multicolored Frame', src:'/img/frames/saga/dfc/m.png', masks:masks},
-	{name:'Land Frame', src:'/img/frames/saga/dfc/l.png', masks:masks},
-	//{name:'Banner Pinstripe (Multicolored)', src:'/img/frames/saga/sagaMidStripe.png', bounds:{x:0.0727, y:0.3058, width:0.0087, height:0.4762}},
-	{name:'Holo Stamp', src:'/img/frames/saga/stamp.png', bounds:{x:0.438, y:0.912, width:0.124, height:0.0372}}
+	{name:'White Frame', src:'img/frames/saga/dfc/w.png', masks:masks},
+	{name:'Blue Frame', src:'img/frames/saga/dfc/u.png', masks:masks},
+	{name:'Black Frame', src:'img/frames/saga/dfc/b.png', masks:masks},
+	{name:'Red Frame', src:'img/frames/saga/dfc/r.png', masks:masks},
+	{name:'Green Frame', src:'img/frames/saga/dfc/g.png', masks:masks},
+	{name:'Multicolored Frame', src:'img/frames/saga/dfc/m.png', masks:masks},
+	{name:'Land Frame', src:'img/frames/saga/dfc/l.png', masks:masks},
+	//{name:'Banner Pinstripe (Multicolored)', src:'img/frames/saga/sagaMidStripe.png', bounds:{x:0.0727, y:0.3058, width:0.0087, height:0.4762}},
+	{name:'Holo Stamp', src:'img/frames/saga/stamp.png', bounds:{x:0.438, y:0.912, width:0.124, height:0.0372}}
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;
@@ -20,8 +20,8 @@ document.querySelector('#loadFrameVersion').onclick = async function() {
 	await resetCardIrregularities();
 	//sets card version
 	card.version = 'sagaDFC';
-	card.onload = '/js/frames/versionSaga.js';
-	loadScript('/js/frames/versionSaga.js');
+	card.onload = 'js/frames/versionSaga.js';
+	loadScript('js/frames/versionSaga.js');
 	//art bounds
 	card.artBounds = {x:0.5, y:0.1124, width:0.4247, height:0.7253};
 	autoFitArt();

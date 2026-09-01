@@ -1,27 +1,27 @@
 //Create objects for common properties across available frames
-var masks = [{src:'/img/frames/saga/ltr/maskNoOverlay.png', name:'No Art Overlay'}];
+var masks = [{src:'img/frames/saga/ltr/maskNoOverlay.png', name:'No Art Overlay'}];
 var stampBounds = {x:878/2010, y:2560/2814, width:256/2010, height:116/2814};
 //defines available frames
 availableFrames = [
-	{name:'White Frame', src:'/img/frames/saga/ltr/w.png', masks:masks},
-	{name:'Blue Frame', src:'/img/frames/saga/ltr/u.png', masks:masks},
-	{name:'Black Frame', src:'/img/frames/saga/ltr/b.png', masks:masks},
-	{name:'Red Frame', src:'/img/frames/saga/ltr/r.png', masks:masks},
-	{name:'Green Frame', src:'/img/frames/saga/ltr/g.png', masks:masks},
-	{name:'Multicolored Frame', src:'/img/frames/saga/ltr/m.png', masks:masks},
+	{name:'White Frame', src:'img/frames/saga/ltr/w.png', masks:masks},
+	{name:'Blue Frame', src:'img/frames/saga/ltr/u.png', masks:masks},
+	{name:'Black Frame', src:'img/frames/saga/ltr/b.png', masks:masks},
+	{name:'Red Frame', src:'img/frames/saga/ltr/r.png', masks:masks},
+	{name:'Green Frame', src:'img/frames/saga/ltr/g.png', masks:masks},
+	{name:'Multicolored Frame', src:'img/frames/saga/ltr/m.png', masks:masks},
 
 
-	// {name:'Blue Frame', src:'/img/frames/saga/regular/sagaFrameU.png', masks:masks},
-	// {name:'Black Frame', src:'/img/frames/saga/regular/sagaFrameB.png', masks:masks},
-	// {name:'Red Frame', src:'/img/frames/saga/regular/sagaFrameR.png', masks:masks},
-	// {name:'Green Frame', src:'/img/frames/saga/regular/sagaFrameG.png', masks:masks},
-	// {name:'Multicolored Frame', src:'/img/frames/saga/regular/sagaFrameM.png', masks:masks},
-	// {name:'Land Frame', src:'/img/frames/saga/regular/l.png', masks:masks},
-	{name:'Banner Pinstripe (Multicolored)', src:'/img/frames/saga//ltr/sagaMidStripe.png', bounds:{x:136/2010, y:761/2814, width:41/2010, height:1435/2814}},
-	{name:'Multicolored Bars', src:'/img/frames/saga/ltr/multicolor-bar-overlay.png', mode:'color'},
+	// {name:'Blue Frame', src:'img/frames/saga/regular/sagaFrameU.png', masks:masks},
+	// {name:'Black Frame', src:'img/frames/saga/regular/sagaFrameB.png', masks:masks},
+	// {name:'Red Frame', src:'img/frames/saga/regular/sagaFrameR.png', masks:masks},
+	// {name:'Green Frame', src:'img/frames/saga/regular/sagaFrameG.png', masks:masks},
+	// {name:'Multicolored Frame', src:'img/frames/saga/regular/sagaFrameM.png', masks:masks},
+	// {name:'Land Frame', src:'img/frames/saga/regular/l.png', masks:masks},
+	{name:'Banner Pinstripe (Multicolored)', src:'img/frames/saga//ltr/sagaMidStripe.png', bounds:{x:136/2010, y:761/2814, width:41/2010, height:1435/2814}},
+	{name:'Multicolored Bars', src:'img/frames/saga/ltr/multicolor-bar-overlay.png', mode:'color'},
 
-	{name:'Gold Holo Stamp', src:'/img/frames/saga/ltr/stamp.png', bounds:stampBounds},
-	{name:'Gray Holo Stamp', src:'/img/frames/saga/ltr/grayStamp.png', bounds:stampBounds}
+	{name:'Gold Holo Stamp', src:'img/frames/saga/ltr/stamp.png', bounds:stampBounds},
+	{name:'Gray Holo Stamp', src:'img/frames/saga/ltr/grayStamp.png', bounds:stampBounds}
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;
@@ -29,11 +29,11 @@ document.querySelector('#loadFrameVersion').disabled = false;
 document.querySelector('#loadFrameVersion').onclick = async function() {
 	//resets things so that every frame doesn't have to
 	await resetCardIrregularities();
-	replacementMasks = {'Right Half':'/img/frames/saga/ltr/maskRightHalf.png'};
+	replacementMasks = {'Right Half':'img/frames/saga/ltr/maskRightHalf.png'};
 	//sets card version
 	card.version = 'sagaLTR';
-	card.onload = '/js/frames/versionSaga.js';
-	loadScript('/js/frames/versionSaga.js');
+	card.onload = 'js/frames/versionSaga.js';
+	loadScript('js/frames/versionSaga.js');
 	//art bounds
 	card.artBounds = {x:997/2010, y:313/2814, width:857/2010, height:2046/2814};
 	autoFitArt();

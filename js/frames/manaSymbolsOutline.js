@@ -1,6 +1,6 @@
 //checks to see if it needs to run
-if (!card.manaSymbols.includes('/js/frames/manaSymbolsOutline.js')) {
-	card.manaSymbols.push('/js/frames/manaSymbolsOutline.js');
+if (!card.manaSymbols.includes('js/frames/manaSymbolsOutline.js')) {
+	card.manaSymbols.push('js/frames/manaSymbolsOutline.js');
 }
 if (!mana.get('outlinew')) {
 	loadManaSymbols([

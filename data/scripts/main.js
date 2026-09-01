@@ -23,7 +23,7 @@ var totalShift = [0, 0]
 date = new Date()
 var cornerCutout = new Image()
 cornerCutout.crossOrigin = 'anonymous';
-cornerCutout.src = '/data/images/cardImages/cornerCutout.png'
+cornerCutout.src = 'data/images/cardImages/cornerCutout.png'
 //To save the server from being overloaded? Maybe?
 function fixUri(input) {
 	var prefix = 'https://raw.githubusercontent.com/ImKyle4815/cardconjurer/master';
@@ -55,7 +55,7 @@ function addToManaSymbolList(folderPath, newManaSymbolList) {
 	}
 }
 
-addToManaSymbolList('/data/images/cardImages/manaSymbols/', ["0.svg", "1.svg", "2.svg", "3.svg", "4.svg", "5.svg", "6.svg", "7.svg", "8.svg", "9.svg", "10.svg", "11.svg", "12.svg", "13.svg", "14.svg", "15.svg", "16.svg", "17.svg", "18.svg", "19.svg", "20.svg", "w.svg", "u.svg", "b.svg", "r.svg", "g.svg", "2w.svg", "2u.svg", "2b.svg", "2r.svg", "2g.svg", "pw.svg", "pu.svg", "pb.svg", "pr.svg", "pg.svg", "wu.svg", "wb.svg", "ub.svg", "ur.svg", "br.svg", "bg.svg", "rg.svg", "rw.svg", "gw.svg", "gu.svg", "x.svg", "s.svg", "c.svg", "t.svg","untap.svg", "e.svg", "y.svg", "z.svg", "half.svg", "inf.svg", "chaos.svg", "l+", "l-", "l0", "oldtap.svg", "artistbrush.svg", "bar", "whitebar", "whiteBrush", "blackBrush", 'star.svg'])
+addToManaSymbolList('data/images/cardImages/manaSymbols/', ["0.svg", "1.svg", "2.svg", "3.svg", "4.svg", "5.svg", "6.svg", "7.svg", "8.svg", "9.svg", "10.svg", "11.svg", "12.svg", "13.svg", "14.svg", "15.svg", "16.svg", "17.svg", "18.svg", "19.svg", "20.svg", "w.svg", "u.svg", "b.svg", "r.svg", "g.svg", "2w.svg", "2u.svg", "2b.svg", "2r.svg", "2g.svg", "pw.svg", "pu.svg", "pb.svg", "pr.svg", "pg.svg", "wu.svg", "wb.svg", "ub.svg", "ur.svg", "br.svg", "bg.svg", "rg.svg", "rw.svg", "gw.svg", "gu.svg", "x.svg", "s.svg", "c.svg", "t.svg","untap.svg", "e.svg", "y.svg", "z.svg", "half.svg", "inf.svg", "chaos.svg", "l+", "l-", "l0", "oldtap.svg", "artistbrush.svg", "bar", "whitebar", "whiteBrush", "blackBrush", 'star.svg'])
 
 function newCanvas(name) {
 	window[name + 'Canvas'] = document.createElement('canvas')
@@ -89,13 +89,13 @@ var setSymbolDrawX, setSymbolDrawY, setSymbolDrawWidth, setSymbolDrawHeight
 var watermarkDrawX = 0, watermarkDrawY = 0, watermarkDrawWidth = 0, watermarkDrawHeight = 0
 var cardArt = new Image()
 cardArt.crossOrigin = 'anonymous';
-cardArt.src = fixUri('/data/images/cardImages/blank.png')
+cardArt.src = fixUri('data/images/cardImages/blank.png')
 var setSymbol = new Image()
 setSymbol.crossOrigin = 'anonymous';
-setSymbol.src = fixUri('/data/images/cardImages/blank.png')
+setSymbol.src = fixUri('data/images/cardImages/blank.png')
 var watermark = new Image()
 watermark.crossOrigin = 'anonymous';
-watermark.src = fixUri('/data/images/cardImages/blank.png')
+watermark.src = fixUri('data/images/cardImages/blank.png')
 cardArt.onload = function() {
 	cardMasterList[0].width = this.width / cardWidth
 	cardMasterList[0].height = this.height / cardHeight
@@ -114,20 +114,20 @@ cardArt.onload = function() {
 }
 function setSymbolFromGatherer() {
 	if (document.getElementById('inputSetCode').value.toLowerCase() == 'cc') {
-		var newSetSymbolSource = '/data/images/cardImages/misc/cc-' + document.getElementById('inputSetRarity').value.toLowerCase()
+		var newSetSymbolSource = 'data/images/cardImages/misc/cc-' + document.getElementById('inputSetRarity').value.toLowerCase()
 		if (document.getElementById('inputSetRarity').value == '') {
 			newSetSymbolSource += 'c'
 		}
 		setSymbol.src = (newSetSymbolSource + '.png')
 	} else if (document.getElementById('inputSetCode').value.toLowerCase() == 'none') {
-		setSymbol.src = ('/data/images/cardImages/blank.png')
+		setSymbol.src = ('data/images/cardImages/blank.png')
 	} else {
 		setSymbol.src = 'https://cors-anywhere.herokuapp.com/http://gatherer.wizards.com/Handlers/Image.ashx?type=symbol&set=' + document.getElementById('inputSetCode').value + '&size=large&rarity=' + document.getElementById('inputSetRarity').value
 		// autoCrop(setSymbol, 'https://cors-anywhere.herokuapp.com/http://gatherer.wizards.com/Handlers/Image.ashx?type=symbol&set=' + document.getElementById('inputSetCode').value + '&size=large&rarity=' + document.getElementById('inputSetRarity').value)
 	}
 }
 setSymbol.onerror = function () {
-	this.src = fixUri('/data/images/cardImages/blank.png')
+	this.src = fixUri('data/images/cardImages/blank.png')
 }
 setSymbol.onload = function() {
 	if (setSymbol.width / setSymbol.height > setSymbolWidth / setSymbolHeight) {
@@ -166,7 +166,7 @@ function loadVersion(versionToLoad) {
 		cardHeight = cardWidth * 7/5
 		resizeCanvases(cardWidth, cardHeight)
 	}
-	loadScript('/data/scripts/versions/' + versionToLoad + '/version.js')
+	loadScript('data/scripts/versions/' + versionToLoad + '/version.js')
 }
 
 class cardPlaceholder {
@@ -208,7 +208,7 @@ class cardPlaceholder {
 	}
 }
 class cardImage {
-	constructor(displayName = 'cardImage', imageSource = '/data/images/cardImages/blank.png', x = 0, y = 0, width = 1, height = 1, opacity = 1, masks = ['Full'], erase = false) {
+	constructor(displayName = 'cardImage', imageSource = 'data/images/cardImages/blank.png', x = 0, y = 0, width = 1, height = 1, opacity = 1, masks = ['Full'], erase = false) {
 		this.name = displayName
 		this.image = new Image()
 		this.image.crossOrigin = 'anonymous';
@@ -386,7 +386,7 @@ function loadFramePackOptions(listOfFramePacks) {
 		framePackHTML += '<option ' + framePackOptionDisabled + 'value="' + listOfFramePacks[i][0] + '">' + listOfFramePacks[i][1] + '</option>'
 	}
 	document.getElementById('inputFramePack').innerHTML = framePackHTML
-	loadScript('/data/scripts/versions/' + document.getElementById('inputFrameVersion').value + '/regular.js')
+	loadScript('data/scripts/versions/' + document.getElementById('inputFrameVersion').value + '/regular.js')
 }
 function loadMaskImages(listOfMasks) {
 	for (var i = 0; i < listOfMasks.length; i++) {

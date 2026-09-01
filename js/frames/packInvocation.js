@@ -4,25 +4,25 @@ var bounds = {x:0.8587, y:0.8186, width:0.062, height:0.1258};
 var bounds2 = {x:0.0527, y:0.0496, width:0.8947, height:0.0515};
 //defines available frames
 availableFrames = [
-	{name:'White Frame', src:'/img/frames/invocation/w.png', masks: masks},
-	{name:'Blue Frame', src:'/img/frames/invocation/u.png', masks: masks},
-	{name:'Black Frame', src:'/img/frames/invocation/b.png', masks: masks},
-	{name:'Red Frame', src:'/img/frames/invocation/r.png', masks: masks},
-	{name:'Green Frame', src:'/img/frames/invocation/g.png', masks: masks},
-	{name:'Multicolored Frame', src:'/img/frames/invocation/m.png', masks: masks},
-	{name:'Artifact Frame', src:'/img/frames/invocation/a.png', masks: masks},
-	{name:'Power/Toughness', src:'/img/frames/invocation/pt.png', bounds:bounds},
-	{name:'Set Symbol Cover', src:'/img/frames/invocation/set.png', bounds:{x:0.8494, y:0.5705, width:0.0907, height:0.0434}},
-	{name:'Mana Bracket (1)', src:'/img/frames/invocation/mana/1.png', bounds:bounds2},
-	{name:'Mana Bracket (2)', src:'/img/frames/invocation/mana/2.png', bounds:bounds2},
-	{name:'Mana Bracket (3)', src:'/img/frames/invocation/mana/3.png', bounds:bounds2},
-	{name:'Mana Bracket (4)', src:'/img/frames/invocation/mana/4.png', bounds:bounds2},
-	{name:'Mana Bracket (5)', src:'/img/frames/invocation/mana/5.png', bounds:bounds2},
-	{name:'Mana Bracket (6)', src:'/img/frames/invocation/mana/6.png', bounds:bounds2},
-	{name:'Mana Bracket (7)', src:'/img/frames/invocation/mana/7.png', bounds:bounds2},
-	{name:'Mana Bracket (8)', src:'/img/frames/invocation/mana/8.png', bounds:bounds2},
-	{name:'Mana Bracket (9)', src:'/img/frames/invocation/mana/9.png', bounds:bounds2},
-	{name:'Mana Bracket (10)', src:'/img/frames/invocation/mana/10.png', bounds:bounds2}
+	{name:'White Frame', src:'img/frames/invocation/w.png', masks: masks},
+	{name:'Blue Frame', src:'img/frames/invocation/u.png', masks: masks},
+	{name:'Black Frame', src:'img/frames/invocation/b.png', masks: masks},
+	{name:'Red Frame', src:'img/frames/invocation/r.png', masks: masks},
+	{name:'Green Frame', src:'img/frames/invocation/g.png', masks: masks},
+	{name:'Multicolored Frame', src:'img/frames/invocation/m.png', masks: masks},
+	{name:'Artifact Frame', src:'img/frames/invocation/a.png', masks: masks},
+	{name:'Power/Toughness', src:'img/frames/invocation/pt.png', bounds:bounds},
+	{name:'Set Symbol Cover', src:'img/frames/invocation/set.png', bounds:{x:0.8494, y:0.5705, width:0.0907, height:0.0434}},
+	{name:'Mana Bracket (1)', src:'img/frames/invocation/mana/1.png', bounds:bounds2},
+	{name:'Mana Bracket (2)', src:'img/frames/invocation/mana/2.png', bounds:bounds2},
+	{name:'Mana Bracket (3)', src:'img/frames/invocation/mana/3.png', bounds:bounds2},
+	{name:'Mana Bracket (4)', src:'img/frames/invocation/mana/4.png', bounds:bounds2},
+	{name:'Mana Bracket (5)', src:'img/frames/invocation/mana/5.png', bounds:bounds2},
+	{name:'Mana Bracket (6)', src:'img/frames/invocation/mana/6.png', bounds:bounds2},
+	{name:'Mana Bracket (7)', src:'img/frames/invocation/mana/7.png', bounds:bounds2},
+	{name:'Mana Bracket (8)', src:'img/frames/invocation/mana/8.png', bounds:bounds2},
+	{name:'Mana Bracket (9)', src:'img/frames/invocation/mana/9.png', bounds:bounds2},
+	{name:'Mana Bracket (10)', src:'img/frames/invocation/mana/10.png', bounds:bounds2}
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;
@@ -33,7 +33,7 @@ document.querySelector('#loadFrameVersion').onclick = async function() {
 	//sets card version
 	card.version = 'invocation';
 	card.showsFlavorBar = false;
-	loadScript('/js/frames/manaSymbolsOutline.js');
+	loadScript('js/frames/manaSymbolsOutline.js');
 	//art bounds
 	card.artBounds = {x:173/1500, y:313/2100, width:1150/1500, height:819/2100};
 	autoFitArt();

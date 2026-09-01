@@ -1,16 +1,16 @@
 //Create objects for common properties across available frames
-var masks = [{src:'/img/frames/planeswalker/tall/planeswalkerTallMaskPinline.png', name:'Pinline'}, {src:'/img/frames/planeswalker/regular/planeswalkerMaskTitle.png', name:'Title'}, {src:'/img/frames/planeswalker/tall/planeswalkerTallMaskType.png', name:'Type'}, {src:'/img/frames/planeswalker/regular/planeswalkerMaskBorder.png', name:'Border'}, {src:'/img/frames/planeswalker/maskLoyalty.png', name:'Loyalty'}];
+var masks = [{src:'img/frames/planeswalker/tall/planeswalkerTallMaskPinline.png', name:'Pinline'}, {src:'img/frames/planeswalker/regular/planeswalkerMaskTitle.png', name:'Title'}, {src:'img/frames/planeswalker/tall/planeswalkerTallMaskType.png', name:'Type'}, {src:'img/frames/planeswalker/regular/planeswalkerMaskBorder.png', name:'Border'}, {src:'img/frames/planeswalker/maskLoyalty.png', name:'Loyalty'}];
 //defines available frames
 availableFrames = [
-	{name:'White Frame', src:'/img/frames/planeswalker/tallBorderless/w.png', masks:masks},
-	{name:'Blue Frame', src:'/img/frames/planeswalker/tallBorderless/u.png', masks:masks},
-	{name:'Black Frame', src:'/img/frames/planeswalker/tallBorderless/b.png', masks:masks},
-	{name:'Red Frame', src:'/img/frames/planeswalker/tallBorderless/r.png', masks:masks},
-	{name:'Green Frame', src:'/img/frames/planeswalker/tallBorderless/g.png', masks:masks},
-	{name:'Multicolored Frame', src:'/img/frames/planeswalker/tallBorderless/m.png', masks:masks},
-	{name:'Artifact Frame', src:'/img/frames/planeswalker/tallBorderless/a.png', masks:masks},
-	{name:'Land Frame', src:'/img/frames/planeswalker/tallBorderless/l.png', masks:masks},
-	{name:'Colorless Frame', src:'/img/frames/planeswalker/tallBorderless/c.png', masks:masks}
+	{name:'White Frame', src:'img/frames/planeswalker/tallBorderless/w.png', masks:masks},
+	{name:'Blue Frame', src:'img/frames/planeswalker/tallBorderless/u.png', masks:masks},
+	{name:'Black Frame', src:'img/frames/planeswalker/tallBorderless/b.png', masks:masks},
+	{name:'Red Frame', src:'img/frames/planeswalker/tallBorderless/r.png', masks:masks},
+	{name:'Green Frame', src:'img/frames/planeswalker/tallBorderless/g.png', masks:masks},
+	{name:'Multicolored Frame', src:'img/frames/planeswalker/tallBorderless/m.png', masks:masks},
+	{name:'Artifact Frame', src:'img/frames/planeswalker/tallBorderless/a.png', masks:masks},
+	{name:'Land Frame', src:'img/frames/planeswalker/tallBorderless/l.png', masks:masks},
+	{name:'Colorless Frame', src:'img/frames/planeswalker/tallBorderless/c.png', masks:masks}
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;
@@ -20,8 +20,8 @@ document.querySelector('#loadFrameVersion').onclick = async function() {
 	await resetCardIrregularities();
 	//sets card version
 	card.version = 'planeswalkerTallBorderless';
-	card.onload = '/js/frames/versionPlaneswalker.js';
-	loadScript('/js/frames/versionPlaneswalker.js');
+	card.onload = 'js/frames/versionPlaneswalker.js';
+	loadScript('js/frames/versionPlaneswalker.js');
 	//art bounds
 	card.artBounds = {x:0, y:0, width:1, height:0.9153};
 	autoFitArt();

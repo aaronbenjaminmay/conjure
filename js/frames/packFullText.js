@@ -1,30 +1,30 @@
 //Create objects for common properties across available frames
-var masks = [{src:'/img/frames/m15/fullText/pinline.svg', name:'Pinline'}, {src:'/img/frames/m15/regular/m15MaskTitle.png', name:'Title'}, {src:'/img/frames/m15/fullText/type.svg', name:'Type'}, {src:'/img/frames/m15/fullText/rules.svg', name:'Rules'}, {src:'/img/frames/m15/fullText/frame.svg', name:'Frame'}, {src:'/img/frames/m15/regular/m15MaskBorder.png', name:'Border'}];
+var masks = [{src:'img/frames/m15/fullText/pinline.svg', name:'Pinline'}, {src:'img/frames/m15/regular/m15MaskTitle.png', name:'Title'}, {src:'img/frames/m15/fullText/type.svg', name:'Type'}, {src:'img/frames/m15/fullText/rules.svg', name:'Rules'}, {src:'img/frames/m15/fullText/frame.svg', name:'Frame'}, {src:'img/frames/m15/regular/m15MaskBorder.png', name:'Border'}];
 var bounds = {x:0.7573, y:0.8848, width:0.188, height:0.0733};
 //defines available frames
 availableFrames = [
-	{name:'White Frame', src:'/img/frames/m15/fullText/w.png', masks:masks},
-	{name:'Blue Frame', src:'/img/frames/m15/fullText/u.png', masks:masks},
-	{name:'Black Frame', src:'/img/frames/m15/fullText/b.png', masks:masks},
-	{name:'Red Frame', src:'/img/frames/m15/fullText/r.png', masks:masks},
-	{name:'Green Frame', src:'/img/frames/m15/fullText/g.png', masks:masks},
-	{name:'Multicolored Frame', src:'/img/frames/m15/fullText/m.png', masks:masks},
-	{name:'Artifact Frame', src:'/img/frames/m15/fullText/a.png', masks:masks},
-	{name:'Land Frame', src:'/img/frames/m15/fullText/l.png', masks:masks},
-	{name:'White Land Frame', src:'/img/frames/m15/fullText/wl.png', masks:masks},
-	{name:'Blue Land Frame', src:'/img/frames/m15/fullText/ul.png', masks:masks},
-	{name:'Black Land Frame', src:'/img/frames/m15/fullText/bl.png', masks:masks},
-	{name:'Red Land Frame', src:'/img/frames/m15/fullText/rl.png', masks:masks},
-	{name:'Green Land Frame', src:'/img/frames/m15/fullText/gl.png', masks:masks},
-	{name:'Multicolored Land Frame', src:'/img/frames/m15/fullText/ml.png', masks:masks},
-	{name:'White Power/Toughness', src:'/img/frames/m15/regular/m15PTW.png', bounds:bounds},
-	{name:'Blue Power/Toughness', src:'/img/frames/m15/regular/m15PTU.png', bounds:bounds},
-	{name:'Black Power/Toughness', src:'/img/frames/m15/regular/m15PTB.png', bounds:bounds},
-	{name:'Red Power/Toughness', src:'/img/frames/m15/regular/m15PTR.png', bounds:bounds},
-	{name:'Green Power/Toughness', src:'/img/frames/m15/regular/m15PTG.png', bounds:bounds},
-	{name:'Multicolored Power/Toughness', src:'/img/frames/m15/regular/m15PTM.png', bounds:bounds},
-	{name:'Artifact Power/Toughness', src:'/img/frames/m15/regular/m15PTA.png', bounds:bounds},
-	{name:'Colorless Power/Toughness', src:'/img/frames/m15/regular/m15PTC.png', bounds:bounds}
+	{name:'White Frame', src:'img/frames/m15/fullText/w.png', masks:masks},
+	{name:'Blue Frame', src:'img/frames/m15/fullText/u.png', masks:masks},
+	{name:'Black Frame', src:'img/frames/m15/fullText/b.png', masks:masks},
+	{name:'Red Frame', src:'img/frames/m15/fullText/r.png', masks:masks},
+	{name:'Green Frame', src:'img/frames/m15/fullText/g.png', masks:masks},
+	{name:'Multicolored Frame', src:'img/frames/m15/fullText/m.png', masks:masks},
+	{name:'Artifact Frame', src:'img/frames/m15/fullText/a.png', masks:masks},
+	{name:'Land Frame', src:'img/frames/m15/fullText/l.png', masks:masks},
+	{name:'White Land Frame', src:'img/frames/m15/fullText/wl.png', masks:masks},
+	{name:'Blue Land Frame', src:'img/frames/m15/fullText/ul.png', masks:masks},
+	{name:'Black Land Frame', src:'img/frames/m15/fullText/bl.png', masks:masks},
+	{name:'Red Land Frame', src:'img/frames/m15/fullText/rl.png', masks:masks},
+	{name:'Green Land Frame', src:'img/frames/m15/fullText/gl.png', masks:masks},
+	{name:'Multicolored Land Frame', src:'img/frames/m15/fullText/ml.png', masks:masks},
+	{name:'White Power/Toughness', src:'img/frames/m15/regular/m15PTW.png', bounds:bounds},
+	{name:'Blue Power/Toughness', src:'img/frames/m15/regular/m15PTU.png', bounds:bounds},
+	{name:'Black Power/Toughness', src:'img/frames/m15/regular/m15PTB.png', bounds:bounds},
+	{name:'Red Power/Toughness', src:'img/frames/m15/regular/m15PTR.png', bounds:bounds},
+	{name:'Green Power/Toughness', src:'img/frames/m15/regular/m15PTG.png', bounds:bounds},
+	{name:'Multicolored Power/Toughness', src:'img/frames/m15/regular/m15PTM.png', bounds:bounds},
+	{name:'Artifact Power/Toughness', src:'img/frames/m15/regular/m15PTA.png', bounds:bounds},
+	{name:'Colorless Power/Toughness', src:'img/frames/m15/regular/m15PTC.png', bounds:bounds}
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;

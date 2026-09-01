@@ -78,7 +78,7 @@ function importSavedCard(localStorageKey = document.getElementById('inputCardToI
     document.getElementById('inputFrameVersion').value = importedCard.version.split('/')[0]
     loadVersion(importedCard.version.split('/')[0])
     if (!importedCard.version.includes('version')) {
-      loadScript('/data/scripts/versions/' + importedCard.version + '.js')
+      loadScript('data/scripts/versions/' + importedCard.version + '.js')
     }
     //Frame
     document.getElementById('cardMaster').innerHTML = importedCard.cardMaster

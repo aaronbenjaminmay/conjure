@@ -1,21 +1,21 @@
 //Create objects for common properties across available frames
-var masks = [{src:'/img/frames/snc/basics/pinline.svg', name:'Pinline'}, {src:'/img/frames/snc/basics/title.svg', name:'Title'}, {src:'/img/frames/snc/basics/type.svg', name:'Type'}, {src:'/img/frames/snc/basics/border.svg', name:'Border'}];
+var masks = [{src:'img/frames/snc/basics/pinline.svg', name:'Pinline'}, {src:'img/frames/snc/basics/title.svg', name:'Title'}, {src:'img/frames/snc/basics/type.svg', name:'Type'}, {src:'img/frames/snc/basics/border.svg', name:'Border'}];
 var bounds = {x:0.42, y:0.7867, width:0.16, height:0.1143};
 //defines available frames
 availableFrames = [
-	{name:'White Frame', src:'/img/frames/snc/basics/w.png', masks:masks},
-	{name:'Blue Frame', src:'/img/frames/snc/basics/u.png', masks:masks},
-	{name:'Black Frame', src:'/img/frames/snc/basics/b.png', masks:masks},
-	{name:'Red Frame', src:'/img/frames/snc/basics/r.png', masks:masks},
-	{name:'Green Frame', src:'/img/frames/snc/basics/g.png', masks:masks},
-	{name:'Multicolored Frame', src:'/img/frames/snc/basics/m.png', masks:masks},
-	{name:'Colorless Frame', src:'/img/frames/snc/basics/l.png', masks:masks},
-	{name:'White Mana Symbol', src:'/img/frames/textless/zendikar/sw.svg', bounds:bounds},
-	{name:'Blue Mana Symbol', src:'/img/frames/textless/zendikar/su.svg', bounds:bounds},
-	{name:'Black Mana Symbol', src:'/img/frames/textless/zendikar/sb.svg', bounds:bounds},
-	{name:'Red Mana Symbol', src:'/img/frames/textless/zendikar/sr.svg', bounds:bounds},
-	{name:'Green Mana Symbol', src:'/img/frames/textless/zendikar/sg.svg', bounds:bounds},
-	{name:'Colorless Mana Symbol', src:'/img/frames/textless/zendikar/sc.svg', bounds:bounds}
+	{name:'White Frame', src:'img/frames/snc/basics/w.png', masks:masks},
+	{name:'Blue Frame', src:'img/frames/snc/basics/u.png', masks:masks},
+	{name:'Black Frame', src:'img/frames/snc/basics/b.png', masks:masks},
+	{name:'Red Frame', src:'img/frames/snc/basics/r.png', masks:masks},
+	{name:'Green Frame', src:'img/frames/snc/basics/g.png', masks:masks},
+	{name:'Multicolored Frame', src:'img/frames/snc/basics/m.png', masks:masks},
+	{name:'Colorless Frame', src:'img/frames/snc/basics/l.png', masks:masks},
+	{name:'White Mana Symbol', src:'img/frames/textless/zendikar/sw.svg', bounds:bounds},
+	{name:'Blue Mana Symbol', src:'img/frames/textless/zendikar/su.svg', bounds:bounds},
+	{name:'Black Mana Symbol', src:'img/frames/textless/zendikar/sb.svg', bounds:bounds},
+	{name:'Red Mana Symbol', src:'img/frames/textless/zendikar/sr.svg', bounds:bounds},
+	{name:'Green Mana Symbol', src:'img/frames/textless/zendikar/sg.svg', bounds:bounds},
+	{name:'Colorless Mana Symbol', src:'img/frames/textless/zendikar/sc.svg', bounds:bounds}
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;

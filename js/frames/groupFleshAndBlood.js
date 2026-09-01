@@ -17,7 +17,7 @@ var LoadFABVersion = async () => {
 	await resetCardIrregularities();
 	//sets card version
 	card.version = 'FABRegular';
-	loadScript('/js/frames/manaSymbolsFAB.js');
+	loadScript('js/frames/manaSymbolsFAB.js');
 	//art bounds
 	card.artBounds = {x:0.0867, y:0.1258, width:0.8267, height:0.4796};
 	autoFitArt();

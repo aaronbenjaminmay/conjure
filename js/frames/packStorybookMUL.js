@@ -1,34 +1,34 @@
 //Create objects for common properties across available frames
-var masks = [{src:'/img/frames/storybook/mul/pinline.png', name:'Pinline'}];
+var masks = [{src:'img/frames/storybook/mul/pinline.png', name:'Pinline'}];
 //Create objects for common properties across available frames
 var bounds = {x:1165/1500, y:1860/2100, width:266/1500, height:134/2100};
 var crownBounds = {x:80/1500, y:41/2100, width:1341/1500, height:73/2100};
 //defines available frames
 availableFrames = [
-	{name:'White Frame', src:'/img/frames/storybook/mul/w.png', masks:masks},
-	{name:'Blue Frame', src:'/img/frames/storybook/mul/u.png', masks:masks},
-	{name:'Black Frame', src:'/img/frames/storybook/mul/b.png', masks:masks},
-	{name:'Red Frame', src:'/img/frames/storybook/mul/r.png', masks:masks},
-	{name:'Green Frame', src:'/img/frames/storybook/mul/g.png', masks:masks},
-	{name:'Multicolored Frame', src:'/img/frames/storybook/mul/m.png', masks:masks},
-	// {name:'Colorless Frame', src:'/img/frames/storybook/c.png', masks:masks},
-	{name:'White Power/Toughness', src:'/img/frames/storybook/mul/pt/w.png', bounds:bounds, complementary: 19},
-	{name:'Blue Power/Toughness', src:'/img/frames/storybook/mul/pt/u.png', bounds:bounds, complementary: 19},
-	{name:'Black Power/Toughness', src:'/img/frames/storybook/mul/pt/b.png', bounds:bounds, complementary: 19},
-	{name:'Red Power/Toughness', src:'/img/frames/storybook/mul/pt/r.png', bounds:bounds, complementary: 19},
-	{name:'Green Power/Toughness', src:'/img/frames/storybook/mul/pt/g.png', bounds:bounds, complementary: 19},
-	{name:'Multicolored Power/Toughness', src:'/img/frames/storybook/mul/pt/m.png', bounds:bounds, complementary: 19},
-	// {name:'Colorless Power/Toughness', src:'/img/frames/storybook/cpt.png', bounds:bounds},
+	{name:'White Frame', src:'img/frames/storybook/mul/w.png', masks:masks},
+	{name:'Blue Frame', src:'img/frames/storybook/mul/u.png', masks:masks},
+	{name:'Black Frame', src:'img/frames/storybook/mul/b.png', masks:masks},
+	{name:'Red Frame', src:'img/frames/storybook/mul/r.png', masks:masks},
+	{name:'Green Frame', src:'img/frames/storybook/mul/g.png', masks:masks},
+	{name:'Multicolored Frame', src:'img/frames/storybook/mul/m.png', masks:masks},
+	// {name:'Colorless Frame', src:'img/frames/storybook/c.png', masks:masks},
+	{name:'White Power/Toughness', src:'img/frames/storybook/mul/pt/w.png', bounds:bounds, complementary: 19},
+	{name:'Blue Power/Toughness', src:'img/frames/storybook/mul/pt/u.png', bounds:bounds, complementary: 19},
+	{name:'Black Power/Toughness', src:'img/frames/storybook/mul/pt/b.png', bounds:bounds, complementary: 19},
+	{name:'Red Power/Toughness', src:'img/frames/storybook/mul/pt/r.png', bounds:bounds, complementary: 19},
+	{name:'Green Power/Toughness', src:'img/frames/storybook/mul/pt/g.png', bounds:bounds, complementary: 19},
+	{name:'Multicolored Power/Toughness', src:'img/frames/storybook/mul/pt/m.png', bounds:bounds, complementary: 19},
+	// {name:'Colorless Power/Toughness', src:'img/frames/storybook/cpt.png', bounds:bounds},
 
-	{name:'White Legend Crown', src:'/img/frames/storybook/mul/crowns/w.png', bounds:crownBounds},
-	{name:'Blue Legend Crown', src:'/img/frames/storybook/mul/crowns/u.png', bounds:crownBounds},
-	{name:'Black Legend Crown', src:'/img/frames/storybook/mul/crowns/b.png', bounds:crownBounds},
-	{name:'Red Legend Crown', src:'/img/frames/storybook/mul/crowns/r.png', bounds:crownBounds},
-	{name:'Green Legend Crown', src:'/img/frames/storybook/mul/crowns/g.png', bounds:crownBounds},
-	{name:'Multicolored Legend Crown', src:'/img/frames/storybook/mul/crowns/m.png', bounds:crownBounds},
+	{name:'White Legend Crown', src:'img/frames/storybook/mul/crowns/w.png', bounds:crownBounds},
+	{name:'Blue Legend Crown', src:'img/frames/storybook/mul/crowns/u.png', bounds:crownBounds},
+	{name:'Black Legend Crown', src:'img/frames/storybook/mul/crowns/b.png', bounds:crownBounds},
+	{name:'Red Legend Crown', src:'img/frames/storybook/mul/crowns/r.png', bounds:crownBounds},
+	{name:'Green Legend Crown', src:'img/frames/storybook/mul/crowns/g.png', bounds:crownBounds},
+	{name:'Multicolored Legend Crown', src:'img/frames/storybook/mul/crowns/m.png', bounds:crownBounds},
 
-	{name:'Holo Stamp', src:'/img/frames/storybook/holo.png', bounds:{x:679/1500, y:0.9129, width:0.0987, height:0.0386}},
-	{name:'Power/Toughness Cover', src:'/img/frames/storybook/mul/pt/cover.png', bounds: {x:1404/1500, y:1817/2100, width:91/1500, height:177/2100}}
+	{name:'Holo Stamp', src:'img/frames/storybook/holo.png', bounds:{x:679/1500, y:0.9129, width:0.0987, height:0.0386}},
+	{name:'Power/Toughness Cover', src:'img/frames/storybook/mul/pt/cover.png', bounds: {x:1404/1500, y:1817/2100, width:91/1500, height:177/2100}}
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;

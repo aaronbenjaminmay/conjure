@@ -3,16 +3,16 @@ var bounds1 = {x:0.048, y:0.0367, width:0.0834, height:0.8805};
 var bounds2 = {x:0.0314, y:0.8896, width:0.4354, height:0.041};
 //defines available frames
 availableFrames = [
-	{name:'White MDFC Flipside', src:'/img/frames/custom/classicshifted/mdfc/w.png', bounds:bounds2},
-	{name:'Blue MDFC Flipside', src:'/img/frames/custom/classicshifted/mdfc/u.png', bounds:bounds2},
-	{name:'Black MDFC Flipside', src:'/img/frames/custom/classicshifted/mdfc/b.png', bounds:bounds2},
-	{name:'Red MDFC Flipside', src:'/img/frames/custom/classicshifted/mdfc/r.png', bounds:bounds2},
-	{name:'Green MDFC Flipside', src:'/img/frames/custom/classicshifted/mdfc/g.png', bounds:bounds2},
-	{name:'Multicolored MDFC Flipside', src:'/img/frames/custom/classicshifted/mdfc/m.png', bounds:bounds2},
-	{name:'Artifact MDFC Flipside', src:'/img/frames/custom/classicshifted/mdfc/a.png', bounds:bounds2},
-	{name:'Land MDFC Flipside', src:'/img/frames/custom/classicshifted/mdfc/l.png', bounds:bounds2},
-	{name:'Front Face', src:'/img/frames/custom/classicshifted/mdfc/mdfcFront.png', bounds:bounds1},
-	{name:'Back Face', src:'/img/frames/custom/classicshifted/mdfc/mdfcBack.png', bounds:bounds1}
+	{name:'White MDFC Flipside', src:'img/frames/custom/classicshifted/mdfc/w.png', bounds:bounds2},
+	{name:'Blue MDFC Flipside', src:'img/frames/custom/classicshifted/mdfc/u.png', bounds:bounds2},
+	{name:'Black MDFC Flipside', src:'img/frames/custom/classicshifted/mdfc/b.png', bounds:bounds2},
+	{name:'Red MDFC Flipside', src:'img/frames/custom/classicshifted/mdfc/r.png', bounds:bounds2},
+	{name:'Green MDFC Flipside', src:'img/frames/custom/classicshifted/mdfc/g.png', bounds:bounds2},
+	{name:'Multicolored MDFC Flipside', src:'img/frames/custom/classicshifted/mdfc/m.png', bounds:bounds2},
+	{name:'Artifact MDFC Flipside', src:'img/frames/custom/classicshifted/mdfc/a.png', bounds:bounds2},
+	{name:'Land MDFC Flipside', src:'img/frames/custom/classicshifted/mdfc/l.png', bounds:bounds2},
+	{name:'Front Face', src:'img/frames/custom/classicshifted/mdfc/mdfcFront.png', bounds:bounds1},
+	{name:'Back Face', src:'img/frames/custom/classicshifted/mdfc/mdfcBack.png', bounds:bounds1}
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;

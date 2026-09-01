@@ -1,15 +1,15 @@
 //Create objects for common properties across available frames
-var masks = [{src:'/img/frames/textless/unhinged/pinline.svg', name:'Pinline'}, {src:'/img/frames/textless/unhinged/title.svg', name:'Title'}];
+var masks = [{src:'img/frames/textless/unhinged/pinline.svg', name:'Pinline'}, {src:'img/frames/textless/unhinged/title.svg', name:'Title'}];
 //defines available frames
 availableFrames = [
-	{name:'White Frame', src:'/img/frames/textless/unhinged/w.png', masks:masks},
-	{name:'Blue Frame', src:'/img/frames/textless/unhinged/u.png', masks:masks},
-	{name:'Black Frame', src:'/img/frames/textless/unhinged/b.png', masks:masks},
-	{name:'Red Frame', src:'/img/frames/textless/unhinged/r.png', masks:masks},
-	{name:'Green Frame', src:'/img/frames/textless/unhinged/g.png', masks:masks},
-	{name:'Multicolored Frame', src:'/img/frames/textless/unhinged/m.png', masks:masks},
-	{name:'Artifact Frame', src:'/img/frames/textless/unhinged/a.png', masks:masks},
-	{name:'Colorless Frame', src:'/img/frames/textless/unhinged/c.png', masks:masks}
+	{name:'White Frame', src:'img/frames/textless/unhinged/w.png', masks:masks},
+	{name:'Blue Frame', src:'img/frames/textless/unhinged/u.png', masks:masks},
+	{name:'Black Frame', src:'img/frames/textless/unhinged/b.png', masks:masks},
+	{name:'Red Frame', src:'img/frames/textless/unhinged/r.png', masks:masks},
+	{name:'Green Frame', src:'img/frames/textless/unhinged/g.png', masks:masks},
+	{name:'Multicolored Frame', src:'img/frames/textless/unhinged/m.png', masks:masks},
+	{name:'Artifact Frame', src:'img/frames/textless/unhinged/a.png', masks:masks},
+	{name:'Colorless Frame', src:'img/frames/textless/unhinged/c.png', masks:masks}
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;

@@ -1,26 +1,26 @@
 //Create objects for common properties across available frames
-var masks = [{src:'/img/frames/textless/zendikar/pinline.png', name:'Pinline'}, {src:'/img/frames/m15/regular/m15MaskTitle.png', name:'Title'}, {src:'/img/frames/textless/zendikar/type.png', name:'Type'}, {src:'/img/frames/textless/zendikar/frame.png', name:'Frame'}, {src:'/img/frames/m15/regular/m15MaskBorder.png', name:'Border'}];
+var masks = [{src:'img/frames/textless/zendikar/pinline.png', name:'Pinline'}, {src:'img/frames/m15/regular/m15MaskTitle.png', name:'Title'}, {src:'img/frames/textless/zendikar/type.png', name:'Type'}, {src:'img/frames/textless/zendikar/frame.png', name:'Frame'}, {src:'img/frames/m15/regular/m15MaskBorder.png', name:'Border'}];
 var bounds = {x:0.42, y:0.7867, width:0.16, height:0.1143};
 //defines available frames
 availableFrames = [
-	{name:'White Frame', src:'/img/frames/textless/zendikar/w.png', masks:masks},
-	{name:'Blue Frame', src:'/img/frames/textless/zendikar/u.png', masks:masks},
-	{name:'Black Frame', src:'/img/frames/textless/zendikar/b.png', masks:masks},
-	{name:'Red Frame', src:'/img/frames/textless/zendikar/r.png', masks:masks},
-	{name:'Green Frame', src:'/img/frames/textless/zendikar/g.png', masks:masks},
-	{name:'Multicolored Frame', src:'/img/frames/textless/zendikar/m.png', masks:masks},
-	{name:'Colorless Frame', src:'/img/frames/textless/zendikar/l.png', masks:masks},
-	{name:'White Mana Symbol', src:'/img/frames/textless/zendikar/sw.svg', bounds:bounds},
-	{name:'Blue Mana Symbol', src:'/img/frames/textless/zendikar/su.svg', bounds:bounds},
-	{name:'Black Mana Symbol', src:'/img/frames/textless/zendikar/sb.svg', bounds:bounds},
-	{name:'Red Mana Symbol', src:'/img/frames/textless/zendikar/sr.svg', bounds:bounds},
-	{name:'Green Mana Symbol', src:'/img/frames/textless/zendikar/sg.svg', bounds:bounds},
-	{name:'Colorless Mana Symbol', src:'/img/frames/textless/zendikar/sc.svg', bounds:bounds},
-	{name:'White Frame (Snow)', src:'/img/frames/textless/snowBasics/w.png', masks:masks},
-	{name:'Blue Frame (Snow)', src:'/img/frames/textless/snowBasics/u.png', masks:masks},
-	{name:'Black Frame (Snow)', src:'/img/frames/textless/snowBasics/b.png', masks:masks},
-	{name:'Red Frame (Snow)', src:'/img/frames/textless/snowBasics/r.png', masks:masks},
-	{name:'Green Frame (Snow)', src:'/img/frames/textless/snowBasics/g.png', masks:masks}
+	{name:'White Frame', src:'img/frames/textless/zendikar/w.png', masks:masks},
+	{name:'Blue Frame', src:'img/frames/textless/zendikar/u.png', masks:masks},
+	{name:'Black Frame', src:'img/frames/textless/zendikar/b.png', masks:masks},
+	{name:'Red Frame', src:'img/frames/textless/zendikar/r.png', masks:masks},
+	{name:'Green Frame', src:'img/frames/textless/zendikar/g.png', masks:masks},
+	{name:'Multicolored Frame', src:'img/frames/textless/zendikar/m.png', masks:masks},
+	{name:'Colorless Frame', src:'img/frames/textless/zendikar/l.png', masks:masks},
+	{name:'White Mana Symbol', src:'img/frames/textless/zendikar/sw.svg', bounds:bounds},
+	{name:'Blue Mana Symbol', src:'img/frames/textless/zendikar/su.svg', bounds:bounds},
+	{name:'Black Mana Symbol', src:'img/frames/textless/zendikar/sb.svg', bounds:bounds},
+	{name:'Red Mana Symbol', src:'img/frames/textless/zendikar/sr.svg', bounds:bounds},
+	{name:'Green Mana Symbol', src:'img/frames/textless/zendikar/sg.svg', bounds:bounds},
+	{name:'Colorless Mana Symbol', src:'img/frames/textless/zendikar/sc.svg', bounds:bounds},
+	{name:'White Frame (Snow)', src:'img/frames/textless/snowBasics/w.png', masks:masks},
+	{name:'Blue Frame (Snow)', src:'img/frames/textless/snowBasics/u.png', masks:masks},
+	{name:'Black Frame (Snow)', src:'img/frames/textless/snowBasics/b.png', masks:masks},
+	{name:'Red Frame (Snow)', src:'img/frames/textless/snowBasics/r.png', masks:masks},
+	{name:'Green Frame (Snow)', src:'img/frames/textless/snowBasics/g.png', masks:masks}
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;

@@ -1,18 +1,18 @@
 //Create objects for common properties across available frames
-var masks = [{src:'/img/frames/saga/ub/sagaMaskPinline.png', name:'Pinline'}, {src:'/img/frames/saga/ub/sagaMaskTitle.png', name:'Title'}, {src:'/img/frames/saga/ub/sagaMaskType.png', name:'Type'}, {src:'/img/frames/saga/ub/sagaMaskFrame.png', name:'Frame'}, {src:'/img/frames/saga/ub/sagaMaskBanner.png', name:'Banner'}, {src:'/img/frames/saga/ub/sagaMaskBannerRight.png', name:'Banner (Right)'}, {src:'/img/frames/saga/ub/sagaMaskText.png', name:'Text'}, {src:'/img/frames/saga/ub/sagaMaskTextRight.png', name:'Text (Right)'}, {src:'/img/frames/saga/ub/sagaMaskBorder.png', name:'Border'}];
+var masks = [{src:'img/frames/saga/ub/sagaMaskPinline.png', name:'Pinline'}, {src:'img/frames/saga/ub/sagaMaskTitle.png', name:'Title'}, {src:'img/frames/saga/ub/sagaMaskType.png', name:'Type'}, {src:'img/frames/saga/ub/sagaMaskFrame.png', name:'Frame'}, {src:'img/frames/saga/ub/sagaMaskBanner.png', name:'Banner'}, {src:'img/frames/saga/ub/sagaMaskBannerRight.png', name:'Banner (Right)'}, {src:'img/frames/saga/ub/sagaMaskText.png', name:'Text'}, {src:'img/frames/saga/ub/sagaMaskTextRight.png', name:'Text (Right)'}, {src:'img/frames/saga/ub/sagaMaskBorder.png', name:'Border'}];
 //defines available frames
 var stampBounds = {x:666/1500, y:1905/2100, width:171/1500, height:95/2100};
 availableFrames = [
-	{name:'White Frame', src:'/img/frames/saga/ub/sagaFrameW.png', masks:masks},
-	{name:'Blue Frame', src:'/img/frames/saga/ub/sagaFrameU.png', masks:masks},
-	{name:'Black Frame', src:'/img/frames/saga/ub/sagaFrameB.png', masks:masks},
-	{name:'Red Frame', src:'/img/frames/saga/ub/sagaFrameR.png', masks:masks},
-	{name:'Green Frame', src:'/img/frames/saga/ub/sagaFrameG.png', masks:masks},
-	{name:'Multicolored Frame', src:'/img/frames/saga/ub/sagaFrameM.png', masks:masks},
-	{name:'Land Frame', src:'/img/frames/saga/ub/l.png', masks:masks},
-	{name:'Banner Pinstripe (Multicolored)', src:'/img/frames/saga/ub/sagaMidStripe.png', bounds:{x:112/1500, y:630/2100, width:15/1500, height:985/2100}},
-	{name:'Holo Stamp', src:'/img/frames/saga/ub/stamp.png', bounds:stampBounds},
-	{name:'Gray Stamp', src:'/img/frames/saga/ub/stampGray.png', bounds:stampBounds},
+	{name:'White Frame', src:'img/frames/saga/ub/sagaFrameW.png', masks:masks},
+	{name:'Blue Frame', src:'img/frames/saga/ub/sagaFrameU.png', masks:masks},
+	{name:'Black Frame', src:'img/frames/saga/ub/sagaFrameB.png', masks:masks},
+	{name:'Red Frame', src:'img/frames/saga/ub/sagaFrameR.png', masks:masks},
+	{name:'Green Frame', src:'img/frames/saga/ub/sagaFrameG.png', masks:masks},
+	{name:'Multicolored Frame', src:'img/frames/saga/ub/sagaFrameM.png', masks:masks},
+	{name:'Land Frame', src:'img/frames/saga/ub/l.png', masks:masks},
+	{name:'Banner Pinstripe (Multicolored)', src:'img/frames/saga/ub/sagaMidStripe.png', bounds:{x:112/1500, y:630/2100, width:15/1500, height:985/2100}},
+	{name:'Holo Stamp', src:'img/frames/saga/ub/stamp.png', bounds:stampBounds},
+	{name:'Gray Stamp', src:'img/frames/saga/ub/stampGray.png', bounds:stampBounds},
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;
@@ -22,8 +22,8 @@ document.querySelector('#loadFrameVersion').onclick = async function() {
 	await resetCardIrregularities();
 	//sets card version
 	card.version = 'sagaUB';
-	card.onload = '/js/frames/versionSaga.js';
-	loadScript('/js/frames/versionSaga.js');
+	card.onload = 'js/frames/versionSaga.js';
+	loadScript('js/frames/versionSaga.js');
 	//art bounds
 	card.artBounds = {x:753/1500, y:240/2100, width:630/1500, height:1517/2100};
 	autoFitArt();

@@ -10,7 +10,7 @@ function loadAbilities() {
             }
         }
     }
-    xhttp.open("GET", "/data/site/other/askUrza/planeswalkerAbilities.txt", true);
+    xhttp.open("GET", "data/site/other/askUrza/planeswalkerAbilities.txt", true);
     xhttp.send();
 }
 

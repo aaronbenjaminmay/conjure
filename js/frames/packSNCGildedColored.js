@@ -1,23 +1,23 @@
 //Create objects for common properties across available frames
-var masks = [{src:'/img/frames/snc/gilded/frame.svg', name:'Frame'}];
+var masks = [{src:'img/frames/snc/gilded/frame.svg', name:'Frame'}];
 var bounds = {x:0.05, y:0.0177, width:0.9, height:0.0958};
 //defines available frames
 availableFrames = [
-	{name:'White Frame', src:'/img/frames/snc/gilded/colored/w.png', masks:masks},
-	{name:'Blue Frame', src:'/img/frames/snc/gilded/colored/u.png', masks:masks},
-	{name:'Black Frame', src:'/img/frames/snc/gilded/colored/b.png', masks:masks},
-	{name:'Red Frame', src:'/img/frames/snc/gilded/colored/r.png', masks:masks},
-	{name:'Green Frame', src:'/img/frames/snc/gilded/colored/g.png', masks:masks},
-	{name:'Multicolored Frame', src:'/img/frames/snc/gilded/colored/m.png', masks:masks},
-	{name:'Artifact Frame', src:'/img/frames/snc/gilded/colored/a.png', masks:masks},
-	{name:'Power/Toughness', src:'/img/frames/snc/gilded/colored/pt.png', bounds:{x:0.7707, y:0.8843, width:0.1694, height:0.0639}},
-	{name:'White Legend Crown', src:'/img/frames/snc/gilded/colored/crowns/w.png', bounds:bounds},
-	{name:'Blue Legend Crown', src:'/img/frames/snc/gilded/colored/crowns/u.png', bounds:bounds},
-	{name:'Black Legend Crown', src:'/img/frames/snc/gilded/colored/crowns/b.png', bounds:bounds},
-	{name:'Red Legend Crown', src:'/img/frames/snc/gilded/colored/crowns/r.png', bounds:bounds},
-	{name:'Green Legend Crown', src:'/img/frames/snc/gilded/colored/crowns/g.png', bounds:bounds},
-	{name:'Multicolored Legend Crown', src:'/img/frames/snc/gilded/colored/crowns/m.png', bounds:bounds},
-	{name:'Artifact Legend Crown', src:'/img/frames/snc/gilded/colored/crowns/a.png', bounds:bounds},
+	{name:'White Frame', src:'img/frames/snc/gilded/colored/w.png', masks:masks},
+	{name:'Blue Frame', src:'img/frames/snc/gilded/colored/u.png', masks:masks},
+	{name:'Black Frame', src:'img/frames/snc/gilded/colored/b.png', masks:masks},
+	{name:'Red Frame', src:'img/frames/snc/gilded/colored/r.png', masks:masks},
+	{name:'Green Frame', src:'img/frames/snc/gilded/colored/g.png', masks:masks},
+	{name:'Multicolored Frame', src:'img/frames/snc/gilded/colored/m.png', masks:masks},
+	{name:'Artifact Frame', src:'img/frames/snc/gilded/colored/a.png', masks:masks},
+	{name:'Power/Toughness', src:'img/frames/snc/gilded/colored/pt.png', bounds:{x:0.7707, y:0.8843, width:0.1694, height:0.0639}},
+	{name:'White Legend Crown', src:'img/frames/snc/gilded/colored/crowns/w.png', bounds:bounds},
+	{name:'Blue Legend Crown', src:'img/frames/snc/gilded/colored/crowns/u.png', bounds:bounds},
+	{name:'Black Legend Crown', src:'img/frames/snc/gilded/colored/crowns/b.png', bounds:bounds},
+	{name:'Red Legend Crown', src:'img/frames/snc/gilded/colored/crowns/r.png', bounds:bounds},
+	{name:'Green Legend Crown', src:'img/frames/snc/gilded/colored/crowns/g.png', bounds:bounds},
+	{name:'Multicolored Legend Crown', src:'img/frames/snc/gilded/colored/crowns/m.png', bounds:bounds},
+	{name:'Artifact Legend Crown', src:'img/frames/snc/gilded/colored/crowns/a.png', bounds:bounds},
 
 ];
 //disables/enables the "Load Frame Version" button

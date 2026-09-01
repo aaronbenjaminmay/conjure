@@ -1,29 +1,29 @@
 //Create objects for common properties across available frames
-var masks = [{src:'/img/frames/m15/flip/pinline.svg', name:'Pinline'}, {src:'/img/frames/m15/flip/twins.svg', name:'Twins'}, {src:'/img/frames/m15/flip/rules.svg', name:'Rules'}];
-var masks2 = [{src:'/img/frames/topHalfSharp.svg', name:'Top PT'}, {src:'/img/frames/bottomHalfSharp.svg', name:'Bottom PT'}]
+var masks = [{src:'img/frames/m15/flip/pinline.svg', name:'Pinline'}, {src:'img/frames/m15/flip/twins.svg', name:'Twins'}, {src:'img/frames/m15/flip/rules.svg', name:'Rules'}];
+var masks2 = [{src:'img/frames/topHalfSharp.svg', name:'Top PT'}, {src:'img/frames/bottomHalfSharp.svg', name:'Bottom PT'}]
 var bounds = {x:0.0374, y:0.2277, width:0.9067, height:0.4762};
 //defines available frames
 availableFrames = [
-	{name:'White Frame', src:'/img/frames/m15/flip/w.png', masks:masks},
-	{name:'Blue Frame', src:'/img/frames/m15/flip/u.png', masks:masks},
-	{name:'Black Frame', src:'/img/frames/m15/flip/b.png', masks:masks},
-	{name:'Red Frame', src:'/img/frames/m15/flip/r.png', masks:masks},
-	{name:'Green Frame', src:'/img/frames/m15/flip/g.png', masks:masks},
-	{name:'Multicolored Frame', src:'/img/frames/m15/flip/m.png', masks:masks},
-	{name:'Artifact Frame', src:'/img/frames/m15/flip/a.png', masks:masks},
-	{name:'Land Frame', src:'/img/frames/m15/flip/l.png', masks:masks},
-	{name:'Colorless Frame', src:'/img/frames/m15/flip/c.png', masks:masks},
-	{name:'Vehicle Frame', src:'/img/frames/m15/flip/v.png', masks:masks},
-	{name:'White Power/Toughness', src:'/img/frames/m15/flip/wpt.png', bounds:bounds, masks:masks2},
-	{name:'Blue Power/Toughness', src:'/img/frames/m15/flip/upt.png', bounds:bounds, masks:masks2},
-	{name:'Black Power/Toughness', src:'/img/frames/m15/flip/bpt.png', bounds:bounds, masks:masks2},
-	{name:'Red Power/Toughness', src:'/img/frames/m15/flip/rpt.png', bounds:bounds, masks:masks2},
-	{name:'Green Power/Toughness', src:'/img/frames/m15/flip/gpt.png', bounds:bounds, masks:masks2},
-	{name:'Multicolored Power/Toughness', src:'/img/frames/m15/flip/mpt.png', bounds:bounds, masks:masks2},
-	{name:'Artifact Power/Toughness', src:'/img/frames/m15/flip/apt.png', bounds:bounds, masks:masks2},
-	{name:'Land Power/Toughness', src:'/img/frames/m15/flip/lpt.png', bounds:bounds, masks:masks2},
-	{name:'Colorless Power/Toughness', src:'/img/frames/m15/flip/cpt.png', bounds:bounds, masks:masks2},
-	{name:'Vehicle Power/Toughness', src:'/img/frames/m15/flip/vpt.png', bounds:bounds, masks:masks2}
+	{name:'White Frame', src:'img/frames/m15/flip/w.png', masks:masks},
+	{name:'Blue Frame', src:'img/frames/m15/flip/u.png', masks:masks},
+	{name:'Black Frame', src:'img/frames/m15/flip/b.png', masks:masks},
+	{name:'Red Frame', src:'img/frames/m15/flip/r.png', masks:masks},
+	{name:'Green Frame', src:'img/frames/m15/flip/g.png', masks:masks},
+	{name:'Multicolored Frame', src:'img/frames/m15/flip/m.png', masks:masks},
+	{name:'Artifact Frame', src:'img/frames/m15/flip/a.png', masks:masks},
+	{name:'Land Frame', src:'img/frames/m15/flip/l.png', masks:masks},
+	{name:'Colorless Frame', src:'img/frames/m15/flip/c.png', masks:masks},
+	{name:'Vehicle Frame', src:'img/frames/m15/flip/v.png', masks:masks},
+	{name:'White Power/Toughness', src:'img/frames/m15/flip/wpt.png', bounds:bounds, masks:masks2},
+	{name:'Blue Power/Toughness', src:'img/frames/m15/flip/upt.png', bounds:bounds, masks:masks2},
+	{name:'Black Power/Toughness', src:'img/frames/m15/flip/bpt.png', bounds:bounds, masks:masks2},
+	{name:'Red Power/Toughness', src:'img/frames/m15/flip/rpt.png', bounds:bounds, masks:masks2},
+	{name:'Green Power/Toughness', src:'img/frames/m15/flip/gpt.png', bounds:bounds, masks:masks2},
+	{name:'Multicolored Power/Toughness', src:'img/frames/m15/flip/mpt.png', bounds:bounds, masks:masks2},
+	{name:'Artifact Power/Toughness', src:'img/frames/m15/flip/apt.png', bounds:bounds, masks:masks2},
+	{name:'Land Power/Toughness', src:'img/frames/m15/flip/lpt.png', bounds:bounds, masks:masks2},
+	{name:'Colorless Power/Toughness', src:'img/frames/m15/flip/cpt.png', bounds:bounds, masks:masks2},
+	{name:'Vehicle Power/Toughness', src:'img/frames/m15/flip/vpt.png', bounds:bounds, masks:masks2}
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;

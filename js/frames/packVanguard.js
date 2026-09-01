@@ -1,6 +1,6 @@
 //defines available frames
 availableFrames = [
-	{name:'Vanguard Frame', src:'/img/frames/vanguard/vanguard.png'}
+	{name:'Vanguard Frame', src:'img/frames/vanguard/vanguard.png'}
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;

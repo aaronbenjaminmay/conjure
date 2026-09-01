@@ -1,15 +1,15 @@
 //Create objects for common properties across available frames
-var masks = [{src:'/img/frames/expedition/znr/expeditionNewMaskPinline.png', name:'Pinline'}, {src:'/img/frames/m15/regular/m15MaskTitle.png', name:'Title'}, {src:'/img/frames/expedition/znr/expeditionNewMaskType.png', name:'Type'}, {src:'/img/frames/expedition/znr/expeditionNewMaskText.png', name:'Rules'}, {src:'/img/frames/expedition/znr/expeditionNewMaskFrame.png', name:'Frame'}, {src:'/img/frames/expedition/znr/expeditionNewMaskHedrons.png', name:'Hedrons'}, {src:'/img/frames/expedition/znr/expeditionNewMaskBorder.png', name:'Border'}];
+var masks = [{src:'img/frames/expedition/znr/expeditionNewMaskPinline.png', name:'Pinline'}, {src:'img/frames/m15/regular/m15MaskTitle.png', name:'Title'}, {src:'img/frames/expedition/znr/expeditionNewMaskType.png', name:'Type'}, {src:'img/frames/expedition/znr/expeditionNewMaskText.png', name:'Rules'}, {src:'img/frames/expedition/znr/expeditionNewMaskFrame.png', name:'Frame'}, {src:'img/frames/expedition/znr/expeditionNewMaskHedrons.png', name:'Hedrons'}, {src:'img/frames/expedition/znr/expeditionNewMaskBorder.png', name:'Border'}];
 //defines available frames
 availableFrames = [
-	{name:'White Frame', src:'/img/frames/expedition/znr/expeditionNewFrameW.png', masks:masks},
-	{name:'Blue Frame', src:'/img/frames/expedition/znr/expeditionNewFrameU.png', masks:masks},
-	{name:'Black Frame', src:'/img/frames/expedition/znr/expeditionNewFrameB.png', masks:masks},
-	{name:'Red Frame', src:'/img/frames/expedition/znr/expeditionNewFrameR.png', masks:masks},
-	{name:'Green Frame', src:'/img/frames/expedition/znr/expeditionNewFrameG.png', masks:masks},
-	{name:'Multicolored Frame', src:'/img/frames/expedition/znr/expeditionNewFrameM.png', masks:masks},
-	{name:'Land Frame', src:'/img/frames/expedition/znr/expeditionNewFrameL.png', masks:masks},
-	{name:'Colorless Frame', src:'/img/frames/expedition/znr/expeditionNewFrameC.png', masks:masks}
+	{name:'White Frame', src:'img/frames/expedition/znr/expeditionNewFrameW.png', masks:masks},
+	{name:'Blue Frame', src:'img/frames/expedition/znr/expeditionNewFrameU.png', masks:masks},
+	{name:'Black Frame', src:'img/frames/expedition/znr/expeditionNewFrameB.png', masks:masks},
+	{name:'Red Frame', src:'img/frames/expedition/znr/expeditionNewFrameR.png', masks:masks},
+	{name:'Green Frame', src:'img/frames/expedition/znr/expeditionNewFrameG.png', masks:masks},
+	{name:'Multicolored Frame', src:'img/frames/expedition/znr/expeditionNewFrameM.png', masks:masks},
+	{name:'Land Frame', src:'img/frames/expedition/znr/expeditionNewFrameL.png', masks:masks},
+	{name:'Colorless Frame', src:'img/frames/expedition/znr/expeditionNewFrameC.png', masks:masks}
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;

@@ -1,24 +1,24 @@
 //Create objects for common properties across available frames
-var masks = [{src:'/img/frames/old/abu/dualLand.png', name:'Dual Land'}];
-var masks2 = [{src:'/img/frames/old/abu/border.svg', name:'ABU Border'}];
+var masks = [{src:'img/frames/old/abu/dualLand.png', name:'Dual Land'}];
+var masks2 = [{src:'img/frames/old/abu/border.svg', name:'ABU Border'}];
 //defines available frames
 availableFrames = [
-	{name:'White Frame', src:'/img/frames/old/abu/w.png'},
-	{name:'Blue Frame', src:'/img/frames/old/abu/u.png'},
-	{name:'Black Frame', src:'/img/frames/old/abu/b.png'},
-	{name:'Red Frame', src:'/img/frames/old/abu/r.png'},
-	{name:'Green Frame', src:'/img/frames/old/abu/g.png'},
-	{name:'Artifact Frame', src:'/img/frames/old/abu/a.png'},
-	{name:'Land Frame', src:'/img/frames/old/abu/l.png', masks:masks},
-	{name:'White Land Frame', src:'/img/frames/old/abu/wl.png', masks:masks},
-	{name:'Blue Land Frame', src:'/img/frames/old/abu/ul.png', masks:masks},
-	{name:'Black Land Frame', src:'/img/frames/old/abu/bl.png', masks:masks},
-	{name:'Red Land Frame', src:'/img/frames/old/abu/rl.png', masks:masks},
-	{name:'Green Land Frame', src:'/img/frames/old/abu/gl.png', masks:masks},
-	{name:'Pure Black Border', src:'/img/black.png', masks:masks2, noDefaultMask:true},
-	{name:'White Border', src:'/img/frames/white.png', masks:masks2, noDefaultMask:true},
-	{name:'Silver Border', src:'/img/frames/silver.png', masks:masks2, noDefaultMask:true},
-	{name:'Gold Border', src:'/img/frames/gold.png', masks:masks2, noDefaultMask:true}
+	{name:'White Frame', src:'img/frames/old/abu/w.png'},
+	{name:'Blue Frame', src:'img/frames/old/abu/u.png'},
+	{name:'Black Frame', src:'img/frames/old/abu/b.png'},
+	{name:'Red Frame', src:'img/frames/old/abu/r.png'},
+	{name:'Green Frame', src:'img/frames/old/abu/g.png'},
+	{name:'Artifact Frame', src:'img/frames/old/abu/a.png'},
+	{name:'Land Frame', src:'img/frames/old/abu/l.png', masks:masks},
+	{name:'White Land Frame', src:'img/frames/old/abu/wl.png', masks:masks},
+	{name:'Blue Land Frame', src:'img/frames/old/abu/ul.png', masks:masks},
+	{name:'Black Land Frame', src:'img/frames/old/abu/bl.png', masks:masks},
+	{name:'Red Land Frame', src:'img/frames/old/abu/rl.png', masks:masks},
+	{name:'Green Land Frame', src:'img/frames/old/abu/gl.png', masks:masks},
+	{name:'Pure Black Border', src:'img/black.png', masks:masks2, noDefaultMask:true},
+	{name:'White Border', src:'img/frames/white.png', masks:masks2, noDefaultMask:true},
+	{name:'Silver Border', src:'img/frames/silver.png', masks:masks2, noDefaultMask:true},
+	{name:'Gold Border', src:'img/frames/gold.png', masks:masks2, noDefaultMask:true}
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;
@@ -29,7 +29,7 @@ document.querySelector('#loadFrameVersion').onclick = async function() {
 	//sets card version
 	card.version = 'abu';
 	card.showsFlavorBar = false;
-	loadScript('/js/frames/manaSymbolsOld.js');
+	loadScript('js/frames/manaSymbolsOld.js');
 	//art bounds
 	card.artBounds = {x:0.116, y:0.1043, width:0.7654, height:0.441};
 	autoFitArt();

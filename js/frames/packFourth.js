@@ -1,16 +1,16 @@
 //Create objects for common properties across available frames
 //defines available frames
 availableFrames = [
-	{name:'White Frame', src:'/img/frames/old/fourth/w.png'},
-	{name:'Blue Frame', src:'/img/frames/old/fourth/u.png'},
-	{name:'Black Frame', src:'/img/frames/old/fourth/b.png'},
-	{name:'Red Frame', src:'/img/frames/old/fourth/r.png'},
-	{name:'Green Frame', src:'/img/frames/old/fourth/g.png'},
-	{name:'Multicolored Frame', src:'/img/frames/old/fourth/m.png'},
-	{name:'Artifact Frame', src:'/img/frames/old/fourth/a.png'},
-	{name:'Land Frame', src:'/img/frames/old/fourth/l.png'},
-	{name:'Black Border', src:'/img/frames/old/fourth/borderBlack.png'},
-	{name:'White Border', src:'/img/frames/old/fourth/borderWhite.png'}
+	{name:'White Frame', src:'img/frames/old/fourth/w.png'},
+	{name:'Blue Frame', src:'img/frames/old/fourth/u.png'},
+	{name:'Black Frame', src:'img/frames/old/fourth/b.png'},
+	{name:'Red Frame', src:'img/frames/old/fourth/r.png'},
+	{name:'Green Frame', src:'img/frames/old/fourth/g.png'},
+	{name:'Multicolored Frame', src:'img/frames/old/fourth/m.png'},
+	{name:'Artifact Frame', src:'img/frames/old/fourth/a.png'},
+	{name:'Land Frame', src:'img/frames/old/fourth/l.png'},
+	{name:'Black Border', src:'img/frames/old/fourth/borderBlack.png'},
+	{name:'White Border', src:'img/frames/old/fourth/borderWhite.png'}
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;

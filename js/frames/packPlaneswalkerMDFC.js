@@ -1,19 +1,19 @@
 //Create objects for common properties across available frames
-var masks = [{src:'/img/frames/planeswalker/mdfc/pinline.svg', name:'Pinline'}, {src:'/img/frames/modal/modalMaskReminder.png', name:'Reminder'}, {src:'/img/frames/planeswalker/mdfc/title.svg', name:'Title'}, {src:'/img/frames/planeswalker/regular/planeswalkerMaskType.png', name:'Type'}, {src:'/img/frames/planeswalker/regular/planeswalkerMaskBorder.png', name:'Border'}, {src:'/img/frames/planeswalker/maskLoyalty.png', name:'Loyalty'}];
+var masks = [{src:'img/frames/planeswalker/mdfc/pinline.svg', name:'Pinline'}, {src:'img/frames/modal/modalMaskReminder.png', name:'Reminder'}, {src:'img/frames/planeswalker/mdfc/title.svg', name:'Title'}, {src:'img/frames/planeswalker/regular/planeswalkerMaskType.png', name:'Type'}, {src:'img/frames/planeswalker/regular/planeswalkerMaskBorder.png', name:'Border'}, {src:'img/frames/planeswalker/maskLoyalty.png', name:'Loyalty'}];
 //defines available frames
 availableFrames = [
-	{name:'White Frame', src:'/img/frames/planeswalker/mdfc/wf.png', masks:masks},
-	{name:'Blue Frame', src:'/img/frames/planeswalker/mdfc/uf.png', masks:masks},
-	{name:'Black Frame', src:'/img/frames/planeswalker/mdfc/bf.png', masks:masks},
-	{name:'Red Frame', src:'/img/frames/planeswalker/mdfc/rf.png', masks:masks},
-	{name:'Green Frame', src:'/img/frames/planeswalker/mdfc/gf.png', masks:masks},
-	{name:'Multicolored Frame', src:'/img/frames/planeswalker/mdfc/mf.png', masks:masks},
-	{name:'White Frame', src:'/img/frames/planeswalker/mdfc/wb.png', masks:masks},
-	{name:'Blue Frame', src:'/img/frames/planeswalker/mdfc/ub.png', masks:masks},
-	{name:'Black Frame', src:'/img/frames/planeswalker/mdfc/bb.png', masks:masks},
-	{name:'Red Frame', src:'/img/frames/planeswalker/mdfc/rb.png', masks:masks},
-	{name:'Green Frame', src:'/img/frames/planeswalker/mdfc/gb.png', masks:masks},
-	{name:'Multicolored Frame', src:'/img/frames/planeswalker/mdfc/mb.png', masks:masks}
+	{name:'White Frame', src:'img/frames/planeswalker/mdfc/wf.png', masks:masks},
+	{name:'Blue Frame', src:'img/frames/planeswalker/mdfc/uf.png', masks:masks},
+	{name:'Black Frame', src:'img/frames/planeswalker/mdfc/bf.png', masks:masks},
+	{name:'Red Frame', src:'img/frames/planeswalker/mdfc/rf.png', masks:masks},
+	{name:'Green Frame', src:'img/frames/planeswalker/mdfc/gf.png', masks:masks},
+	{name:'Multicolored Frame', src:'img/frames/planeswalker/mdfc/mf.png', masks:masks},
+	{name:'White Frame', src:'img/frames/planeswalker/mdfc/wb.png', masks:masks},
+	{name:'Blue Frame', src:'img/frames/planeswalker/mdfc/ub.png', masks:masks},
+	{name:'Black Frame', src:'img/frames/planeswalker/mdfc/bb.png', masks:masks},
+	{name:'Red Frame', src:'img/frames/planeswalker/mdfc/rb.png', masks:masks},
+	{name:'Green Frame', src:'img/frames/planeswalker/mdfc/gb.png', masks:masks},
+	{name:'Multicolored Frame', src:'img/frames/planeswalker/mdfc/mb.png', masks:masks}
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;
@@ -23,8 +23,8 @@ document.querySelector('#loadFrameVersion').onclick = async function() {
 	await resetCardIrregularities();
 	//sets card version
 	card.version = 'planeswalkerMDFC';
-	card.onload = '/js/frames/versionPlaneswalker.js';
-	loadScript('/js/frames/versionPlaneswalker.js');
+	card.onload = 'js/frames/versionPlaneswalker.js';
+	loadScript('js/frames/versionPlaneswalker.js');
 	//art bounds
 	card.artBounds = {x:0.068, y:0.101, width:0.864, height:0.8143};
 	autoFitArt();

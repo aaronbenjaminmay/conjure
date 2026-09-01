@@ -1,15 +1,15 @@
 //Create objects for common properties across available frames
-var masks = [{src:'/img/frames/expedition/bfz/expeditionMaskPinline.png', name:'Pinline'}, {src:'/img/frames/m15/regular/m15MaskTitle.png', name:'Title'}, {src:'/img/frames/expedition/bfz/expeditionMaskType.png', name:'Type'}, {src:'/img/frames/expedition/bfz/expeditionMaskTextbox.png', name:'Rules'}, {src:'/img/frames/expedition/bfz/expeditionMaskFrame.png', name:'Frame'}, {src:'/img/frames/m15/regular/m15MaskBorder.png', name:'Border'}];
+var masks = [{src:'img/frames/expedition/bfz/expeditionMaskPinline.png', name:'Pinline'}, {src:'img/frames/m15/regular/m15MaskTitle.png', name:'Title'}, {src:'img/frames/expedition/bfz/expeditionMaskType.png', name:'Type'}, {src:'img/frames/expedition/bfz/expeditionMaskTextbox.png', name:'Rules'}, {src:'img/frames/expedition/bfz/expeditionMaskFrame.png', name:'Frame'}, {src:'img/frames/m15/regular/m15MaskBorder.png', name:'Border'}];
 //defines available frames
 availableFrames = [
-	{name:'White Frame', src:'/img/frames/expedition/bfz/expeditionFrameW.png', masks:masks},
-	{name:'Blue Frame', src:'/img/frames/expedition/bfz/expeditionFrameU.png', masks:masks},
-	{name:'Black Frame', src:'/img/frames/expedition/bfz/expeditionFrameB.png', masks:masks},
-	{name:'Red Frame', src:'/img/frames/expedition/bfz/expeditionFrameR.png', masks:masks},
-	{name:'Green Frame', src:'/img/frames/expedition/bfz/expeditionFrameG.png', masks:masks},
-	{name:'Multicolored Frame', src:'/img/frames/expedition/bfz/expeditionFrameM.png', masks:masks},
-	{name:'Land Frame', src:'/img/frames/expedition/bfz/expeditionFrameL.png', masks:masks},
-	{name:'Colorless Frame', src:'/img/frames/expedition/bfz/expeditionFrameA.png', masks:masks}
+	{name:'White Frame', src:'img/frames/expedition/bfz/expeditionFrameW.png', masks:masks},
+	{name:'Blue Frame', src:'img/frames/expedition/bfz/expeditionFrameU.png', masks:masks},
+	{name:'Black Frame', src:'img/frames/expedition/bfz/expeditionFrameB.png', masks:masks},
+	{name:'Red Frame', src:'img/frames/expedition/bfz/expeditionFrameR.png', masks:masks},
+	{name:'Green Frame', src:'img/frames/expedition/bfz/expeditionFrameG.png', masks:masks},
+	{name:'Multicolored Frame', src:'img/frames/expedition/bfz/expeditionFrameM.png', masks:masks},
+	{name:'Land Frame', src:'img/frames/expedition/bfz/expeditionFrameL.png', masks:masks},
+	{name:'Colorless Frame', src:'img/frames/expedition/bfz/expeditionFrameA.png', masks:masks}
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;

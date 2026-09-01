@@ -3,26 +3,26 @@ var bounds = {x:0.06, y:0.05, width:0.0667, height:0.0481};
 var bounds2 = {x:0.7567, y:0.8786, width:0.2007, height:0.0748};
 //defines available frames
 availableFrames = [
-	{name:'White Frame', src:'/img/frames/ixalan/ixalanFrameW.png'},
-	{name:'Blue Frame', src:'/img/frames/ixalan/ixalanFrameU.png'},
-	{name:'Black Frame', src:'/img/frames/ixalan/ixalanFrameB.png'},
-	{name:'Red Frame', src:'/img/frames/ixalan/ixalanFrameR.png'},
-	{name:'Green Frame', src:'/img/frames/ixalan/ixalanFrameG.png'},
-	{name:'Multicolored Frame', src:'/img/frames/ixalan/ixalanFrameM.png'},
-	{name:'Colorless Frame', src:'/img/frames/ixalan/ixalanFrameL.png'},
-	{name:'Creature Icon', src:'/img/frames/ixalan/ixalanIconCreature.png', bounds:bounds},
-	{name:'Instant Icon', src:'/img/frames/ixalan/ixalanIconInstant.png', bounds:bounds},
-	{name:'Sorcery Icon', src:'/img/frames/ixalan/ixalanIconSorcery.png', bounds:bounds},
-	{name:'Enchantment Icon', src:'/img/frames/ixalan/ixalanIconEnchantment.png', bounds:bounds},
-	{name:'Artifact Icon', src:'/img/frames/ixalan/ixalanIconArtifact.png', bounds:bounds},
-	{name:'Multitype Icon', src:'/img/frames/ixalan/ixalanIconMulti.png', bounds:bounds},
-	{name:'White Power/Toughness', src:'/img/frames/ixalan/pt/w.png', bounds:bounds2},
-	{name:'Blue Power/Toughness', src:'/img/frames/ixalan/pt/u.png', bounds:bounds2},
-	{name:'Black Power/Toughness', src:'/img/frames/ixalan/pt/b.png', bounds:bounds2},
-	{name:'Red Power/Toughness', src:'/img/frames/ixalan/pt/r.png', bounds:bounds2},
-	{name:'Green Power/Toughness', src:'/img/frames/ixalan/pt/g.png', bounds:bounds2},
-	{name:'Multicolored Power/Toughness', src:'/img/frames/ixalan/pt/m.png', bounds:bounds2},
-	{name:'Colorless Power/Toughness', src:'/img/frames/ixalan/pt/l.png', bounds:bounds2}
+	{name:'White Frame', src:'img/frames/ixalan/ixalanFrameW.png'},
+	{name:'Blue Frame', src:'img/frames/ixalan/ixalanFrameU.png'},
+	{name:'Black Frame', src:'img/frames/ixalan/ixalanFrameB.png'},
+	{name:'Red Frame', src:'img/frames/ixalan/ixalanFrameR.png'},
+	{name:'Green Frame', src:'img/frames/ixalan/ixalanFrameG.png'},
+	{name:'Multicolored Frame', src:'img/frames/ixalan/ixalanFrameM.png'},
+	{name:'Colorless Frame', src:'img/frames/ixalan/ixalanFrameL.png'},
+	{name:'Creature Icon', src:'img/frames/ixalan/ixalanIconCreature.png', bounds:bounds},
+	{name:'Instant Icon', src:'img/frames/ixalan/ixalanIconInstant.png', bounds:bounds},
+	{name:'Sorcery Icon', src:'img/frames/ixalan/ixalanIconSorcery.png', bounds:bounds},
+	{name:'Enchantment Icon', src:'img/frames/ixalan/ixalanIconEnchantment.png', bounds:bounds},
+	{name:'Artifact Icon', src:'img/frames/ixalan/ixalanIconArtifact.png', bounds:bounds},
+	{name:'Multitype Icon', src:'img/frames/ixalan/ixalanIconMulti.png', bounds:bounds},
+	{name:'White Power/Toughness', src:'img/frames/ixalan/pt/w.png', bounds:bounds2},
+	{name:'Blue Power/Toughness', src:'img/frames/ixalan/pt/u.png', bounds:bounds2},
+	{name:'Black Power/Toughness', src:'img/frames/ixalan/pt/b.png', bounds:bounds2},
+	{name:'Red Power/Toughness', src:'img/frames/ixalan/pt/r.png', bounds:bounds2},
+	{name:'Green Power/Toughness', src:'img/frames/ixalan/pt/g.png', bounds:bounds2},
+	{name:'Multicolored Power/Toughness', src:'img/frames/ixalan/pt/m.png', bounds:bounds2},
+	{name:'Colorless Power/Toughness', src:'img/frames/ixalan/pt/l.png', bounds:bounds2}
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;

@@ -1,12 +1,12 @@
 //Create objects for common properties across available frames
-var masks1 = [{src:'/img/frames/snc/gilded/frame.svg', name:'Frame'}];
-var masks2 = [{src:'/img/frames/snc/gilded/frame.svg', name:'Frame'}];
+var masks1 = [{src:'img/frames/snc/gilded/frame.svg', name:'Frame'}];
+var masks2 = [{src:'img/frames/snc/gilded/frame.svg', name:'Frame'}];
 var bounds = {x:0.7707, y:0.8843, width:0.1694, height:0.0639};
 //defines available frames
 availableFrames = [
-	{name:'Regular Frame', src:'/img/frames/snc/gilded/m.png', masks:masks1},
-	{name:'Legendary Frame', src:'/img/frames/snc/gilded/legendary/m.png', masks:masks2},
-	{name:'Power/Toughness', src:'/img/frames/snc/gilded/pt/m.png', bounds:bounds},
+	{name:'Regular Frame', src:'img/frames/snc/gilded/m.png', masks:masks1},
+	{name:'Legendary Frame', src:'img/frames/snc/gilded/legendary/m.png', masks:masks2},
+	{name:'Power/Toughness', src:'img/frames/snc/gilded/pt/m.png', bounds:bounds},
 
 ];
 //disables/enables the "Load Frame Version" button

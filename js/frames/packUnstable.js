@@ -1,14 +1,14 @@
 //Create objects for common properties across available frames
-var masks = [{src:'/img/frames/unstable/title.svg', name:'Title'}, {src:'/img/frames/unstable/pinline.svg', name:'Bottom'}];
+var masks = [{src:'img/frames/unstable/title.svg', name:'Title'}, {src:'img/frames/unstable/pinline.svg', name:'Bottom'}];
 //defines available frames
 availableFrames = [
-	{name:'White Frame', src:'/img/frames/unstable/unstableFrameW.png', masks:masks},
-	{name:'Blue Frame', src:'/img/frames/unstable/unstableFrameU.png', masks:masks},
-	{name:'Black Frame', src:'/img/frames/unstable/unstableFrameB.png', masks:masks},
-	{name:'Red Frame', src:'/img/frames/unstable/unstableFrameR.png', masks:masks},
-	{name:'Green Frame', src:'/img/frames/unstable/unstableFrameG.png', masks:masks},
-	{name:'Multicolored Frame', src:'/img/frames/unstable/unstableFrameM.png', masks:masks},
-	{name:'Colorless Frame', src:'/img/frames/unstable/unstableFrameC.png', masks:masks}
+	{name:'White Frame', src:'img/frames/unstable/unstableFrameW.png', masks:masks},
+	{name:'Blue Frame', src:'img/frames/unstable/unstableFrameU.png', masks:masks},
+	{name:'Black Frame', src:'img/frames/unstable/unstableFrameB.png', masks:masks},
+	{name:'Red Frame', src:'img/frames/unstable/unstableFrameR.png', masks:masks},
+	{name:'Green Frame', src:'img/frames/unstable/unstableFrameG.png', masks:masks},
+	{name:'Multicolored Frame', src:'img/frames/unstable/unstableFrameM.png', masks:masks},
+	{name:'Colorless Frame', src:'img/frames/unstable/unstableFrameC.png', masks:masks}
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;

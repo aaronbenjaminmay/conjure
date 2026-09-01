@@ -1,23 +1,23 @@
 //Create objects for common properties across available frames
-var masks = [{src:'/img/frames/seventh/regular/pinline.svg', name:'Pinline'}, {src:'/img/frames/seventh/regular/rules.svg', name:'Rules'}, {src:'/img/frames/seventh/regular/frame.svg', name:'Frame'}, {src:'/img/frames/seventh/regular/trim.svg', name:'Textbox Pinline'}, {src:'/img/frames/seventh/regular/dual.svg', name:'Dual Land'}, {src:'/img/frames/seventh/regular/border.svg', name:'Border'}];
-var borderMask = [{src:'/img/frames/seventh/regular/border.svg', name:'Border'}];
+var masks = [{src:'img/frames/seventh/regular/pinline.svg', name:'Pinline'}, {src:'img/frames/seventh/regular/rules.svg', name:'Rules'}, {src:'img/frames/seventh/regular/frame.svg', name:'Frame'}, {src:'img/frames/seventh/regular/trim.svg', name:'Textbox Pinline'}, {src:'img/frames/seventh/regular/dual.svg', name:'Dual Land'}, {src:'img/frames/seventh/regular/border.svg', name:'Border'}];
+var borderMask = [{src:'img/frames/seventh/regular/border.svg', name:'Border'}];
 var bounds = {x:0.3354, y:0.6239, width:0.33, height:0.2386};
 //defines available frames
 availableFrames = [
-	{name:'White Frame', src:'/img/frames/seventh/regular/w.png', masks:masks},
-	{name:'Blue Frame', src:'/img/frames/seventh/regular/u.png', masks:masks},
-	{name:'Black Frame', src:'/img/frames/seventh/regular/b.png', masks:masks},
-	{name:'Red Frame', src:'/img/frames/seventh/regular/r.png', masks:masks},
-	{name:'Green Frame', src:'/img/frames/seventh/regular/g.png', masks:masks},
-	{name:'Multicolored Frame', src:'/img/frames/seventh/regular/m.png', masks:masks},
-	{name:'Artifact Frame', src:'/img/frames/seventh/regular/a.png', masks:masks},
-	{name:'Colorless Frame', src:'/img/frames/seventh/regular/c.png', masks:masks},
-	{name:'Land Frame', src:'/img/frames/seventh/regular/l.png', masks:masks},
-	{name:'DCI Star', src:'/img/frames/seventh/foilStar.svg'},
-	{name:'Foil Layer', src:'/img/frames/effects/foil.png', opacity:20, masks:[{src:'/img/frames/seventh/foil.svg', name:'With Star'}, {src:'/img/frames/seventh/foil2.svg', name:'Without Star'}]},
-	{name:'White Border', src:'/img/frames/white.png', masks:borderMask, noDefaultMask:true},
-	{name:'Silver Border', src:'/img/frames/silver.png', masks:borderMask, noDefaultMask:true},
-	{name:'Gold Border', src:'/img/frames/gold.png', masks:borderMask, noDefaultMask:true}
+	{name:'White Frame', src:'img/frames/seventh/regular/w.png', masks:masks},
+	{name:'Blue Frame', src:'img/frames/seventh/regular/u.png', masks:masks},
+	{name:'Black Frame', src:'img/frames/seventh/regular/b.png', masks:masks},
+	{name:'Red Frame', src:'img/frames/seventh/regular/r.png', masks:masks},
+	{name:'Green Frame', src:'img/frames/seventh/regular/g.png', masks:masks},
+	{name:'Multicolored Frame', src:'img/frames/seventh/regular/m.png', masks:masks},
+	{name:'Artifact Frame', src:'img/frames/seventh/regular/a.png', masks:masks},
+	{name:'Colorless Frame', src:'img/frames/seventh/regular/c.png', masks:masks},
+	{name:'Land Frame', src:'img/frames/seventh/regular/l.png', masks:masks},
+	{name:'DCI Star', src:'img/frames/seventh/foilStar.svg'},
+	{name:'Foil Layer', src:'img/frames/effects/foil.png', opacity:20, masks:[{src:'img/frames/seventh/foil.svg', name:'With Star'}, {src:'img/frames/seventh/foil2.svg', name:'Without Star'}]},
+	{name:'White Border', src:'img/frames/white.png', masks:borderMask, noDefaultMask:true},
+	{name:'Silver Border', src:'img/frames/silver.png', masks:borderMask, noDefaultMask:true},
+	{name:'Gold Border', src:'img/frames/gold.png', masks:borderMask, noDefaultMask:true}
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;
@@ -27,8 +27,8 @@ document.querySelector('#loadFrameVersion').onclick = async function() {
 	await resetCardIrregularities();
 	//sets card version
 	card.version = 'planeswalkerSeventh';
-	card.onload = '/js/frames/versionPlaneswalker.js';
-	loadScript('/js/frames/versionPlaneswalker.js');
+	card.onload = 'js/frames/versionPlaneswalker.js';
+	loadScript('js/frames/versionPlaneswalker.js');
 	//art bounds
 	card.artBounds = {x:0.12, y:0.0991, width:0.7667, height:0.4429};
 	autoFitArt();

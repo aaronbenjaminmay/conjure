@@ -1,6 +1,6 @@
 //defines available frames
 availableFrames = [
-	{name:'Multicolored Frame', src:'/img/frames/old/legends/m.png'}
+	{name:'Multicolored Frame', src:'img/frames/old/legends/m.png'}
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;
@@ -11,7 +11,7 @@ document.querySelector('#loadFrameVersion').onclick = async function() {
 	//sets card version
 	card.version = 'legends';
 	card.showsFlavorBar = false;
-	loadScript('/js/frames/manaSymbolsOld.js');
+	loadScript('js/frames/manaSymbolsOld.js');
 	//art bounds
 	card.artBounds = {x:0.1074, y:0.0924, width:0.7854, height:0.4524};
 	autoFitArt();

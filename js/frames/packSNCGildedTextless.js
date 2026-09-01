@@ -1,8 +1,8 @@
 //Create objects for common properties across available frames
-var masks = [];//[{src:'/img/frames/snc/gilded/frame.svg', name:'Frame'}];
+var masks = [];//[{src:'img/frames/snc/gilded/frame.svg', name:'Frame'}];
 //defines available frames
 availableFrames = [
-	{name:'Regular Frame', src:'/img/frames/snc/gilded/textless/m.png', masks:masks}
+	{name:'Regular Frame', src:'img/frames/snc/gilded/textless/m.png', masks:masks}
 
 ];
 //disables/enables the "Load Frame Version" button

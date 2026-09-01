@@ -1,15 +1,15 @@
 //Create objects for common properties across available frames
-var masks = [{src:'/img/frames/attraction/maskPinline.png', name:'Pinline'}, {src:'/img/frames/attraction/maskBorder.png', name:'Border'}];
+var masks = [{src:'img/frames/attraction/maskPinline.png', name:'Pinline'}, {src:'img/frames/attraction/maskBorder.png', name:'Border'}];
 //defines available frames
 availableFrames = [
-	{name:'Attraction Frame', src:'/img/frames/attraction/attraction.png', masks:masks},
-	{name:'Light 2', src:'/img/frames/attraction/2.png', bounds:{x:1362/1500, y:1443/2100, width:65/1500, height:65/2100}},
-	{name:'Light 3', src:'/img/frames/attraction/3.png', bounds:{x:1362/1500, y:1543/2100, width:65/1500, height:65/2100}},
-	{name:'Light 4', src:'/img/frames/attraction/4.png', bounds:{x:1362/1500, y:1643/2100, width:65/1500, height:65/2100}},
-	{name:'Light 5', src:'/img/frames/attraction/5.png', bounds:{x:1362/1500, y:1743/2100, width:65/1500, height:65/2100}},
-	{name:'Light 6', src:'/img/frames/attraction/6.png', bounds:{x:1362/1500, y:1843/2100, width:65/1500, height:65/2100}},
-	{name:'Holo Stamp', src:'/img/frames/m15/holoStamps/m15HoloStampA2.png', bounds:{x:0.436, y:0.9034, width:0.128, height:0.0458}},
-	{name:'Acorn Holo Stamp', src:'/img/frames/m15/holoStamps/acorn.png', bounds:{x:0.4554, y:0.9129, width:0.0894, height:0.0381}}
+	{name:'Attraction Frame', src:'img/frames/attraction/attraction.png', masks:masks},
+	{name:'Light 2', src:'img/frames/attraction/2.png', bounds:{x:1362/1500, y:1443/2100, width:65/1500, height:65/2100}},
+	{name:'Light 3', src:'img/frames/attraction/3.png', bounds:{x:1362/1500, y:1543/2100, width:65/1500, height:65/2100}},
+	{name:'Light 4', src:'img/frames/attraction/4.png', bounds:{x:1362/1500, y:1643/2100, width:65/1500, height:65/2100}},
+	{name:'Light 5', src:'img/frames/attraction/5.png', bounds:{x:1362/1500, y:1743/2100, width:65/1500, height:65/2100}},
+	{name:'Light 6', src:'img/frames/attraction/6.png', bounds:{x:1362/1500, y:1843/2100, width:65/1500, height:65/2100}},
+	{name:'Holo Stamp', src:'img/frames/m15/holoStamps/m15HoloStampA2.png', bounds:{x:0.436, y:0.9034, width:0.128, height:0.0458}},
+	{name:'Acorn Holo Stamp', src:'img/frames/m15/holoStamps/acorn.png', bounds:{x:0.4554, y:0.9129, width:0.0894, height:0.0381}}
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;

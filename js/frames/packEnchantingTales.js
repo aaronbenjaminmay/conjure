@@ -4,26 +4,26 @@ var bounds = {x:1535/2010, y:2458/2814, width:373/2010, height:206/2814};
 var stampBounds = {x:890/2010, y:2548/2814, width:229/2010, height:132/2814};
 //defines available frames
 availableFrames = [
-	{name:'White Frame', src:'/img/frames/enchantingTales/w.png', masks:masks},
-	{name:'Blue Frame', src:'/img/frames/enchantingTales/u.png', masks:masks},
-	{name:'Black Frame', src:'/img/frames/enchantingTales/b.png', masks:masks},
-	{name:'Red Frame', src:'/img/frames/enchantingTales/r.png', masks:masks},
-	{name:'Green Frame', src:'/img/frames/enchantingTales/g.png', masks:masks},
-	{name:'Multicolored Frame', src:'/img/frames/enchantingTales/m.png', masks:masks},
+	{name:'White Frame', src:'img/frames/enchantingTales/w.png', masks:masks},
+	{name:'Blue Frame', src:'img/frames/enchantingTales/u.png', masks:masks},
+	{name:'Black Frame', src:'img/frames/enchantingTales/b.png', masks:masks},
+	{name:'Red Frame', src:'img/frames/enchantingTales/r.png', masks:masks},
+	{name:'Green Frame', src:'img/frames/enchantingTales/g.png', masks:masks},
+	{name:'Multicolored Frame', src:'img/frames/enchantingTales/m.png', masks:masks},
 
-	{name:'White Power/Toughness', src:'/img/frames/enchantingTales/pt/w.png', bounds: bounds},
-	{name:'Blue Power/Toughness', src:'/img/frames/enchantingTales/pt/u.png', bounds: bounds},
-	{name:'Black Power/Toughness', src:'/img/frames/enchantingTales/pt/b.png', bounds: bounds},
-	{name:'Red Power/Toughness', src:'/img/frames/enchantingTales/pt/r.png', bounds: bounds},
-	{name:'Green Power/Toughness', src:'/img/frames/enchantingTales/pt/g.png', bounds: bounds},
-	{name:'Multicolored Power/Toughness', src:'/img/frames/enchantingTales/pt/m.png', bounds: bounds},
+	{name:'White Power/Toughness', src:'img/frames/enchantingTales/pt/w.png', bounds: bounds},
+	{name:'Blue Power/Toughness', src:'img/frames/enchantingTales/pt/u.png', bounds: bounds},
+	{name:'Black Power/Toughness', src:'img/frames/enchantingTales/pt/b.png', bounds: bounds},
+	{name:'Red Power/Toughness', src:'img/frames/enchantingTales/pt/r.png', bounds: bounds},
+	{name:'Green Power/Toughness', src:'img/frames/enchantingTales/pt/g.png', bounds: bounds},
+	{name:'Multicolored Power/Toughness', src:'img/frames/enchantingTales/pt/m.png', bounds: bounds},
 
-	{name:'White Holo Stamp', src:'/img/frames/enchantingTales/stamp/w.png', bounds: stampBounds},
-	{name:'Blue Holo Stamp', src:'/img/frames/enchantingTales/stamp/u.png', bounds: stampBounds},
-	{name:'Black Holo Stamp', src:'/img/frames/enchantingTales/stamp/b.png', bounds: stampBounds},
-	{name:'Red Holo Stamp', src:'/img/frames/enchantingTales/stamp/r.png', bounds: stampBounds},
-	{name:'Green Holo Stamp', src:'/img/frames/enchantingTales/stamp/g.png', bounds: stampBounds},
-	{name:'Multicolored Holo Stamp', src:'/img/frames/enchantingTales/stamp/m.png', bounds: stampBounds}
+	{name:'White Holo Stamp', src:'img/frames/enchantingTales/stamp/w.png', bounds: stampBounds},
+	{name:'Blue Holo Stamp', src:'img/frames/enchantingTales/stamp/u.png', bounds: stampBounds},
+	{name:'Black Holo Stamp', src:'img/frames/enchantingTales/stamp/b.png', bounds: stampBounds},
+	{name:'Red Holo Stamp', src:'img/frames/enchantingTales/stamp/r.png', bounds: stampBounds},
+	{name:'Green Holo Stamp', src:'img/frames/enchantingTales/stamp/g.png', bounds: stampBounds},
+	{name:'Multicolored Holo Stamp', src:'img/frames/enchantingTales/stamp/m.png', bounds: stampBounds}
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;

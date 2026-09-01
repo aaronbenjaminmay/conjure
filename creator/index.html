@@ -1,12 +1,12 @@
 <!-- START OF CONTENT -->
-	<link rel="preload" href="/fonts/beleren-b.ttf" as="font" type="font/ttf" crossorigin="anonymous" as='font'>
-	<link rel="preload" href="/fonts/beleren-bsc.ttf" as="font" type="font/ttf" crossorigin="anonymous" as='font'>
-	<link rel="preload" href="/fonts/gotham-medium.ttf" as="font" type="font/ttf" crossorigin="anonymous" as='font'>
-	<link rel="preload" href="/fonts/goudy-medieval.ttf" as="font" type="font/ttf" crossorigin="anonymous" as='font'>
-	<link rel="preload" href="/fonts/matrix.ttf" as="font" type="font/ttf" crossorigin="anonymous" as='font'>
-	<link rel="preload" href="/fonts/matrix-b.ttf" as="font" type="font/ttf" crossorigin="anonymous" as='font'>
-	<link rel="preload" href="/fonts/mplantin.ttf" as="font" type="font/ttf" crossorigin="anonymous" as='font'>
-	<link rel="preload" href="/fonts/mplantin-i.ttf" as="font" type="font/ttf" crossorigin="anonymous" as='font'>
+	<link rel="preload" href="fonts/beleren-b.ttf" as="font" type="font/ttf" crossorigin="anonymous" as='font'>
+	<link rel="preload" href="fonts/beleren-bsc.ttf" as="font" type="font/ttf" crossorigin="anonymous" as='font'>
+	<link rel="preload" href="fonts/gotham-medium.ttf" as="font" type="font/ttf" crossorigin="anonymous" as='font'>
+	<link rel="preload" href="fonts/goudy-medieval.ttf" as="font" type="font/ttf" crossorigin="anonymous" as='font'>
+	<link rel="preload" href="fonts/matrix.ttf" as="font" type="font/ttf" crossorigin="anonymous" as='font'>
+	<link rel="preload" href="fonts/matrix-b.ttf" as="font" type="font/ttf" crossorigin="anonymous" as='font'>
+	<link rel="preload" href="fonts/mplantin.ttf" as="font" type="font/ttf" crossorigin="anonymous" as='font'>
+	<link rel="preload" href="fonts/mplantin-i.ttf" as="font" type="font/ttf" crossorigin="anonymous" as='font'>
 	<div class='main-content'>
 		<!-- Popups -->
 		<div id='frame-element-editor' class='frame-element-editor'>
@@ -157,7 +157,7 @@
 						<div class='quick-section'>
 							<h5 class='quick-section-title'>Artwork &amp; Attribution</h5>
 							<div class='quick-dropzone drop-area'>
-								<img class='quick-upload-icon' src='/img/quickMode/upload.svg' alt=''>
+								<img class='quick-upload-icon' src='img/quickMode/upload.svg' alt=''>
 								<h5 class='quick-dropzone-title'>Drag &amp; drop artwork here</h5>
 								<h5 class='quick-hint'>or click to browse local files</h5>
 								<input type='file' multiple accept='.png, .svg, .jpg, .jpeg, .bmp' class='input' oninput='uploadFiles(event.target.files, uploadArt, "autoFit");' data-dropFunction='uploadArt' data-otherParams='autoFit'>
@@ -178,7 +178,7 @@
 							<h5 class='margin-bottom padding input-description'>
 								Select a Frame Group and a Frame Pack, or type to search. Then you may Load the selected Frame Version (loading the frame version configures text placement, art size, etc...)</h5>
 							<div class='input-grid margin-bottom'>
-								<select id='selectFrameGroup' onchange='loadScript("/js/frames/group" + this.value + ".js")' class='input'>
+								<select id='selectFrameGroup' onchange='loadScript("js/frames/group" + this.value + ".js")' class='input'>
 									<option disabled>Standard Frames</option>
 									<option value='Standard-3'>Regular</option>
 									<option value='Token-2'>Tokens</option>
@@ -199,7 +199,7 @@
 									<option disabled>Other Games</option>
 									<option value='FleshAndBlood'>Flesh and Blood</option>
 								</select>
-								<select id='selectFramePack' onchange='loadScript("/js/frames/pack" + this.value + ".js")' class='input'></select>
+								<select id='selectFramePack' onchange='loadScript("js/frames/pack" + this.value + ".js")' class='input'></select>
 								<div class="autocomplete"><input id='frameSearch' onchange="frameSearch(this.value)" type='text' class='input' placeholder='Search Frames...'></div>
 							</div>
 							<div class='input-grid margin-bottom'>
@@ -219,13 +219,13 @@
 							</div>
 							<div class='input-grid margin-bottom'>
 								<button id='addToFull' class='input' onclick='addFrame()'>Add Frame to Card</button>
-								<button id='addToRightHalf' class='input' onclick='addFrame([{src:"/img/frames/maskRightHalf.png", name:"Right Half"}])'>Add Frame to Card (Right Half)</button>
+								<button id='addToRightHalf' class='input' onclick='addFrame([{src:"img/frames/maskRightHalf.png", name:"Right Half"}])'>Add Frame to Card (Right Half)</button>
 							</div>
 							<h5 class='collapsible collapsed padding input-description' onclick='toggleCollapse(event);'>More options</h5>
 								<div>
 									<div class='input-grid margin-bottom'>
-										<button id='addToLeftHalf' class='input' onclick='addFrame([{src:"/img/frames/maskLeftHalf.png", name:"Left Half"}])'>Add Frame to Card (Left Half)</button>
-										<button id='addToMiddleThird' class='input' onclick='addFrame([{src:"/img/frames/maskMiddleThird.png", name:"Middle Third"}])'>Add Frame to Card (Middle Third)</button>
+										<button id='addToLeftHalf' class='input' onclick='addFrame([{src:"img/frames/maskLeftHalf.png", name:"Left Half"}])'>Add Frame to Card (Left Half)</button>
+										<button id='addToMiddleThird' class='input' onclick='addFrame([{src:"img/frames/maskMiddleThird.png", name:"Middle Third"}])'>Add Frame to Card (Middle Third)</button>
 									</div>
 									<h5 class='padding input-description'>You can now double click frames and masks to add them to the card. You can do so while holding the shift, control, or alt keys to add to the right half, left half, or middle third, respectively.</h5>
 								</div>
@@ -492,68 +492,68 @@
 							<select class='input padding margin-bottom' onchange='getSetSymbolWatermark(fixUri(this.value));'>
 								<option disabled selected='selected'>None</option>
 								<option disabled>General</option>
-								<option value="/img/watermarks/planeswalker.svg">Planeswalker</option>
-								<option value="/img/watermarks/desparked-planeswalker.svg">Desparked Planeswalker</option>
-								<option value="/img/watermarks/misc-star.svg">DCI Star</option>
-								<option value="/img/watermarks/misc-dci.svg">DCI Logo</option>
+								<option value="img/watermarks/planeswalker.svg">Planeswalker</option>
+								<option value="img/watermarks/desparked-planeswalker.svg">Desparked Planeswalker</option>
+								<option value="img/watermarks/misc-star.svg">DCI Star</option>
+								<option value="img/watermarks/misc-dci.svg">DCI Logo</option>
 								<option disabled>Monocolors</option>
-								<option value="/img/watermarks/w.svg">White</option>
-								<option value="/img/watermarks/u.svg">Blue</option>
-								<option value="/img/watermarks/b.svg">Black</option>
-								<option value="/img/watermarks/r.svg">Red</option>
-								<option value="/img/watermarks/g.svg">Green</option>
+								<option value="img/watermarks/w.svg">White</option>
+								<option value="img/watermarks/u.svg">Blue</option>
+								<option value="img/watermarks/b.svg">Black</option>
+								<option value="img/watermarks/r.svg">Red</option>
+								<option value="img/watermarks/g.svg">Green</option>
 								<option disabled>Mechanics</option>
-								<option value="/img/watermarks/ability-foretell.svg">Foretell</option>
+								<option value="img/watermarks/ability-foretell.svg">Foretell</option>
 								<option disabled>Phyrexian/Mirrodin</option>
-								<option value="/img/watermarks/phyrexian.svg">Phyrexian</option>
-								<option value="/img/watermarks/mirran.svg">Mirran</option>
+								<option value="img/watermarks/phyrexian.svg">Phyrexian</option>
+								<option value="img/watermarks/mirran.svg">Mirran</option>
 								<option disabled>Guilds (Ravnica)</option>
-								<option value="/img/watermarks/guild-azorius.svg">Azorius</option>
-								<option value="/img/watermarks/guild-dimir.svg">Dimir</option>
-								<option value="/img/watermarks/guild-rakdos.svg">Rakdos</option>
-								<option value="/img/watermarks/guild-gruul.svg">Gruul</option>
-								<option value="/img/watermarks/guild-selesnya.svg">Selesnya</option>
-								<option value="/img/watermarks/guild-orzhov.svg">Orzhov</option>
-								<option value="/img/watermarks/guild-izzet.svg">Izzet</option>
-								<option value="/img/watermarks/guild-golgari.svg">Golgari</option>
-								<option value="/img/watermarks/guild-boros.svg">Boros</option>
-								<option value="/img/watermarks/guild-simic.svg">Simic</option>
+								<option value="img/watermarks/guild-azorius.svg">Azorius</option>
+								<option value="img/watermarks/guild-dimir.svg">Dimir</option>
+								<option value="img/watermarks/guild-rakdos.svg">Rakdos</option>
+								<option value="img/watermarks/guild-gruul.svg">Gruul</option>
+								<option value="img/watermarks/guild-selesnya.svg">Selesnya</option>
+								<option value="img/watermarks/guild-orzhov.svg">Orzhov</option>
+								<option value="img/watermarks/guild-izzet.svg">Izzet</option>
+								<option value="img/watermarks/guild-golgari.svg">Golgari</option>
+								<option value="img/watermarks/guild-boros.svg">Boros</option>
+								<option value="img/watermarks/guild-simic.svg">Simic</option>
 								<option disabled>Schools (Strixhaven)</option>
-								<option value="/img/watermarks/school-silverquill.svg">Silverquill</option>
-								<option value="/img/watermarks/school-prismari.svg">Prismari</option>
-								<option value="/img/watermarks/school-witherbloom.svg">Witherbloom</option>
-								<option value="/img/watermarks/school-lorehold.svg">Lorehold</option>
-								<option value="/img/watermarks/school-quandrix.svg">Quandrix</option>
+								<option value="img/watermarks/school-silverquill.svg">Silverquill</option>
+								<option value="img/watermarks/school-prismari.svg">Prismari</option>
+								<option value="img/watermarks/school-witherbloom.svg">Witherbloom</option>
+								<option value="img/watermarks/school-lorehold.svg">Lorehold</option>
+								<option value="img/watermarks/school-quandrix.svg">Quandrix</option>
 								<option disabled>Families (New Capenna)</option>
-								<option value="/img/watermarks/family-brokers.svg">Brokers</option>
-								<option value="/img/watermarks/family-obscura.svg">Obscura</option>
-								<option value="/img/watermarks/family-maestros.svg">Maestros</option>
-								<option value="/img/watermarks/family-riveteers.svg">Riveteers</option>
-								<option value="/img/watermarks/family-cabaretti.svg">Cabaretti</option>
+								<option value="img/watermarks/family-brokers.svg">Brokers</option>
+								<option value="img/watermarks/family-obscura.svg">Obscura</option>
+								<option value="img/watermarks/family-maestros.svg">Maestros</option>
+								<option value="img/watermarks/family-riveteers.svg">Riveteers</option>
+								<option value="img/watermarks/family-cabaretti.svg">Cabaretti</option>
 								<option disabled>Clans (Tarkir - Old Timeline)</option>
-								<option value="/img/watermarks/clan-abzan.svg">Abzan</option>
-								<option value="/img/watermarks/clan-jeskai.svg">Jeskai</option>
-								<option value="/img/watermarks/clan-sultai.svg">Sultai</option>
-								<option value="/img/watermarks/clan-mardu.svg">Mardu</option>
-								<option value="/img/watermarks/clan-temur.svg">Temur</option>
+								<option value="img/watermarks/clan-abzan.svg">Abzan</option>
+								<option value="img/watermarks/clan-jeskai.svg">Jeskai</option>
+								<option value="img/watermarks/clan-sultai.svg">Sultai</option>
+								<option value="img/watermarks/clan-mardu.svg">Mardu</option>
+								<option value="img/watermarks/clan-temur.svg">Temur</option>
 								<option disabled>Clans (Tarkir - New Timeline)</option>
-								<option value="/img/watermarks/clan-ojutai.svg">Ojutai</option>
-								<option value="/img/watermarks/clan-silumgar.svg">Silumgar</option>
-								<option value="/img/watermarks/clan-kolaghan.svg">Kolaghan</option>
-								<option value="/img/watermarks/clan-atarka.svg">Atarka</option>
-								<option value="/img/watermarks/clan-dromoka.svg">Dromoka</option>
+								<option value="img/watermarks/clan-ojutai.svg">Ojutai</option>
+								<option value="img/watermarks/clan-silumgar.svg">Silumgar</option>
+								<option value="img/watermarks/clan-kolaghan.svg">Kolaghan</option>
+								<option value="img/watermarks/clan-atarka.svg">Atarka</option>
+								<option value="img/watermarks/clan-dromoka.svg">Dromoka</option>
 								<option disabled>Poleis (Theros)</option>
-								<option value="/img/watermarks/polis-akros.svg">Akros</option>
-								<option value="/img/watermarks/polis-meletis.svg">Meletis</option>
-								<option value="/img/watermarks/polis-setessa.svg">Setessa</option>
+								<option value="img/watermarks/polis-akros.svg">Akros</option>
+								<option value="img/watermarks/polis-meletis.svg">Meletis</option>
+								<option value="img/watermarks/polis-setessa.svg">Setessa</option>
 								<option disabled>Unstable Factions (Bablovia)</option>
-								<option value="/img/watermarks/faction-order-of-the-widget.svg">Order of the Widget</option>
-								<option value="/img/watermarks/faction-agents-of-sneak.svg">Agents of S.N.E.A.K.</option>
-								<option value="/img/watermarks/faction-league-of-dastardly-doom.svg">League of Dastardly Doom</option>
-								<option value="/img/watermarks/faction-goblin-explosioneers.svg">Goblin Explosioneers</option>
-								<option value="/img/watermarks/faction-crossbreed-labs.svg">Crossbreed Labs</option>
+								<option value="img/watermarks/faction-order-of-the-widget.svg">Order of the Widget</option>
+								<option value="img/watermarks/faction-agents-of-sneak.svg">Agents of S.N.E.A.K.</option>
+								<option value="img/watermarks/faction-league-of-dastardly-doom.svg">League of Dastardly Doom</option>
+								<option value="img/watermarks/faction-goblin-explosioneers.svg">Goblin Explosioneers</option>
+								<option value="img/watermarks/faction-crossbreed-labs.svg">Crossbreed Labs</option>
 								<option disabled>Custome</option>
-								<option value="/img/watermarks/purple.svg">Purple Mana</option>
+								<option value="img/watermarks/purple.svg">Purple Mana</option>
 							</select>
 							<h5 class='collapsible collapsed padding input-description' onclick='toggleCollapse(event);'>
 								How to find set codes
@@ -959,7 +959,7 @@
 	-->
 
 	</div>
-	<script defer src='/js/creator-23.js'></script>
-	<script defer src='/js/quickMode.js'></script>
-	<script defer src='/js/frameSearch.js'></script>
+	<script defer src='js/creator-23.js'></script>
+	<script defer src='js/quickMode.js'></script>
+	<script defer src='js/frameSearch.js'></script>
 <!-- END OF CONTENT -->

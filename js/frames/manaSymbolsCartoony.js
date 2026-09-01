@@ -1,6 +1,6 @@
 //checks to see if it needs to run
-if (!card.manaSymbols.includes('/js/frames/manaSymbolsCartoony.js')) {
-	card.manaSymbols.push('/js/frames/manaSymbolsCartoony.js');
+if (!card.manaSymbols.includes('js/frames/manaSymbolsCartoony.js')) {
+	card.manaSymbols.push('js/frames/manaSymbolsCartoony.js');
 }
 if (!mana.get('cw')) {
 	loadManaSymbols([

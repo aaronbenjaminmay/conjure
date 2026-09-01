@@ -1,24 +1,24 @@
 //Create objects for common properties across available frames
-var masks = [{src:'/img/frames/storybook/pinline.png', name:'Pinline'}];
+var masks = [{src:'img/frames/storybook/pinline.png', name:'Pinline'}];
 //Create objects for common properties across available frames
 var bounds = {x:0.7414, y:0.8839, width:0.2134, height:0.0681};
 //defines available frames
 availableFrames = [
-	{name:'White Frame', src:'/img/frames/storybook/w.png', masks:masks},
-	{name:'Blue Frame', src:'/img/frames/storybook/u.png', masks:masks},
-	{name:'Black Frame', src:'/img/frames/storybook/b.png', masks:masks},
-	{name:'Red Frame', src:'/img/frames/storybook/r.png', masks:masks},
-	{name:'Green Frame', src:'/img/frames/storybook/g.png', masks:masks},
-	{name:'Multicolored Frame', src:'/img/frames/storybook/m.png', masks:masks},
-	{name:'Colorless Frame', src:'/img/frames/storybook/c.png', masks:masks},
-	{name:'White Power/Toughness', src:'/img/frames/storybook/wpt.png', bounds:bounds},
-	{name:'Blue Power/Toughness', src:'/img/frames/storybook/upt.png', bounds:bounds},
-	{name:'Black Power/Toughness', src:'/img/frames/storybook/bpt.png', bounds:bounds},
-	{name:'Red Power/Toughness', src:'/img/frames/storybook/rpt.png', bounds:bounds},
-	{name:'Green Power/Toughness', src:'/img/frames/storybook/gpt.png', bounds:bounds},
-	{name:'Multicolored Power/Toughness', src:'/img/frames/storybook/mpt.png', bounds:bounds},
-	{name:'Colorless Power/Toughness', src:'/img/frames/storybook/cpt.png', bounds:bounds},
-	{name:'Holo Stamp', src:'/img/frames/storybook/holo.png', bounds:{x:0.4507, y:0.9129, width:0.0987, height:0.0386}}
+	{name:'White Frame', src:'img/frames/storybook/w.png', masks:masks},
+	{name:'Blue Frame', src:'img/frames/storybook/u.png', masks:masks},
+	{name:'Black Frame', src:'img/frames/storybook/b.png', masks:masks},
+	{name:'Red Frame', src:'img/frames/storybook/r.png', masks:masks},
+	{name:'Green Frame', src:'img/frames/storybook/g.png', masks:masks},
+	{name:'Multicolored Frame', src:'img/frames/storybook/m.png', masks:masks},
+	{name:'Colorless Frame', src:'img/frames/storybook/c.png', masks:masks},
+	{name:'White Power/Toughness', src:'img/frames/storybook/wpt.png', bounds:bounds},
+	{name:'Blue Power/Toughness', src:'img/frames/storybook/upt.png', bounds:bounds},
+	{name:'Black Power/Toughness', src:'img/frames/storybook/bpt.png', bounds:bounds},
+	{name:'Red Power/Toughness', src:'img/frames/storybook/rpt.png', bounds:bounds},
+	{name:'Green Power/Toughness', src:'img/frames/storybook/gpt.png', bounds:bounds},
+	{name:'Multicolored Power/Toughness', src:'img/frames/storybook/mpt.png', bounds:bounds},
+	{name:'Colorless Power/Toughness', src:'img/frames/storybook/cpt.png', bounds:bounds},
+	{name:'Holo Stamp', src:'img/frames/storybook/holo.png', bounds:{x:0.4507, y:0.9129, width:0.0987, height:0.0386}}
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;

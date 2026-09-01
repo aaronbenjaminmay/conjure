@@ -1,26 +1,26 @@
 //Create objects for common properties across available frames
-var masks = [{src:'/img/frames/textless/2022/maskPinline.png', name:'Pinline'}, {src:'/img/frames/m15/regular/m15MaskTitle.png', name:'Title'}, {src:'/img/frames/textless/2022/maskType.png', name:'Type'}, {src:'/img/frames/textless/2022/maskBorder.png', name:'Border'}];
+var masks = [{src:'img/frames/textless/2022/maskPinline.png', name:'Pinline'}, {src:'img/frames/m15/regular/m15MaskTitle.png', name:'Title'}, {src:'img/frames/textless/2022/maskType.png', name:'Type'}, {src:'img/frames/textless/2022/maskBorder.png', name:'Border'}];
 var bounds = {x:62/1500, y:1752/2100, width:168/1500, height:168/2100};
 //defines available frames
 availableFrames = [
-	{name:'White Frame', src:'/img/frames/textless/2022/w.png', masks:masks},
-	{name:'Blue Frame', src:'/img/frames/textless/2022/u.png', masks:masks},
-	{name:'Black Frame', src:'/img/frames/textless/2022/b.png', masks:masks},
-	{name:'Red Frame', src:'/img/frames/textless/2022/r.png', masks:masks},
-	{name:'Green Frame', src:'/img/frames/textless/2022/g.png', masks:masks},
-	{name:'Multicolored Frame', src:'/img/frames/textless/2022/m.png', masks:masks},
-	{name:'Colorless Frame', src:'/img/frames/textless/2022/l.png', masks:masks},
-	{name:'White Mana Symbol', src:'/img/frames/textless/2022/sw.png', bounds:bounds},
-	{name:'Blue Mana Symbol', src:'/img/frames/textless/2022/su.png', bounds:bounds},
-	{name:'Black Mana Symbol', src:'/img/frames/textless/2022/sb.png', bounds:bounds},
-	{name:'Red Mana Symbol', src:'/img/frames/textless/2022/sr.png', bounds:bounds},
-	{name:'Green Mana Symbol', src:'/img/frames/textless/2022/sg.png', bounds:bounds},
-	{name:'Colorless Mana Symbol', src:'/img/frames/textless/2022/sc.png', bounds:bounds},
-	{name:'White Snow Frame', src:'/img/frames/textless/2022/snow/w.png', masks:masks},
-	{name:'Blue Snow Frame', src:'/img/frames/textless/2022/snow/u.png', masks:masks},
-	{name:'Black Snow Frame', src:'/img/frames/textless/2022/snow/b.png', masks:masks},
-	{name:'Red Snow Frame', src:'/img/frames/textless/2022/snow/r.png', masks:masks},
-	{name:'Green Snow Frame', src:'/img/frames/textless/2022/snow/g.png', masks:masks},
+	{name:'White Frame', src:'img/frames/textless/2022/w.png', masks:masks},
+	{name:'Blue Frame', src:'img/frames/textless/2022/u.png', masks:masks},
+	{name:'Black Frame', src:'img/frames/textless/2022/b.png', masks:masks},
+	{name:'Red Frame', src:'img/frames/textless/2022/r.png', masks:masks},
+	{name:'Green Frame', src:'img/frames/textless/2022/g.png', masks:masks},
+	{name:'Multicolored Frame', src:'img/frames/textless/2022/m.png', masks:masks},
+	{name:'Colorless Frame', src:'img/frames/textless/2022/l.png', masks:masks},
+	{name:'White Mana Symbol', src:'img/frames/textless/2022/sw.png', bounds:bounds},
+	{name:'Blue Mana Symbol', src:'img/frames/textless/2022/su.png', bounds:bounds},
+	{name:'Black Mana Symbol', src:'img/frames/textless/2022/sb.png', bounds:bounds},
+	{name:'Red Mana Symbol', src:'img/frames/textless/2022/sr.png', bounds:bounds},
+	{name:'Green Mana Symbol', src:'img/frames/textless/2022/sg.png', bounds:bounds},
+	{name:'Colorless Mana Symbol', src:'img/frames/textless/2022/sc.png', bounds:bounds},
+	{name:'White Snow Frame', src:'img/frames/textless/2022/snow/w.png', masks:masks},
+	{name:'Blue Snow Frame', src:'img/frames/textless/2022/snow/u.png', masks:masks},
+	{name:'Black Snow Frame', src:'img/frames/textless/2022/snow/b.png', masks:masks},
+	{name:'Red Snow Frame', src:'img/frames/textless/2022/snow/r.png', masks:masks},
+	{name:'Green Snow Frame', src:'img/frames/textless/2022/snow/g.png', masks:masks},
 ];
 //disables/enables the "Load Frame Version" button
 document.querySelector('#loadFrameVersion').disabled = false;
