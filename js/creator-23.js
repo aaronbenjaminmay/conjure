@@ -5542,29 +5542,24 @@ if ('number' in defaultCollector) {
 }
 if (!localStorage.getItem('enableImportCollectorInfo')) {
 	localStorage.setItem('enableImportCollectorInfo', 'false');
-} else {
-	document.querySelector('#enableImportCollectorInfo').checked = (localStorage.getItem('enableImportCollectorInfo') == 'true');
 }
+document.querySelector('#enableImportCollectorInfo').checked = (localStorage.getItem('enableImportCollectorInfo') == 'true');
 if (!localStorage.getItem('enableNewCollectorStyle')) {
 	localStorage.setItem('enableNewCollectorStyle', 'false');
-} else {
-	document.querySelector('#enableNewCollectorStyle').checked = (localStorage.getItem('enableNewCollectorStyle') == 'true');
 }
+document.querySelector('#enableNewCollectorStyle').checked = (localStorage.getItem('enableNewCollectorStyle') == 'true');
 if (!localStorage.getItem('enableCollectorInfo')) {
 	localStorage.setItem('enableCollectorInfo', 'true');
-} else {
-	document.querySelector('#enableCollectorInfo').checked = (localStorage.getItem('enableCollectorInfo') == 'true');
 }
+document.querySelector('#enableCollectorInfo').checked = (localStorage.getItem('enableCollectorInfo') == 'true');
 if (!localStorage.getItem('autoFrame')) {
 	localStorage.setItem('autoFrame', 'false');
-} else {
-	document.querySelector('#autoFrame').value = localStorage.getItem('autoFrame');
 }
+document.querySelector('#autoFrame').value = localStorage.getItem('autoFrame');
 if (!localStorage.getItem('autoFit')) {
 	localStorage.setItem('autoFit', 'true');
-} else {
-	document.querySelector('#art-update-autofit').checked = localStorage.getItem('autoFit');
 }
+document.querySelector('#art-update-autofit').checked = (localStorage.getItem('autoFit') == 'true');
 
 // lock set symbol code (user defaults)
 if (!localStorage.getItem('lockSetSymbolCode')) {
