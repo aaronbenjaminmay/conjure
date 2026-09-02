@@ -55,12 +55,14 @@ async function buildDeckTile(deck) {
 }
 
 function navigateToDeck(deckId) {
-	history.pushState(null, '', '/decks/?deck=' + encodeURIComponent(deckId));
+	// Relative to this page's own current path, so this works whether the
+	// site is served from a domain root or a GitHub Pages subpath.
+	history.pushState(null, '', '?deck=' + encodeURIComponent(deckId));
 	showDeckDetail(deckId);
 }
 
 function navigateToDecksList() {
-	history.pushState(null, '', '/decks/');
+	history.pushState(null, '', window.location.pathname);
 	showDecksList();
 }
 
@@ -147,7 +149,7 @@ function startDecklistImport(entries, job) {
 		return;
 	}
 	sessionStorage.setItem('pendingDecklistImport', JSON.stringify(Object.assign({ entries }, job)));
-	window.location.href = '/?importDecklist=1';
+	window.location.href = '../?importDecklist=1';
 }
 
 document.addEventListener('DOMContentLoaded', function () {

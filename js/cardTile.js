@@ -23,7 +23,7 @@ function buildCardTile(card, decks, options) {
 
 	var thumb = document.createElement('div');
 	thumb.className = 'library-tile-thumb';
-	thumb.onclick = function () { window.location.href = '/?card=' + encodeURIComponent(card.id); }
+	thumb.onclick = function () { window.location.href = '../?card=' + encodeURIComponent(card.id); }
 	if (card.thumbnail) {
 		var img = document.createElement('img');
 		img.src = card.thumbnail;
@@ -52,7 +52,7 @@ function buildCardTile(card, decks, options) {
 	menuButton.className = 'library-tile-menu-button';
 	menuButton.setAttribute('aria-label', 'More actions');
 	var menuIcon = document.createElement('img');
-	menuIcon.src = '/img/quickMode/menu-dots.svg';
+	menuIcon.src = '../img/quickMode/menu-dots.svg';
 	menuIcon.alt = '';
 	menuButton.appendChild(menuIcon);
 	menuWrap.appendChild(menuButton);
@@ -62,7 +62,7 @@ function buildCardTile(card, decks, options) {
 
 	var editItem = document.createElement('button');
 	editItem.textContent = 'Edit';
-	editItem.onclick = function () { window.location.href = '/?card=' + encodeURIComponent(card.id); }
+	editItem.onclick = function () { window.location.href = '../?card=' + encodeURIComponent(card.id); }
 	menu.appendChild(editItem);
 
 	var duplicateItem = document.createElement('button');

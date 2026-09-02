@@ -5140,7 +5140,7 @@ async function persistCurrentCardToLibrary() {
 }
 async function saveCardToLibrary() {
 	await persistCurrentCardToLibrary();
-	window.location.href = '/my-cards/';
+	window.location.href = 'my-cards/';
 }
 async function populateSaveToDeckOptions() {
 	var select = document.querySelector('#save-to-deck-select');
@@ -5177,7 +5177,7 @@ async function saveCardToDeck() {
 	}
 	var id = await persistCurrentCardToLibrary();
 	await CardStorage.addCardToDeck(deckId, id);
-	window.location.href = '/decks/?deck=' + encodeURIComponent(deckId);
+	window.location.href = 'decks/?deck=' + encodeURIComponent(deckId);
 }
 async function applyCardData(data) {
 	//clear the draggable frames

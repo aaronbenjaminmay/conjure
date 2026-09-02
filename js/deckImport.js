@@ -147,7 +147,7 @@ async function runDecklistImport() {
 	var doneButton = document.querySelector('#decklist-import-done');
 	doneButton.classList.remove('hidden');
 	doneButton.onclick = function () {
-		window.location.href = '/decks/?deck=' + encodeURIComponent(deckId);
+		window.location.href = 'decks/?deck=' + encodeURIComponent(deckId);
 	};
 }
 
