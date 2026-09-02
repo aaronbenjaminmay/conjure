@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="mtg, magic, card, creator, custom, maker">
+	<title>Decks - Card Conjurer</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/style-9.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../css/quickMode.css">
+	<link rel="stylesheet" href="../css/library.css">
+	<link rel="shortcut icon" href="../core/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="../core/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../core/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../core/favicon-16x16.png">
+	<link rel="manifest" href="../core/site.webmanifest">
+	<script src='../js/themes.js'></script>
+	<script defer src='../js/cardStorage.js'></script>
+	<script defer src='../js/main-1.js'></script>
+	<script defer src='../js/cardTile.js'></script>
+	<script defer src='../js/decks.js'></script>
+</head>
+<body>
+	<div class='background'></div>
+	<header class='site-nav'>
+		<h1 class='title'>Conjurer</h1>
+		<nav>
+			<a href='/'>Creator</a>
+			<a href='/my-cards/'>My Cards</a>
+			<a href='/decks/' class='site-nav-selected'>Decks</a>
+		</nav>
+	</header>
+	<div class='notification-container'></div>
+
+	<div class='library-page'>
+		<div id='decks-list-view'>
+			<div id='decklist-import-form' class='decklist-import-form'>
+				<h5 class='quick-section-title'>Create &amp; import your deck list</h5>
+				<div class='quick-field'>
+					<h5 class='quick-label'>Deck Name</h5>
+					<input id='decklist-new-deck-name' class='input' type='text' placeholder='New deck name'>
+				</div>
+				<h5 class='quick-hint'>Optionally paste a decklist (one card per line, e.g. "4 Lightning Bolt") to fill the deck right away. Each card is looked up on Scryfall and rendered with a default frame, so this can take a few seconds per unique card. Leave it blank to just create an empty deck.</h5>
+				<div class='quick-field'>
+					<h5 class='quick-label'>Deck List</h5>
+					<textarea id='decklist-import-text' class='input' placeholder='4 Lightning Bolt&#10;2 Counterspell&#10;1 Sol Ring'></textarea>
+				</div>
+				<button class='quick-export-button' id='decklist-import-submit'>Import Deck List</button>
+			</div>
+			<div id='decks-grid' class='library-grid'></div>
+			<div id='decks-empty' class='library-empty hidden'>
+				<h3 class='quick-export-title'>No decks yet</h3>
+				<h5 class='quick-export-subtitle'>Create a deck, then add cards to it from <a href='/my-cards/'>My Cards</a>.</h5>
+			</div>
+		</div>
+
+		<div id='deck-detail-view' class='hidden'>
+			<div id='deck-decklist-import-form' class='decklist-import-form'>
+				<h5 class='quick-section-title'>Create &amp; import your deck list</h5>
+				<h5 class='quick-hint'>Optionally paste a decklist (one card per line, e.g. "4 Lightning Bolt") to fill the deck right away. Each card is looked up on Scryfall and rendered with a default frame, so this can take a few seconds per unique card. Leave it blank to just create an empty deck.</h5>
+				<div class='quick-field'>
+					<h5 class='quick-label'>Deck List</h5>
+					<textarea id='deck-decklist-import-text' class='input' placeholder='4 Lightning Bolt&#10;2 Counterspell&#10;1 Sol Ring'></textarea>
+				</div>
+				<button class='quick-export-button' id='deck-decklist-import-submit'>Import Deck List</button>
+			</div>
+
+			<div class='button-row'>
+				<button class='quick-export-button quick-export-button-outline' id='download-deck-button'>Download All</button>
+				<a href='/print/' target='_blank' class='quick-export-button quick-export-button-outline' id='print-sheet-link'>Print Sheet</a>
+				<button class='quick-export-button quick-export-button-destructive' id='delete-deck-button'>Delete Deck</button>
+			</div>
+			<h5 class='quick-hint margin-bottom-large'>For full 300 DPI print-quality files, open a card in the Creator and use "Download as PNG (300 DPI)".</h5>
+
+			<input id='deck-name-input' class='deck-title-input' type='text'>
+
+			<div id='deck-cards-list' class='library-grid'></div>
+			<div id='deck-cards-empty' class='library-empty hidden'>
+				<h3 class='quick-export-title'>No cards yet</h3>
+				<h5 class='quick-export-subtitle'>Import a decklist above, or add this deck from a card on <a href='/my-cards/'>My Cards</a>.</h5>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

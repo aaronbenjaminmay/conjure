@@ -92,6 +92,15 @@
 				<input id='textbox-editor-height' class='input' type='number' placeholder='X' step='1'>
 			</div>
 		</div>
+		<div id='decklist-import-overlay' class='decklist-import-overlay hidden'>
+			<div class='decklist-import-panel readable-background box-shadow'>
+				<h2>Importing Decklist</h2>
+				<h5 id='decklist-import-status' class='input-description'>Starting...</h5>
+				<h5 id='decklist-import-progress' class='input-description'></h5>
+				<div id='decklist-import-log' class='decklist-import-log'></div>
+				<button id='decklist-import-done' class='input hidden'>View Deck</button>
+			</div>
+		</div>
 		<!-- Regular stuff -->
 		<div class='creator-grid margin-bottom-large'>
 			<div class='quick-preview-pane'>
@@ -770,14 +779,19 @@
 					</div>
 				</div>
 				<div class='quick-export-panel'>
+					<h2 class='quick-export-title'>Save your card</h2>
+					<h5 class='quick-export-subtitle'>Save this card to your browser so you can come back and edit it later, or add it to a deck.</h5>
+					<h3 class='quick-export-button' onclick='saveCardToLibrary();'>Save Card</h3>
+					<div class='quick-field'>
+						<h5 class='quick-label'>Save to a deck</h5>
+						<select id='save-to-deck-select' class='input'></select>
+					</div>
+					<h3 class='quick-export-button' onclick='saveCardToDeck();'>Save To Deck</h3>
+				</div>
+				<div class='quick-export-panel'>
 					<h2 class='quick-export-title'>Download your card</h2>
 					<h5 class='quick-export-subtitle'>Generate production-ready files optimized for tabletop printing or digital play.</h5>
-					<h3 class='download quick-export-button' onclick='downloadCard();'>Download as PNG (300 DPI)</h3>
-					<div class='quick-export-links'>
-						<h5 onclick='downloadCard(false, true);' id='downloadJpg' class='download quick-export-link'>Download as JPEG</h5>
-						<span class='quick-export-dot'></span>
-						<a class='download quick-export-link' href='/print' target='_blank'>Get PDF Print Sheet</a>
-					</div>
+					<h3 class='download quick-export-button' onclick='downloadCard();'>Download Card</h3>
 				</div>
 					
 			</div>
@@ -962,4 +976,5 @@
 	<script defer src='js/creator-23.js'></script>
 	<script defer src='js/quickMode.js'></script>
 	<script defer src='js/frameSearch.js'></script>
+	<script defer src='js/deckImport.js'></script>
 <!-- END OF CONTENT -->

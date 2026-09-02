@@ -1,0 +1,464 @@
+/* Shared design-system components used across the Creator, My Cards, Decks, and
+   Print pages. Previously duplicated per-page (scoped under .creator-menu in
+   quickMode.css and under .library-page here); consolidated to one definition
+   so every page uses the same components instead of near-identical copies. */
+
+.quick-field {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.quick-label {
+	color: #9caf9f;
+	font-family: 'Geist', Helvetica, sans-serif;
+	font-weight: 600;
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: 0.02em;
+	font-style: normal;
+	margin: 0;
+}
+
+.quick-hint {
+	color: #6b8073;
+	font-family: 'Geist', Helvetica, sans-serif;
+	font-weight: 400;
+	font-size: 11px;
+	font-style: normal;
+	text-transform: none;
+	margin: 0;
+}
+
+.quick-section-title {
+	color: #3ad437;
+	font-family: 'Geist', Helvetica, sans-serif;
+	font-weight: 700;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 0.02em;
+	margin: 0;
+}
+
+/* Inputs, selects, and textareas */
+.input {
+	background: #0b100d;
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	border-radius: 8px;
+	color: #f3f6f3;
+	font-family: 'Geist', Helvetica, sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	min-height: 44px;
+	padding: 12px 16px;
+	box-shadow: none;
+	transition: border-color 0.2s;
+}
+
+.input:hover {
+	box-shadow: none;
+	border-color: rgba(255, 255, 255, 0.16);
+}
+
+.input:focus,
+.input:active {
+	border-color: rgba(58, 212, 55, 0.4);
+	outline: none;
+}
+
+textarea.input {
+	min-height: 120px;
+	font-family: 'Geist', Helvetica, sans-serif;
+}
+
+select.input {
+	appearance: none;
+	-webkit-appearance: none;
+	background-image: url('../img/quickMode/chevron-down.svg');
+	background-repeat: no-repeat;
+	background-position: right 16px center;
+	background-size: 14px;
+	padding-right: 40px;
+}
+
+/* Primary CTA (green pill) and export-panel typography, shared by the
+   Creator's Save/Download panels and the Decks page */
+.quick-export-title {
+	font-family: 'Instrument Serif', 'Geist', serif;
+	font-style: italic;
+	color: #3ad437;
+	font-size: 32px;
+	font-weight: 400;
+	margin: 0;
+}
+
+.quick-export-subtitle {
+	color: #9caf9f;
+	font-family: 'Geist', Helvetica, sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	margin: 0;
+}
+
+.quick-export-button {
+	background: #3ad437;
+	color: #090e09;
+	border: none;
+	border-radius: 999px;
+	height: 48px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Geist', Helvetica, sans-serif;
+	font-weight: 700;
+	font-size: 15px;
+	margin: 0;
+	width: 100%;
+	cursor: pointer;
+	text-decoration: none !important;
+}
+
+.quick-export-button:hover {
+	text-decoration: none;
+	opacity: 0.9;
+}
+
+.quick-export-link {
+	color: #9caf9f;
+	font-family: 'Geist', Helvetica, sans-serif;
+	font-weight: 600;
+	font-size: 12px;
+	text-decoration: underline;
+	margin: 0;
+}
+
+/* Site navigation header shared by the Creator, My Cards, Decks, and Print pages */
+.site-nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 1rem;
+	padding: 1.25rem 2rem;
+	background: #18261c;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.site-nav h1.title {
+	font-size: 1.75rem;
+	margin: 0;
+}
+
+.site-nav nav {
+	display: flex;
+	gap: 1.5rem;
+	flex-wrap: wrap;
+}
+
+.site-nav nav a {
+	font-family: 'Geist', Helvetica, sans-serif;
+	font-weight: 600;
+	font-size: 0.95rem;
+	color: var(--font-color-2);
+	text-decoration: none;
+	padding-bottom: 0.15rem;
+	border-bottom: 2px solid transparent;
+}
+
+.site-nav nav a:hover {
+	color: var(--font-color);
+	text-decoration: none;
+}
+
+.site-nav nav a.site-nav-selected {
+	color: #3ad437;
+	border-bottom-color: #3ad437;
+}
+
+/* Shared page container for My Cards / Decks */
+.library-page {
+	max-width: 72rem;
+	margin: 0 auto;
+	padding: 3rem 3rem 3rem 3rem;
+}
+
+.library-empty {
+	text-align: center;
+	color: var(--font-color-2);
+	padding: 4rem 1rem;
+}
+
+/* Grid of card / deck tiles */
+.library-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(16.5rem, 1fr));
+	gap: 1.5rem;
+}
+
+.library-tile {
+	background: #14261b;
+	border: 1px solid #26372d;
+	border-radius: 16px;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.library-tile-thumb {
+	width: 100%;
+	aspect-ratio: 5 / 7;
+	background: #0b100d center / cover no-repeat;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--font-color-2);
+	font-size: 0.85rem;
+	cursor: pointer;
+	border-radius: 16px 16px 0 0;
+	overflow: hidden;
+}
+
+.library-tile-thumb img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+.library-tile-body {
+	padding: 0 1rem 1rem 1rem;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.library-tile-title-row {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 0.5rem;
+}
+
+.library-tile-title {
+	font-family: 'Geist', Helvetica, sans-serif;
+	font-weight: 700;
+	font-size: 1.125rem;
+	margin: 0;
+	overflow-wrap: anywhere;
+}
+
+.library-tile-menu-wrap {
+	position: relative;
+	flex: 0 0 auto;
+}
+
+.library-tile-menu-button {
+	width: 2rem;
+	height: 2rem;
+	min-height: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 4px;
+	background: none;
+	border: none;
+}
+
+.library-tile-menu-button:hover {
+	background: rgba(255, 255, 255, 0.08);
+}
+
+.library-tile-menu-button img {
+	width: 5px;
+	height: 24px;
+}
+
+.library-tile-menu {
+	position: absolute;
+	right: 0;
+	top: calc(100% + 0.4rem);
+	background: #0b100d;
+	border: 1px solid rgba(255, 255, 255, 0.12);
+	border-radius: 10px;
+	padding: 0.4rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0.2rem;
+	min-width: 8rem;
+	z-index: 5;
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+}
+
+.library-tile-menu.hidden {
+	display: none;
+}
+
+.library-tile-menu button {
+	background: none;
+	border: none;
+	color: var(--font-color);
+	text-align: left;
+	padding: 0.4rem 0.6rem;
+	border-radius: 6px;
+	cursor: pointer;
+	font-family: 'Geist', Helvetica, sans-serif;
+	font-size: 0.85rem;
+	flex: none;
+}
+
+.library-tile-menu button:hover {
+	background: rgba(255, 255, 255, 0.08);
+}
+
+/* Deck detail view */
+.deck-title-input {
+	display: block;
+	width: 100%;
+	background: none;
+	border: none;
+	padding: 0;
+	margin: 0 0 1.5rem 0;
+	min-height: 0;
+	font-family: 'Instrument Serif', 'Geist', serif;
+	font-style: italic;
+	color: #3ad437;
+	font-size: 32px;
+	font-weight: 400;
+}
+
+.deck-title-input:hover,
+.deck-title-input:focus,
+.deck-title-input:active {
+	border: none;
+	outline: none;
+}
+
+.button-row {
+	display: flex;
+	gap: 10px;
+	margin-bottom: 0.75rem;
+}
+
+.button-row .quick-export-button {
+	flex: 1 1 0;
+	width: auto;
+}
+
+/* Deck Detail's action row matches the width of the import panel above it */
+#deck-detail-view .button-row {
+	max-width: 46.5rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Secondary CTA: green outline pill (Download All / Print Sheet) */
+.quick-export-button-outline {
+	background: transparent;
+	border: 2px solid #3ad437;
+	color: #3ad437;
+}
+
+.quick-export-button-outline:hover {
+	background: rgba(58, 212, 55, 0.08);
+	opacity: 1;
+}
+
+/* Destructive CTA: filled red pill (Delete Deck) */
+.quick-export-button-destructive {
+	background: #d43737;
+	color: #fff;
+}
+
+.quick-export-button-destructive:hover {
+	opacity: 0.9;
+}
+
+/* Decklist bulk-import progress overlay (creator page) */
+.decklist-import-overlay {
+	position: fixed;
+	inset: 0;
+	z-index: 20;
+	background: rgba(0, 0, 0, 0.75);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 2rem;
+}
+
+.decklist-import-overlay.hidden {
+	display: none;
+}
+
+.decklist-import-panel {
+	background: #18261c;
+	border-radius: 16px;
+	padding: 2rem;
+	width: 32rem;
+	max-width: 100%;
+	max-height: calc(100vh - 4rem);
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+}
+
+.decklist-import-log {
+	flex: 1 1 auto;
+	overflow-y: auto;
+	background: #0b100d;
+	border-radius: 8px;
+	padding: 0.75rem 1rem;
+	font-family: 'Geist', Helvetica, sans-serif;
+	font-size: 0.8rem;
+	color: var(--font-color-2);
+	max-height: 16rem;
+}
+
+.decklist-import-log > div {
+	margin-bottom: 0.25rem;
+}
+
+/* Decklist import form (Decks page) */
+.decklist-import-form {
+	background: #18261c;
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	border-radius: 16px;
+	padding: 1.5rem;
+	margin-bottom: 2rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+}
+
+.decklist-import-form textarea.input {
+	min-height: 10rem;
+	font-family: 'Geist', Helvetica, sans-serif;
+}
+
+.decklist-import-form.hidden {
+	display: none;
+}
+
+#decklist-new-deck-name {
+	border-color: rgba(58, 212, 55, 0.4);
+}
+
+#decklist-import-form {
+	max-width: 46.5rem;
+	margin: 0 auto 3rem auto;
+}
+
+#deck-decklist-import-form {
+	max-width: 46.5rem;
+	margin: 0 auto 2rem auto;
+}
+
+/* Print page: the rendered sheet, shown in the same sticky preview pane the
+   Creator uses for its card canvas (.quick-preview-pane in quickMode.css) */
+.print-canvas {
+	background: #fff;
+	box-shadow: 0px 24px 48px 0px rgba(0, 0, 0, 0.5);
+	max-width: 100%;
+	width: 100%;
+	height: auto;
+}

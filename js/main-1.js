@@ -120,7 +120,9 @@ function bindInputs(query1, query2, checkbox = false) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-	htmx.ajax('GET', 'creator/index.html', {target: '#content', swap: 'innerHTML'});
+	if (window.htmx && document.querySelector('#content')) {
+		htmx.ajax('GET', 'creator/index.html', {target: '#content', swap: 'innerHTML'});
+	}
 })
 
 document.onkeyup = function(e) {

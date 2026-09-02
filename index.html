@@ -13,6 +13,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/quickMode.css">
+	<link rel="stylesheet" href="css/library.css">
 	<link rel="shortcut icon" href="core/favicon.ico">
 	<link rel="apple-touch-icon" sizes="180x180" href="core/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="core/favicon-32x32.png">
@@ -20,10 +21,19 @@
 	<link rel="manifest" href="core/site.webmanifest">
 	<script src='js/themes.js'></script>
 	<script src='js/htmx.min.js'></script>
+	<script defer src='js/cardStorage.js'></script>
 	<script defer src='js/main-1.js'></script>
 </head>
 <body>
 	<div class='background'></div>
+	<header class='site-nav'>
+		<h1 class='title'>Conjurer</h1>
+		<nav>
+			<a href='/' class='site-nav-selected'>Creator</a>
+			<a href='/my-cards/'>My Cards</a>
+			<a href='/decks/'>Decks</a>
+		</nav>
+	</header>
 	<div class='notification-container'></div>
 
 	<div id="content"></div>

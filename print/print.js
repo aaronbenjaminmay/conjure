@@ -182,6 +182,17 @@ function setPageSize(size = [8.5, 11]) {
 function changeOrientation() {
     setPageSize([page[1], page[0]]);
 }
+// Sets orientation explicitly (used by the Paper Orientation select), rather than
+// blindly toggling like changeOrientation() does.
+function setOrientation(value) {
+    var shortSide = Math.min(page[0], page[1]);
+    var longSide = Math.max(page[0], page[1]);
+    if (value === 'landscape') {
+        setPageSize([longSide, shortSide]);
+    } else {
+        setPageSize([shortSide, longSide]);
+    }
+}
 //Sets PPI, recalculates card measurements
 function setPPI(inputPPI) {
     var oldPPI = ppi;
@@ -263,6 +274,7 @@ function loadDefaults() {
         document.querySelector("#bleedEdgeColor").value = bleedEdgeColor;
         useCuttingAids = cardObject.cuttingAids;
         document.querySelector("#cuttingAidsCheckbox").checked = useCuttingAids;
+        document.querySelector("#pageOrientation").value = (page[0] > page[1]) ? 'landscape' : 'portrait';
     }
 }
 

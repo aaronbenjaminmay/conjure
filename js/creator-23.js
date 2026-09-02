@@ -5115,12 +5115,76 @@ function saveCard(saveFromFile) {
 		notify('You have exceeded your 5MB of local storage, and your card has failed to save. If you would like to continue saving cards, please download all saved cards, then delete all saved cards to free up space.<br><br>Local storage is most often exceeded by uploading large images directly from your computer. If possible/convenient, using a URL avoids the need to save these large images.<br><br>Apologies for the inconvenience.');
 	}
 }
-async function loadCard(selectedCardKey) {
+//LIBRARY (IndexedDB) SAVE/LOAD - used by the Quick Mode "Save Card" button and the My Cards / Decks pages
+var currentCardId = null;
+function generateCardThumbnail(maxWidth = 320) {
+	var thumbCanvas = document.createElement('canvas');
+	var scale = maxWidth / cardCanvas.width;
+	thumbCanvas.width = maxWidth;
+	thumbCanvas.height = Math.round(cardCanvas.height * scale);
+	thumbCanvas.getContext('2d').drawImage(cardCanvas, 0, 0, thumbCanvas.width, thumbCanvas.height);
+	return thumbCanvas.toDataURL('image/jpeg', 0.7);
+}
+function buildSerializableCardSnapshot() {
+	var snapshot = JSON.parse(JSON.stringify(card));
+	snapshot.frames.forEach(frame => {
+		delete frame.image;
+		frame.masks.forEach(mask => delete mask.image);
+	});
+	return snapshot;
+}
+async function persistCurrentCardToLibrary() {
+	var thumbnail = generateCardThumbnail();
+	currentCardId = await CardStorage.saveCard(currentCardId, getCardName(), buildSerializableCardSnapshot(), thumbnail);
+	return currentCardId;
+}
+async function saveCardToLibrary() {
+	await persistCurrentCardToLibrary();
+	window.location.href = '/my-cards/';
+}
+async function populateSaveToDeckOptions() {
+	var select = document.querySelector('#save-to-deck-select');
+	if (!select) { return; }
+	var decks = await CardStorage.getAllDecks();
+	select.innerHTML = '';
+	var placeholder = document.createElement('option');
+	placeholder.textContent = 'Choose a deck...';
+	placeholder.value = '';
+	placeholder.setAttribute('selected', 'selected');
+	select.appendChild(placeholder);
+	decks.forEach(deck => {
+		var option = document.createElement('option');
+		option.value = deck.id;
+		option.textContent = deck.name;
+		select.appendChild(option);
+	});
+	var newOption = document.createElement('option');
+	newOption.value = '__new__';
+	newOption.textContent = '+ New deck...';
+	select.appendChild(newOption);
+}
+async function saveCardToDeck() {
+	var select = document.querySelector('#save-to-deck-select');
+	var deckId = select.value;
+	if (deckId === '__new__') {
+		var name = prompt('Enter a name for the new deck:');
+		if (!name) { return; }
+		deckId = await CardStorage.createDeck(name.trim());
+	}
+	if (!deckId) {
+		notify('Choose a deck first.', 4);
+		return;
+	}
+	var id = await persistCurrentCardToLibrary();
+	await CardStorage.addCardToDeck(deckId, id);
+	window.location.href = '/decks/?deck=' + encodeURIComponent(deckId);
+}
+async function applyCardData(data) {
 	//clear the draggable frames
 	document.querySelector('#frame-list').innerHTML = null;
 	//clear the existing card, then replace it with the new JSON
 	card = {};
-	card = JSON.parse(localStorage.getItem(selectedCardKey));
+	card = data;
 	//if the card was loaded properly...
 	if (card) {
 		//load values from card into html inputs
@@ -5179,7 +5243,13 @@ async function loadCard(selectedCardKey) {
 			bottomInfoEdited();
 			watermarkEdited();
 		}
-	} else {
+		populateQuickFields();
+	}
+	return !!card;
+}
+async function loadCard(selectedCardKey) {
+	var loaded = await applyCardData(JSON.parse(localStorage.getItem(selectedCardKey)));
+	if (!loaded) {
 		notify(selectedCardKey + ' failed to load.', 5)
 	}
 }
@@ -5593,3 +5663,20 @@ bindInputs('#show-guidelines', '#show-guidelines-2', true);
 loadScript('js/frames/groupStandard-3.js');
 loadAvailableCards();
 initDraggableArt();
+
+// Library (IndexedDB) bootstrap: migrate any pre-existing localStorage saves,
+// then check for a `?card=<id>` link (from My Cards / Decks) to load into the editor.
+CardStorage.migrateLegacyLocalStorageCards().then(function () {
+	populateSaveToDeckOptions();
+	var cardIdToLoad = params.get('card');
+	if (cardIdToLoad) {
+		CardStorage.getCard(cardIdToLoad).then(function (record) {
+			if (record) {
+				currentCardId = record.id;
+				applyCardData(record.data);
+			} else {
+				notify('Could not find that saved card.', 5);
+			}
+		});
+	}
+});

@@ -1,74 +1,118 @@
-<!-- START OF CONTENT -->
-    <h2 class='readable-background header-extension title center margin-bottom-large'>Printing Tool</h2>
-    <div class='readable-background padding layer margin-bottom-large'>
-		<h4 class='collapsible collapsed center padding margin-bottom' onclick='toggleCollapse(event);'>Configure Page Settings</h4>
-        <div>
-    		<h5 class='margin-bottom padding input-description'>Select your paper size</h5>
-    		<select onchange='setPageSize(this.value.split(","));' class='input margin-bottom'>
-    			<option value='8.5,11'>Letter (8.5 by 11)</option>
-    			<option value='8.2667,11.6934'>A4</option>
-    		</select>
-            <h5 class='margin-bottom padding input-description'>Toggle the paper orientation (Portrait / Landscape)</h5>
-            <button onclick='changeOrientation();' class='input margin-bottom'>Toggle orientation</button>
-            <h5 class='margin-bottom padding input-description'>Select a default card size</h5>
-            <select onchange='setCardSize(this.value.split(","));' class='input margin-bottom'>
-                <option value='2.5,3.5'>2.5 x 3.5 Inches</option>
-                <option value='2.48031,3.46457'>63 x 88 mm</option>
-            </select>
-            <h5 class='margin-bottom padding input-description'>Or enter your own card size</h5>
-            <div class='margin-bottom split-grid'>
-                <input type='number' id='cardWidth' class='input' value='1500' onchange='setCardSize();'>
-                <input type='number' id='cardHeight' class='input' value='2100' onchange='setCardSize();'>
-            </div>
-            <h5 class='margin-bottom padding input-description'>Enter your bleed edge thickness (in pixels)</h5>
-            <input type='number' id='cardPadding' class='input margin-bottom' value='0' min='0' onchange='setPaddingSize(this.value);'>
-    		<h5 class='margin-bottom padding input-description'>Enter the distance between cards (in pixels)</h5>
-            <input type='number' id='cardMargin' class='input margin-bottom' value='30' min='0' onchange='setMarginSize(this.value);'>
-            <h5 class='margin-bottom padding input-description'>Set PPI (pixels per inch)</h5>
-            <input type='number' id='cardPPI' class='input margin-bottom' value='600' min='1' max='2400' onchange='setPPI(this.value);'>
-            <h5 class='margin-bottom padding input-description'>Include cutting aids (colored marks to help guide cuts; may not be visible in preview)</h5>
-            <label class='checkbox-container input margin-bottom'>Cutting aids
-                <input id='cuttingAidsCheckbox' type='checkbox' onchange='setCuttingAids(this.checked);'>
-                <span class='checkmark'></span>
-            </label>
-            <h5 class='margin-bottom padding input-description'>Images already include bleed edge</h5>
-            <label class='checkbox-container input margin-bottom'>Bleed edge included
-                <input id='bleedEdgeCheckbox' type='checkbox' onchange='setBleedEdge(this.checked);' checked>
-                <span class='checkmark'></span>
-            </label>
-            <h5 class='margin-bottom padding input-description'>Bleed Edge Color</h5>
-            <input id='bleedEdgeColor' type='color' class='input margin-bottom' onchange='setBleedEdgeColor(this.value);'>
-            <h5 class='margin-bottom padding input-description'>Save your current configurations as default</h5>
-            <button onclick='saveDefaults();' class='input margin-bottom'>Save configuration</button>
-        </div>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="mtg, magic, card, creator, custom, maker">
+	<title>Printing Tool - Conjurer</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/style-9.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../css/quickMode.css">
+	<link rel="stylesheet" href="../css/library.css">
+	<link rel="shortcut icon" href="../core/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="../core/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../core/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../core/favicon-16x16.png">
+	<link rel="manifest" href="../core/site.webmanifest">
+	<script src='../js/themes.js'></script>
+	<script defer src='../js/main-1.js'></script>
+</head>
+<body>
+	<div class='background'></div>
+	<header class='site-nav'>
+		<h1 class='title'>Conjurer</h1>
+		<nav>
+			<a href='/'>Creator</a>
+			<a href='/my-cards/'>My Cards</a>
+			<a href='/decks/'>Decks</a>
+		</nav>
+	</header>
+	<div class='notification-container'></div>
+
+	<div class='creator-grid margin-bottom-large'>
+		<div class='quick-preview-pane'>
+			<canvas class='print-canvas'></canvas>
+		</div>
+		<div class='creator-menu'>
+			<div class='quick-section'>
+				<h5 class='quick-section-title'>Add cards to print</h5>
+				<div class='quick-dropzone drop-area'>
+					<img class='quick-upload-icon' src='../img/quickMode/upload.svg' alt=''>
+					<h5 class='quick-dropzone-title'>Drag &amp; drop artwork here</h5>
+					<h5 class='quick-hint'>or click to browse local files</h5>
+					<input type='file' multiple accept='.png, .svg, .jpg, .jpeg, .bmp' class='input' oninput='uploadFiles(event.target.files, uploadCard, "filename");' data-dropFunction='uploadCard' data-otherParams='filename'>
+				</div>
+			</div>
+			<div class='quick-section'>
+				<h5 class='quick-section-title'>Page settings</h5>
+				<div class='quick-field'>
+					<h5 class='quick-label'>Paper size</h5>
+					<select class='input' onchange='setPageSize(this.value.split(","));'>
+						<option value='8.5,11'>Letter 8.5x11in</option>
+						<option value='8.2667,11.6934'>A4</option>
+					</select>
+				</div>
+				<div class='quick-field'>
+					<h5 class='quick-label'>Paper orientation</h5>
+					<select id='pageOrientation' class='input' onchange='setOrientation(this.value);'>
+						<option value='portrait'>Portrait</option>
+						<option value='landscape'>Landscape</option>
+					</select>
+				</div>
+				<div class='quick-field'>
+					<h5 class='quick-label'>Select card size</h5>
+					<select class='input' onchange='setCardSize(this.value.split(","));'>
+						<option value='2.5,3.5'>2.5x3.5in</option>
+						<option value='2.48031,3.46457'>63x88mm</option>
+					</select>
+				</div>
+				<input type='hidden' id='cardWidth' value='1500'>
+				<input type='hidden' id='cardHeight' value='2100'>
+				<div class='quick-field'>
+					<h5 class='quick-label'>Gutter</h5>
+					<input type='number' id='cardMargin' class='input' value='30' min='0' placeholder='Space between cards in pixels, e.g. 24' onchange='setMarginSize(this.value);'>
+				</div>
+				<div class='quick-field'>
+					<h5 class='quick-label'>Bleed edge thickness</h5>
+					<input type='number' id='cardPadding' class='input' value='0' min='0' placeholder='Bleed edge in pixels, e.g. 24' onchange='setPaddingSize(this.value);'>
+				</div>
+				<div class='quick-field'>
+					<h5 class='quick-label'>Resolution (DPI)</h5>
+					<input type='number' id='cardPPI' class='input' value='600' min='1' max='2400' placeholder='e.g. 300' onchange='setPPI(this.value);'>
+				</div>
+				<label class='checkbox-container input quick-checkbox'>Cutting aids
+					<input id='cuttingAidsCheckbox' type='checkbox' onchange='setCuttingAids(this.checked);'>
+					<span class='checkmark'></span>
+				</label>
+				<label class='checkbox-container input quick-checkbox'>Include bleed edge
+					<input id='bleedEdgeCheckbox' type='checkbox' onchange='setBleedEdge(this.checked);' checked>
+					<span class='checkmark'></span>
+				</label>
+				<div class='quick-field'>
+					<h5 class='quick-label'>Bleed edge color</h5>
+					<select id='bleedEdgeColor' class='input' onchange='setBleedEdgeColor(this.value);'>
+						<option value='black'>Black</option>
+						<option value='white'>White</option>
+						<option value='red'>Red</option>
+						<option value='gray'>Gray</option>
+					</select>
+				</div>
+				<button class='quick-export-button' onclick='saveDefaults();'>Save configuration</button>
+			</div>
+			<div class='quick-export-panel'>
+				<h2 class='quick-export-title'>Download your sheet</h2>
+				<h5 class='quick-export-subtitle'>Generate production-ready files optimized for tabletop printing or digital play.</h5>
+				<div class='button-row'>
+					<button class='quick-export-button' onclick='downloadCanvas();'>Download PNG</button>
+					<button class='quick-export-button' onclick='downloadPDF();'>Download PDF</button>
+				</div>
+			</div>
+		</div>
 	</div>
-    <div class="layer margin-bottom-large">
-        <div class="drop-area" style="padding: 1rem">
-            <div class='padding margin-bottom-large readable-background'>
-                <h5 class='margin-bottom padding input-description'>Upload the images that you'd like to print, or drag-and-drop them</h5>
-                <input type='file' multiple accept='.png, .svg, .jpg, .jpeg, .bmp' placeholder='File Upload' class='input' oninput='uploadFiles(event.target.files, uploadCard, "filename");' data-dropFunction='uploadCard' data-otherParams='filename'>
-            </div>
-            <div class="center">
-                <canvas style='height: auto; max-width:850px; width: 100%; background: #fff;'></canvas>
-            </div>
-        </div>
-    </div>
-    <div class='readable-background padding layer margin-bottom-large'>
-		<h3 class='download padding' onclick='downloadCanvas();'>Download your Sheet (PNG)</h3>
-		<h4 class='padding center'>(Can take a few seconds)</h4>
-	</div>
-	<div class='readable-background padding layer margin-bottom-large'>
-		<h3 class='download padding' onclick='downloadPDF();'>Download your Sheet (PDF)</h3>
-		<h4 class='padding center'>(WARNING: This can take around 15 seconds...)</h4>
-	</div>
-    <div class="readable-background layer margin-bottom-large">
-        <h3 class='padding margin-bottom center'>
-            Want to see your custom cards on the kitchen table?
-        </h3>
-        <h4 class='padding'>
-        	Upload up to nine images, and they will automatically arrange themselves on an 8.5" by 11" sheet, so you can print them at home at up to 600PPI.
-        </h4>
-    </div>
 	<script defer src='https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.debug.js'></script>
-    <script defer src="/print/print.js"></script>
-<!-- END OF CONTENT -->
+	<script defer src="/print/print.js"></script>
+</body>
+</html>

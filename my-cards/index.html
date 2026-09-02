@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="mtg, magic, card, creator, custom, maker">
+	<title>My Cards - Card Conjurer</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/style-9.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../css/quickMode.css">
+	<link rel="stylesheet" href="../css/library.css">
+	<link rel="shortcut icon" href="../core/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="../core/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../core/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../core/favicon-16x16.png">
+	<link rel="manifest" href="../core/site.webmanifest">
+	<script src='../js/themes.js'></script>
+	<script defer src='../js/cardStorage.js'></script>
+	<script defer src='../js/main-1.js'></script>
+	<script defer src='../js/cardTile.js'></script>
+	<script defer src='../js/myCards.js'></script>
+</head>
+<body>
+	<div class='background'></div>
+	<header class='site-nav'>
+		<h1 class='title'>Conjurer</h1>
+		<nav>
+			<a href='/'>Creator</a>
+			<a href='/my-cards/' class='site-nav-selected'>My Cards</a>
+			<a href='/decks/'>Decks</a>
+		</nav>
+	</header>
+	<div class='notification-container'></div>
+
+	<div class='library-page'>
+		<h5 class='quick-hint margin-bottom-large'>Saved cards live in this browser only.</h5>
+		<div id='cards-grid' class='library-grid'></div>
+		<div id='cards-empty' class='library-empty hidden'>
+			<h3 class='quick-export-title'>No saved cards yet</h3>
+			<h5 class='quick-export-subtitle'>Open the <a href='/'>Creator</a> and use "Save Card" to add one here.</h5>
+		</div>
+	</div>
+</body>
+</html>
